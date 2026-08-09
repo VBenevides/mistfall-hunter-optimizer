@@ -1,0 +1,94 @@
+{
+  "id": "1550101",
+  "name": "Bloodwrath General Greaves",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200097",
+  "grade": 5,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "The Wulfen family of the kingdom is an enviable military nobility. One of their most notable icons is the silver wolf fur adorning their battle boots. The shinier the fur, the more prestigious the wearer.\nHarald and Brandr are both members of the Wulfen family.",
+  "subName": "Boots",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 87,
+  "maxPrice": 2500,
+  "recommendedPrice": 700,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 87,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 10,
+    "maxHealth": 50,
+    "combatValue": 450,
+    "physicalIncrease": 0.03
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "109",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1721402",
+        "name": "Stoic",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": 5,
+    "holeGroup": [
+      22
+    ],
+    "repairCost": 0.154286,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 294,
+    "affixLibraryId": 107501,
+    "durabilityLimit": 1400,
+    "requiredClasses": [
+      10
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 22,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_D",
+      "name": "Tier II Amethyst Slot - Empty",
+      "type": 2,
+      "level": 2
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Mercenary"
+  ],
+  "rarity": "epic",
+  "wiki": {
+    "name": "Bloodwrath General Greaves",
+    "slot": "Feet",
+    "classes": "Mercenary",
+    "rarity": "Epic",
+    "attack": 10,
+    "health": 50,
+    "combat": 450
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "1160104",
+  "name": "Champion's Helmet",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200160",
+  "grade": 6,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "For Harald, the weight of expectation on his shoulders was too immense. He would not fail, and he could not fail.",
+  "subName": "Helmet",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 271,
+  "maxPrice": 7000,
+  "recommendedPrice": 1500,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 271,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "defence": 70,
+    "maxHealth": 74,
+    "combatValue": 525,
+    "criticalReduction": 0.07
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "114",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1732200",
+        "name": "Resilience",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": 1,
+    "holeGroup": [
+      32,
+      11
+    ],
+    "repairCost": 0.6,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 300,
+    "affixLibraryId": 103604,
+    "durabilityLimit": 1500,
+    "requiredClasses": [
+      10
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 32,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_B",
+      "name": "Tier II Moonstone Slot - Empty",
+      "type": 3,
+      "level": 2
+    },
+    {
+      "id": 11,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_A",
+      "name": "Tier I Agate Slot - Empty",
+      "type": 1,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Mercenary"
+  ],
+  "rarity": "legendary",
+  "wiki": {
+    "name": "Champion's Helmet",
+    "slot": "Head",
+    "classes": "Mercenary",
+    "rarity": "Legendary",
+    "attack": null,
+    "health": 74,
+    "combat": 525
+  }
+}

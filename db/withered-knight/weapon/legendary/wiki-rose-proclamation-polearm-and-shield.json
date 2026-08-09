@@ -1,0 +1,20 @@
+{
+  "id": "wiki-rose-proclamation-polearm-and-shield",
+  "name": "Rose Proclamation",
+  "mainCategory": "weapon",
+  "grade": 6,
+  "classes": [
+    "Withered Knight"
+  ],
+  "rarity": "legendary",
+  "wiki": {
+    "name": "Rose Proclamation",
+    "set": null,
+    "type": "Polearm and Shield",
+    "classes": "Withered Knight",
+    "rarity": "Legendary",
+    "attack": 24,
+    "combat": 525,
+    "durability": 1500
+  }
+}

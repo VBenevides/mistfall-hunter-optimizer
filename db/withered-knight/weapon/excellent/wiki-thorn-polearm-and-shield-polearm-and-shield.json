@@ -1,0 +1,20 @@
+{
+  "id": "wiki-thorn-polearm-and-shield-polearm-and-shield",
+  "name": "Thorn Polearm and Shield",
+  "mainCategory": "weapon",
+  "grade": 4,
+  "classes": [
+    "Withered Knight"
+  ],
+  "rarity": "excellent",
+  "wiki": {
+    "name": "Thorn Polearm and Shield",
+    "set": null,
+    "type": "Polearm and Shield",
+    "classes": "Withered Knight",
+    "rarity": "Excellent",
+    "attack": 17,
+    "combat": 375,
+    "durability": 1300
+  }
+}

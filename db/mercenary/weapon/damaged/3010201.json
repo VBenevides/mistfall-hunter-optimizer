@@ -1,0 +1,70 @@
+{
+  "id": "3010201",
+  "name": "Rusty Crude Hammer",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1211004",
+  "grade": 1,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "weapon",
+  "subCategory": "Hammer",
+  "description": "Rust does little to diminish its effectiveness. Its weight remains the true killer.",
+  "subName": "Warhammer",
+  "itemType": 4,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 0,
+  "tradable": false,
+  "tradeColdTime": 0,
+  "minPrice": 0,
+  "maxPrice": 0,
+  "recommendedPrice": 0,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 0,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 16,
+    "combatValue": 100
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": null,
+    "holeGroup": [],
+    "repairCost": 0.005,
+    "weaponType": 2,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 250,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1000,
+    "requiredClasses": [
+      10
+    ],
+    "weaponTypeName": "Hammer",
+    "specialSkillDesc": 0
+  },
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Mercenary"
+  ],
+  "rarity": "damaged",
+  "wiki": {
+    "name": "Rusty Crude Hammer",
+    "set": null,
+    "type": "Hammer",
+    "classes": "Mercenary",
+    "rarity": "Damaged",
+    "attack": 16,
+    "combat": 100,
+    "durability": 1000
+  }
+}

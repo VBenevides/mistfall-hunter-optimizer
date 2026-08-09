@@ -1,0 +1,94 @@
+{
+  "id": "1350102",
+  "name": "Bloodwrath General Bracers",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200095",
+  "grade": 5,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "After Dragonfall, Einherjar Brandr's fame grew, but only his sealed, fragmented soul remained, lingering in Brandrgarde's obscure and endless night. If not for Harald's Soul Experiment, the hero might not have perished completely.",
+  "subName": "Gauntlets",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 87,
+  "maxPrice": 2500,
+  "recommendedPrice": 700,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 87,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 10,
+    "defence": 45,
+    "combatValue": 450,
+    "physicalIncrease": 0.03
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "206",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1710102",
+        "name": "Wrath",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": 3,
+    "holeGroup": [
+      32
+    ],
+    "repairCost": 0.154286,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 294,
+    "affixLibraryId": 105502,
+    "durabilityLimit": 1400,
+    "requiredClasses": [
+      10
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 32,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_B",
+      "name": "Tier II Moonstone Slot - Empty",
+      "type": 3,
+      "level": 2
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Mercenary"
+  ],
+  "rarity": "epic",
+  "wiki": {
+    "name": "Bloodwrath General Bracers",
+    "slot": "Arms",
+    "classes": "Mercenary",
+    "rarity": "Epic",
+    "attack": 10,
+    "health": null,
+    "combat": 450
+  }
+}

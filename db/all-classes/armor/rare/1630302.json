@@ -1,0 +1,69 @@
+{
+  "id": "1630302",
+  "name": "Warrior Pendant",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1221008",
+  "grade": 3,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "Possession of a true warrior. Wearing it makes one's body surge with power.",
+  "subName": "Necklace",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 44,
+  "maxPrice": 400,
+  "recommendedPrice": 95,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 44,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 5,
+    "combatValue": 275,
+    "physicalIncrease": 0.005
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 6,
+    "holeGroup": [
+      21
+    ],
+    "repairCost": 0,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 0,
+    "affixLibraryId": 0,
+    "durabilityLimit": 0,
+    "requiredClasses": [],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 21,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_D",
+      "name": "Tier I Amethyst Slot - Empty",
+      "type": 2,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "All classes"
+  ],
+  "rarity": "rare"
+}

@@ -1,0 +1,97 @@
+{
+  "id": "1360409",
+  "name": "Ace Assassin Bracers",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200130",
+  "grade": 6,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "\"He stands today where I stood yesterday; how can I leave him to perish?\" Casting aside the deep anxieties of his subordinates, Lars opened his arms to welcome the youth of unknown origin.",
+  "subName": "Gauntlets",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 217,
+  "maxPrice": 7000,
+  "recommendedPrice": 1500,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 217,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 12,
+    "defence": 52,
+    "combatValue": 500,
+    "physicalIncrease": 0.036
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 3,
+    "holeGroup": [
+      42,
+      21,
+      31
+    ],
+    "repairCost": 0.6,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 300,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1500,
+    "requiredClasses": [
+      13
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 42,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_C",
+      "name": "Tier II Peridot Slot - Empty",
+      "type": 4,
+      "level": 2
+    },
+    {
+      "id": 21,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_D",
+      "name": "Tier I Amethyst Slot - Empty",
+      "type": 2,
+      "level": 1
+    },
+    {
+      "id": 31,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_B",
+      "name": "Tier I Moonstone Slot - Empty",
+      "type": 3,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Shadowstrix"
+  ],
+  "rarity": "legendary",
+  "wiki": {
+    "name": "Ace Assassin Bracers",
+    "slot": "Arms",
+    "classes": "Shadowstrix",
+    "rarity": "Legendary",
+    "attack": 12,
+    "health": null,
+    "combat": 525
+  }
+}

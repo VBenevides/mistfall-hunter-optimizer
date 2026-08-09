@@ -1,0 +1,20 @@
+{
+  "id": "wiki-insatiable-heart-soulseeker-bow-bow",
+  "name": "Soulseeker Bow",
+  "mainCategory": "weapon",
+  "grade": 7,
+  "classes": [
+    "Blackarrow"
+  ],
+  "rarity": "holy",
+  "wiki": {
+    "name": "Soulseeker Bow",
+    "set": "Insatiable Heart",
+    "type": "Bow",
+    "classes": "Blackarrow",
+    "rarity": "Holy",
+    "attack": 40,
+    "combat": 625,
+    "durability": 1600
+  }
+}

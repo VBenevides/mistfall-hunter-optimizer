@@ -1,0 +1,80 @@
+{
+  "id": "1340109",
+  "name": "Fearless Bracers",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200100",
+  "grade": 4,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "Brandrgarde is overrun by the Gyldenmist. A Mistchaser survived five days in it and was nearly insane upon escaping. He claimed Harald still stood at Brandrgarde's heart, awaiting an audience. The next day, the explorer disappeared.",
+  "subName": "Gauntlets",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 54,
+  "maxPrice": 900,
+  "recommendedPrice": 280,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 54,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 9,
+    "defence": 35,
+    "combatValue": 350,
+    "physicalIncrease": 0.02
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 3,
+    "holeGroup": [
+      21,
+      31
+    ],
+    "repairCost": 0.052308,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 286,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1300,
+    "requiredClasses": [
+      10
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 21,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_D",
+      "name": "Tier I Amethyst Slot - Empty",
+      "type": 2,
+      "level": 1
+    },
+    {
+      "id": 31,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_B",
+      "name": "Tier I Moonstone Slot - Empty",
+      "type": 3,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Mercenary"
+  ],
+  "rarity": "excellent"
+}

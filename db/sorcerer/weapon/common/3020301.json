@@ -1,0 +1,70 @@
+{
+  "id": "3020301",
+  "name": "Apprentice Staff",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1214005",
+  "grade": 2,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "weapon",
+  "subCategory": "Staff",
+  "description": "An apprentice staff, a witness to countless apprentices casting their very first spells.",
+  "subName": "Staff",
+  "itemType": 4,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 0,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 30,
+  "maxPrice": 150,
+  "recommendedPrice": 50,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 30,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 20,
+    "combatValue": 200
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": null,
+    "holeGroup": [],
+    "repairCost": 0.009091,
+    "weaponType": 4,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 264,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1100,
+    "requiredClasses": [
+      11
+    ],
+    "weaponTypeName": "Staff",
+    "specialSkillDesc": 0
+  },
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Sorcerer"
+  ],
+  "rarity": "common",
+  "wiki": {
+    "name": "Apprentice Staff",
+    "set": null,
+    "type": "Staff",
+    "classes": "Sorcerer",
+    "rarity": "Common",
+    "attack": 20,
+    "combat": 200,
+    "durability": 1100
+  }
+}

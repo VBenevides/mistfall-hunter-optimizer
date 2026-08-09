@@ -1,0 +1,95 @@
+{
+  "id": "3050507",
+  "name": "Gem Lizard Dagger",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1213008",
+  "grade": 5,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "weapon",
+  "subCategory": "Dagger",
+  "description": "Adorning weapons with decorative gems is uncharacteristic of Northern craftsmanship. This dagger's artistry clearly hails from the Southern city-states. Though the southern folks are less martial than their northern counterparts, their metallurgy is unrivaled. Even the master smith Vronn journeyed south in his youth to study their craft.",
+  "subName": "Dagger",
+  "itemType": 4,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 0,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 120,
+  "maxPrice": 2500,
+  "recommendedPrice": 850,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 120,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 35,
+    "combatValue": 450,
+    "physicalIncrease": 0.06
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "311",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1733100",
+        "name": "Blessing",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": null,
+    "holeGroup": [
+      12
+    ],
+    "repairCost": 0.171429,
+    "weaponType": 5,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 294,
+    "affixLibraryId": 131507,
+    "durabilityLimit": 1400,
+    "requiredClasses": [
+      13
+    ],
+    "weaponTypeName": "Dagger",
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 12,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_A",
+      "name": "Tier II Agate Slot - Empty",
+      "type": 1,
+      "level": 2
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Shadowstrix"
+  ],
+  "rarity": "epic",
+  "wiki": {
+    "name": "Gem Lizard Dagger",
+    "set": null,
+    "type": "Dagger",
+    "classes": "Shadowstrix",
+    "rarity": "Epic",
+    "attack": 35,
+    "combat": 450,
+    "durability": 1400
+  }
+}

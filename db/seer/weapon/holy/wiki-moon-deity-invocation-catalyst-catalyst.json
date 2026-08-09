@@ -1,0 +1,20 @@
+{
+  "id": "wiki-moon-deity-invocation-catalyst-catalyst",
+  "name": "Invocation Catalyst",
+  "mainCategory": "weapon",
+  "grade": 7,
+  "classes": [
+    "Seer"
+  ],
+  "rarity": "holy",
+  "wiki": {
+    "name": "Invocation Catalyst",
+    "set": "Moon Deity",
+    "type": "Catalyst",
+    "classes": "Seer",
+    "rarity": "Holy",
+    "attack": 40,
+    "combat": 625,
+    "durability": 1600
+  }
+}

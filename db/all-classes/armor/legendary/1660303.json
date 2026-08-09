@@ -1,0 +1,85 @@
+{
+  "id": "1660303",
+  "name": "Frostspeaker Pendant",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1221012",
+  "grade": 6,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "The snow wolves that run across the frozen earth are known as Frostspeakers. They are praised for their unity in battle and their wisdom in predicting winter. Elements of wolves are featured in many tribal totems, including that of the Wulfen family, from which the Einherjar Brandr descended.",
+  "subName": "Necklace",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 293,
+  "maxPrice": 50000,
+  "recommendedPrice": 1500,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 293,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 8,
+    "combatValue": 500,
+    "physicalIncrease": 0.018
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 6,
+    "holeGroup": [
+      52,
+      31,
+      41
+    ],
+    "repairCost": 0,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 0,
+    "affixLibraryId": 0,
+    "durabilityLimit": 0,
+    "requiredClasses": [],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 52,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_X",
+      "name": "Tier 2 Universal Gem Slot - Empty",
+      "type": -1,
+      "level": 2
+    },
+    {
+      "id": 31,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_B",
+      "name": "Tier I Moonstone Slot - Empty",
+      "type": 3,
+      "level": 1
+    },
+    {
+      "id": 41,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_C",
+      "name": "Tier I Peridot Slot - Empty",
+      "type": 4,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "All classes"
+  ],
+  "rarity": "legendary"
+}

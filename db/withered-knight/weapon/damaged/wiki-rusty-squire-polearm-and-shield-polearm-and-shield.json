@@ -1,0 +1,20 @@
+{
+  "id": "wiki-rusty-squire-polearm-and-shield-polearm-and-shield",
+  "name": "Rusty Squire Polearm and Shield",
+  "mainCategory": "weapon",
+  "grade": 1,
+  "classes": [
+    "Withered Knight"
+  ],
+  "rarity": "damaged",
+  "wiki": {
+    "name": "Rusty Squire Polearm and Shield",
+    "set": null,
+    "type": "Polearm and Shield",
+    "classes": "Withered Knight",
+    "rarity": "Damaged",
+    "attack": 10,
+    "combat": 100,
+    "durability": 1000
+  }
+}

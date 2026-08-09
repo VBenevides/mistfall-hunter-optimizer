@@ -1,0 +1,103 @@
+{
+  "id": "3060506",
+  "name": "Serpent's Whisper",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1213009",
+  "grade": 6,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "weapon",
+  "subCategory": "Dagger",
+  "description": "The weapon Dago carried when fleeing the Shadowstrix Inn. Its wavy blade resembles a winding serpent's tongue, waiting to strike its prey. He buried the dagger along with his robes in his grave, determined to leave his past behind.",
+  "subName": "Dagger",
+  "itemType": 4,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 0,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 300,
+  "maxPrice": 7000,
+  "recommendedPrice": 1500,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 300,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 40,
+    "combatValue": 525,
+    "physicalIncrease": 0.072
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "309",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1732500",
+        "name": "Sleight of Hand",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": null,
+    "holeGroup": [
+      32,
+      41
+    ],
+    "repairCost": 0.666667,
+    "weaponType": 5,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 300,
+    "affixLibraryId": 131606,
+    "durabilityLimit": 1500,
+    "requiredClasses": [
+      13
+    ],
+    "weaponTypeName": "Dagger",
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 32,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_B",
+      "name": "Tier II Moonstone Slot - Empty",
+      "type": 3,
+      "level": 2
+    },
+    {
+      "id": 41,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_C",
+      "name": "Tier I Peridot Slot - Empty",
+      "type": 4,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Shadowstrix"
+  ],
+  "rarity": "legendary",
+  "wiki": {
+    "name": "Serpent's Whisper",
+    "set": null,
+    "type": "Dagger",
+    "classes": "Shadowstrix",
+    "rarity": "Legendary",
+    "attack": 40,
+    "combat": 525,
+    "durability": 1500
+  }
+}

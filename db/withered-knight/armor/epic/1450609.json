@@ -1,0 +1,89 @@
+{
+  "id": "1450609",
+  "name": "Black Iris Breeches",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200144",
+  "grade": 5,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "The Black Iris rarely practices holy magic, focusing instead on arcane arts that counter spellcasters. Throughout history, many arrogant, lawless sorcerers in Gaenaria have been slain by the Black Iris, earning the group an increasingly fearsome reputation as \"Sorcerer Hunters.\"",
+  "subName": "Pants",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 108,
+  "maxPrice": 2500,
+  "recommendedPrice": 750,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 108,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "defence": 75,
+    "maxHealth": 83,
+    "combatValue": 425,
+    "magicalReduction": 0.06
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 4,
+    "holeGroup": [
+      32,
+      41
+    ],
+    "repairCost": 0.154286,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 294,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1400,
+    "requiredClasses": [
+      15
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 32,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_B",
+      "name": "Tier II Moonstone Slot - Empty",
+      "type": 3,
+      "level": 2
+    },
+    {
+      "id": 41,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_C",
+      "name": "Tier I Peridot Slot - Empty",
+      "type": 4,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Withered Knight"
+  ],
+  "rarity": "epic",
+  "wiki": {
+    "name": "Black Iris Breeches",
+    "slot": "Legs",
+    "classes": "Withered Knight",
+    "rarity": "Epic",
+    "attack": null,
+    "health": 83,
+    "combat": 450
+  }
+}

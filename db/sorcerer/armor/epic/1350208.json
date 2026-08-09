@@ -1,0 +1,80 @@
+{
+  "id": "1350208",
+  "name": "Mysteria Elder Bracers",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200105",
+  "grade": 5,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "Sáldr is a free-spirited and joyful girl just like Máni. She is the great sorcerer of Velgr. To the Velgr tribe, Loghva, the Thousand-faced God, represents pure, immense primal energy. For centuries, they have explored the true meaning of the spirit in all things.",
+  "subName": "Gauntlets",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 87,
+  "maxPrice": 2500,
+  "recommendedPrice": 700,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 87,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 10,
+    "defence": 45,
+    "combatValue": 425,
+    "magicalIncrease": 0.03
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 3,
+    "holeGroup": [
+      42,
+      21
+    ],
+    "repairCost": 0.154286,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 294,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1400,
+    "requiredClasses": [
+      11
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 42,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_C",
+      "name": "Tier II Peridot Slot - Empty",
+      "type": 4,
+      "level": 2
+    },
+    {
+      "id": 21,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_D",
+      "name": "Tier I Amethyst Slot - Empty",
+      "type": 2,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Sorcerer"
+  ],
+  "rarity": "epic"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "1520301",
+  "name": "Artisan's Leather Boots",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200037",
+  "grade": 2,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "The soles have been re-nailed, enhancing their durability.",
+  "subName": "Boots",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 22,
+  "maxPrice": 150,
+  "recommendedPrice": 40,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 22,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 6,
+    "maxHealth": 35,
+    "combatValue": 200
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 5,
+    "holeGroup": [],
+    "repairCost": 0.009091,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 264,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1100,
+    "requiredClasses": [
+      12,
+      13
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Blackarrow",
+    "Shadowstrix"
+  ],
+  "rarity": "common",
+  "wiki": {
+    "name": "Artisan's Leather Boots",
+    "slot": "Feet",
+    "classes": "Blackarrow, Shadowstrix",
+    "rarity": "Common",
+    "attack": 6,
+    "health": 35,
+    "combat": 200
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "wiki-guard-polearm-and-shield-polearm-and-shield",
+  "name": "Guard Polearm and Shield",
+  "mainCategory": "weapon",
+  "grade": 3,
+  "classes": [
+    "Withered Knight"
+  ],
+  "rarity": "rare",
+  "wiki": {
+    "name": "Guard Polearm and Shield",
+    "set": null,
+    "type": "Polearm and Shield",
+    "classes": "Withered Knight",
+    "rarity": "Rare",
+    "attack": 14,
+    "combat": 300,
+    "durability": 1200
+  }
+}

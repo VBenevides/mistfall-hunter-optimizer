@@ -1,0 +1,85 @@
+{
+  "id": "1150206",
+  "name": "Mysteria Elder Mask",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200103",
+  "grade": 5,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "Sorcerers claim the serpent's eye is the third eye of Argus. Most sorcerers spend their lives seeking ways to open this third eye, with many going astray in their pursuit. Some in Brandrgarde believe welcoming Loghva, the Thousand-faced God, is the only shortcut to enlightenment.",
+  "subName": "Helmet",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 108,
+  "maxPrice": 2500,
+  "recommendedPrice": 750,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 108,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "defence": 60,
+    "maxHealth": 66,
+    "combatValue": 450,
+    "criticalReduction": 0.06
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "305",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1731700",
+        "name": "Elusive",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": 1,
+    "holeGroup": [
+      42
+    ],
+    "repairCost": 0.154286,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 294,
+    "affixLibraryId": 113506,
+    "durabilityLimit": 1400,
+    "requiredClasses": [
+      11
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 42,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_C",
+      "name": "Tier II Peridot Slot - Empty",
+      "type": 4,
+      "level": 2
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Sorcerer"
+  ],
+  "rarity": "epic"
+}

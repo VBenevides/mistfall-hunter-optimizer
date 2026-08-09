@@ -1,0 +1,85 @@
+{
+  "id": "1760402",
+  "name": "Eye of the Sea Giant",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1220017",
+  "grade": 6,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "Sea Giants possess crystal-clear blue eyes, like the ice sea. After their leader Hastain was slain, the remaining Sea Giants scattered and vanished without a trace. No one has seen them in a long time.",
+  "subName": "Ring",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 267,
+  "maxPrice": 50000,
+  "recommendedPrice": 1500,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 267,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 8,
+    "combatValue": 500,
+    "magicalIncrease": 0.018
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 7,
+    "holeGroup": [
+      42,
+      11,
+      31
+    ],
+    "repairCost": 0,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 0,
+    "affixLibraryId": 0,
+    "durabilityLimit": 0,
+    "requiredClasses": [],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 42,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_C",
+      "name": "Tier II Peridot Slot - Empty",
+      "type": 4,
+      "level": 2
+    },
+    {
+      "id": 11,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_A",
+      "name": "Tier I Agate Slot - Empty",
+      "type": 1,
+      "level": 1
+    },
+    {
+      "id": 31,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_B",
+      "name": "Tier I Moonstone Slot - Empty",
+      "type": 3,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "All classes"
+  ],
+  "rarity": "legendary"
+}

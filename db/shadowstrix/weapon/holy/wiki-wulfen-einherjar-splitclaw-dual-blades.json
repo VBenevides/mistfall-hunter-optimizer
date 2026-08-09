@@ -1,0 +1,20 @@
+{
+  "id": "wiki-wulfen-einherjar-splitclaw-dual-blades",
+  "name": "Splitclaw",
+  "mainCategory": "weapon",
+  "grade": 7,
+  "classes": [
+    "Shadowstrix"
+  ],
+  "rarity": "holy",
+  "wiki": {
+    "name": "Splitclaw",
+    "set": "Wulfen Einherjar",
+    "type": "Dual Blades",
+    "classes": "Shadowstrix",
+    "rarity": "Holy",
+    "attack": 40,
+    "combat": 625,
+    "durability": 1600
+  }
+}

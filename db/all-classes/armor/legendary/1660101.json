@@ -1,0 +1,85 @@
+{
+  "id": "1660101",
+  "name": "Tri-phase Knot Pendant",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1221014",
+  "grade": 6,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "All things are connected to the number three. The tri-phase knot pattern appears not only on decorations but also on homecoming bells hung by the families of warriors. People pray that the sound of the bell will reach across the three realms, guiding their loved ones back home.",
+  "subName": "Necklace",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 293,
+  "maxPrice": 50000,
+  "recommendedPrice": 1500,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 293,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "maxHealth": 34,
+    "combatValue": 500,
+    "physicalReduction": 0.018
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 6,
+    "holeGroup": [
+      12,
+      21,
+      31
+    ],
+    "repairCost": 0,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 0,
+    "affixLibraryId": 0,
+    "durabilityLimit": 0,
+    "requiredClasses": [],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 12,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_A",
+      "name": "Tier II Agate Slot - Empty",
+      "type": 1,
+      "level": 2
+    },
+    {
+      "id": 21,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_D",
+      "name": "Tier I Amethyst Slot - Empty",
+      "type": 2,
+      "level": 1
+    },
+    {
+      "id": 31,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_B",
+      "name": "Tier I Moonstone Slot - Empty",
+      "type": 3,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "All classes"
+  ],
+  "rarity": "legendary"
+}

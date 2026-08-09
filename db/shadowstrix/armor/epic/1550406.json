@@ -1,0 +1,85 @@
+{
+  "id": "1550406",
+  "name": "Shadowstrix Leather Boots",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200092",
+  "grade": 5,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "The soles are padded, allowing well-trained assassins to move silently.",
+  "subName": "Boots",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 87,
+  "maxPrice": 2500,
+  "recommendedPrice": 700,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 87,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 10,
+    "maxHealth": 50,
+    "combatValue": 450,
+    "physicalIncrease": 0.03
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "305",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1731700",
+        "name": "Elusive",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": 5,
+    "holeGroup": [
+      32
+    ],
+    "repairCost": 0.154286,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 294,
+    "affixLibraryId": 137506,
+    "durabilityLimit": 1400,
+    "requiredClasses": [
+      13
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 32,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_B",
+      "name": "Tier II Moonstone Slot - Empty",
+      "type": 3,
+      "level": 2
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Shadowstrix"
+  ],
+  "rarity": "epic"
+}

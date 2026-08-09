@@ -1,0 +1,20 @@
+{
+  "id": "wiki-moon-deity-crescent-dagger-dagger",
+  "name": "Crescent Dagger",
+  "mainCategory": "weapon",
+  "grade": 7,
+  "classes": [
+    "Shadowstrix"
+  ],
+  "rarity": "holy",
+  "wiki": {
+    "name": "Crescent Dagger",
+    "set": "Moon Deity",
+    "type": "Dagger",
+    "classes": "Shadowstrix",
+    "rarity": "Holy",
+    "attack": 40,
+    "combat": 625,
+    "durability": 1600
+  }
+}

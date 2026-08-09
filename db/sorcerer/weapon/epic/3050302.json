@@ -1,0 +1,95 @@
+{
+  "id": "3050302",
+  "name": "Empyrean Rain Staff",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1214008",
+  "grade": 5,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "weapon",
+  "subCategory": "Staff",
+  "description": "With three High Priests befalling misfortune, tension mounts in Brandrgarde. Sorcerers and priests, already at odds over divine worship, frequently clash.\n\"They claim to wield nature's power without kneeling before the gods. How absurd! Are not all powers in this world divine gifts?\"",
+  "subName": "Staff",
+  "itemType": 4,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 0,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 120,
+  "maxPrice": 2500,
+  "recommendedPrice": 850,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 120,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 35,
+    "combatValue": 450,
+    "magicalIncrease": 0.06
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "208",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1710101",
+        "name": "Fervid",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": null,
+    "holeGroup": [
+      32
+    ],
+    "repairCost": 0.171429,
+    "weaponType": 4,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 294,
+    "affixLibraryId": 111502,
+    "durabilityLimit": 1400,
+    "requiredClasses": [
+      11
+    ],
+    "weaponTypeName": "Staff",
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 32,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_B",
+      "name": "Tier II Moonstone Slot - Empty",
+      "type": 3,
+      "level": 2
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Sorcerer"
+  ],
+  "rarity": "epic",
+  "wiki": {
+    "name": "Empyrean Rain Staff",
+    "set": null,
+    "type": "Staff",
+    "classes": "Sorcerer",
+    "rarity": "Epic",
+    "attack": 35,
+    "combat": 450,
+    "durability": 1400
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "1620101",
+  "name": "Carved Amulet",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1221005",
+  "grade": 2,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "The dull metal is inscribed with mysterious protective runes.",
+  "subName": "Necklace",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 29,
+  "maxPrice": 150,
+  "recommendedPrice": 45,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 29,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "maxHealth": 23,
+    "combatValue": 200
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 6,
+    "holeGroup": [],
+    "repairCost": 0,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 0,
+    "affixLibraryId": 0,
+    "durabilityLimit": 0,
+    "requiredClasses": [],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "All classes"
+  ],
+  "rarity": "common",
+  "wiki": {
+    "name": "Carved Amulet",
+    "slot": "Amulet",
+    "classes": "All classes",
+    "rarity": "Common",
+    "attack": null,
+    "health": 23,
+    "combat": 200
+  }
+}

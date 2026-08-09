@@ -1,0 +1,81 @@
+{
+  "id": "1530608",
+  "name": "Ceremonial Sabatons",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200136",
+  "grade": 3,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "The Pontiff's personal guard is composed of Rose Knights, who reside with him in the Grand Cathedral. Visitors to the cathedral must disarm, leaving these knights as the only ones free to carry weapons and move at will.",
+  "subName": "Boots",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 32,
+  "maxPrice": 400,
+  "recommendedPrice": 70,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 32,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 7,
+    "maxHealth": 38,
+    "combatValue": 275,
+    "physicalIncrease": 0.01
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 5,
+    "holeGroup": [
+      11
+    ],
+    "repairCost": 0.0125,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 276,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1200,
+    "requiredClasses": [
+      15
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 11,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_A",
+      "name": "Tier I Agate Slot - Empty",
+      "type": 1,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false,
+  "classes": [
+    "Withered Knight"
+  ],
+  "rarity": "rare",
+  "wiki": {
+    "name": "Ceremonial Sabatons",
+    "slot": "Feet",
+    "classes": "Withered Knight",
+    "rarity": "Rare",
+    "attack": 7,
+    "health": 38,
+    "combat": 300
+  }
+}

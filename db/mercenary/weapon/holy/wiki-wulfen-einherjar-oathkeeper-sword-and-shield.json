@@ -1,0 +1,20 @@
+{
+  "id": "wiki-wulfen-einherjar-oathkeeper-sword-and-shield",
+  "name": "Oathkeeper",
+  "mainCategory": "weapon",
+  "grade": 7,
+  "classes": [
+    "Mercenary"
+  ],
+  "rarity": "holy",
+  "wiki": {
+    "name": "Oathkeeper",
+    "set": "Wulfen Einherjar",
+    "type": "Sword and Shield",
+    "classes": "Mercenary",
+    "rarity": "Holy",
+    "attack": 24,
+    "combat": 625,
+    "durability": 1600
+  }
+}
