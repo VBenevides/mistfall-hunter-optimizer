@@ -22,7 +22,12 @@ GEM_TYPES = {1: "Agate", 2: "Amethyst", 3: "Moonstone", 4: "Peridot", 5: "Any"}
 PIECE_ORDER = {slot: index for index, slot in enumerate((
     "weapon", "helmet", "clothes", "gauntlets", "pants", "boots", "necklace", "ring"
 ))}
-SLOT_ALIASES = {"clothe": "clothes", "gauntlet": "gauntlets", "boot": "boots"}
+SLOT_ALIASES = {
+    "clothe": "clothes",
+    "gauntlet": "gauntlets",
+    "boot": "boots",
+    "amulet": "necklace",
+}
 PRICE_FIELDS = ("minPrice", "maxPrice", "recommendedPrice")
 
 
@@ -56,6 +61,33 @@ def _class_slug(value):
 def _slot_key(value):
     value = str(value).casefold()
     return SLOT_ALIASES.get(value, value)
+
+
+def _accessory_filter(value):
+    if value is None:
+        return None
+    if isinstance(value, (tuple, list)) and len(value) == 2:
+        value = "/".join(value)
+    parts = str(value).casefold().split("/")
+    if len(parts) != 2 or parts[0] not in {"hp", "atk"} or parts[1] not in {"phys", "mag"}:
+        raise ValueError("accessory filter must be HP/PHYS, HP/MAG, ATK/PHYS, or ATK/MAG")
+    return tuple(parts)
+
+
+def _filter_equipment(equipment, ring_filter=None, amulet_filter=None):
+    filters = {"ring": _accessory_filter(ring_filter), "necklace": _accessory_filter(amulet_filter)}
+    if not any(filters.values()):
+        return equipment
+    result = []
+    for item in equipment:
+        slot = _slot_key(item.get("subName", ""))
+        selected = filters.get(slot)
+        if selected is None or (
+            ("maxHealth" if selected[0] == "hp" else "attack") in item.get("attributes", {})
+            and any(name.startswith(selected[1] + "ical") for name in item.get("attributes", {}))
+        ):
+            result.append(item)
+    return result
 
 
 def _load_database(equipment_dir=EQUIPMENT_DB, gem_dir=GEM_DIR, character_class=None):
@@ -404,12 +436,15 @@ def optimize(
     min_rarity=1,
     max_rarity=6,
     character_class=None,
+    ring_filter=None,
+    amulet_filter=None,
 ):
     min_rarity = _rarity(min_rarity)
     max_rarity = _rarity(max_rarity)
     if min_rarity > max_rarity:
         raise ValueError("min_rarity cannot exceed max_rarity")
     equipment, gems = _load_database(equipment_dir, gem_dir, character_class)
+    equipment = _filter_equipment(equipment, ring_filter, amulet_filter)
     if weapon_mode == "both":
         return {
             mode: _best(requirements, mode, equipment, gems, min_rarity, max_rarity)
@@ -508,6 +543,8 @@ def main():
     parser.add_argument("--weapon", choices=("same", "above", "both"), default="both")
     parser.add_argument("--min-rarity", default="1", metavar="RARITY", help="minimum rarity: 1-6 or name")
     parser.add_argument("--max-rarity", default="6", metavar="RARITY", help="maximum rarity: 1-6 or name")
+    parser.add_argument("--ring", metavar="[HP/ATK]/[PHYS/MAG]", type=_accessory_filter, help="filter ring: HP/PHYS, HP/MAG, ATK/PHYS, or ATK/MAG")
+    parser.add_argument("--amulet", metavar="[HP/ATK]/[PHYS/MAG]", type=_accessory_filter, help="filter amulet: HP/PHYS, HP/MAG, ATK/PHYS, or ATK/MAG")
     parser.add_argument("--format", choices=("text", "json"), default="text", dest="output_format")
     args = parser.parse_args()
     requirements = {}
@@ -522,6 +559,8 @@ def main():
         min_rarity=args.min_rarity,
         max_rarity=args.max_rarity,
         character_class=args.character_class,
+        ring_filter=args.ring,
+        amulet_filter=args.amulet,
     )
     print(
         json.dumps(result, indent=2, ensure_ascii=False)

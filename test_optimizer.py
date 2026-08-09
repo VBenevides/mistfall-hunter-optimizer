@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from optimizer import _compatible, _load_database, format_text, optimize
+from optimizer import _accessory_filter, _compatible, _filter_equipment, _load_database, format_text, optimize
 
 
 class OptimizerTest(unittest.TestCase):
@@ -14,6 +14,18 @@ class OptimizerTest(unittest.TestCase):
         self.assertTrue(_compatible(gem, {"type": -1, "level": 1}))
         self.assertFalse(_compatible({"gem": {"affixGemType": 2, "affixGemLevel": 1}}, 11))
         self.assertFalse(_compatible({"gem": {"affixGemType": 1, "affixGemLevel": 2}}, 11))
+
+    def test_accessory_filters(self):
+        items = [
+            {"id": "ring-hp-phys", "subName": "Ring", "attributes": {"maxHealth": 1, "physicalReduction": 1}},
+            {"id": "ring-atk-mag", "subName": "Ring", "attributes": {"attack": 1, "magicalIncrease": 1}},
+            {"id": "amulet-hp-mag", "subName": "Necklace", "attributes": {"maxHealth": 1, "magicalReduction": 1}},
+        ]
+        self.assertEqual(_accessory_filter("HP/Phys"), ("hp", "phys"))
+        self.assertEqual(
+            {item["id"] for item in _filter_equipment(items, "hp/phys", "hp/mag")},
+            {"ring-hp-phys", "amulet-hp-mag"},
+        )
 
     def test_class_loader_includes_all_classes(self):
         with tempfile.TemporaryDirectory() as directory:
