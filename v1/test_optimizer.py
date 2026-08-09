@@ -4,7 +4,15 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from optimizer import _accessory_filter, _compatible, _filter_equipment, _format_gem, _load_database, format_text, optimize
+from v1.optimizer import (
+    _accessory_filter,
+    _compatible,
+    _filter_equipment,
+    _format_gem,
+    _load_database,
+    format_text,
+    optimize,
+)
 
 
 class OptimizerTest(unittest.TestCase):
@@ -17,9 +25,21 @@ class OptimizerTest(unittest.TestCase):
 
     def test_accessory_filters(self):
         items = [
-            {"id": "ring-hp-phys", "subName": "Ring", "attributes": {"maxHealth": 1, "physicalReduction": 1}},
-            {"id": "ring-atk-mag", "subName": "Ring", "attributes": {"attack": 1, "magicalIncrease": 1}},
-            {"id": "amulet-hp-mag", "subName": "Necklace", "attributes": {"maxHealth": 1, "magicalReduction": 1}},
+            {
+                "id": "ring-hp-phys",
+                "subName": "Ring",
+                "attributes": {"maxHealth": 1, "physicalReduction": 1},
+            },
+            {
+                "id": "ring-atk-mag",
+                "subName": "Ring",
+                "attributes": {"attack": 1, "magicalIncrease": 1},
+            },
+            {
+                "id": "amulet-hp-mag",
+                "subName": "Necklace",
+                "attributes": {"maxHealth": 1, "magicalReduction": 1},
+            },
         ]
         self.assertEqual(_accessory_filter("HP/Phys"), ("hp", "phys"))
         self.assertEqual(
@@ -29,13 +49,15 @@ class OptimizerTest(unittest.TestCase):
 
     def test_gem_text_format(self):
         self.assertEqual(
-            _format_gem({
-                "type": "Agate",
-                "gem": {
-                    "name": "Fortitude · Fighting Spirit Agate",
-                    "affixes": [{"name": "Aegis"}, {"name": "Valor"}],
-                },
-            }),
+            _format_gem(
+                {
+                    "type": "Agate",
+                    "gem": {
+                        "name": "Fortitude · Fighting Spirit Agate",
+                        "affixes": [{"name": "Aegis"}, {"name": "Valor"}],
+                    },
+                }
+            ),
             "Red (Fighting/Spirit - Aegis/Valor)",
         )
 
@@ -50,13 +72,19 @@ class OptimizerTest(unittest.TestCase):
                     CREATE TABLE item_classes (item_id TEXT, class_slug TEXT, PRIMARY KEY (item_id, class_slug));
                     """
                 )
-                for class_name, item_id in (("mercenary", "m"), ("sorcerer", "s"), ("all-classes", "a")):
+                for class_name, item_id in (
+                    ("mercenary", "m"),
+                    ("sorcerer", "s"),
+                    ("all-classes", "a"),
+                ):
                     item = {"id": item_id, "mainCategory": "weapon"}
                     connection.execute(
                         "INSERT INTO items VALUES (?, ?, ?, ?, ?, ?)",
                         (item_id, item_id, "weapon", 1, "damaged", json.dumps(item)),
                     )
-                    connection.execute("INSERT INTO item_classes VALUES (?, ?)", (item_id, class_name))
+                    connection.execute(
+                        "INSERT INTO item_classes VALUES (?, ?)", (item_id, class_name)
+                    )
                 gem = {"id": "g", "mainCategory": "affix_gem", "gem": {"affixes": []}}
                 connection.execute(
                     "INSERT INTO items VALUES (?, ?, ?, ?, ?, ?)",
@@ -78,33 +106,53 @@ class OptimizerTest(unittest.TestCase):
             records = [("weapon-t2", "weapon", 2), ("weapon-t3", "weapon", 3)]
             records += [(f"{slot}-t2", slot, 2) for slot in slots]
             for item_id, slot, grade in records:
-                (equipment / f"{item_id}.json").write_text(json.dumps({
-                    "id": item_id,
-                    "name": item_id,
-                    "mainCategory": "weapon" if slot == "weapon" else "armor",
-                    "subName": slot,
-                    "grade": grade,
-                    "minPrice": 1,
-                    "maxPrice": 1,
-                    "recommendedPrice": 1,
-                    "equipment": {"affixes": [], "holeGroup": [11]},
-                }))
-            (gems / "g1.json").write_text(json.dumps({
-                "id": "g1",
-                "name": "Aegis Ruby",
-                "minPrice": 1,
-                "maxPrice": 3,
-                "recommendedPrice": 2,
-                "gem": {"affixGemType": 1, "affixGemLevel": 1, "affixes": [{"name": "Aegis", "level": 1}]},
-            }))
-            (gems / "g2.json").write_text(json.dumps({
-                "id": "g2",
-                "name": "Iron Helmet Ruby",
-                "minPrice": 1,
-                "maxPrice": 3,
-                "recommendedPrice": 2,
-                "gem": {"affixGemType": 1, "affixGemLevel": 1, "affixes": [{"name": "Iron Helmet", "level": 1}]},
-            }))
+                (equipment / f"{item_id}.json").write_text(
+                    json.dumps(
+                        {
+                            "id": item_id,
+                            "name": item_id,
+                            "mainCategory": "weapon" if slot == "weapon" else "armor",
+                            "subName": slot,
+                            "grade": grade,
+                            "minPrice": 1,
+                            "maxPrice": 1,
+                            "recommendedPrice": 1,
+                            "equipment": {"affixes": [], "holeGroup": [11]},
+                        }
+                    )
+                )
+            (gems / "g1.json").write_text(
+                json.dumps(
+                    {
+                        "id": "g1",
+                        "name": "Aegis Ruby",
+                        "minPrice": 1,
+                        "maxPrice": 3,
+                        "recommendedPrice": 2,
+                        "gem": {
+                            "affixGemType": 1,
+                            "affixGemLevel": 1,
+                            "affixes": [{"name": "Aegis", "level": 1}],
+                        },
+                    }
+                )
+            )
+            (gems / "g2.json").write_text(
+                json.dumps(
+                    {
+                        "id": "g2",
+                        "name": "Iron Helmet Ruby",
+                        "minPrice": 1,
+                        "maxPrice": 3,
+                        "recommendedPrice": 2,
+                        "gem": {
+                            "affixGemType": 1,
+                            "affixGemLevel": 1,
+                            "affixes": [{"name": "Iron Helmet", "level": 1}],
+                        },
+                    }
+                )
+            )
 
             result = optimize({"Aegis": 2}, "both", equipment, root / "gem")
             self.assertEqual(result["same"]["levelCombination"], [2] * 8)
@@ -136,19 +184,29 @@ class OptimizerTest(unittest.TestCase):
             self.assertFalse(limited["possible"])
             self.assertEqual(limited["independentMaximums"], {"Aegis": 0})
             self.assertEqual(
-                optimize({"Iron Helmet": 9}, "same", equipment, root / "gem", max_rarity=2)["independentMaximums"],
+                optimize({"Iron Helmet": 9}, "same", equipment, root / "gem", max_rarity=2)[
+                    "independentMaximums"
+                ],
                 {"Iron Helmet": 8},
             )
             self.assertIsNotNone(optimize({"iRoN_hElMeT": 1}, "same", equipment, root / "gem"))
 
-            (gems / "g3.json").write_text(json.dumps({
-                "id": "g3",
-                "name": "Aegis IV Ruby",
-                "minPrice": 1,
-                "maxPrice": 1,
-                "recommendedPrice": 1,
-                "gem": {"affixGemType": 1, "affixGemLevel": 1, "affixes": [{"name": "Aegis", "level": 4}]},
-            }))
+            (gems / "g3.json").write_text(
+                json.dumps(
+                    {
+                        "id": "g3",
+                        "name": "Aegis IV Ruby",
+                        "minPrice": 1,
+                        "maxPrice": 1,
+                        "recommendedPrice": 1,
+                        "gem": {
+                            "affixGemType": 1,
+                            "affixGemLevel": 1,
+                            "affixes": [{"name": "Aegis", "level": 4}],
+                        },
+                    }
+                )
+            )
             minimum = optimize({"Aegis": 3}, "same", equipment, root / "gem")
             self.assertTrue(minimum["possible"])
             self.assertEqual(minimum["effects"], {"Aegis": 3})
