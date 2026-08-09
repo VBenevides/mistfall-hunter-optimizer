@@ -77,7 +77,7 @@ class OptimizerTest(unittest.TestCase):
             self.assertIn("Rarity: Armor (Common) - Weapon (Common)", text)
             self.assertIn("Affixes: Aegis (2)", text)
             self.assertIn("Price: 10 / 12 / 14", text)
-            self.assertIn("Agate (Aegis Ruby)", text)
+            self.assertIn("No Native Affix: Agate (Aegis Ruby)", text)
             unavailable = optimize({"Aegis": 2}, "same", equipment, root / "gem", min_rarity="RARE")
             self.assertFalse(unavailable["possible"])
             self.assertIn("No set", unavailable["reason"])

@@ -407,13 +407,13 @@ def _format_one(result):
         native_text = (
             "No Native Affix"
             if native == "No Native Affix"
-            else "Native Affixes: " + ", ".join(f"{affix['name']} ({affix['level']})" for affix in native)
+            else ", ".join(f"{affix['name']} ({affix['level']})" for affix in native)
         )
         gems = ", ".join(
             f"{slot['type']} ({slot['gem']['name'] if slot['gem'] else 'empty'})"
             for slot in piece.get("gemSlots", [])
         ) or "No gem slots"
-        lines.append(f"{piece['slot'].title()} - {piece['name']} - {native_text} - {gems}")
+        lines.append(f"{piece['slot'].title()} - {piece['name']} - {native_text}: {gems}")
     return "\n".join(lines)
 
 
