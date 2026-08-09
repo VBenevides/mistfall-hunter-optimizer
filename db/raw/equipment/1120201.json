@@ -1,0 +1,57 @@
+{
+  "id": "1120201",
+  "name": "Apprentice Hood",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200038",
+  "grade": 2,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "Barely covers the head, the soft fabric can't withstand Brandrgarde's cold winds.",
+  "subName": "Helmet",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 27,
+  "maxPrice": 150,
+  "recommendedPrice": 45,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 27,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "defence": 22,
+    "maxHealth": 47,
+    "combatValue": 200
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 1,
+    "holeGroup": [],
+    "repairCost": 0.009091,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 264,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1100,
+    "requiredClasses": [
+      11,
+      14
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

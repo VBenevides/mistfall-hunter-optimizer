@@ -1,0 +1,81 @@
+{
+  "id": "1340207",
+  "name": "Raven Priest Bracers",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200025",
+  "grade": 4,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "Serpents symbolize Argus, while nature is the sorcerers' power source. Before the Gyldenfall, Máni, the Prayer of the Moon, traveled extensively. Upon her return, she praised the Velgr Isles west of the Tear Sea, where she made a new friend atop the mountains.",
+  "subName": "Gauntlets",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 54,
+  "maxPrice": 900,
+  "recommendedPrice": 280,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 54,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 9,
+    "defence": 35,
+    "combatValue": 375,
+    "magicalIncrease": 0.02
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "309",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1732500",
+        "name": "Sleight of Hand",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": 3,
+    "holeGroup": [
+      21
+    ],
+    "repairCost": 0.052308,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 286,
+    "affixLibraryId": 115407,
+    "durabilityLimit": 1300,
+    "requiredClasses": [
+      11
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 21,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_D",
+      "name": "Tier I Amethyst Slot - Empty",
+      "type": 2,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

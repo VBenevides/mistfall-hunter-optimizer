@@ -1,0 +1,84 @@
+{
+  "id": "1460608",
+  "name": "Rosen Oath Pants",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200164",
+  "grade": 6,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "During a retreat, Joanna stayed at the rear of the army. Perhaps fearful of pursuing enemies, timid city guards prematurely closed the gates. Joanna was captured and, after a brief and absurd trial, was tied to the pyre.",
+  "subName": "Pants",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 271,
+  "maxPrice": 7000,
+  "recommendedPrice": 1500,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 271,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "defence": 87,
+    "maxHealth": 92,
+    "combatValue": 500,
+    "magicalReduction": 0.072
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 4,
+    "holeGroup": [
+      12,
+      21,
+      41
+    ],
+    "repairCost": 0.6,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 300,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1500,
+    "requiredClasses": [
+      15
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 12,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_A",
+      "name": "Tier II Agate Slot - Empty",
+      "type": 1,
+      "level": 2
+    },
+    {
+      "id": 21,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_D",
+      "name": "Tier I Amethyst Slot - Empty",
+      "type": 2,
+      "level": 1
+    },
+    {
+      "id": 41,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_C",
+      "name": "Tier I Peridot Slot - Empty",
+      "type": 4,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

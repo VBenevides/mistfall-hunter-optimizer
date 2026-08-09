@@ -1,0 +1,81 @@
+{
+  "id": "1150204",
+  "name": "Mysteria Elder Mask",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200103",
+  "grade": 5,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "Sorcerers claim the serpent's eye is the third eye of Argus. Most sorcerers spend their lives seeking ways to open this third eye, with many going astray in their pursuit. Some in Brandrgarde believe welcoming Loghva, the Thousand-faced God, is the only shortcut to enlightenment.",
+  "subName": "Helmet",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 108,
+  "maxPrice": 2500,
+  "recommendedPrice": 750,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 108,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "defence": 60,
+    "maxHealth": 66,
+    "combatValue": 450,
+    "criticalReduction": 0.06
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "211",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1710407",
+        "name": "Ranged",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": 1,
+    "holeGroup": [
+      22
+    ],
+    "repairCost": 0.154286,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 294,
+    "affixLibraryId": 113504,
+    "durabilityLimit": 1400,
+    "requiredClasses": [
+      11
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 22,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_D",
+      "name": "Tier II Amethyst Slot - Empty",
+      "type": 2,
+      "level": 2
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

@@ -1,0 +1,57 @@
+{
+  "id": "1110301",
+  "name": "Simple Leather Eyepatch",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200063",
+  "grade": 1,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "The straps hang loose, hinting that the previous owner had a rather large head.",
+  "subName": "Helmet",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": false,
+  "tradeColdTime": 0,
+  "minPrice": 0,
+  "maxPrice": 0,
+  "recommendedPrice": 0,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 14,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "defence": 10,
+    "maxHealth": 40,
+    "combatValue": 100
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 1,
+    "holeGroup": [],
+    "repairCost": 0.005,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 250,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1000,
+    "requiredClasses": [
+      12,
+      13
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

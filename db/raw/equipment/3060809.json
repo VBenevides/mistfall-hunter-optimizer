@@ -1,0 +1,84 @@
+{
+  "id": "3060809",
+  "name": "Absolution",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1217006",
+  "grade": 6,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "weapon",
+  "subCategory": "Mace",
+  "description": "It was once nothing more than a candelabrum in the Sacred Chamber. It became a weapon when the blasphemer Yorol seized it and razed the faith that had taken everything from him, seeking vengeance against the gods who never answered his prayers.",
+  "subName": "Mace",
+  "itemType": 4,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 0,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 300,
+  "maxPrice": 7000,
+  "recommendedPrice": 1500,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 300,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 40,
+    "combatValue": 500,
+    "physicalIncrease": 0.072
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": null,
+    "holeGroup": [
+      22,
+      31,
+      41
+    ],
+    "repairCost": 0.666667,
+    "weaponType": 8,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 300,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1500,
+    "requiredClasses": [
+      14
+    ],
+    "weaponTypeName": "Mace",
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 22,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_D",
+      "name": "Tier II Amethyst Slot - Empty",
+      "type": 2,
+      "level": 2
+    },
+    {
+      "id": 31,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_B",
+      "name": "Tier I Moonstone Slot - Empty",
+      "type": 3,
+      "level": 1
+    },
+    {
+      "id": 41,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_C",
+      "name": "Tier I Peridot Slot - Empty",
+      "type": 4,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

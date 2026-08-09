@@ -1,0 +1,76 @@
+{
+  "id": "3050909",
+  "name": "Sacred Heart Greatsword",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1218005",
+  "grade": 5,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "weapon",
+  "subCategory": "Greatsword",
+  "description": "The weapons of the fallen are reclaimed and passed down to successors. It is believed that the faith of the departed endures through this inheritance.",
+  "subName": "Greatsword",
+  "itemType": 4,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 0,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 120,
+  "maxPrice": 2500,
+  "recommendedPrice": 850,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 120,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 35,
+    "combatValue": 425,
+    "physicalIncrease": 0.06
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": null,
+    "holeGroup": [
+      42,
+      21
+    ],
+    "repairCost": 0.171429,
+    "weaponType": 9,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 294,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1400,
+    "requiredClasses": [
+      15
+    ],
+    "weaponTypeName": "Greatsword",
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 42,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_C",
+      "name": "Tier II Peridot Slot - Empty",
+      "type": 4,
+      "level": 2
+    },
+    {
+      "id": 21,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_D",
+      "name": "Tier I Amethyst Slot - Empty",
+      "type": 2,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

@@ -1,0 +1,68 @@
+{
+  "id": "3030508",
+  "name": "Fang-Piercer Dagger",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1213006",
+  "grade": 3,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "weapon",
+  "subCategory": "Dagger",
+  "description": "This Dagger's design hails from Dmitrheim, brought north by a recruited assassin. Forge master Vronn studied it and replicated it en masse.",
+  "subName": "Dagger",
+  "itemType": 4,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 0,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 45,
+  "maxPrice": 400,
+  "recommendedPrice": 100,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 45,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 23,
+    "combatValue": 275,
+    "physicalIncrease": 0.02
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": null,
+    "holeGroup": [
+      31
+    ],
+    "repairCost": 0.0125,
+    "weaponType": 5,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 276,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1200,
+    "requiredClasses": [
+      13
+    ],
+    "weaponTypeName": "Dagger",
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 31,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_B",
+      "name": "Tier I Moonstone Slot - Empty",
+      "type": 3,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

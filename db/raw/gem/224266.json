@@ -1,0 +1,65 @@
+{
+  "id": "224266",
+  "name": "Strife - Wealth Peridot",
+  "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Gem_2_C",
+  "grade": 0,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "affix_gem",
+  "subName": "Affix Gemstones",
+  "usage": "Can be embedded into the corresponding type of equipment slot. The affix gemstone level cannot exceed the equipment slot level.",
+  "itemType": 16,
+  "heapMax": 1,
+  "stashHeapMax": 5,
+  "tradeHeapMax": 5,
+  "sort": 0,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 60,
+  "maxPrice": 1500,
+  "recommendedPrice": 150,
+  "needIdentify": true,
+  "canTeamRetrieve": false,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 60,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "gem": {
+    "affixes": [
+      {
+        "id": "215",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1710600",
+        "name": "Strife",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      },
+      {
+        "id": "313",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1732300",
+        "name": "Wealth",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "combatValue": 50,
+    "affixGemType": 4,
+    "affixGemLevel": 2
+  },
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}
