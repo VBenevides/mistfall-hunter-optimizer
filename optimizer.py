@@ -16,6 +16,7 @@ RARITIES = {
     5: "Epic",
     6: "Legendary",
 }
+GEM_TYPES = {1: "Agate", 2: "Amethyst", 3: "Moonstone", 4: "Peridot", 5: "Any"}
 PRICE_FIELDS = ("minPrice", "maxPrice", "recommendedPrice")
 
 
@@ -94,11 +95,36 @@ def _vector(affixes, positions, limits):
 
 
 def _compatible(gem, hole):
-    hole_type, hole_level = divmod(int(hole), 10)
+    hole_type, hole_level = _socket_parts(hole)
     data = gem["gem"]
     return int(data["affixGemLevel"]) == hole_level and (
-        data["affixGemType"] == hole_type or hole_type == 5
+        int(data["affixGemType"]) == hole_type or hole_type == 5
     )
+
+
+def _socket_parts(socket):
+    if isinstance(socket, dict):
+        return int(socket["type"]), int(socket["level"])
+    return divmod(int(socket), 10)
+
+
+def _holes(item):
+    return item.get("itemSockets") or item.get("equipment", {}).get("holeGroup", [])
+
+
+def _gem_slots(item, selected_gems, gem_by_id):
+    slots = []
+    for socket, gem_id in zip(_holes(item), selected_gems):
+        socket_type, tier = _socket_parts(socket)
+        slots.append({
+            "type": GEM_TYPES.get(socket_type, f"Type {socket_type}"),
+            "tier": tier,
+            "gem": None if gem_id is None else {
+                "id": gem_id,
+                "name": gem_by_id[gem_id]["name"],
+            },
+        })
+    return slots
 
 
 def _affix_value(affixes, key):
@@ -128,7 +154,7 @@ def _max_affix_levels(equipment, gems, keys, max_rarity):
                 key: _affix_value(data.get("affixes", []), key)
                 for key in keys
             }
-            for hole in data.get("holeGroup", []):
+            for hole in _holes(item):
                 for key in keys:
                     values[key] += max(
                         [_affix_value(gem.get("gem", {}).get("affixes", []), key)
@@ -169,7 +195,7 @@ def _item_options(item, gems, positions, limits):
     equipment = item.get("equipment", {})
     states = {(_vector(equipment.get("affixes", []), positions, limits), ()): (0, 0, 0, 0, 0)}
     choices_by_hole = []
-    for hole in equipment.get("holeGroup", []):
+    for hole in _holes(item):
         choices_by_hole.append([None] + [gem for gem in gems if _compatible(gem, hole)])
 
     for choices in choices_by_hole:
@@ -245,6 +271,7 @@ def _solve(equipment, gems, armor_level, weapon_level, positions, labels, limits
                                 }
                                 for gem_id in selected_gems
                             ],
+                            "gemSlots": _gem_slots(item, selected_gems, gem_by_id),
                         }
                         next_states[combined] = (cost, selected)
         states = next_states
@@ -357,6 +384,48 @@ def available_affixes(equipment_dir=EQUIPMENT_DIR, gem_dir=GEM_DIR, character_cl
     })
 
 
+def _format_one(result):
+    if not result.get("possible"):
+        requested = result.get("requestedAffixes", {})
+        maximum = result.get("independentMaximums", {})
+        lines = [f"Not possible: {result.get('message', result.get('reason', 'No matching set found'))}"]
+        if requested:
+            lines.append("Requested: " + ", ".join(f"{name} ({level})" for name, level in requested.items()))
+        if maximum:
+            lines.append("Independent maximums: " + ", ".join(f"{name} ({level})" for name, level in maximum.items()))
+        return "\n".join(lines)
+
+    effects = sorted(result["effects"].items(), key=lambda item: (-item[1], item[0].casefold()))
+    lines = [
+        f"Rarity: Armor ({RARITIES[result['armorLevel']]}) - Weapon ({RARITIES[result['weaponLevel']]})",
+        "Affixes: " + ", ".join(f"{name} ({level})" for name, level in effects),
+        f"Price: {result['minPrice']} / {result['averagePrice']} / {result['maxPrice']}",
+        "Pieces:",
+    ]
+    for piece in result["pieces"]:
+        native = piece["nativeAffixes"]
+        native_text = (
+            "No Native Affix"
+            if native == "No Native Affix"
+            else "Native Affixes: " + ", ".join(f"{affix['name']} ({affix['level']})" for affix in native)
+        )
+        gems = ", ".join(
+            f"{slot['type']} ({slot['gem']['name'] if slot['gem'] else 'empty'})"
+            for slot in piece.get("gemSlots", [])
+        ) or "No gem slots"
+        lines.append(f"{piece['slot'].title()} - {piece['name']} - {native_text} - {gems}")
+    return "\n".join(lines)
+
+
+def format_text(result):
+    if set(result) >= {"same", "above"}:
+        return "\n\n".join(
+            f"Weapon mode: {label}\n{_format_one(result[mode])}"
+            for mode, label in (("same", "same rarity"), ("above", "one rarity above armor"))
+        )
+    return _format_one(result)
+
+
 def main():
     try:
         affix_help = ", ".join(available_affixes())
@@ -376,6 +445,7 @@ def main():
     parser.add_argument("--weapon", choices=("same", "above", "both"), default="both")
     parser.add_argument("--min-rarity", default="1", metavar="RARITY", help="minimum rarity: 1-6 or name")
     parser.add_argument("--max-rarity", default="6", metavar="RARITY", help="maximum rarity: 1-6 or name")
+    parser.add_argument("--format", choices=("text", "json"), default="text", dest="output_format")
     args = parser.parse_args()
     requirements = {}
     for value in args.affixes:
@@ -383,17 +453,18 @@ def main():
         if not separator or not name:
             parser.error(f"expected AFFIX=LEVEL, got {value!r}")
         requirements[name] = int(level)
-    print(json.dumps(
-        optimize(
-            requirements,
-            args.weapon,
-            min_rarity=args.min_rarity,
-            max_rarity=args.max_rarity,
-            character_class=args.character_class,
-        ),
-        indent=2,
-        ensure_ascii=False,
-    ))
+    result = optimize(
+        requirements,
+        args.weapon,
+        min_rarity=args.min_rarity,
+        max_rarity=args.max_rarity,
+        character_class=args.character_class,
+    )
+    print(
+        json.dumps(result, indent=2, ensure_ascii=False)
+        if args.output_format == "json"
+        else format_text(result)
+    )
 
 
 if __name__ == "__main__":

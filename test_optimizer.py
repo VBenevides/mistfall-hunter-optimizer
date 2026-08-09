@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from optimizer import _compatible, _load_database, optimize
+from optimizer import _compatible, _load_database, format_text, optimize
 
 
 class OptimizerTest(unittest.TestCase):
@@ -73,6 +73,11 @@ class OptimizerTest(unittest.TestCase):
             self.assertEqual(result["same"]["averagePrice"], 12)
             self.assertIn("pieces", result["same"])
             self.assertEqual(result["same"]["pieces"][0]["nativeAffixes"], "No Native Affix")
+            text = format_text(result["same"])
+            self.assertIn("Rarity: Armor (Common) - Weapon (Common)", text)
+            self.assertIn("Affixes: Aegis (2)", text)
+            self.assertIn("Price: 10 / 12 / 14", text)
+            self.assertIn("Agate (Aegis Ruby)", text)
             unavailable = optimize({"Aegis": 2}, "same", equipment, root / "gem", min_rarity="RARE")
             self.assertFalse(unavailable["possible"])
             self.assertIn("No set", unavailable["reason"])
