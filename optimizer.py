@@ -19,6 +19,10 @@ RARITIES = {
     6: "Legendary",
 }
 GEM_TYPES = {1: "Agate", 2: "Amethyst", 3: "Moonstone", 4: "Peridot", 5: "Any"}
+PIECE_ORDER = {slot: index for index, slot in enumerate((
+    "weapon", "helmet", "clothes", "gauntlets", "pants", "boots", "necklace", "ring"
+))}
+SLOT_ALIASES = {"clothe": "clothes", "gauntlet": "gauntlets", "boot": "boots"}
 PRICE_FIELDS = ("minPrice", "maxPrice", "recommendedPrice")
 
 
@@ -47,6 +51,11 @@ def _rarity(value):
 
 def _class_slug(value):
     return re.sub(r"[^a-z0-9]+", "-", str(value).casefold()).strip("-")
+
+
+def _slot_key(value):
+    value = str(value).casefold()
+    return SLOT_ALIASES.get(value, value)
 
 
 def _load_database(equipment_dir=EQUIPMENT_DB, gem_dir=GEM_DIR, character_class=None):
@@ -264,7 +273,10 @@ def _solve(equipment, gems, armor_level, weapon_level, positions, labels, limits
             groups["weapon"].append(item)
         elif item["mainCategory"] == "armor" and item["grade"] == armor_level:
             groups[item["subName"]].append(item)
-    armor_slots = sorted(slot for slot in groups if slot != "weapon")
+    armor_slots = sorted(
+        (slot for slot in groups if slot != "weapon"),
+        key=lambda slot: (PIECE_ORDER.get(_slot_key(slot), len(PIECE_ORDER)), str(slot)),
+    )
     if not armor_slots or "weapon" not in groups:
         return None
 
@@ -449,7 +461,8 @@ def _format_one(result):
             f"{slot['type']} ({slot['gem']['name'] if slot['gem'] else 'empty'})"
             for slot in piece.get("gemSlots", [])
         ) or "No gem slots"
-        lines.append(f"{piece['slot'].title()} - {piece['name']} - {native_text}: {gems}")
+        slot_name = _slot_key(piece["slot"]).title()
+        lines.append(f"{slot_name} - {piece['name']} - {native_text}: {gems}")
     return "\n".join(lines)
 
 

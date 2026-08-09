@@ -90,6 +90,10 @@ class OptimizerTest(unittest.TestCase):
             self.assertEqual(result["same"]["maxPrice"], 14)
             self.assertEqual(result["same"]["averagePrice"], 12)
             self.assertIn("pieces", result["same"])
+            self.assertEqual(
+                [piece["slot"] for piece in result["same"]["pieces"]],
+                ["weapon", "helmet", "clothe", "gauntlet", "pants", "boot", "necklace", "ring"],
+            )
             self.assertEqual(result["same"]["pieces"][0]["nativeAffixes"], "No Native Affix")
             text = format_text(result["same"])
             self.assertIn("Rarity: Armor (Common) - Weapon (Common)", text)
