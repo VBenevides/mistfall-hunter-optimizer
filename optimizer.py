@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 EQUIPMENT_DIR = ROOT / "db_simplified" / "equipment"
-GEM_DIR = ROOT / "db" / "gem"
+GEM_DIR = ROOT / "db-questlog" / "gem"
 RARITIES = {
     1: "Damaged",
     2: "Common",

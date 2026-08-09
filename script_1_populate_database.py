@@ -8,7 +8,7 @@ import requests
 
 
 BASE_URL = "https://questlog.gg/mistfall-hunter/api/trpc/database."
-DB_DIR = Path(__file__).parent / "db"
+DB_DIR = Path(__file__).parent / "db-questlog"
 HEADERS = {
     "User-Agent": "Mozilla/5.0",
     "Referer": "https://questlog.gg/mistfall-hunter/en/db/items",

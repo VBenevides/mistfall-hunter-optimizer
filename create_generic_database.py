@@ -4,7 +4,7 @@ from collections import defaultdict
 from pathlib import Path
 
 
-SOURCE = Path(__file__).parent / "db" / "raw" / "equipment"
+SOURCE = Path(__file__).parent / "db-questlog" / "raw" / "equipment"
 TARGET = Path(__file__).parent / "db_simplified"
 SLOTS = {
     "Boots": "boot",

@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import Mock
 
-from scrape_items import download
+from script_1_populate_database import download
 
 
 class ScraperTest(unittest.TestCase):
