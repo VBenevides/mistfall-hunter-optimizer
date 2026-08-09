@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from optimizer import _accessory_filter, _compatible, _filter_equipment, _load_database, format_text, optimize
+from optimizer import _accessory_filter, _compatible, _filter_equipment, _format_gem, _load_database, format_text, optimize
 
 
 class OptimizerTest(unittest.TestCase):
@@ -25,6 +25,18 @@ class OptimizerTest(unittest.TestCase):
         self.assertEqual(
             {item["id"] for item in _filter_equipment(items, "hp/phys", "hp/mag")},
             {"ring-hp-phys", "amulet-hp-mag"},
+        )
+
+    def test_gem_text_format(self):
+        self.assertEqual(
+            _format_gem({
+                "type": "Agate",
+                "gem": {
+                    "name": "Fortitude · Fighting Spirit Agate",
+                    "affixes": [{"name": "Aegis"}, {"name": "Valor"}],
+                },
+            }),
+            "Red (Fighting/Spirit - Aegis/Valor)",
         )
 
     def test_class_loader_includes_all_classes(self):
@@ -109,12 +121,13 @@ class OptimizerTest(unittest.TestCase):
             )
             self.assertEqual(result["same"]["pieces"][0]["nativeAffixes"], "No Native Affix")
             text = format_text(result["same"])
-            self.assertIn("Rarity: Armor (Common) - Weapon (Common)", text)
+            self.assertIn("Rarity: Armor White - Weapon White", text)
             self.assertIn("Affixes: Aegis (2)", text)
             self.assertIn("Price: 10 / 12 / 14", text)
-            self.assertRegex(text, r"Weapon\s+\|\s+Common\s+\|\s+weapon-t2")
+            self.assertRegex(text, r"Weapon\s+\|\s+White\s+\|\s+weapon-t2")
+            self.assertIn("-", text)
             self.assertIn("Native Affixes", text)
-            self.assertIn("Agate (Aegis Ruby)", text)
+            self.assertIn("Red (Aegis - Aegis)", text)
             unavailable = optimize({"Aegis": 2}, "same", equipment, root / "gem", min_rarity="RARE")
             self.assertFalse(unavailable["possible"])
             self.assertIn("No set", unavailable["reason"])

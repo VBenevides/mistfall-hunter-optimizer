@@ -2,6 +2,7 @@ import argparse
 import json
 import re
 import sqlite3
+import sys
 from collections import defaultdict
 from pathlib import Path
 
@@ -18,7 +19,9 @@ RARITIES = {
     5: "Epic",
     6: "Legendary",
 }
+RARITY_COLORS = {1: "Gray", 2: "White", 3: "Green", 4: "Blue", 5: "Purple", 6: "Yellow"}
 GEM_TYPES = {1: "Agate", 2: "Amethyst", 3: "Moonstone", 4: "Peridot", 5: "Any"}
+GEM_COLORS = {"Agate": "Red", "Amethyst": "Pink", "Moonstone": "Blue", "Peridot": "White", "Any": "Any"}
 PIECE_ORDER = {slot: index for index, slot in enumerate((
     "weapon", "helmet", "clothes", "gauntlets", "pants", "boots", "necklace", "ring"
 ))}
@@ -49,6 +52,8 @@ def _rarity(value):
         level = int(text)
     else:
         level = next((level for level, name in RARITIES.items() if name.casefold() == text), 0)
+        if not level:
+            level = next((level for level, color in RARITY_COLORS.items() if color.casefold() == text), 0)
     if not 1 <= level <= 6:
         raise ValueError("min_rarity must be 1-6 or a rarity name")
     return level
@@ -61,6 +66,10 @@ def _class_slug(value):
 def _slot_key(value):
     value = str(value).casefold()
     return SLOT_ALIASES.get(value, value)
+
+
+def _rarity_display(level):
+    return RARITY_COLORS[level]
 
 
 def _accessory_filter(value):
@@ -200,6 +209,7 @@ def _gem_slots(item, selected_gems, gem_by_id):
             "gem": None if gem_id is None else {
                 "id": gem_id,
                 "name": gem_by_id[gem_id]["name"],
+                "affixes": gem_by_id[gem_id].get("gem", {}).get("affixes", []),
             },
         })
     return slots
@@ -478,6 +488,25 @@ def _format_table(headers, rows):
     return "\n".join((row(headers), "-+-".join("-" * width for width in widths), *(row(item) for item in rows)))
 
 
+def _format_gem_name(gem):
+    name = re.sub(
+        r"\s+(?:agate|amethyst|moonstone|peridot|ruby|onyx|purple\s+rhomb(?:us)?\s+(?:gem|stone))$",
+        "",
+        gem["name"],
+        flags=re.IGNORECASE,
+    )
+    parts = re.split(r"\s*(?:·|:|-)+\s*", name)
+    return "/".join((parts[-1] if parts else name).split())
+
+
+def _format_gem(slot):
+    color = GEM_COLORS.get(slot["type"], slot["type"])
+    if not slot["gem"]:
+        return f"{color} (empty)"
+    affixes = "/".join(affix["name"] for affix in slot["gem"].get("affixes", []))
+    return f"{color} ({_format_gem_name(slot['gem'])} - {affixes})"
+
+
 def _format_one(result):
     if not result.get("possible"):
         requested = result.get("requestedAffixes", {})
@@ -491,7 +520,7 @@ def _format_one(result):
 
     effects = sorted(result["effects"].items(), key=lambda item: (-item[1], item[0].casefold()))
     lines = [
-        f"Rarity: Armor ({RARITIES[result['armorLevel']]}) - Weapon ({RARITIES[result['weaponLevel']]})",
+        f"Rarity: Armor {_rarity_display(result['armorLevel'])} - Weapon {_rarity_display(result['weaponLevel'])}",
         "Affixes: " + ", ".join(f"{name} ({level})" for name, level in effects),
         f"Price: {result['minPrice']} / {result['averagePrice']} / {result['maxPrice']}",
         "Pieces:",
@@ -500,17 +529,17 @@ def _format_one(result):
     for piece in result["pieces"]:
         native = piece["nativeAffixes"]
         native_text = (
-            "No Native Affix"
+            "-"
             if native == "No Native Affix"
-            else ", ".join(f"{affix['name']} ({affix['level']})" for affix in native)
+            else ", ".join(affix["name"] for affix in native)
         )
         gems = ", ".join(
-            f"{slot['type']} ({slot['gem']['name'] if slot['gem'] else 'empty'})"
+            _format_gem(slot)
             for slot in piece.get("gemSlots", [])
         ) or "No gem slots"
         slot_name = _slot_key(piece["slot"]).title()
         rarity_level = result["weaponLevel"] if _slot_key(piece["slot"]) == "weapon" else result["armorLevel"]
-        piece_rows.append((slot_name, RARITIES[rarity_level], piece["name"], native_text, gems))
+        piece_rows.append((slot_name, _rarity_display(rarity_level), piece["name"], native_text, gems))
     lines.append(_format_table(("Type", "Rarity", "Name", "Native Affixes", "Gems"), piece_rows))
     return "\n".join(lines)
 
@@ -524,6 +553,20 @@ def format_text(result):
     return _format_one(result)
 
 
+def _normalize_cli_args(arguments):
+    options = {"class", "weapon", "min-rarity", "max-rarity", "ring", "amulet", "format"}
+    normalized = []
+    for argument in arguments:
+        if argument.startswith("--"):
+            name = argument[2:].split("=", 1)[0]
+            if name in options and "=" not in argument:
+                raise ValueError(f"use --{name}=VALUE")
+        elif "=" in argument and argument.split("=", 1)[0] in options:
+            argument = f"--{argument}"
+        normalized.append(argument)
+    return normalized
+
+
 def main():
     try:
         affix_help = ", ".join(available_affixes())
@@ -534,11 +577,11 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=(
             "Rarity (higher is better):\n"
-            "  1 Damaged, 2 Common, 3 Rare, 4 Excellent, 5 Epic, 6 Legendary\n\n"
+            "  1 Gray, 2 White, 3 Green, 4 Blue, 5 Purple, 6 Yellow\n\n"
             f"Available affixes:\n  {affix_help}"
         ),
     )
-    parser.add_argument("affixes", nargs="+", help="AFFIX=MIN_LEVEL (at least this level), e.g. 'Aegis=2'")
+    parser.add_argument("--affixes", nargs="+", required=True, help="AFFIX=MIN_LEVEL, e.g. 'Aegis=2'")
     parser.add_argument("--class", dest="character_class", required=True, help="class using the equipment")
     parser.add_argument("--weapon", choices=("same", "above", "both"), default="both")
     parser.add_argument("--min-rarity", default="1", metavar="RARITY", help="minimum rarity: 1-6 or name")
@@ -546,7 +589,11 @@ def main():
     parser.add_argument("--ring", metavar="[HP/ATK]/[PHYS/MAG]", type=_accessory_filter, help="filter ring: HP/PHYS, HP/MAG, ATK/PHYS, or ATK/MAG")
     parser.add_argument("--amulet", metavar="[HP/ATK]/[PHYS/MAG]", type=_accessory_filter, help="filter amulet: HP/PHYS, HP/MAG, ATK/PHYS, or ATK/MAG")
     parser.add_argument("--format", choices=("text", "json"), default="text", dest="output_format")
-    args = parser.parse_args()
+    try:
+        arguments = _normalize_cli_args(sys.argv[1:])
+    except ValueError as error:
+        parser.error(str(error))
+    args = parser.parse_args(arguments)
     requirements = {}
     for value in args.affixes:
         name, separator, level = value.rpartition("=")
