@@ -1,0 +1,68 @@
+{
+  "id": "1530208",
+  "name": "Practitioner Shoes",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200047",
+  "grade": 3,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "Crafted from unknown materials, these shoes are so light they feel weightless. Practitioners have come to really appreciate them—after all, their dedication to arduous journeys hasn't been the same since the Gyldenfall.",
+  "subName": "Boots",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 32,
+  "maxPrice": 400,
+  "recommendedPrice": 70,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 32,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 7,
+    "maxHealth": 38,
+    "combatValue": 275,
+    "magicalIncrease": 0.01
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 5,
+    "holeGroup": [
+      41
+    ],
+    "repairCost": 0.0125,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 276,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1200,
+    "requiredClasses": [
+      11
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 41,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_C",
+      "name": "Tier I Peridot Slot - Empty",
+      "type": 4,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

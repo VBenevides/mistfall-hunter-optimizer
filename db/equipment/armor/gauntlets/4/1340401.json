@@ -1,0 +1,81 @@
+{
+  "id": "1340401",
+  "name": "Emissary Gauntlets",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200019",
+  "grade": 4,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "Though the defected spies have escaped their perilous former lives, they cling to their faith in the Goddess of Death.",
+  "subName": "Gauntlets",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 54,
+  "maxPrice": 900,
+  "recommendedPrice": 280,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 54,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 9,
+    "defence": 35,
+    "combatValue": 375,
+    "physicalIncrease": 0.02
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "208",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1710101",
+        "name": "Fervid",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": 3,
+    "holeGroup": [
+      31
+    ],
+    "repairCost": 0.052308,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 286,
+    "affixLibraryId": 135401,
+    "durabilityLimit": 1300,
+    "requiredClasses": [
+      13
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 31,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_B",
+      "name": "Tier I Moonstone Slot - Empty",
+      "type": 3,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

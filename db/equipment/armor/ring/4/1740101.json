@@ -1,0 +1,73 @@
+{
+  "id": "1740101",
+  "name": "Woodling Guardian Ring",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1220013",
+  "grade": 4,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "Woodlings, originating in the Age of the Stars, are forest guardians. But after the Gyldenfall, stories about them became scarce.",
+  "subName": "Ring",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 67,
+  "maxPrice": 900,
+  "recommendedPrice": 350,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 67,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "maxHealth": 30,
+    "combatValue": 350,
+    "physicalReduction": 0.01
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 7,
+    "holeGroup": [
+      11,
+      31
+    ],
+    "repairCost": 0,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 0,
+    "affixLibraryId": 0,
+    "durabilityLimit": 0,
+    "requiredClasses": [],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 11,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_A",
+      "name": "Tier I Agate Slot - Empty",
+      "type": 1,
+      "level": 1
+    },
+    {
+      "id": 31,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_B",
+      "name": "Tier I Moonstone Slot - Empty",
+      "type": 3,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "1750302",
+  "name": "Commander Seal Ring",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1220016",
+  "grade": 5,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "Once a symbol of the highest authority in Brandrgarde, this was sadly lost along with the commander's finger in the man-made Mistfall.",
+  "subName": "Ring",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 107,
+  "maxPrice": 10000,
+  "recommendedPrice": 700,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 107,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 7,
+    "combatValue": 425,
+    "physicalIncrease": 0.015
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 7,
+    "holeGroup": [
+      22,
+      41
+    ],
+    "repairCost": 0,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 0,
+    "affixLibraryId": 0,
+    "durabilityLimit": 0,
+    "requiredClasses": [],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 22,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_D",
+      "name": "Tier II Amethyst Slot - Empty",
+      "type": 2,
+      "level": 2
+    },
+    {
+      "id": 41,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_C",
+      "name": "Tier I Peridot Slot - Empty",
+      "type": 4,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

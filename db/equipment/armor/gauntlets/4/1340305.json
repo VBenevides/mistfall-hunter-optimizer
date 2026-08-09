@@ -1,0 +1,81 @@
+{
+  "id": "1340305",
+  "name": "Crusader Gauntlets",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200080",
+  "grade": 4,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "A band of Blackarrow scouts returned to find their unit nearly annihilated in an ambush. Unwilling to surrender, they pledged allegiance to Brandrgarde.\n\"The giants seek the Abyss for the malevolent Outer Gods. We stand guard, ready to avenge our fallen brethren!\"",
+  "subName": "Gauntlets",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 54,
+  "maxPrice": 900,
+  "recommendedPrice": 280,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 54,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 9,
+    "defence": 35,
+    "combatValue": 375,
+    "physicalIncrease": 0.02
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "309",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1732500",
+        "name": "Sleight of Hand",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": 3,
+    "holeGroup": [
+      11
+    ],
+    "repairCost": 0.052308,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 286,
+    "affixLibraryId": 125405,
+    "durabilityLimit": 1300,
+    "requiredClasses": [
+      12
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 11,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_A",
+      "name": "Tier I Agate Slot - Empty",
+      "type": 1,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

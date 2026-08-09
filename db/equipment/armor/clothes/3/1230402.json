@@ -1,0 +1,70 @@
+{
+  "id": "1230402",
+  "name": "Shadow Skull Top",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200059",
+  "grade": 3,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "A secret compartment lies hidden within, concealing weapons that catch foes off guard.",
+  "subName": "Clothes",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 49,
+  "maxPrice": 400,
+  "recommendedPrice": 100,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 49,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "defence": 58,
+    "maxHealth": 50,
+    "combatValue": 300,
+    "physicalReduction": 0.02
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "102",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1720800",
+        "name": "Tenacious",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": 2,
+    "holeGroup": [],
+    "repairCost": 0.0125,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 276,
+    "affixLibraryId": 134302,
+    "durabilityLimit": 1200,
+    "requiredClasses": [
+      13
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

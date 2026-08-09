@@ -1,0 +1,84 @@
+{
+  "id": "3060208",
+  "name": "Skullcrusher",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1211009",
+  "grade": 6,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "weapon",
+  "subCategory": "Hammer",
+  "description": "After Harald became general, he wielded this massive hammer to crush countless monster skulls on the Abyssal Front, truly making it live up to its name, \"Skullcrusher.\"",
+  "subName": "Warhammer",
+  "itemType": 4,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 0,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 300,
+  "maxPrice": 7000,
+  "recommendedPrice": 1500,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 300,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 40,
+    "combatValue": 500,
+    "physicalIncrease": 0.072
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": null,
+    "holeGroup": [
+      42,
+      11,
+      21
+    ],
+    "repairCost": 0.666667,
+    "weaponType": 2,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 300,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1500,
+    "requiredClasses": [
+      10
+    ],
+    "weaponTypeName": "Hammer",
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 42,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_C",
+      "name": "Tier II Peridot Slot - Empty",
+      "type": 4,
+      "level": 2
+    },
+    {
+      "id": 11,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_A",
+      "name": "Tier I Agate Slot - Empty",
+      "type": 1,
+      "level": 1
+    },
+    {
+      "id": 21,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_D",
+      "name": "Tier I Amethyst Slot - Empty",
+      "type": 2,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

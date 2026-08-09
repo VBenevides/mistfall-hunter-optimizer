@@ -1,0 +1,70 @@
+{
+  "id": "1430501",
+  "name": "Martyr's Pants",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200111",
+  "grade": 3,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "When villagers near Brandrgarde learned that the blind Seers, who regularly provided them with free medical care, had sacrificed their vision for faith, they abandoned the idea of sending their children to the Sacred Chamber.",
+  "subName": "Pants",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 41,
+  "maxPrice": 400,
+  "recommendedPrice": 90,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 41,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "defence": 41,
+    "maxHealth": 63,
+    "combatValue": 300,
+    "magicalReduction": 0.02
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "102",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1720800",
+        "name": "Tenacious",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": 4,
+    "holeGroup": [],
+    "repairCost": 0.0125,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 276,
+    "affixLibraryId": 146301,
+    "durabilityLimit": 1200,
+    "requiredClasses": [
+      14
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

@@ -1,0 +1,81 @@
+{
+  "id": "3040801",
+  "name": "Antique Mace",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1217004",
+  "grade": 4,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "weapon",
+  "subCategory": "Mace",
+  "description": "The plating on its surface has worn away with age, but unlike swords, a mace requires little maintenance.",
+  "subName": "Mace",
+  "itemType": 4,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 0,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 75,
+  "maxPrice": 900,
+  "recommendedPrice": 350,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 75,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 29,
+    "combatValue": 375,
+    "physicalIncrease": 0.04
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "215",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1710600",
+        "name": "Strife",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": null,
+    "holeGroup": [
+      21
+    ],
+    "repairCost": 0.057692,
+    "weaponType": 8,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 286,
+    "affixLibraryId": 142401,
+    "durabilityLimit": 1300,
+    "requiredClasses": [
+      14
+    ],
+    "weaponTypeName": "Mace",
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 21,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_1_D",
+      "name": "Tier I Amethyst Slot - Empty",
+      "type": 2,
+      "level": 1
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

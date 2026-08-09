@@ -1,0 +1,61 @@
+{
+  "id": "3020101",
+  "name": "Recruit Sword and Shield",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1210005",
+  "grade": 2,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "weapon",
+  "subCategory": "Sword and Shield",
+  "description": "An ordinary longsword and patched wooden shield commonly used for recruit training.",
+  "subName": "Sword and Shield",
+  "itemType": 4,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 0,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 30,
+  "maxPrice": 150,
+  "recommendedPrice": 50,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 30,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 12,
+    "defence": 22,
+    "blockRate": 0.7,
+    "combatValue": 200
+  },
+  "adventurerAttributes": {
+    "dodgeCostReduction": -0.1
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": null,
+    "holeGroup": [],
+    "repairCost": 0.009091,
+    "weaponType": 1,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 264,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1100,
+    "requiredClasses": [
+      10
+    ],
+    "weaponTypeName": "Sword and Shield",
+    "specialSkillDesc": 0
+  },
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

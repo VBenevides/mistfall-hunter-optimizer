@@ -1,0 +1,81 @@
+{
+  "id": "3050705",
+  "name": "True Intent Catalyst",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1216005",
+  "grade": 5,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "weapon",
+  "subCategory": "Catalyst",
+  "description": "The ascetic Seers pray silently, hoping humanity might escape suffering, but who can predict the true intentions of the divine? The gods have taken so many forms while walking among humans—which one is their true appearance?",
+  "subName": "Catalyst",
+  "itemType": 4,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 0,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 120,
+  "maxPrice": 2500,
+  "recommendedPrice": 850,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 120,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 35,
+    "combatValue": 450,
+    "magicalIncrease": 0.06
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "211",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1710407",
+        "name": "Ranged",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": null,
+    "holeGroup": [
+      42
+    ],
+    "repairCost": 0.171429,
+    "weaponType": 7,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 294,
+    "affixLibraryId": 141505,
+    "durabilityLimit": 1400,
+    "requiredClasses": [
+      14
+    ],
+    "weaponTypeName": "Catalyst",
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 42,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_C",
+      "name": "Tier II Peridot Slot - Empty",
+      "type": 4,
+      "level": 2
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

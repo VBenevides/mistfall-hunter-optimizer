@@ -1,0 +1,53 @@
+{
+  "id": "223101",
+  "name": "Aegis Moonstone",
+  "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Gem_1_B",
+  "grade": 0,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "affix_gem",
+  "subName": "Affix Gemstones",
+  "usage": "Can be embedded into the corresponding type of equipment slot. The affix gemstone level cannot exceed the equipment slot level.",
+  "itemType": 16,
+  "heapMax": 2,
+  "stashHeapMax": 10,
+  "tradeHeapMax": 10,
+  "sort": 0,
+  "tradable": true,
+  "tradeColdTime": 0,
+  "minPrice": 25,
+  "maxPrice": 500,
+  "recommendedPrice": 75,
+  "needIdentify": true,
+  "canTeamRetrieve": false,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 25,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "gem": {
+    "affixes": [
+      {
+        "id": "101",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1720900",
+        "name": "Aegis",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "combatValue": 25,
+    "affixGemType": 3,
+    "affixGemLevel": 1
+  },
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

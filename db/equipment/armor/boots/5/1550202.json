@@ -1,0 +1,81 @@
+{
+  "id": "1550202",
+  "name": "Mysteria Elder Boots",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200107",
+  "grade": 5,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "A navigator from the southern continent landed on an island post-Gyldenmist. The island's mountains stretch endlessly, with dozens of Velgrs carrying giant bird eggs in and out of the peaks. This unfortunate soul was eventually captured. The Velgrs took him to a mountaintop laboratory. Before losing consciousness, he noticed a lifeless yet extraordinarily beautiful female Velgr Sorcerer lying on a stone platform in the open hall.",
+  "subName": "Boots",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": true,
+  "tradeColdTime": -1,
+  "minPrice": 87,
+  "maxPrice": 2500,
+  "recommendedPrice": 700,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 87,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "attack": 10,
+    "maxHealth": 50,
+    "combatValue": 450,
+    "magicalIncrease": 0.03
+  },
+  "equipment": {
+    "affixes": [
+      {
+        "id": "207",
+        "icon": "/assets/Game/Project/UI/Textures/Icon_EquipSkill/T_UI_Icon_EquipSkill_1731901",
+        "name": "Sky Piercer",
+        "grade": null,
+        "level": 1,
+        "dbType": "affix",
+        "language": "en",
+        "subCategory": null,
+        "mainCategory": null,
+        "tertiaryCategory": null
+      }
+    ],
+    "armorType": 5,
+    "holeGroup": [
+      42
+    ],
+    "repairCost": 0.154286,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 294,
+    "affixLibraryId": 117502,
+    "durabilityLimit": 1400,
+    "requiredClasses": [
+      11
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "itemSockets": [
+    {
+      "id": 42,
+      "icon": "/assets/Game/Project/UI/Textures/EquipGemHole/SPR_UI_EquipGemHole_Hole_2_C",
+      "name": "Tier II Peridot Slot - Empty",
+      "type": 4,
+      "level": 2
+    }
+  ],
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}

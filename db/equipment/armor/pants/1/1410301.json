@@ -1,0 +1,57 @@
+{
+  "id": "1410301",
+  "name": "Simple Leather Pants",
+  "icon": "/assets/Game/Project/UI/Textures/Icon_Equip/T_UI_Icon_Equip_1200066",
+  "grade": 1,
+  "language": "en",
+  "dbType": "item",
+  "mainCategory": "armor",
+  "description": "The hem is a bit frayed, but let's just leave it as is.",
+  "subName": "Pants",
+  "itemType": 5,
+  "heapMax": 1,
+  "stashHeapMax": 1,
+  "tradeHeapMax": 1,
+  "sort": 3000,
+  "tradable": false,
+  "tradeColdTime": 0,
+  "minPrice": 0,
+  "maxPrice": 0,
+  "recommendedPrice": 0,
+  "needIdentify": true,
+  "canTeamRetrieve": true,
+  "isSeasonReset": true,
+  "values": [
+    {
+      "count": 0,
+      "currencyId": 101
+    }
+  ],
+  "sources": [],
+  "attributes": {
+    "defence": 12,
+    "maxHealth": 50,
+    "combatValue": 100
+  },
+  "equipment": {
+    "affixes": [],
+    "armorType": 4,
+    "holeGroup": [],
+    "repairCost": 0.005,
+    "weaponType": null,
+    "capabilities": [],
+    "gameplayTag": null,
+    "useCostLimit": 250,
+    "affixLibraryId": 0,
+    "durabilityLimit": 1000,
+    "requiredClasses": [
+      12,
+      13
+    ],
+    "weaponTypeName": null,
+    "specialSkillDesc": 0
+  },
+  "createdAt": "2026-07-30",
+  "updatedAt": "2026-07-30",
+  "isDisabled": false
+}
