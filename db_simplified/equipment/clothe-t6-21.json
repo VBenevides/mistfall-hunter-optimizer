@@ -4,6 +4,9 @@
   "mainCategory": "armor",
   "subName": "clothe",
   "grade": 6,
+  "minPrice": 325,
+  "maxPrice": 7000,
+  "recommendedPrice": 1500,
   "equipment": {
     "affixes": [
       {

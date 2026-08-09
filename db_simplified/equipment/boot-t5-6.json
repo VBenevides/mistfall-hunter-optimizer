@@ -4,6 +4,9 @@
   "mainCategory": "armor",
   "subName": "boot",
   "grade": 5,
+  "minPrice": 87,
+  "maxPrice": 2500,
+  "recommendedPrice": 700,
   "equipment": {
     "affixes": [],
     "holeGroup": [

@@ -4,6 +4,9 @@
   "mainCategory": "armor",
   "subName": "pants",
   "grade": 1,
+  "minPrice": 0,
+  "maxPrice": 0,
+  "recommendedPrice": 0,
   "equipment": {
     "affixes": [],
     "holeGroup": []

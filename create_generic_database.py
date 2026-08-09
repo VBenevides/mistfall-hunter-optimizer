@@ -25,6 +25,11 @@ def signature(item):
     return item["mainCategory"], slot, int(item["grade"]), affixes, holes
 
 
+def average_price(items, field):
+    average = round(sum(float(item.get(field) or 0) for item in items) / len(items), 2)
+    return int(average) if average.is_integer() else average
+
+
 def create_database(source=SOURCE, target=TARGET):
     groups = defaultdict(list)
     for path in source.glob("*.json"):
@@ -52,6 +57,9 @@ def create_database(source=SOURCE, target=TARGET):
             "mainCategory": category,
             "subName": slot,
             "grade": grade,
+            "minPrice": average_price(items, "minPrice"),
+            "maxPrice": average_price(items, "maxPrice"),
+            "recommendedPrice": average_price(items, "recommendedPrice"),
             "equipment": {
                 "affixes": [{"name": name, "level": level} for name, level in affixes],
                 "holeGroup": list(holes),

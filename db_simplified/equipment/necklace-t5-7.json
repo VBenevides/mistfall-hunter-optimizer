@@ -4,6 +4,9 @@
   "mainCategory": "armor",
   "subName": "necklace",
   "grade": 5,
+  "minPrice": 117,
+  "maxPrice": 10000,
+  "recommendedPrice": 700,
   "equipment": {
     "affixes": [],
     "holeGroup": [

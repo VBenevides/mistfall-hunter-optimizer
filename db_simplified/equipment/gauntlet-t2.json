@@ -4,6 +4,9 @@
   "mainCategory": "armor",
   "subName": "gauntlet",
   "grade": 2,
+  "minPrice": 22,
+  "maxPrice": 150,
+  "recommendedPrice": 40,
   "equipment": {
     "affixes": [],
     "holeGroup": []

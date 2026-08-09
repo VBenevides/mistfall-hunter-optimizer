@@ -4,6 +4,9 @@
   "mainCategory": "armor",
   "subName": "ring",
   "grade": 2,
+  "minPrice": 27,
+  "maxPrice": 150,
+  "recommendedPrice": 40,
   "equipment": {
     "affixes": [],
     "holeGroup": []

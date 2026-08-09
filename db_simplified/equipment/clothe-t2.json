@@ -4,6 +4,9 @@
   "mainCategory": "armor",
   "subName": "clothe",
   "grade": 2,
+  "minPrice": 32,
+  "maxPrice": 150,
+  "recommendedPrice": 50,
   "equipment": {
     "affixes": [],
     "holeGroup": []

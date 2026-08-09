@@ -4,6 +4,9 @@
   "mainCategory": "weapon",
   "subName": "weapon",
   "grade": 6,
+  "minPrice": 300,
+  "maxPrice": 7000,
+  "recommendedPrice": 1500,
   "equipment": {
     "affixes": [
       {
