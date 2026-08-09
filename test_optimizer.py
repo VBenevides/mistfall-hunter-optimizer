@@ -3,10 +3,21 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from optimizer import optimize
+from optimizer import _load_database, optimize
 
 
 class OptimizerTest(unittest.TestCase):
+    def test_class_loader_includes_all_classes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for class_name, item_id in (("mercenary", "m"), ("sorcerer", "s"), ("all-classes", "a")):
+                folder = root / "db" / class_name / "weapon" / "common"
+                folder.mkdir(parents=True)
+                (folder / f"{item_id}.json").write_text(json.dumps({"id": item_id, "mainCategory": "weapon"}))
+
+            equipment, _ = _load_database(root / "db", root / "gem", "mercenary")
+            self.assertEqual({item["id"] for item in equipment}, {"m", "a"})
+
     def test_uniform_armor_and_weapon_options(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -53,8 +64,20 @@ class OptimizerTest(unittest.TestCase):
             self.assertEqual(result["same"]["gemCost"]["count"], 2)
             self.assertEqual(result["same"]["minPrice"], 10)
             self.assertEqual(result["same"]["maxPrice"], 14)
-            self.assertEqual(result["same"]["recommendedPrice"], 12)
-            self.assertIsNone(optimize({"Aegis": 2}, "same", equipment, root / "gem", min_level=3))
+            self.assertEqual(result["same"]["averagePrice"], 12)
+            self.assertIn("pieces", result["same"])
+            self.assertEqual(result["same"]["pieces"][0]["nativeAffixes"], "No Native Affix")
+            unavailable = optimize({"Aegis": 2}, "same", equipment, root / "gem", min_rarity="RARE")
+            self.assertFalse(unavailable["possible"])
+            self.assertIn("No set", unavailable["reason"])
+            self.assertEqual(unavailable["maxAffixLevels"], {"Aegis": 8})
+            limited = optimize({"Aegis": 2}, "same", equipment, root / "gem", max_rarity="damaged")
+            self.assertFalse(limited["possible"])
+            self.assertEqual(limited["maxAffixLevels"], {"Aegis": 0})
+            self.assertEqual(
+                optimize({"Iron Helmet": 9}, "same", equipment, root / "gem", max_rarity=2)["maxAffixLevels"],
+                {"Iron Helmet": 8},
+            )
             self.assertIsNotNone(optimize({"iRoN_hElMeT": 1}, "same", equipment, root / "gem"))
 
 

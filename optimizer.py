@@ -1,11 +1,12 @@
 import argparse
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 
 
 ROOT = Path(__file__).parent
-EQUIPMENT_DIR = ROOT / "db_simplified" / "equipment"
+EQUIPMENT_DIR = ROOT / "db"
 GEM_DIR = ROOT / "db-questlog" / "gem"
 RARITIES = {
     1: "Damaged",
@@ -30,8 +31,36 @@ def _number(value):
     return int(value) if value.is_integer() else round(value, 2)
 
 
-def _load_database(equipment_dir=EQUIPMENT_DIR, gem_dir=GEM_DIR):
-    equipment = [json.loads(path.read_text()) for path in equipment_dir.glob("*.json")]
+def _rarity(value):
+    text = str(value).replace("_", " ").strip().casefold()
+    if text.isdigit():
+        level = int(text)
+    else:
+        level = next((level for level, name in RARITIES.items() if name.casefold() == text), 0)
+    if not 1 <= level <= 6:
+        raise ValueError("min_rarity must be 1-6 or a rarity name")
+    return level
+
+
+def _class_slug(value):
+    return re.sub(r"[^a-z0-9]+", "-", str(value).casefold()).strip("-")
+
+
+def _load_database(equipment_dir=EQUIPMENT_DIR, gem_dir=GEM_DIR, character_class=None):
+    if character_class:
+        class_dirs = {equipment_dir / _class_slug(character_class), equipment_dir / "all-classes"}
+        paths = [path for directory in class_dirs for path in directory.glob("*/*/*.json")]
+    else:
+        paths = list(equipment_dir.glob("*.json"))
+        if not paths:
+            paths = list(equipment_dir.glob("*/*/*.json"))
+    equipment = []
+    seen = set()
+    for path in paths:
+        item = json.loads(path.read_text())
+        if item.get("id") not in seen:
+            equipment.append(item)
+            seen.add(item.get("id"))
     gems = [
         json.loads(path.read_text())
         for path in gem_dir.glob("*/*.json")
@@ -69,6 +98,60 @@ def _compatible(gem, hole):
     return data["affixGemLevel"] <= hole_level and (
         data["affixGemType"] == hole_type or hole_type == 5
     )
+
+
+def _affix_value(affixes, key):
+    return sum(
+        int(affix.get("level", 1))
+        for affix in affixes
+        if _normalize_affix(affix.get("name", "")) == key
+    )
+
+
+def _max_affix_levels(equipment, gems, keys, max_rarity):
+    groups = defaultdict(list)
+    for item in equipment:
+        if int(item.get("grade", 0)) > max_rarity:
+            continue
+        if item.get("mainCategory") == "weapon":
+            groups["weapon"].append(item)
+        elif item.get("mainCategory") == "armor":
+            groups[item.get("subName", "unknown")].append(item)
+
+    maximum = {key: 0 for key in keys}
+    for items in groups.values():
+        best = {key: 0 for key in keys}
+        for item in items:
+            data = item.get("equipment", {})
+            values = {
+                key: _affix_value(data.get("affixes", []), key)
+                for key in keys
+            }
+            for hole in data.get("holeGroup", []):
+                for key in keys:
+                    values[key] += max(
+                        [_affix_value(gem.get("gem", {}).get("affixes", []), key)
+                         for gem in gems if _compatible(gem, hole)]
+                        or [0]
+                    )
+            for key in keys:
+                best[key] = max(best[key], values[key])
+        for key in keys:
+            maximum[key] += best[key]
+    return maximum
+
+
+def _not_possible(reason, min_rarity, max_rarity, requested, maximum):
+    return {
+        "possible": False,
+        "reason": reason,
+        "minRarity": min_rarity,
+        "maxRarity": max_rarity,
+        "requestedAffixLevels": {name: level for name, level in requested.values()},
+        "maxAffixLevels": {name: maximum[key] for key, (name, _) in requested.items()},
+        "requestedTotalAffixLevels": sum(level for _, level in requested.values()),
+        "maxTotalAffixLevels": sum(maximum.values()),
+    }
 
 
 def _item_options(item, gems, positions, limits):
@@ -134,30 +217,23 @@ def _solve(equipment, gems, armor_level, weapon_level, positions, labels, limits
                     )
                     if combined not in next_states or cost < next_states[combined][0]:
                         selected = dict(previous_items)
+                        item_equipment = item.get("equipment", {})
                         selected[slot] = {
-                            "id": item["id"],
+                            "slot": slot,
                             "name": item["name"],
-                            "grade": item["grade"],
-                            "prices": {
-                                "min": _number(item_prices[0]),
-                                "max": _number(item_prices[1]),
-                                "recommended": _number(item_prices[2]),
-                            },
+                            "nativeAffixes": [
+                                {"name": affix["name"], "level": affix.get("level", 1)}
+                                for affix in item_equipment.get("affixes", [])
+                            ] or "No Native Affix",
                             "gems": [
                                 None
                                 if gem_id is None
                                 else {
                                     "id": gem_id,
                                     "name": gem_by_id[gem_id]["name"],
-                                    "prices": {
-                                        "min": _number(_prices(gem_by_id[gem_id])[0]),
-                                        "max": _number(_prices(gem_by_id[gem_id])[1]),
-                                        "recommended": _number(_prices(gem_by_id[gem_id])[2]),
-                                    },
                                 }
                                 for gem_id in selected_gems
                             ],
-                            "itemIncludes": item.get("itemIncludes", []),
                         }
                         next_states[combined] = (cost, selected)
         states = next_states
@@ -174,14 +250,14 @@ def _solve(equipment, gems, armor_level, weapon_level, positions, labels, limits
         "levelCombination": [weapon_level] + [armor_level] * len(armor_slots),
         "effects": {labels[key][0]: limits[i] for i, key in enumerate(positions)},
         "minPrice": _number(cost[1]),
+        "averagePrice": _number(cost[0]),
         "maxPrice": _number(cost[2]),
-        "recommendedPrice": _number(cost[0]),
         "gemCost": {"levelSum": cost[3], "count": cost[4]},
-        "items": selected,
+        "pieces": list(selected.values()),
     }
 
 
-def _best(requirements, mode, equipment, gems, min_level):
+def _best(requirements, mode, equipment, gems, min_rarity, max_rarity):
     names = _requirements(requirements)
     positions = {key: index for index, key in enumerate(names)}
     limits = tuple(value[1] for value in names.values())
@@ -198,33 +274,67 @@ def _best(requirements, mode, equipment, gems, min_level):
     if unknown:
         raise ValueError(f"unknown affix: {', '.join(unknown)}")
 
+    maximum = _max_affix_levels(equipment, gems, names, max_rarity)
+    if any(limits[index] > maximum[key] for key, index in positions.items()):
+        return _not_possible(
+            "Requested affix levels exceed the maximum allowed by max rarity",
+            min_rarity,
+            max_rarity,
+            names,
+            maximum,
+        )
+
     grades = sorted(
-        {item["grade"] for item in equipment if item["mainCategory"] == "armor" and item["grade"] >= min_level}
+        {
+            item["grade"]
+            for item in equipment
+            if item["mainCategory"] == "armor"
+            and min_rarity <= item["grade"] <= max_rarity
+        }
     )
     for armor_level in grades:
         weapon_level = armor_level + (mode == "above")
+        if weapon_level > max_rarity:
+            continue
         result = _solve(equipment, gems, armor_level, weapon_level, positions, names, limits)
         if result:
+            result["possible"] = True
             return result
-    return None
+    return _not_possible(
+        "No set matching the requested effects and rarity constraints was found",
+        min_rarity,
+        max_rarity,
+        names,
+        maximum,
+    )
 
 
-def optimize(requirements, weapon_mode="both", equipment_dir=EQUIPMENT_DIR, gem_dir=GEM_DIR, min_level=1):
-    if not 1 <= min_level <= 6:
-        raise ValueError("min_level must be between 1 and 6")
-    equipment, gems = _load_database(equipment_dir, gem_dir)
+def optimize(
+    requirements,
+    weapon_mode="both",
+    equipment_dir=EQUIPMENT_DIR,
+    gem_dir=GEM_DIR,
+    min_rarity=1,
+    max_rarity=6,
+    character_class=None,
+):
+    min_rarity = _rarity(min_rarity)
+    max_rarity = _rarity(max_rarity)
+    if min_rarity > max_rarity:
+        raise ValueError("min_rarity cannot exceed max_rarity")
+    equipment, gems = _load_database(equipment_dir, gem_dir, character_class)
     if weapon_mode == "both":
         return {
-            mode: _best(requirements, mode, equipment, gems, min_level)
+            mode: _best(requirements, mode, equipment, gems, min_rarity, max_rarity)
             for mode in ("same", "above")
         }
     if weapon_mode not in {"same", "above"}:
         raise ValueError("weapon_mode must be 'same', 'above', or 'both'")
-    return _best(requirements, weapon_mode, equipment, gems, min_level)
+    return _best(requirements, weapon_mode, equipment, gems, min_rarity, max_rarity)
 
 
-def available_affixes(equipment_dir=EQUIPMENT_DIR, gem_dir=GEM_DIR):
-    equipment, gems = _load_database(equipment_dir, gem_dir)
+def available_affixes(equipment_dir=EQUIPMENT_DIR, gem_dir=GEM_DIR, character_class=None):
+    equipment, gems = _load_database(equipment_dir, gem_dir, character_class)
     return sorted({
         str(affix.get("name", ""))
         for item in equipment
@@ -241,19 +351,20 @@ def main():
         affix_help = ", ".join(available_affixes())
     except (FileNotFoundError, json.JSONDecodeError):
         affix_help = "database unavailable"
-    help_text = (
-        "Rarity (higher is better):\n"
-        "  1 Damaged, 2 Common, 3 Rare, 4 Excellent, 5 Epic, 6 Legendary\n\n"
-        f"Available affixes:\n  {affix_help}"
-    )
     parser = argparse.ArgumentParser(
         description="Find a low-level Mistfall Hunters gear and gem setup.",
-        epilog=help_text,
         formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=(
+            "Rarity (higher is better):\n"
+            "  1 Damaged, 2 Common, 3 Rare, 4 Excellent, 5 Epic, 6 Legendary\n\n"
+            f"Available affixes:\n  {affix_help}"
+        ),
     )
     parser.add_argument("affixes", nargs="+", help="AFFIX=LEVEL, e.g. 'Aegis=2'")
+    parser.add_argument("--class", dest="character_class", required=True, help="class using the equipment")
     parser.add_argument("--weapon", choices=("same", "above", "both"), default="both")
-    parser.add_argument("--min-level", type=int, default=1, metavar="LEVEL", help="minimum equipment rarity level (1-6)")
+    parser.add_argument("--min-rarity", default="1", metavar="RARITY", help="minimum rarity: 1-6 or name")
+    parser.add_argument("--max-rarity", default="6", metavar="RARITY", help="maximum rarity: 1-6 or name")
     args = parser.parse_args()
     requirements = {}
     for value in args.affixes:
@@ -261,7 +372,17 @@ def main():
         if not separator or not name:
             parser.error(f"expected AFFIX=LEVEL, got {value!r}")
         requirements[name] = int(level)
-    print(json.dumps(optimize(requirements, args.weapon, min_level=args.min_level), indent=2, ensure_ascii=False))
+    print(json.dumps(
+        optimize(
+            requirements,
+            args.weapon,
+            min_rarity=args.min_rarity,
+            max_rarity=args.max_rarity,
+            character_class=args.character_class,
+        ),
+        indent=2,
+        ensure_ascii=False,
+    ))
 
 
 if __name__ == "__main__":
