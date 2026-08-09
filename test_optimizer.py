@@ -70,12 +70,12 @@ class OptimizerTest(unittest.TestCase):
             unavailable = optimize({"Aegis": 2}, "same", equipment, root / "gem", min_rarity="RARE")
             self.assertFalse(unavailable["possible"])
             self.assertIn("No set", unavailable["reason"])
-            self.assertEqual(unavailable["maxAffixLevels"], {"Aegis": 8})
+            self.assertEqual(unavailable["independentMaximums"], {"Aegis": 8})
             limited = optimize({"Aegis": 2}, "same", equipment, root / "gem", max_rarity="damaged")
             self.assertFalse(limited["possible"])
-            self.assertEqual(limited["maxAffixLevels"], {"Aegis": 0})
+            self.assertEqual(limited["independentMaximums"], {"Aegis": 0})
             self.assertEqual(
-                optimize({"Iron Helmet": 9}, "same", equipment, root / "gem", max_rarity=2)["maxAffixLevels"],
+                optimize({"Iron Helmet": 9}, "same", equipment, root / "gem", max_rarity=2)["independentMaximums"],
                 {"Iron Helmet": 8},
             )
             self.assertIsNotNone(optimize({"iRoN_hElMeT": 1}, "same", equipment, root / "gem"))

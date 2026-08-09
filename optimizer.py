@@ -142,15 +142,25 @@ def _max_affix_levels(equipment, gems, keys, max_rarity):
 
 
 def _not_possible(reason, min_rarity, max_rarity, requested, maximum):
+    requested_levels = {name: level for name, level in requested.values()}
+    maximum_levels = {name: maximum[key] for key, (name, _) in requested.items()}
+    if reason.startswith("Requested"):
+        message = "The requested affix levels exceed the available levels at the maximum rarity."
+    else:
+        message = "No single equipment set can provide all requested affix levels together."
     return {
         "possible": False,
+        "message": message,
         "reason": reason,
-        "minRarity": min_rarity,
-        "maxRarity": max_rarity,
-        "requestedAffixLevels": {name: level for name, level in requested.values()},
-        "maxAffixLevels": {name: maximum[key] for key, (name, _) in requested.items()},
-        "requestedTotalAffixLevels": sum(level for _, level in requested.values()),
-        "maxTotalAffixLevels": sum(maximum.values()),
+        "rarityRange": {
+            "min": {"level": min_rarity, "name": RARITIES[min_rarity]},
+            "max": {"level": max_rarity, "name": RARITIES[max_rarity]},
+        },
+        "requestedAffixes": requested_levels,
+        "independentMaximums": maximum_levels,
+        "requestedTotalLevels": sum(requested_levels.values()),
+        "independentMaximumTotal": sum(maximum_levels.values()),
+        "note": "Each independent maximum is calculated separately; they cannot necessarily be combined into one set.",
     }
 
 
