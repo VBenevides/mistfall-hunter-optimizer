@@ -1,0 +1,74 @@
+Weapon;Type;Class;Rarity;Attack;Combat;Durability
+Absolution;Mace;Seer;Legendary;40;525;1,500
+Antique Mace;Mace;Seer;Excellent;29;375;1,300
+Apprentice Staff;Staff;Sorcerer;Common;20;200;1,100
+Arcane Elixir Catalyst;Catalyst;Seer;Excellent;29;375;1,300
+Beast Spirit Catalyst;Catalyst;Seer;Rare;23;300;1,200
+Blade of Destined Death;Dual Blades;Shadowstrix;Epic;35;450;1,400
+Blind Eye Staff;Staff;Sorcerer;Legendary;40;525;1,500
+Bond of Friendship;Sword and Shield;Mercenary;Legendary;24;525;1,500
+Byrnes's Ash Urn;Catalyst;Seer;Legendary;40;525;1,500
+Carved Dagger;Dagger;Shadowstrix;Common;20;200;1,100
+Commander Sword and Shield;Sword and Shield;Mercenary;Epic;21;450;1,400
+Convergence Staff;Staff;Sorcerer;Excellent;29;375;1,300
+Crude Hammer;Hammer;Mercenary;Common;20;200;1,100
+Crusader Strongbow;Bow;Blackarrow;Epic;35;450;1,400
+Deathclaw Hunter;Bow;Blackarrow;Legendary;40;525;1,500
+Empyrean Rain Staff;Staff;Sorcerer;Epic;35;450;1,400
+Executioner Greatsword;Greatsword;Withered Knight;Rare;23;300;1,200
+Exile Greatsword;Greatsword;Withered Knight;Excellent;29;375;1,300
+Faded Apprentice Staff;Staff;Sorcerer;Damaged;16;100;1,000
+Fang-Piercer Dagger;Dagger;Shadowstrix;Rare;23;300;1,200
+Fine Iron Sword and Shield;Sword and Shield;Mercenary;Rare;14;300;1,200
+Focus Staff;Staff;Sorcerer;Rare;23;300;1,200
+Gem Lizard Dagger;Dagger;Shadowstrix;Epic;35;450;1,400
+Guard Polearm and Shield;Polearm and Shield;Withered Knight;Rare;14;300;1,200
+Handcrafted Longbow;Bow;Blackarrow;Common;20;200;1,100
+Insatiable Heart;Cornered Beast Bow;Bow;Blackarrow;Holy;40;625;1,600
+Insatiable Heart;Demolisher;Hammer;Mercenary;Holy;40;625;1,600
+Insatiable Heart;Everburn;Polearm and Shield;Withered Knight;Holy;24;625;1,600
+Insatiable Heart;Soulseeker Bow;Bow;Blackarrow;Holy;40;625;1,600
+Magica Hammer;Hammer;Mercenary;Excellent;29;375;1,300
+Magical Knot Catalyst;Catalyst;Seer;Common;20;200;1,100
+Mercy;Greatsword;Withered Knight;Legendary;40;525;1,500
+Military Hammer;Hammer;Mercenary;Rare;23;300;1,200
+Moon Deity;Convergence Staff;Staff;Sorcerer;Holy;40;625;1,600
+Moon Deity;Crescent Dagger;Dagger;Shadowstrix;Holy;40;625;1,600
+Moon Deity;Invocation Catalyst;Catalyst;Seer;Holy;40;625;1,600
+Moon Deity;Myriad Soul Staff;Staff;Sorcerer;Holy;40;625;1,600
+Moon Deity;Souleater Catalyst;Catalyst;Seer;Holy;40;625;1,600
+Morningstar Mace;Mace;Seer;Rare;23;300;1,200
+Night Vigil Polearm and Shield;Polearm and Shield;Withered Knight;Epic;21;450;1,400
+Obsidian Sledgehammer;Hammer;Mercenary;Epic;35;450;1,400
+Oil-soaked Wooden Bow;Bow;Blackarrow;Rare;23;300;1,200
+Recruit Sword and Shield;Sword and Shield;Mercenary;Common;12;200;1,100
+Rose Proclamation;Polearm and Shield;Withered Knight;Legendary;24;525;1,500
+Rough Handcrafted Longbow;Bow;Blackarrow;Damaged;16;100;1,000
+Rusty Crude Hammer;Hammer;Mercenary;Damaged;16;100;1,000
+Rusty Recruit Sword and Shield;Sword and Shield;Mercenary;Damaged;10;100;1,000
+Rusty Spiked Mace;Mace;Seer;Damaged;16;100;1,000
+Rusty Squire Greatsword;Greatsword;Withered Knight;Damaged;16;100;1,000
+Rusty Squire Polearm and Shield;Polearm and Shield;Withered Knight;Damaged;10;100;1,000
+Rusty Wooden-Handled Dual Blades;Dual Blades;Shadowstrix;Damaged;16;100;1,000
+Sacred Heart Greatsword;Greatsword;Withered Knight;Epic;35;450;1,400
+Serpent's Whisper;Dagger;Shadowstrix;Legendary;40;525;1,500
+Skullcrusher;Hammer;Mercenary;Legendary;40;525;1,500
+Spiked Mace;Mace;Seer;Common;20;200;1,100
+Spirit Feline Dual Blades;Dual Blades;Shadowstrix;Rare;23;300;1,200
+Spiritwood Drumstick;Mace;Seer;Epic;35;450;1,400
+Squire Greatsword;Greatsword;Withered Knight;Common;20;200;1,100
+Squire Polearm and Shield;Polearm and Shield;Withered Knight;Common;12;200;1,100
+Studded Sword and Shield;Sword and Shield;Mercenary;Excellent;17;375;1,300
+Thorn Polearm and Shield;Polearm and Shield;Withered Knight;Excellent;17;375;1,300
+True Intent Catalyst;Catalyst;Seer;Epic;35;450;1,400
+Twilight Knot Catalyst;Catalyst;Seer;Damaged;16;100;1,000
+Veil Dual Blades;Dual Blades;Shadowstrix;Excellent;29;375;1,300
+Venomfang;Dual Blades;Shadowstrix;Legendary;40;525;1,500
+Venomfang Dagger;Dagger;Shadowstrix;Excellent;29;375;1,300
+Wooden-Handled Dual Blades;Dual Blades;Shadowstrix;Common;20;200;1,100
+Worn Carved Dagger;Dagger;Shadowstrix;Damaged;16;100;1,000
+Wulfen Einherjar;Blade of Inquisition;Greatsword;Withered Knight;Holy;40;625;1,600
+Wulfen Einherjar;Oathkeeper;Sword and Shield;Mercenary;Holy;24;625;1,600
+Wulfen Einherjar;Splitclaw;Dual Blades;Shadowstrix;Holy;40;625;1,600
+Wulfen Einherjar;Warcry Spike;Mace;Seer;Holy;40;625;1,600
+Yew Longbow;Bow;Blackarrow;Excellent;29;375;1,300
