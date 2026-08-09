@@ -3,10 +3,16 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from optimizer import _load_database, optimize
+from optimizer import _compatible, _load_database, optimize
 
 
 class OptimizerTest(unittest.TestCase):
+    def test_gem_requires_socket_type_and_tier(self):
+        gem = {"gem": {"affixGemType": 1, "affixGemLevel": 1}}
+        self.assertTrue(_compatible(gem, 11))
+        self.assertFalse(_compatible({"gem": {"affixGemType": 2, "affixGemLevel": 1}}, 11))
+        self.assertFalse(_compatible({"gem": {"affixGemType": 1, "affixGemLevel": 2}}, 11))
+
     def test_class_loader_includes_all_classes(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -79,6 +85,19 @@ class OptimizerTest(unittest.TestCase):
                 {"Iron Helmet": 8},
             )
             self.assertIsNotNone(optimize({"iRoN_hElMeT": 1}, "same", equipment, root / "gem"))
+
+            (gems / "g3.json").write_text(json.dumps({
+                "id": "g3",
+                "name": "Aegis IV Ruby",
+                "minPrice": 1,
+                "maxPrice": 1,
+                "recommendedPrice": 1,
+                "gem": {"affixGemType": 1, "affixGemLevel": 1, "affixes": [{"name": "Aegis", "level": 4}]},
+            }))
+            minimum = optimize({"Aegis": 3}, "same", equipment, root / "gem")
+            self.assertTrue(minimum["possible"])
+            self.assertEqual(minimum["effects"], {"Aegis": 3})
+            self.assertEqual(minimum["gemCost"]["count"], 1)
 
 
 if __name__ == "__main__":

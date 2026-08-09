@@ -89,13 +89,14 @@ def _vector(affixes, positions, limits):
         position = positions.get(_normalize_affix(affix.get("name", "")))
         if position is not None:
             values[position] += int(affix.get("level", 1))
+    # Requirements are minimums: anything above the requested level satisfies it.
     return tuple(min(value, limits[index]) for index, value in enumerate(values))
 
 
 def _compatible(gem, hole):
     hole_type, hole_level = divmod(int(hole), 10)
     data = gem["gem"]
-    return data["affixGemLevel"] <= hole_level and (
+    return int(data["affixGemLevel"]) == hole_level and (
         data["affixGemType"] == hole_type or hole_type == 5
     )
 
@@ -370,7 +371,7 @@ def main():
             f"Available affixes:\n  {affix_help}"
         ),
     )
-    parser.add_argument("affixes", nargs="+", help="AFFIX=LEVEL, e.g. 'Aegis=2'")
+    parser.add_argument("affixes", nargs="+", help="AFFIX=MIN_LEVEL (at least this level), e.g. 'Aegis=2'")
     parser.add_argument("--class", dest="character_class", required=True, help="class using the equipment")
     parser.add_argument("--weapon", choices=("same", "above", "both"), default="both")
     parser.add_argument("--min-rarity", default="1", metavar="RARITY", help="minimum rarity: 1-6 or name")
