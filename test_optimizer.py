@@ -1,4 +1,5 @@
 import json
+import sqlite3
 import tempfile
 import unittest
 from pathlib import Path
@@ -16,13 +17,30 @@ class OptimizerTest(unittest.TestCase):
     def test_class_loader_includes_all_classes(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            for class_name, item_id in (("mercenary", "m"), ("sorcerer", "s"), ("all-classes", "a")):
-                folder = root / "db" / class_name / "weapon" / "common"
-                folder.mkdir(parents=True)
-                (folder / f"{item_id}.json").write_text(json.dumps({"id": item_id, "mainCategory": "weapon"}))
+            database = root / "db.sqlite"
+            with sqlite3.connect(database) as connection:
+                connection.executescript(
+                    """
+                    CREATE TABLE items (id TEXT PRIMARY KEY, name TEXT, category TEXT, grade INTEGER, rarity TEXT, data TEXT);
+                    CREATE TABLE item_classes (item_id TEXT, class_slug TEXT, PRIMARY KEY (item_id, class_slug));
+                    """
+                )
+                for class_name, item_id in (("mercenary", "m"), ("sorcerer", "s"), ("all-classes", "a")):
+                    item = {"id": item_id, "mainCategory": "weapon"}
+                    connection.execute(
+                        "INSERT INTO items VALUES (?, ?, ?, ?, ?, ?)",
+                        (item_id, item_id, "weapon", 1, "damaged", json.dumps(item)),
+                    )
+                    connection.execute("INSERT INTO item_classes VALUES (?, ?)", (item_id, class_name))
+                gem = {"id": "g", "mainCategory": "affix_gem", "gem": {"affixes": []}}
+                connection.execute(
+                    "INSERT INTO items VALUES (?, ?, ?, ?, ?, ?)",
+                    ("g", "Ruby", "affix_gem", 0, None, json.dumps(gem)),
+                )
 
-            equipment, _ = _load_database(root / "db", root / "gem", "mercenary")
+            equipment, gems = _load_database(database, root / "gem", "mercenary")
             self.assertEqual({item["id"] for item in equipment}, {"m", "a"})
+            self.assertEqual({item["id"] for item in gems}, {"g"})
 
     def test_uniform_armor_and_weapon_options(self):
         with tempfile.TemporaryDirectory() as directory:

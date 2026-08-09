@@ -1,12 +1,14 @@
 import argparse
 import json
 import re
+import sqlite3
 from collections import defaultdict
 from pathlib import Path
 
 
 ROOT = Path(__file__).parent
-EQUIPMENT_DIR = ROOT / "db"
+EQUIPMENT_DB = ROOT / "db.sqlite"
+LEGACY_EQUIPMENT_DIR = ROOT / "db"
 GEM_DIR = ROOT / "db-questlog" / "gem"
 RARITIES = {
     1: "Damaged",
@@ -47,26 +49,60 @@ def _class_slug(value):
     return re.sub(r"[^a-z0-9]+", "-", str(value).casefold()).strip("-")
 
 
-def _load_database(equipment_dir=EQUIPMENT_DIR, gem_dir=GEM_DIR, character_class=None):
-    if character_class:
-        class_dirs = {equipment_dir / _class_slug(character_class), equipment_dir / "all-classes"}
-        paths = [path for directory in class_dirs for path in directory.glob("*/*/*.json")]
+def _load_database(equipment_dir=EQUIPMENT_DB, gem_dir=GEM_DIR, character_class=None):
+    equipment_dir = Path(equipment_dir)
+    if not equipment_dir.exists() and LEGACY_EQUIPMENT_DIR.exists():
+        equipment_dir = LEGACY_EQUIPMENT_DIR
+    if equipment_dir.is_file():
+        with sqlite3.connect(equipment_dir) as connection:
+            if character_class:
+                rows = connection.execute(
+                    """
+                    SELECT data FROM items
+                    WHERE category IN ('weapon', 'armor')
+                      AND EXISTS (
+                        SELECT 1 FROM item_classes
+                        WHERE item_classes.item_id = items.id
+                          AND item_classes.class_slug IN (?, 'all-classes')
+                    )
+                    """,
+                    (_class_slug(character_class),),
+                ).fetchall()
+            else:
+                rows = connection.execute(
+                    "SELECT data FROM items WHERE category IN ('weapon', 'armor')"
+                ).fetchall()
+            gem_rows = connection.execute(
+                "SELECT data FROM items WHERE category = 'affix_gem'"
+            ).fetchall()
+        gems = [json.loads(row[0]) for row in gem_rows]
+        if not gems:
+            gems = [
+                json.loads(path.read_text())
+                for path in Path(gem_dir).glob("*/*.json")
+                if path.name != "index.json"
+            ]
+        equipment = [json.loads(row[0]) for row in rows]
     else:
-        paths = list(equipment_dir.glob("*.json"))
-        if not paths:
-            paths = list(equipment_dir.glob("*/*/*.json"))
-    equipment = []
-    seen = set()
-    for path in paths:
-        item = json.loads(path.read_text())
-        if item.get("id") not in seen:
-            equipment.append(item)
-            seen.add(item.get("id"))
-    gems = [
-        json.loads(path.read_text())
-        for path in gem_dir.glob("*/*.json")
-        if path.name != "index.json"
-    ]
+        if character_class:
+            class_dirs = {equipment_dir / _class_slug(character_class), equipment_dir / "all-classes"}
+            paths = [path for directory in class_dirs for path in directory.glob("*/*/*.json")]
+        else:
+            paths = list(equipment_dir.glob("*.json"))
+            if not paths:
+                paths = list(equipment_dir.glob("*/*/*.json"))
+        equipment = []
+        seen = set()
+        for path in paths:
+            item = json.loads(path.read_text())
+            if item.get("id") not in seen:
+                equipment.append(item)
+                seen.add(item.get("id"))
+        gems = [
+            json.loads(path.read_text())
+            for path in Path(gem_dir).glob("*/*.json")
+            if path.name != "index.json"
+        ]
     return equipment, gems
 
 
@@ -350,7 +386,7 @@ def _best(requirements, mode, equipment, gems, min_rarity, max_rarity):
 def optimize(
     requirements,
     weapon_mode="both",
-    equipment_dir=EQUIPMENT_DIR,
+    equipment_dir=EQUIPMENT_DB,
     gem_dir=GEM_DIR,
     min_rarity=1,
     max_rarity=6,
@@ -371,7 +407,7 @@ def optimize(
     return _best(requirements, weapon_mode, equipment, gems, min_rarity, max_rarity)
 
 
-def available_affixes(equipment_dir=EQUIPMENT_DIR, gem_dir=GEM_DIR, character_class=None):
+def available_affixes(equipment_dir=EQUIPMENT_DB, gem_dir=GEM_DIR, character_class=None):
     equipment, gems = _load_database(equipment_dir, gem_dir, character_class)
     return sorted({
         str(affix.get("name", ""))
