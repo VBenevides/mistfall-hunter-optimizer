@@ -1,0 +1,313 @@
+Gem;Level;Affixes;Combat;Suggested Price
+Aegis Creation Moonstone;2;Spirit Shield, Creation;50;150
+Aegis Curseward Moonstone;2;Spirit Shield, Curse;50;150
+Aegis Fervor Moonstone;2;Spirit Shield, Fervor;50;150
+Aegis Flawless Moonstone;2;Spirit Shield, Seamless;50;150
+Aegis Fury Moonstone;2;Spirit Shield, Wrath;50;150
+Aegis Haste Moonstone;2;Spirit Shield, Swift;50;150
+Aegis: Ironhelm Agate;2;Aegis, Iron Helmet;50;150
+Aegis: Stalwart Agate;2;Aegis, Stoic;50;150
+Aegis: Steelwall Agate;2;Aegis, Bulwark;50;150
+Aegis: Tenacious Agate;2;Aegis, Tenacious;50;150
+Agile Peridot;1;Elusive;25;75
+Agility Blessing Peridot;2;Elusive, Blessing;50;150
+Agility Dexterity Peridot;2;Elusive, Deft;50;150
+Agility Fortune Peridot;2;Elusive, Wealth;50;150
+Allied Burst Moonstone;2;Brotherhood, Burst;50;150
+Allied Unyielding Moonstone;2;Brotherhood, Unyielding;50;150
+Artifice Moonstone;1;Creation;25;75
+Battle Spirit: Battle Will Purple Rhomb Gem;2;Valor, Fervor;50;150
+Battle Spirit: Curse Resist Purple Rhomb Gem;2;Valor, Curse;50;150
+Battle Spirit: Fervor Purple Rhomb Gem;2;Valor, Fervid;50;150
+Battle Spirit: Pierce Purple Rhomb Gem;2;Valor, Sky Piercer;50;150
+Battle Spirit: Pursuit Purple Rhomb Gem;2;Valor, Seeker;50;150
+Battle Spirit: Rage Purple Rhomb Gem;2;Valor, Wrath;50;150
+Battle Spirit: Ranged Purple Rhomb Gem;2;Valor, Ranged;50;150
+Battle Spirit: Vitality Purple Rhomb Gem;2;Valor, Vitality;50;150
+Battlebond · Fighting Spirit Agate;2;Brotherhood, Valor;50;150
+Battlewill·Fervor Agate;2;Valor, Fervid;50;150
+Battlewill·Focus Agate;2;Valor, Focused;50;150
+Battlewill·Skysunder Agate;2;Valor, Sky Piercer;50;150
+Blast Moonstone;1;Burst;25;75
+Blessed Peridot;1;Blessing;25;75
+Blessing Fortune Peridot;2;Blessing, Wealth;50;150
+Brawl · Focus Agate;2;Strife, Focused;50;150
+Brawling Peridot;1;Strife;25;75
+Brotherhood Onyx;1;Brotherhood;25;75
+Brotherhood·Fervor Agate;2;Brotherhood, Fervid;50;150
+Brotherhood·Focus Agate;2;Brotherhood, Focused;50;150
+Brotherhood·Skysunder Agate;2;Brotherhood, Sky Piercer;50;150
+Brutal Alacrity Peridot;2;Smiting, Elusive;50;150
+Brutal Blessed Peridot;2;Smiting, Blessing;50;150
+Brutal Cunning Peridot;2;Smiting, Eloquence;50;150
+Brutal Flawless Peridot;2;Smiting, Seamless;50;150
+Brutal Fortune Peridot;2;Smiting, Wealth;50;150
+Brutal Sleight Peridot;2;Smiting, Deft;50;150
+Brutal Vitality Peridot;2;Smiting, Vitality;50;150
+Bulwark·Brotherhood Agate;2;Bulwark, Brotherhood;50;150
+Bulwark·Endurance Agate;2;Bulwark, Stoic;50;150
+Bulwark·Iron Helm Agate;2;Bulwark, Iron Helmet;50;150
+Burst Haste Moonstone;2;Burst, Swift;50;150
+Burst Seamless Moonstone;2;Burst, Seamless;50;150
+Bursting - Conjuring Moonstone;2;Burst, Creation;50;150
+Bursting - Cursing Moonstone;2;Burst, Curse;50;150
+Camaraderie · Brawl Agate;2;Brotherhood, Strife;50;150
+Camaraderie · Ranged Ward Agate;2;Brotherhood, Distant Ward;50;150
+Carnage Onyx;1;Strife;25;75
+Crush · Melee Peridot;2;Smiting, Strife;50;150
+Crushing Peridot;1;Smiting;25;75
+Cunning Alacrity Peridot;2;Eloquence, Elusive;50;150
+Cunning Blessed Peridot;2;Eloquence, Blessing;50;150
+Cunning Flawless Peridot;2;Eloquence, Seamless;50;150
+Cunning Fortune Peridot;2;Eloquence, Wealth;50;150
+Cunning Sleight Peridot;2;Eloquence, Deft;50;150
+Cunning Vitality Peridot;2;Eloquence, Vitality;50;150
+Curseward · Craft Moonstone;2;Curse, Creation;50;150
+Curseward Amethyst;1;Curse;25;75
+Curseward Moonstone;1;Curse;25;75
+Deft Peridot;1;Deft;25;75
+Dexterity Blessing Peridot;2;Deft, Blessing;50;150
+Dexterity Fortune Peridot;2;Deft, Wealth;50;150
+Farguard Peridot;1;Distant Ward;25;75
+Farstrike Peridot;1;Ranged;25;75
+Fervor · Brawl Agate;2;Fervid, Strife;50;150
+Fervor · Craft Moonstone;2;Fervor, Creation;50;150
+Fervor · Curseward Moonstone;2;Fervor, Curse;50;150
+Fervor · Haste Moonstone;2;Fervor, Swift;50;150
+Fervor · Seamless Moonstone;2;Fervor, Seamless;50;150
+Fervor Amethyst;1;Fervid;25;75
+Fervor Onyx;1;Fervid;25;75
+Fervor·Focus Agate;2;Fervid, Focused;50;150
+Fierce Battle: Blessed Peridot;2;Strife, Blessing;50;150
+Fierce Battle: Deft Peridot;2;Strife, Deft;50;150
+Fierce Battle: Nimble Peridot;2;Strife, Elusive;50;150
+Fierce Battle: Wealth Peridot;2;Strife, Wealth;50;150
+Fighting Spirit · Brawl Agate;2;Valor, Strife;50;150
+Flawless Agility Peridot;2;Seamless, Elusive;50;150
+Flawless Blessing Peridot;2;Seamless, Blessing;50;150
+Flawless Dexterity Peridot;2;Seamless, Deft;50;150
+Flawless Fortune Peridot;2;Seamless, Wealth;50;150
+Flawless Peridot;1;Seamless;25;75
+Flawless Vitality Peridot;2;Seamless, Vitality;50;150
+Focus Onyx;1;Focused;25;75
+Fortitude · Battlebond Agate;2;Stoic, Brotherhood;50;150
+Fortitude · Brawl Agate;2;Stoic, Strife;50;150
+Fortitude · Fervor Agate;2;Stoic, Fervid;50;150
+Fortitude · Fighting Spirit Agate;2;Stoic, Valor;50;150
+Fortitude · Fighting Spirit Purple Rhomb Stone;2;Stoic, Valor;50;150
+Fortitude · Focus Agate;2;Stoic, Focused;50;150
+Fortitude · Rage Purple Rhomb Stone;2;Stoic, Wrath;50;150
+Fortitude · Ranged Ward Agate;2;Stoic, Distant Ward;50;150
+Fortitude · Skycleave Agate;2;Stoic, Sky Piercer;50;150
+Fortitude Amethyst;1;Stoic;25;75
+Fortitude Onyx;1;Stoic;25;75
+Fortitude: Battle Will Purple Rhomb Gem;2;Stoic, Fervor;50;150
+Fortitude: Curse Resist Purple Rhomb Gem;2;Stoic, Curse;50;150
+Fortitude: Fervor Purple Rhomb Gem;2;Stoic, Fervid;50;150
+Fortitude: Pierce Purple Rhomb Gem;2;Stoic, Sky Piercer;50;150
+Fortitude: Pursuit Purple Rhomb Gem;2;Stoic, Seeker;50;150
+Fortitude: Ranged Purple Rhomb Gem;2;Stoic, Ranged;50;150
+Fortitude: Vitality Purple Rhomb Gem;2;Stoic, Vitality;50;150
+Fortitude·Brotherhood Agate;2;Tenacious, Brotherhood;50;150
+Fortitude·Bulwark Agate;2;Tenacious, Bulwark;50;150
+Fortitude·Endurance Agate;2;Tenacious, Stoic;50;150
+Fortitude·Focus Agate;2;Tenacious, Focused;50;150
+Fortitude·Hotblood Agate;2;Tenacious, Fervid;50;150
+Fortitude·Iron Helm Agate;2;Tenacious, Iron Helmet;50;150
+Fortitude·Resilience Purple Rhomb Gem;2;Stoic, Resilience;50;150
+Fortitude·Skysunder Agate;2;Tenacious, Sky Piercer;50;150
+Fortitude·Unyielding Purple Rhomb Gem;2;Stoic, Unyielding;50;150
+Fortitude·Zeal Agate;2;Tenacious, Valor;50;150
+Fortune Peridot;1;Wealth;25;75
+Fury Fervor Moonstone;2;Wrath, Fervor;50;150
+Fury Flawless Moonstone;2;Wrath, Seamless;50;150
+Guardian Moonstone;1;Aegis;25;75
+Haste · Craft Moonstone;2;Swift, Creation;50;150
+Haste · Curseward Moonstone;2;Swift, Curse;50;150
+Haste Moonstone;1;Swift;25;75
+Hotblood·Battle Zeal Purple Rhombus Stone;2;Fervid, Fervor;50;150
+Hotblood·Curseward Purple Rhomb Gem;2;Fervid, Curse;50;150
+Hotblood·Pursuit Purple Rhombus Stone;2;Fervid, Seeker;50;150
+Hotblood·Ranged Purple Rhombus Stone;2;Fervid, Ranged;50;150
+Hotblood·Vigor Purple Rhombus Stone;2;Fervid, Vitality;50;150
+Impenetrable Moonstone;1;Seamless;25;75
+Iron Helm · Battlebond Agate;2;Iron Helmet, Brotherhood;50;150
+Iron Helm · Brawl Agate;2;Iron Helmet, Strife;50;150
+Iron Helm · Fervor Agate;2;Iron Helmet, Fervid;50;150
+Iron Helm · Fighting Spirit Agate;2;Iron Helmet, Valor;50;150
+Iron Helm · Focus Agate;2;Iron Helmet, Focused;50;150
+Iron Helm · Fortitude Agate;2;Iron Helmet, Stoic;50;150
+Iron Helm · Skycleave Agate;2;Iron Helmet, Sky Piercer;50;150
+Iron Helm Agate;1;Iron Helmet;25;75
+Ironhelm·Rangeward Agate;2;Iron Helmet, Distant Ward;50;150
+Light·Aegis Moonstone;2;Ethereal, Spirit Shield;50;150
+Light·Cleansing Moonstone;2;Ethereal, Curse;50;150
+Light·Fervor Moonstone;2;Ethereal, Fervor;50;150
+Light·Flawless Moonstone;2;Ethereal, Seamless;50;150
+Light·Haste Moonstone;2;Ethereal, Swift;50;150
+Light·Unity Moonstone;2;Ethereal, Brotherhood;50;150
+Light·Wrath Moonstone;2;Ethereal, Wrath;50;150
+Lightfoot Moonstone;1;Ethereal;25;75
+Lightweight Burst Moonstone;2;Ethereal, Burst;50;150
+Lightweight Creation Moonstone;2;Ethereal, Creation;50;150
+Melee · Bulwark Peridot;2;Strife, Seamless;50;150
+Melee · Persuasion Peridot;2;Strife, Eloquence;50;150
+Melee · Vitality Peridot;2;Strife, Vitality;50;150
+Nimble · Unyielding Moonstone;2;Ethereal, Unyielding;50;150
+Persuasive Peridot;1;Eloquence;25;75
+Pierce · Brawl Agate;2;Sky Piercer, Strife;50;150
+Pursuit Amethyst;1;Seeker;25;75
+Pursuit·Curseward Purple Rhomb Gem;2;Seeker, Curse;50;150
+Pursuit·Ranged Purple Rhomb Gem;2;Seeker, Ranged;50;150
+Pursuit·Vitality Purple Rhomb Gem;2;Seeker, Vitality;50;150
+Pursuit·Zeal Purple Rhomb Gem;2;Seeker, Fervor;50;150
+Rage · Craft Moonstone;2;Wrath, Creation;50;150
+Rage · Curseward Moonstone;2;Wrath, Curse;50;150
+Rage · Haste Moonstone;2;Wrath, Swift;50;150
+Rage: Pierce Purple Rhomb Gem;2;Wrath, Sky Piercer;50;150
+Ranged - Agile Peridot;2;Ranged, Elusive;50;150
+Ranged - Flawless Peridot;2;Ranged, Seamless;50;150
+Ranged - Smiting Peridot;2;Ranged, Smiting;50;150
+Ranged - Vigorous Peridot;2;Ranged, Vitality;50;150
+Ranged - Wily Peridot;2;Ranged, Eloquence;50;150
+Ranged · Melee Peridot;2;Ranged, Strife;50;150
+Ranged Blessed Peridot;2;Ranged, Blessing;50;150
+Ranged Fortune Peridot;2;Ranged, Wealth;50;150
+Ranged Power Amethyst;1;Ranged;25;75
+Ranged Sleight Peridot;2;Ranged, Deft;50;150
+Ranged Ward · Agility Peridot;2;Distant Ward, Elusive;50;150
+Ranged Ward · Blessing Peridot;2;Distant Ward, Blessing;50;150
+Ranged Ward · Brawl Agate;2;Distant Ward, Strife;50;150
+Ranged Ward · Bulwark Peridot;2;Distant Ward, Seamless;50;150
+Ranged Ward · Crush Peridot;2;Distant Ward, Smiting;50;150
+Ranged Ward · Dexterity Peridot;2;Distant Ward, Deft;50;150
+Ranged Ward · Fervor Agate;2;Distant Ward, Fervid;50;150
+Ranged Ward · Fighting Spirit Agate;2;Distant Ward, Valor;50;150
+Ranged Ward · Focus Agate;2;Distant Ward, Focused;50;150
+Ranged Ward · Fortune Peridot;2;Distant Ward, Wealth;50;150
+Ranged Ward · Melee Peridot;2;Distant Ward, Strife;50;150
+Ranged Ward · Persuasion Peridot;2;Distant Ward, Eloquence;50;150
+Ranged Ward · Pierce Agate;2;Distant Ward, Sky Piercer;50;150
+Ranged Ward · Ranged Peridot;2;Distant Ward, Ranged;50;150
+Ranged Ward · Vitality Peridot;2;Distant Ward, Vitality;50;150
+Ranged Ward Onyx;1;Distant Ward;25;75
+Ranged·Curseward Purple Rhomb Gem;2;Ranged, Curse;50;150
+Ranged·Vitality Purple Rhomb Gem;2;Ranged, Vitality;50;150
+Ranged·Zeal Purple Rhomb Gem;2;Ranged, Fervor;50;150
+Resilience Amethyst;1;Resilience;25;75
+Resolve Amethyst;1;Valor;25;75
+Resolve Onyx;1;Valor;25;75
+Seamless · Craft Moonstone;2;Seamless, Creation;50;150
+Seamless · Curseward Moonstone;2;Seamless, Curse;50;150
+Seamless · Haste Moonstone;2;Seamless, Swift;50;150
+Skycleave·Battle Zeal Purple Rhombus Stone;2;Sky Piercer, Fervor;50;150
+Skycleave·Cursebreak Purple Rhombus Stone;2;Sky Piercer, Curse;50;150
+Skycleave·Hotblood Purple Rhombus Stone;2;Sky Piercer, Fervid;50;150
+Skycleave·Pursuit Purple Rhombus Stone;2;Sky Piercer, Seeker;50;150
+Skycleave·Ranged Purple Rhombus Stone;2;Sky Piercer, Ranged;50;150
+Skycleave·Vigor Purple Rhombus Stone;2;Sky Piercer, Vitality;50;150
+Skyshatter Amethyst;1;Sky Piercer;25;75
+Skyshatter Onyx;1;Sky Piercer;25;75
+Skysunder·Fervor Agate;2;Sky Piercer, Fervid;50;150
+Skysunder·Focus Agate;2;Sky Piercer, Focused;50;150
+Spellshield Burst Moonstone;2;Spirit Shield, Burst;50;150
+Spellshield Moonstone;1;Spirit Shield;25;75
+Spellshield Unyielding Moonstone;2;Spirit Shield, Unyielding;50;150
+Steel Bulwark · Fervor Agate;2;Bulwark, Fervid;50;150
+Steel Bulwark · Fighting Spirit Agate;2;Bulwark, Valor;50;150
+Steel Bulwark · Focus Agate;2;Bulwark, Focused;50;150
+Steel Bulwark · Skycleave Agate;2;Bulwark, Sky Piercer;50;150
+Steel Bulwark Agate;1;Bulwark;25;75
+Steelwall·Brawl Agate;2;Bulwark, Strife;50;150
+Steelwall·Rangeward Agate;2;Bulwark, Distant Ward;50;150
+Tenacious - Agile Peridot;2;Tenacious, Elusive;50;150
+Tenacious - Blessed Peridot;2;Tenacious, Blessing;50;150
+Tenacious - Dexterous Peridot;2;Tenacious, Deft;50;150
+Tenacious - Flawless Peridot;2;Tenacious, Seamless;50;150
+Tenacious - Fortunate Peridot;2;Tenacious, Wealth;50;150
+Tenacious - Ranged Peridot;2;Tenacious, Ranged;50;150
+Tenacious - Smiting Peridot;2;Tenacious, Smiting;50;150
+Tenacious - Vigorous Peridot;2;Tenacious, Vitality;50;150
+Tenacious - Wily Peridot;2;Tenacious, Eloquence;50;150
+Tenacious Peridot;1;Tenacious;25;75
+Tenacity · Armor Pierce Purple Rhombus Stone;2;Resilience, Sky Piercer;50;150
+Tenacity · Battle Will Purple Rhombus Stone;2;Resilience, Fervor;50;150
+Tenacity · Curse Resistance Purple Rhombus Stone;2;Resilience, Curse;50;150
+Tenacity · Fervor Purple Rhombus Stone;2;Resilience, Fervid;50;150
+Tenacity · Fighting Spirit Purple Rhombus Stone;2;Resilience, Valor;50;150
+Tenacity · Fury Purple Rhombus Stone;2;Resilience, Wrath;50;150
+Tenacity · Melee Peridot;2;Tenacious, Strife;50;150
+Tenacity · Pursuit Purple Rhombus Stone;2;Resilience, Seeker;50;150
+Tenacity · Ranged Attack Purple Rhombus Stone;2;Resilience, Ranged;50;150
+Tenacity · Vitality Purple Rhombus Stone;2;Resilience, Vitality;50;150
+Tenacity Agate;1;Tenacious;25;75
+Tenacity Ranged Ward Peridot;2;Tenacious, Distant Ward;50;150
+Tenacity·Brawl Agate;2;Tenacious, Strife;50;150
+Tenacity·Rangeward Agate;2;Tenacious, Distant Ward;50;150
+Unity Aegis Moonstone;2;Brotherhood, Spirit Shield;50;150
+Unity Creation Moonstone;2;Brotherhood, Creation;50;150
+Unity Curseward Moonstone;2;Brotherhood, Curse;50;150
+Unity Fervor Moonstone;2;Brotherhood, Fervor;50;150
+Unity Flawless Moonstone;2;Brotherhood, Seamless;50;150
+Unity Fury Moonstone;2;Brotherhood, Wrath;50;150
+Unity Haste Moonstone;2;Brotherhood, Swift;50;150
+Unity Moonstone;1;Brotherhood;25;75
+Unyielding · Armor Pierce Purple Rhombus Stone;2;Unyielding, Sky Piercer;50;150
+Unyielding · Battle Will Purple Rhombus Stone;2;Unyielding, Fervor;50;150
+Unyielding · Curse Resistance Purple Rhombus Stone;2;Unyielding, Curse;50;150
+Unyielding · Fervor Purple Rhombus Stone;2;Unyielding, Fervid;50;150
+Unyielding · Pursuit Purple Rhombus Stone;2;Unyielding, Seeker;50;150
+Unyielding · Ranged Attack Purple Rhombus Stone;2;Unyielding, Ranged;50;150
+Unyielding · Vitality Purple Rhombus Stone;2;Unyielding, Vitality;50;150
+Unyielding Amethyst;1;Unyielding;25;75
+Unyielding Burst Moonstone;2;Unyielding, Burst;50;150
+Unyielding Creation Moonstone;2;Unyielding, Creation;50;150
+Unyielding Curseward Moonstone;2;Unyielding, Curse;50;150
+Unyielding Haste Moonstone;2;Unyielding, Swift;50;150
+Unyielding Moonstone;1;Unyielding;25;75
+Unyielding Seamless Moonstone;2;Unyielding, Seamless;50;150
+Unyielding Wrath Moonstone;2;Unyielding, Wrath;50;150
+Unyielding Zeal Moonstone;2;Unyielding, Fervor;50;150
+Unyielding·Rage Purple Rhomb Gem;2;Unyielding, Wrath;50;150
+Unyielding·Resilience Purple Rhomb Gem;2;Unyielding, Resilience;50;150
+Unyielding·Resolve Purple Rhomb Gem;2;Unyielding, Valor;50;150
+Vital Peridot;1;Vitality;25;75
+Vitality Agility Peridot;2;Vitality, Elusive;50;150
+Vitality Amethyst;1;Vitality;25;75
+Vitality Blessing Peridot;2;Vitality, Blessing;50;150
+Vitality Dexterity Peridot;2;Vitality, Deft;50;150
+Vitality Fortune Peridot;2;Vitality, Wealth;50;150
+Vitality·Curseward Purple Rhomb Gem;2;Vitality, Curse;50;150
+Ward·Aegis Moonstone;2;Aegis, Spirit Shield;50;150
+Ward·Brawl Agate;2;Aegis, Strife;50;150
+Ward·Cleansing Moonstone;2;Aegis, Curse;50;150
+Ward·Craft Moonstone;2;Aegis, Creation;50;150
+Ward·Fervor Moonstone;2;Aegis, Fervor;50;150
+Ward·Flawless Moonstone;2;Aegis, Seamless;50;150
+Ward·Haste Moonstone;2;Aegis, Swift;50;150
+Ward·Light Moonstone;2;Aegis, Ethereal;50;150
+Ward·Rangeward Agate;2;Aegis, Distant Ward;50;150
+Ward·Unity Moonstone;2;Aegis, Brotherhood;50;150
+Ward·Wrath Moonstone;2;Aegis, Wrath;50;150
+Warding · Burst Moonstone;2;Aegis, Burst;50;150
+Warding · Unyielding Moonstone;2;Aegis, Unyielding;50;150
+Warding Agate;1;Aegis;25;75
+Warding·Brotherhood Agate;2;Aegis, Brotherhood;50;150
+Warding·Focus Agate;2;Aegis, Focused;50;150
+Warding·Hotblood Agate;2;Aegis, Fervid;50;150
+Warding·Skysunder Agate;2;Aegis, Sky Piercer;50;150
+Warding·Zeal Agate;2;Aegis, Valor;50;150
+Warspirit Amethyst;1;Fervor;25;75
+Warspirit Moonstone;1;Fervor;25;75
+Wrath Amethyst;1;Wrath;25;75
+Wrath Burst Moonstone;2;Wrath, Burst;50;150
+Wrath Moonstone;1;Wrath;25;75
+Wrath·Battle Zeal Purple Rhombus Stone;2;Wrath, Fervor;50;150
+Wrath·Cursebreak Purple Rhombus Stone;2;Wrath, Curse;50;150
+Wrath·Hotblood Purple Rhombus Stone;2;Wrath, Fervid;50;150
+Wrath·Pursuit Purple Rhombus Stone;2;Wrath, Seeker;50;150
+Wrath·Ranged Purple Rhombus Stone;2;Wrath, Ranged;50;150
+Wrath·Vigor Purple Rhombus Stone;2;Wrath, Vitality;50;150
+Zeal Burst Moonstone;2;Fervor, Burst;50;150
+Zeal·Curseward Purple Rhomb Gem;2;Fervor, Curse;50;150
+Zeal·Vitality Purple Rhomb Gem;2;Fervor, Vitality;50;150

@@ -11,6 +11,7 @@ class OptimizerTest(unittest.TestCase):
     def test_gem_requires_socket_type_and_tier(self):
         gem = {"gem": {"affixGemType": 1, "affixGemLevel": 1}}
         self.assertTrue(_compatible(gem, 11))
+        self.assertTrue(_compatible(gem, {"type": -1, "level": 1}))
         self.assertFalse(_compatible({"gem": {"affixGemType": 2, "affixGemLevel": 1}}, 11))
         self.assertFalse(_compatible({"gem": {"affixGemType": 1, "affixGemLevel": 2}}, 11))
 

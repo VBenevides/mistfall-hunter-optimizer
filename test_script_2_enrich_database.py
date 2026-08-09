@@ -12,11 +12,9 @@ class EnrichDatabaseTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             source = root / "questlog" / "raw" / "equipment"
-            gems = root / "questlog" / "gem" / "ruby"
             wiki = root / "wiki"
             target = root / "db.sqlite"
             source.mkdir(parents=True)
-            gems.mkdir(parents=True)
             wiki.mkdir()
             (source / "a.json").write_text(json.dumps({
                 "id": "a", "name": "Sword", "mainCategory": "weapon", "grade": 3,
@@ -28,12 +26,10 @@ class EnrichDatabaseTest(unittest.TestCase):
                 "Sword;Mace;Seer;Rare;23;300;1,200\n"
                 "Only Wiki;Mace;Mercenary;Common;20;200;1,100\n"
             )
-            (gems / "g.json").write_text(json.dumps({
-                "id": "g",
-                "name": "Guardian Ruby",
-                "mainCategory": "affix_gem",
-                "gem": {"affixGemType": 1, "affixGemLevel": 1, "affixes": []},
-            }))
+            (wiki / "gem-wiki.txt").write_text(
+                "Gem;Level;Affixes;Combat;Price\n"
+                "Guardian Agate;1;Aegis;25;75\n"
+            )
 
             build_database(root / "questlog", wiki, target)
             with sqlite3.connect(target) as connection:
@@ -41,10 +37,13 @@ class EnrichDatabaseTest(unittest.TestCase):
                 wiki_only = connection.execute(
                     "SELECT 1 FROM items WHERE id = 'wiki-only-wiki-mace'"
                 ).fetchone()
-                gem = json.loads(connection.execute("SELECT data FROM items WHERE id = 'g'").fetchone()[0])
+                gem = json.loads(connection.execute(
+                    "SELECT data FROM items WHERE category = 'affix_gem'"
+                ).fetchone()[0])
             self.assertEqual(sword["classes"], ["Seer"])
             self.assertIsNotNone(wiki_only)
-            self.assertEqual(gem["name"], "Guardian Ruby")
+            self.assertEqual(gem["name"], "Guardian Agate")
+            self.assertEqual(gem["gem"]["affixGemType"], 1)
 
 
 if __name__ == "__main__":

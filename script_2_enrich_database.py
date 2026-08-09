@@ -75,6 +75,45 @@ def parse_wiki(path, category):
     return rows
 
 
+def parse_gems(path):
+    gems = []
+    for serial, line in enumerate(path.read_text().splitlines()[1:], 1):
+        fields = line.split(";")
+        if len(fields) != 5:
+            continue
+        name, level, affix_names, combat, price = fields
+        lower_name = name.casefold()
+        gem_type = next(
+            (value for label, value in (("agate", 1), ("amethyst", 2), ("moonstone", 3), ("peridot", 4)) if lower_name.endswith(label)),
+            5,
+        )
+        affixes = [part.strip() for part in affix_names.split(",") if part.strip()]
+        price = number(price)
+        gems.append({
+            "id": f"wiki-gem-{serial}-{slug(name)}",
+            "name": name,
+            "grade": 0,
+            "mainCategory": "affix_gem",
+            "minPrice": price,
+            "maxPrice": price,
+            "recommendedPrice": price,
+            "gem": {
+                "affixes": [{"name": affix, "level": 1} for affix in affixes],
+                "combatValue": number(combat),
+                "affixGemType": gem_type,
+                "affixGemLevel": number(level),
+            },
+            "wiki": {
+                "name": name,
+                "level": number(level),
+                "affixes": affixes,
+                "combat": number(combat),
+                "recommendedPrice": price,
+            },
+        })
+    return gems
+
+
 def wiki_classes(value):
     if value.casefold() == "all classes":
         return ["All classes"]
@@ -88,12 +127,6 @@ def questlog_classes(item):
 
 def load_items(source):
     for path in (source / "raw" / "equipment").glob("*.json"):
-        if path.name != "index.json":
-            yield json.loads(path.read_text())
-
-
-def load_gems(source):
-    for path in (source / "gem").glob("*/*.json"):
         if path.name != "index.json":
             yield json.loads(path.read_text())
 
@@ -143,6 +176,7 @@ def build_database(source=SOURCE, wiki_dir=WIKI, target=TARGET):
     wiki = {}
     for category, filename in (("armor", "armor-wiki.txt"), ("weapon", "weapons-wiki.txt")):
         wiki[category] = parse_wiki(wiki_dir / filename, category)
+    gems = parse_gems(wiki_dir / "gem-wiki.txt")
 
     target = Path(target)
     target.parent.mkdir(parents=True, exist_ok=True)
@@ -200,7 +234,7 @@ def build_database(source=SOURCE, wiki_dir=WIKI, target=TARGET):
                     wiki_only += 1
 
         gem_count = 0
-        for gem in load_gems(source):
+        for gem in gems:
             _insert_item(connection, gem)
             gem_count += 1
 

@@ -149,7 +149,8 @@ def _compatible(gem, hole):
 
 def _socket_parts(socket):
     if isinstance(socket, dict):
-        return int(socket["type"]), int(socket["level"])
+        socket_type = int(socket["type"])
+        return (5 if socket_type == -1 else socket_type), int(socket["level"])
     return divmod(int(socket), 10)
 
 
