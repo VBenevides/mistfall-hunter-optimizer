@@ -1,0 +1,25 @@
+{
+  "id": "boot-t3-21",
+  "name": "Generic Boot T3 #21",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1530206"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1530206",
+      "name": "Practitioner Shoes"
+    }
+  ]
+}

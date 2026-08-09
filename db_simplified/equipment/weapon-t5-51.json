@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t5-51",
+  "name": "Generic Weapon T5 #51",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "3050605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050605",
+      "name": "Blade of Destined Death"
+    }
+  ]
+}

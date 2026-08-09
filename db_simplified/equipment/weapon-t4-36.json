@@ -1,0 +1,32 @@
+{
+  "id": "weapon-t4-36",
+  "name": "Generic Weapon T4 #36",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "3040205",
+    "3040604"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040205",
+      "name": "Magica Hammer"
+    },
+    {
+      "id": "3040604",
+      "name": "Veil Dual Blades"
+    }
+  ]
+}

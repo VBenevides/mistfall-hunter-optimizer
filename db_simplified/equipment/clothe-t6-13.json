@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-13",
+  "name": "Generic Clothe T6 #13",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Bulwark",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1260103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260103",
+      "name": "Champion's Armor"
+    }
+  ]
+}

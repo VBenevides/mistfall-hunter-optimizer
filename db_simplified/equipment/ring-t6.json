@@ -1,0 +1,24 @@
+{
+  "id": "ring-t6",
+  "name": "Generic Ring T6",
+  "mainCategory": "armor",
+  "subName": "ring",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      21,
+      52
+    ]
+  },
+  "sourceIds": [
+    "1760103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1760103",
+      "name": "Ancestral Blessing Ring"
+    }
+  ]
+}

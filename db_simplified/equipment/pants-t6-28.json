@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-28",
+  "name": "Generic Pants T6 #28",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1460403"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460403",
+      "name": "Ace Assassin Pants"
+    }
+  ]
+}

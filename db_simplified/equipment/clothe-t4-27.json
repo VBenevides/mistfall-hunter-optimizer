@@ -1,0 +1,32 @@
+{
+  "id": "clothe-t4-27",
+  "name": "Generic Clothe T4 #27",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1240104",
+    "1240403"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240104",
+      "name": "Fearless Breastplate"
+    },
+    {
+      "id": "1240403",
+      "name": "Emissary Leather Armor"
+    }
+  ]
+}

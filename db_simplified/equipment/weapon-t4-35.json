@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-35",
+  "name": "Generic Weapon T4 #35",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "3040904"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040904",
+      "name": "Exile Greatsword"
+    }
+  ]
+}

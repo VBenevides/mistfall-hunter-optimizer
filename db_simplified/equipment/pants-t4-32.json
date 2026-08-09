@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-32",
+  "name": "Generic Pants T4 #32",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1440601"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440601",
+      "name": "Crusade Breeches"
+    }
+  ]
+}

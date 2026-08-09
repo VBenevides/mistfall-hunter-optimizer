@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-9",
+  "name": "Generic Pants T4 #9",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Bulwark",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1440103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440103",
+      "name": "Fearless Pants"
+    }
+  ]
+}

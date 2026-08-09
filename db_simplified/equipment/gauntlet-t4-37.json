@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-37",
+  "name": "Generic Gauntlet T4 #37",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1340306"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340306",
+      "name": "Crusader Gauntlets"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "gauntlet-t3-24",
+  "name": "Generic Gauntlet T3 #24",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1330102",
+    "1330602"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1330102",
+      "name": "Veteran Bracers"
+    },
+    {
+      "id": "1330602",
+      "name": "Ceremonial Bracers"
+    }
+  ]
+}

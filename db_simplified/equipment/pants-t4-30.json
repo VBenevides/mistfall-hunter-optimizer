@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-30",
+  "name": "Generic Pants T4 #30",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1440206"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440206",
+      "name": "Raven Priest Pants"
+    }
+  ]
+}

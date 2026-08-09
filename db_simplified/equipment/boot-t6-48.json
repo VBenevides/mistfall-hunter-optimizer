@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-48",
+  "name": "Generic Boot T6 #48",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "1560103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560103",
+      "name": "Champion's Boots"
+    }
+  ]
+}

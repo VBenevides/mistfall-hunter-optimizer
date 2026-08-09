@@ -1,0 +1,24 @@
+{
+  "id": "gauntlet-t6-5",
+  "name": "Generic Gauntlet T6 #5",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      12,
+      31,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1360508"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360508",
+      "name": "Holy Saint's Bracers"
+    }
+  ]
+}

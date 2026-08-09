@@ -1,0 +1,37 @@
+{
+  "id": "gauntlet-t5-30",
+  "name": "Generic Gauntlet T5 #30",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sleight of Hand",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1350106",
+    "1350305",
+    "1350606"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1350106",
+      "name": "Bloodwrath General Bracers"
+    },
+    {
+      "id": "1350305",
+      "name": "Eagle God Bracers"
+    },
+    {
+      "id": "1350606",
+      "name": "Black Iris Bracers"
+    }
+  ]
+}

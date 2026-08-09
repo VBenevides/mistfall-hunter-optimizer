@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-32",
+  "name": "Generic Pants T5 #32",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "1450405"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450405",
+      "name": "Shadowstrix Pants"
+    }
+  ]
+}

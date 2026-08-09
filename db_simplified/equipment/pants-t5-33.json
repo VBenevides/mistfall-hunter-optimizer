@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-33",
+  "name": "Generic Pants T5 #33",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1450506"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450506",
+      "name": "True Prayer Pants"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t5-34",
+  "name": "Generic Helmet T5 #34",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "1150105"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1150105",
+      "name": "Bloodwrath General Helmet"
+    }
+  ]
+}

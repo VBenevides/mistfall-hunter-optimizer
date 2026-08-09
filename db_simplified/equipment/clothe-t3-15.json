@@ -1,0 +1,30 @@
+{
+  "id": "clothe-t3-15",
+  "name": "Generic Clothe T3 #15",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1230107",
+    "1230307"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1230107",
+      "name": "Veteran Armor"
+    },
+    {
+      "id": "1230307",
+      "name": "Rover Top"
+    }
+  ]
+}

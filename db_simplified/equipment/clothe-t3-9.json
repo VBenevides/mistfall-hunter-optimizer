@@ -1,0 +1,25 @@
+{
+  "id": "clothe-t3-9",
+  "name": "Generic Clothe T3 #9",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Distant Ward",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1230602"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1230602",
+      "name": "Ceremonial Breastplate"
+    }
+  ]
+}

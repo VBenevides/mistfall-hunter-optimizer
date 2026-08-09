@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-16",
+  "name": "Generic Gauntlet T4 #16",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1340304"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340304",
+      "name": "Crusader Gauntlets"
+    }
+  ]
+}

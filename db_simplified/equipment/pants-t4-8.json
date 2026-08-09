@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-8",
+  "name": "Generic Pants T4 #8",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Brotherhood",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1440502"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440502",
+      "name": "Enlightenment Pants"
+    }
+  ]
+}

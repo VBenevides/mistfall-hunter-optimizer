@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-41",
+  "name": "Generic Gauntlet T6 #41",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1360204"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360204",
+      "name": "Moon Priestess Bracers"
+    }
+  ]
+}

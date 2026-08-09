@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-16",
+  "name": "Generic Pants T5 #16",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Distant Ward",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1450106"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450106",
+      "name": "Bloodwrath General Pants"
+    }
+  ]
+}

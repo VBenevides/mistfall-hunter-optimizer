@@ -1,0 +1,32 @@
+{
+  "id": "clothe-t5-37",
+  "name": "Generic Clothe T5 #37",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "1250206",
+    "1250607"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250206",
+      "name": "Mysteria Elder Robe"
+    },
+    {
+      "id": "1250607",
+      "name": "Black Iris Breastplate"
+    }
+  ]
+}

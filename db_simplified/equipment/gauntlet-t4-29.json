@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-29",
+  "name": "Generic Gauntlet T4 #29",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1340201"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340201",
+      "name": "Raven Priest Bracers"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "boot-t3-23",
+  "name": "Generic Boot T3 #23",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Unyielding",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1530104"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1530104",
+      "name": "Veteran Boots"
+    }
+  ]
+}

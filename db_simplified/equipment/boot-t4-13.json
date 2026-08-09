@@ -1,0 +1,42 @@
+{
+  "id": "boot-t4-13",
+  "name": "Generic Boot T4 #13",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ethereal",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1540201",
+    "1540301",
+    "1540402",
+    "1540502"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540201",
+      "name": "Raven Priest Greaves"
+    },
+    {
+      "id": "1540301",
+      "name": "Crusader Long Boots"
+    },
+    {
+      "id": "1540402",
+      "name": "Emissary Long Boots"
+    },
+    {
+      "id": "1540502",
+      "name": "Enlightenment Greaves"
+    }
+  ]
+}

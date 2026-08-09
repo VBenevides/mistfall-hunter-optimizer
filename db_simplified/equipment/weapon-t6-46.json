@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-46",
+  "name": "Generic Weapon T6 #46",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Spirit Shield",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "3060702"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060702",
+      "name": "Byrnes's Ash Urn"
+    }
+  ]
+}

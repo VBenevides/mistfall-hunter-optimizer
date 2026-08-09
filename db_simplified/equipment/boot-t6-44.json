@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-44",
+  "name": "Generic Boot T6 #44",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Unyielding",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1560104"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560104",
+      "name": "Champion's Boots"
+    }
+  ]
+}

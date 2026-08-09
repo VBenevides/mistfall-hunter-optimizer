@@ -1,0 +1,25 @@
+{
+  "id": "gauntlet-t3-7",
+  "name": "Generic Gauntlet T3 #7",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Brotherhood",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1330501"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1330501",
+      "name": "Martyr's Bracers"
+    }
+  ]
+}

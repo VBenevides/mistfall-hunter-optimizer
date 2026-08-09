@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-28",
+  "name": "Generic Helmet T6 #28",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1160602"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160602",
+      "name": "Rosen Oath Helmet"
+    }
+  ]
+}

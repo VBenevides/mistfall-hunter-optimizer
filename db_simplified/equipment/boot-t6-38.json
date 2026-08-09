@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-38",
+  "name": "Generic Boot T6 #38",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1560405"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560405",
+      "name": "Ace Assassin Boots"
+    }
+  ]
+}

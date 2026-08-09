@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t5-34",
+  "name": "Generic Weapon T5 #34",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "3050401"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050401",
+      "name": "Crusader Strongbow"
+    }
+  ]
+}

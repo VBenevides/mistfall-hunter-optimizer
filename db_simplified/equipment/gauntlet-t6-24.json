@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-24",
+  "name": "Generic Gauntlet T6 #24",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1360503"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360503",
+      "name": "Holy Saint's Bracers"
+    }
+  ]
+}

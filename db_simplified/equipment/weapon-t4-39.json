@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-39",
+  "name": "Generic Weapon T4 #39",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "3040104"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040104",
+      "name": "Studded Sword and Shield"
+    }
+  ]
+}

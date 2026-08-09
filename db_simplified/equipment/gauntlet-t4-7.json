@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-7",
+  "name": "Generic Gauntlet T4 #7",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1340405"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340405",
+      "name": "Emissary Gauntlets"
+    }
+  ]
+}

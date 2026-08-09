@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-15",
+  "name": "Generic Clothe T6 #15",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1260207"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260207",
+      "name": "Moon Priestess Robe"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "boot-t3-10",
+  "name": "Generic Boot T3 #10",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ethereal",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1530102",
+    "1530201",
+    "1530301",
+    "1530402",
+    "1530502",
+    "1530602"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1530102",
+      "name": "Veteran Boots"
+    },
+    {
+      "id": "1530201",
+      "name": "Practitioner Shoes"
+    },
+    {
+      "id": "1530301",
+      "name": "Rover Long Boots"
+    },
+    {
+      "id": "1530402",
+      "name": "Shadow Skull Boots"
+    },
+    {
+      "id": "1530502",
+      "name": "Martyr's Greaves"
+    },
+    {
+      "id": "1530602",
+      "name": "Ceremonial Sabatons"
+    }
+  ]
+}

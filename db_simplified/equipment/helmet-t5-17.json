@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t5-17",
+  "name": "Generic Helmet T5 #17",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Distant Ward",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12
+    ]
+  },
+  "sourceIds": [
+    "1150501"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1150501",
+      "name": "True Prayer Miter"
+    }
+  ]
+}

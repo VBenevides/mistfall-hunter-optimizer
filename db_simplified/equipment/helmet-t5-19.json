@@ -1,0 +1,32 @@
+{
+  "id": "helmet-t5-19",
+  "name": "Generic Helmet T5 #19",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1150206",
+    "1150405"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1150206",
+      "name": "Mysteria Elder Mask"
+    },
+    {
+      "id": "1150405",
+      "name": "Shadowstrix Mask"
+    }
+  ]
+}

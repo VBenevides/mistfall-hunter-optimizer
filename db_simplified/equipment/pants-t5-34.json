@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-34",
+  "name": "Generic Pants T5 #34",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12
+    ]
+  },
+  "sourceIds": [
+    "1450105"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450105",
+      "name": "Bloodwrath General Pants"
+    }
+  ]
+}

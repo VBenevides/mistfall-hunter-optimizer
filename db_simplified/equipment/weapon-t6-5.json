@@ -1,0 +1,29 @@
+{
+  "id": "weapon-t6-5",
+  "name": "Generic Weapon T6 #5",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      32,
+      41
+    ]
+  },
+  "sourceIds": [
+    "3060108",
+    "3060808"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060108",
+      "name": "Bond of Friendship"
+    },
+    {
+      "id": "3060808",
+      "name": "Absolution"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "boot-t4-5",
+  "name": "Generic Boot T4 #5",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      31,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1540109",
+    "1540508",
+    "1540609"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540109",
+      "name": "Fearless Boots"
+    },
+    {
+      "id": "1540508",
+      "name": "Enlightenment Greaves"
+    },
+    {
+      "id": "1540609",
+      "name": "Crusade Sabatons"
+    }
+  ]
+}

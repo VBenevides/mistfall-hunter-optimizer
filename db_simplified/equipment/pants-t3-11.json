@@ -1,0 +1,45 @@
+{
+  "id": "pants-t3-11",
+  "name": "Generic Pants T3 #11",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1430107",
+    "1430207",
+    "1430306",
+    "1430407",
+    "1430606"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1430107",
+      "name": "Veteran Pants"
+    },
+    {
+      "id": "1430207",
+      "name": "Practitioner Pants"
+    },
+    {
+      "id": "1430306",
+      "name": "Rover Pants"
+    },
+    {
+      "id": "1430407",
+      "name": "Shadow Skull Tights"
+    },
+    {
+      "id": "1430606",
+      "name": "Ceremonial Breeches"
+    }
+  ]
+}

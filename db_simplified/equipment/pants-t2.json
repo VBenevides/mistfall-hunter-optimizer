@@ -1,0 +1,30 @@
+{
+  "id": "pants-t2",
+  "name": "Generic Pants T2",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 2,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1420101",
+    "1420201",
+    "1420301"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1420101",
+      "name": "Guard Pants"
+    },
+    {
+      "id": "1420201",
+      "name": "Apprentice Pants"
+    },
+    {
+      "id": "1420301",
+      "name": "Artisan's Pants"
+    }
+  ]
+}

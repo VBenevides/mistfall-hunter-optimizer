@@ -1,0 +1,32 @@
+{
+  "id": "clothe-t5-8",
+  "name": "Generic Clothe T5 #8",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "1250101",
+    "1250601"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250101",
+      "name": "Bloodwrath General Armor"
+    },
+    {
+      "id": "1250601",
+      "name": "Black Iris Breastplate"
+    }
+  ]
+}

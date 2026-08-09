@@ -1,0 +1,33 @@
+{
+  "id": "clothe-t6-29",
+  "name": "Generic Clothe T6 #29",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1260303",
+    "1260502"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260303",
+      "name": "Scaleclaw Armor"
+    },
+    {
+      "id": "1260502",
+      "name": "Holy Saint's Vestment"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t5-19",
+  "name": "Generic Weapon T5 #19",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12
+    ]
+  },
+  "sourceIds": [
+    "3050806"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050806",
+      "name": "Spiritwood Drumstick"
+    }
+  ]
+}

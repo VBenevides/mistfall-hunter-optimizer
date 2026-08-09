@@ -1,0 +1,32 @@
+{
+  "id": "pants-t4-17",
+  "name": "Generic Pants T4 #17",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1440404",
+    "1440604"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440404",
+      "name": "Emissary Tights"
+    },
+    {
+      "id": "1440604",
+      "name": "Crusade Breeches"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "clothe-t4-7",
+  "name": "Generic Clothe T4 #7",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1240101",
+    "1240401"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240101",
+      "name": "Fearless Breastplate"
+    },
+    {
+      "id": "1240401",
+      "name": "Emissary Leather Armor"
+    }
+  ]
+}

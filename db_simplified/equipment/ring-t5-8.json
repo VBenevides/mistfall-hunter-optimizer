@@ -1,0 +1,23 @@
+{
+  "id": "ring-t5-8",
+  "name": "Generic Ring T5 #8",
+  "mainCategory": "armor",
+  "subName": "ring",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      41,
+      52
+    ]
+  },
+  "sourceIds": [
+    "1750403"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1750403",
+      "name": "Stargazing Ring"
+    }
+  ]
+}

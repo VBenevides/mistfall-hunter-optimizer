@@ -1,0 +1,35 @@
+{
+  "id": "clothe-t3-23",
+  "name": "Generic Clothe T3 #23",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1230206",
+    "1230405",
+    "1230607"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1230206",
+      "name": "Practitioner Robe"
+    },
+    {
+      "id": "1230405",
+      "name": "Shadow Skull Top"
+    },
+    {
+      "id": "1230607",
+      "name": "Ceremonial Breastplate"
+    }
+  ]
+}

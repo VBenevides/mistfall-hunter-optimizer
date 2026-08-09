@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-47",
+  "name": "Generic Gauntlet T6 #47",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1360602"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360602",
+      "name": "Rosen Oath Bracers"
+    }
+  ]
+}

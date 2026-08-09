@@ -1,0 +1,23 @@
+{
+  "id": "ring-t5-2",
+  "name": "Generic Ring T5 #2",
+  "mainCategory": "armor",
+  "subName": "ring",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      52
+    ]
+  },
+  "sourceIds": [
+    "1750103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1750103",
+      "name": "Ragon's Ring"
+    }
+  ]
+}

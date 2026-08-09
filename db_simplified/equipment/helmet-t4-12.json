@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t4-12",
+  "name": "Generic Helmet T4 #12",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Bulwark",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1140103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140103",
+      "name": "Fearless Helmet"
+    }
+  ]
+}

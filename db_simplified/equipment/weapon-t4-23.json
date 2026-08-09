@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-23",
+  "name": "Generic Weapon T4 #23",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "3040603"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040603",
+      "name": "Veil Dual Blades"
+    }
+  ]
+}

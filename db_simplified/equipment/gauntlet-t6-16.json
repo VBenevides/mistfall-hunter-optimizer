@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-16",
+  "name": "Generic Gauntlet T6 #16",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1360504"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360504",
+      "name": "Holy Saint's Bracers"
+    }
+  ]
+}

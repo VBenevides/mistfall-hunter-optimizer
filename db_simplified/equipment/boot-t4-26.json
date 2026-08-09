@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-26",
+  "name": "Generic Boot T4 #26",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1540302"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540302",
+      "name": "Crusader Long Boots"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "helmet-t6-35",
+  "name": "Generic Helmet T6 #35",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1160107",
+    "1160303"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160107",
+      "name": "Champion's Helmet"
+    },
+    {
+      "id": "1160303",
+      "name": "Scaleclaw Winged Helm"
+    }
+  ]
+}

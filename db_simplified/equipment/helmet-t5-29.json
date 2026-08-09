@@ -1,0 +1,32 @@
+{
+  "id": "helmet-t5-29",
+  "name": "Generic Helmet T5 #29",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1150107",
+    "1150203"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1150107",
+      "name": "Bloodwrath General Helmet"
+    },
+    {
+      "id": "1150203",
+      "name": "Mysteria Elder Mask"
+    }
+  ]
+}

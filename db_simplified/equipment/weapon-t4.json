@@ -1,0 +1,38 @@
+{
+  "id": "weapon-t4",
+  "name": "Generic Weapon T4",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      21
+    ]
+  },
+  "sourceIds": [
+    "3040208",
+    "3040408",
+    "3040809",
+    "3040908"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040208",
+      "name": "Magica Hammer"
+    },
+    {
+      "id": "3040408",
+      "name": "Yew Longbow"
+    },
+    {
+      "id": "3040809",
+      "name": "Antique Mace"
+    },
+    {
+      "id": "3040908",
+      "name": "Exile Greatsword"
+    }
+  ]
+}

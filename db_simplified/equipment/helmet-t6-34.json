@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-34",
+  "name": "Generic Helmet T6 #34",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "1160203"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160203",
+      "name": "Moon Priestess Mask"
+    }
+  ]
+}

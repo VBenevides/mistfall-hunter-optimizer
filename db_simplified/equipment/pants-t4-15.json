@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-15",
+  "name": "Generic Pants T4 #15",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1440207"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440207",
+      "name": "Raven Priest Pants"
+    }
+  ]
+}

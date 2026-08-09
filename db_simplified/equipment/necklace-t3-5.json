@@ -1,0 +1,37 @@
+{
+  "id": "necklace-t3-5",
+  "name": "Generic Necklace T3 #5",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 3,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      51
+    ]
+  },
+  "sourceIds": [
+    "1630103",
+    "1630203",
+    "1630303",
+    "1630403"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1630103",
+      "name": "Discipline Pendant"
+    },
+    {
+      "id": "1630203",
+      "name": "Beak Necklace"
+    },
+    {
+      "id": "1630303",
+      "name": "Warrior Pendant"
+    },
+    {
+      "id": "1630403",
+      "name": "Sorcery Collar"
+    }
+  ]
+}

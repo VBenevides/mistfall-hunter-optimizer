@@ -1,0 +1,30 @@
+{
+  "id": "gauntlet-t3-11",
+  "name": "Generic Gauntlet T3 #11",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1330205",
+    "1330504"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1330205",
+      "name": "Practitioner Bracers"
+    },
+    {
+      "id": "1330504",
+      "name": "Martyr's Bracers"
+    }
+  ]
+}

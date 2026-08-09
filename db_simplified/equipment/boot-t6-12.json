@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-12",
+  "name": "Generic Boot T6 #12",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1560205"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560205",
+      "name": "Moon Priestess Boots"
+    }
+  ]
+}

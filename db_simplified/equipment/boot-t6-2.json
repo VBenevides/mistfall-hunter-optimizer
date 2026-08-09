@@ -1,0 +1,24 @@
+{
+  "id": "boot-t6-2",
+  "name": "Generic Boot T6 #2",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1560309"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560309",
+      "name": "Scaleclaw Leather Boots"
+    }
+  ]
+}

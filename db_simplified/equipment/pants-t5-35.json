@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-35",
+  "name": "Generic Pants T5 #35",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "1450603"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450603",
+      "name": "Black Iris Breeches"
+    }
+  ]
+}

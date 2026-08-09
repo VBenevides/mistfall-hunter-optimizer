@@ -1,0 +1,32 @@
+{
+  "id": "pants-t3",
+  "name": "Generic Pants T3",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 3,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1430309",
+    "1430509",
+    "1430609"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1430309",
+      "name": "Rover Pants"
+    },
+    {
+      "id": "1430509",
+      "name": "Martyr's Pants"
+    },
+    {
+      "id": "1430609",
+      "name": "Ceremonial Breeches"
+    }
+  ]
+}

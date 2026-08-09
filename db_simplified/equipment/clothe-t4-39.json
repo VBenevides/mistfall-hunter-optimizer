@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t4-39",
+  "name": "Generic Clothe T4 #39",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1240106"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240106",
+      "name": "Fearless Breastplate"
+    }
+  ]
+}

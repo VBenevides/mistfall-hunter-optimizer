@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-29",
+  "name": "Generic Helmet T6 #29",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "1160304"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160304",
+      "name": "Scaleclaw Winged Helm"
+    }
+  ]
+}

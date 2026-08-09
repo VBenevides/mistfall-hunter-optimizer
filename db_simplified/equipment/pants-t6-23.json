@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-23",
+  "name": "Generic Pants T6 #23",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1460303"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460303",
+      "name": "Scaleclaw Pants"
+    }
+  ]
+}

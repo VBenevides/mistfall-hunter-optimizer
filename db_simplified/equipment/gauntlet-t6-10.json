@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-10",
+  "name": "Generic Gauntlet T6 #10",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1360405"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360405",
+      "name": "Ace Assassin Bracers"
+    }
+  ]
+}

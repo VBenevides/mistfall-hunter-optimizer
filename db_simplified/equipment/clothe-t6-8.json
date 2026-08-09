@@ -1,0 +1,29 @@
+{
+  "id": "clothe-t6-8",
+  "name": "Generic Clothe T6 #8",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      22,
+      31,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1260209",
+    "1260308"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260209",
+      "name": "Moon Priestess Robe"
+    },
+    {
+      "id": "1260308",
+      "name": "Scaleclaw Armor"
+    }
+  ]
+}

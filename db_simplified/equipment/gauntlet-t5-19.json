@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t5-19",
+  "name": "Generic Gauntlet T5 #19",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "1350503"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1350503",
+      "name": "True Prayer Bracers"
+    }
+  ]
+}

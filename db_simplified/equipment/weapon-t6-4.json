@@ -1,0 +1,29 @@
+{
+  "id": "weapon-t6-4",
+  "name": "Generic Weapon T6 #4",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "3060408",
+    "3060509"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060408",
+      "name": "Deathclaw Hunter"
+    },
+    {
+      "id": "3060509",
+      "name": "Serpent's Whisper"
+    }
+  ]
+}

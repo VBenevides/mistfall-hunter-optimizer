@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t5-45",
+  "name": "Generic Weapon T5 #45",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "3050801"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050801",
+      "name": "Spiritwood Drumstick"
+    }
+  ]
+}

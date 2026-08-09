@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-28",
+  "name": "Generic Pants T5 #28",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1450403"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450403",
+      "name": "Shadowstrix Pants"
+    }
+  ]
+}

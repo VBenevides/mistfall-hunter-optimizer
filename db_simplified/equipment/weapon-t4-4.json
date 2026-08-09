@@ -1,0 +1,33 @@
+{
+  "id": "weapon-t4-4",
+  "name": "Generic Weapon T4 #4",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      31
+    ]
+  },
+  "sourceIds": [
+    "3040308",
+    "3040609",
+    "3040808"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040308",
+      "name": "Convergence Staff"
+    },
+    {
+      "id": "3040609",
+      "name": "Veil Dual Blades"
+    },
+    {
+      "id": "3040808",
+      "name": "Antique Mace"
+    }
+  ]
+}

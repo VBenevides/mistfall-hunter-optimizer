@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-26",
+  "name": "Generic Gauntlet T6 #26",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      21
+    ]
+  },
+  "sourceIds": [
+    "1360107"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360107",
+      "name": "Champion's Bracers"
+    }
+  ]
+}

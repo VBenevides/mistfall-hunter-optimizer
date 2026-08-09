@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-24",
+  "name": "Generic Weapon T4 #24",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "3040503"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040503",
+      "name": "Venomfang Dagger"
+    }
+  ]
+}

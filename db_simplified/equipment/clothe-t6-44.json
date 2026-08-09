@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-44",
+  "name": "Generic Clothe T6 #44",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1260106"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260106",
+      "name": "Champion's Armor"
+    }
+  ]
+}

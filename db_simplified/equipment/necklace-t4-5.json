@@ -1,0 +1,28 @@
+{
+  "id": "necklace-t4-5",
+  "name": "Generic Necklace T4 #5",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1640102",
+    "1640302"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1640102",
+      "name": "Benediction Amulet"
+    },
+    {
+      "id": "1640302",
+      "name": "Dominance Amulet"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-42",
+  "name": "Generic Weapon T4 #42",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "3040307"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040307",
+      "name": "Convergence Staff"
+    }
+  ]
+}

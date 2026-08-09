@@ -1,0 +1,33 @@
+{
+  "id": "clothe-t4",
+  "name": "Generic Clothe T4",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      21
+    ]
+  },
+  "sourceIds": [
+    "1240209",
+    "1240309",
+    "1240608"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240209",
+      "name": "Raven Priest Robe"
+    },
+    {
+      "id": "1240309",
+      "name": "Crusader Leather Armor"
+    },
+    {
+      "id": "1240608",
+      "name": "Crusade Breastplate"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-35",
+  "name": "Generic Gauntlet T6 #35",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sleight of Hand",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1360505"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360505",
+      "name": "Holy Saint's Bracers"
+    }
+  ]
+}

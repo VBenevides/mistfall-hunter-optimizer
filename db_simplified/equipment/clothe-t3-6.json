@@ -1,0 +1,30 @@
+{
+  "id": "clothe-t3-6",
+  "name": "Generic Clothe T3 #6",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1230105",
+    "1230507"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1230105",
+      "name": "Veteran Armor"
+    },
+    {
+      "id": "1230507",
+      "name": "Martyr's Vestment"
+    }
+  ]
+}

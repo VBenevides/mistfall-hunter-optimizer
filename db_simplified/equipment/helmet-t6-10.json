@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-10",
+  "name": "Generic Helmet T6 #10",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1160601"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160601",
+      "name": "Rosen Oath Helmet"
+    }
+  ]
+}

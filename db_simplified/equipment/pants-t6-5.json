@@ -1,0 +1,24 @@
+{
+  "id": "pants-t6-5",
+  "name": "Generic Pants T6 #5",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      12,
+      21,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1460408"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460408",
+      "name": "Ace Assassin Pants"
+    }
+  ]
+}

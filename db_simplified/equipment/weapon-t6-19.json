@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-19",
+  "name": "Generic Weapon T6 #19",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32,
+      41
+    ]
+  },
+  "sourceIds": [
+    "3060305"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060305",
+      "name": "Blind Eye Staff"
+    }
+  ]
+}

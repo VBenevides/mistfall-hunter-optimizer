@@ -1,0 +1,28 @@
+{
+  "id": "pants-t4",
+  "name": "Generic Pants T4",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1440208",
+    "1440609"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440208",
+      "name": "Raven Priest Pants"
+    },
+    {
+      "id": "1440609",
+      "name": "Crusade Breeches"
+    }
+  ]
+}

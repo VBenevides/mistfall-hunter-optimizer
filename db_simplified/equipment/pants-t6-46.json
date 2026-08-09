@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-46",
+  "name": "Generic Pants T6 #46",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1460406"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460406",
+      "name": "Ace Assassin Pants"
+    }
+  ]
+}

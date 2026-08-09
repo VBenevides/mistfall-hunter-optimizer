@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-24",
+  "name": "Generic Helmet T6 #24",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1160505"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160505",
+      "name": "Holy Saint's Miter"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-11",
+  "name": "Generic Weapon T6 #11",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "3060101"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060101",
+      "name": "Bond of Friendship"
+    }
+  ]
+}

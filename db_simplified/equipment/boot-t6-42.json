@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-42",
+  "name": "Generic Boot T6 #42",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1560206"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560206",
+      "name": "Moon Priestess Boots"
+    }
+  ]
+}

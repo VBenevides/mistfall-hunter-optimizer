@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-49",
+  "name": "Generic Boot T6 #49",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1560604"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560604",
+      "name": "Rosen Oath Boots"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-44",
+  "name": "Generic Helmet T6 #44",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1160506"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160506",
+      "name": "Holy Saint's Miter"
+    }
+  ]
+}

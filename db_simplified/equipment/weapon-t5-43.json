@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t5-43",
+  "name": "Generic Weapon T5 #43",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "3050907"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050907",
+      "name": "Sacred Heart Greatsword"
+    }
+  ]
+}

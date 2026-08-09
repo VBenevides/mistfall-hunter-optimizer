@@ -1,0 +1,32 @@
+{
+  "id": "pants-t5-19",
+  "name": "Generic Pants T5 #19",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "1450107",
+    "1450306"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450107",
+      "name": "Bloodwrath General Pants"
+    },
+    {
+      "id": "1450306",
+      "name": "Eagle God Pants"
+    }
+  ]
+}

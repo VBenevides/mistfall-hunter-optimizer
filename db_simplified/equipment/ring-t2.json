@@ -1,0 +1,25 @@
+{
+  "id": "ring-t2",
+  "name": "Generic Ring T2",
+  "mainCategory": "armor",
+  "subName": "ring",
+  "grade": 2,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1720101",
+    "1720201"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1720101",
+      "name": "Engraved Ring"
+    },
+    {
+      "id": "1720201",
+      "name": "Decorative Ring"
+    }
+  ]
+}

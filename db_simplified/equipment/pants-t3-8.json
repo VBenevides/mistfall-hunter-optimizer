@@ -1,0 +1,30 @@
+{
+  "id": "pants-t3-8",
+  "name": "Generic Pants T3 #8",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1430307",
+    "1430607"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1430307",
+      "name": "Rover Pants"
+    },
+    {
+      "id": "1430607",
+      "name": "Ceremonial Breeches"
+    }
+  ]
+}

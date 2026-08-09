@@ -1,0 +1,29 @@
+{
+  "id": "gauntlet-t6-3",
+  "name": "Generic Gauntlet T6 #3",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1360309",
+    "1360609"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360309",
+      "name": "Scaleclaw Bracers"
+    },
+    {
+      "id": "1360609",
+      "name": "Rosen Oath Bracers"
+    }
+  ]
+}

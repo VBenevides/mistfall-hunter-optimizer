@@ -1,0 +1,32 @@
+{
+  "id": "helmet-t4-7",
+  "name": "Generic Helmet T4 #7",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1140101",
+    "1140601"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140101",
+      "name": "Fearless Helmet"
+    },
+    {
+      "id": "1140601",
+      "name": "Crusade Helmet"
+    }
+  ]
+}

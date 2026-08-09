@@ -1,0 +1,35 @@
+{
+  "id": "boot-t3-11",
+  "name": "Generic Boot T3 #11",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1530203",
+    "1530303",
+    "1530504"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1530203",
+      "name": "Practitioner Shoes"
+    },
+    {
+      "id": "1530303",
+      "name": "Rover Long Boots"
+    },
+    {
+      "id": "1530504",
+      "name": "Martyr's Greaves"
+    }
+  ]
+}

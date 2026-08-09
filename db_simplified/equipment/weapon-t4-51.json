@@ -1,0 +1,32 @@
+{
+  "id": "weapon-t4-51",
+  "name": "Generic Weapon T4 #51",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "3040106",
+    "3040902"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040106",
+      "name": "Studded Sword and Shield"
+    },
+    {
+      "id": "3040902",
+      "name": "Exile Greatsword"
+    }
+  ]
+}

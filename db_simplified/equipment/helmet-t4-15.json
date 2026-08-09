@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t4-15",
+  "name": "Generic Helmet T4 #15",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Distant Ward",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1140501"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140501",
+      "name": "Enlightenment Crown"
+    }
+  ]
+}

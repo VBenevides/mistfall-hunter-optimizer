@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t5-10",
+  "name": "Generic Clothe T5 #10",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1250401"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250401",
+      "name": "Shadowstrix Vigor"
+    }
+  ]
+}

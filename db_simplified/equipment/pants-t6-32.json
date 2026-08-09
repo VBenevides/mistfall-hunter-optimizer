@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-32",
+  "name": "Generic Pants T6 #32",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1460204"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460204",
+      "name": "Moon Priestess Pants"
+    }
+  ]
+}

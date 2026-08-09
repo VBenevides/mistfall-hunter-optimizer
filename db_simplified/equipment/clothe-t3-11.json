@@ -1,0 +1,25 @@
+{
+  "id": "clothe-t3-11",
+  "name": "Generic Clothe T3 #11",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1230305"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1230305",
+      "name": "Rover Top"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "gauntlet-t3",
+  "name": "Generic Gauntlet T3",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1330109",
+    "1330208",
+    "1330408"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1330109",
+      "name": "Veteran Bracers"
+    },
+    {
+      "id": "1330208",
+      "name": "Practitioner Bracers"
+    },
+    {
+      "id": "1330408",
+      "name": "Shadow Skull Gauntlets"
+    }
+  ]
+}

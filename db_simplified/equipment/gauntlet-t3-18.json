@@ -1,0 +1,35 @@
+{
+  "id": "gauntlet-t3-18",
+  "name": "Generic Gauntlet T3 #18",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1330203",
+    "1330302",
+    "1330402"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1330203",
+      "name": "Practitioner Bracers"
+    },
+    {
+      "id": "1330302",
+      "name": "Rover Bracers"
+    },
+    {
+      "id": "1330402",
+      "name": "Shadow Skull Gauntlets"
+    }
+  ]
+}

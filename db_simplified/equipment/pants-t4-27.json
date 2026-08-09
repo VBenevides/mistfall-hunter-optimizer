@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-27",
+  "name": "Generic Pants T4 #27",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1440506"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440506",
+      "name": "Enlightenment Pants"
+    }
+  ]
+}

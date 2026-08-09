@@ -1,0 +1,28 @@
+{
+  "id": "boot-t5-2",
+  "name": "Generic Boot T5 #2",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1550308",
+    "1550409"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1550308",
+      "name": "Eagle God Leather Boots"
+    },
+    {
+      "id": "1550409",
+      "name": "Shadowstrix Leather Boots"
+    }
+  ]
+}

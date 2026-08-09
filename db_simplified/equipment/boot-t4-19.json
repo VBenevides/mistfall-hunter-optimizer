@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-19",
+  "name": "Generic Boot T4 #19",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1540404"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540404",
+      "name": "Emissary Long Boots"
+    }
+  ]
+}

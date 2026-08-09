@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-22",
+  "name": "Generic Weapon T6 #22",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      32
+    ]
+  },
+  "sourceIds": [
+    "3060501"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060501",
+      "name": "Serpent's Whisper"
+    }
+  ]
+}

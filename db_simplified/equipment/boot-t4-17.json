@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-17",
+  "name": "Generic Boot T4 #17",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1540303"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540303",
+      "name": "Crusader Long Boots"
+    }
+  ]
+}

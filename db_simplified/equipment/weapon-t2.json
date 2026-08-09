@@ -1,0 +1,60 @@
+{
+  "id": "weapon-t2",
+  "name": "Generic Weapon T2",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 2,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "3020101",
+    "3020201",
+    "3020301",
+    "3020401",
+    "3020501",
+    "3020601",
+    "3020701",
+    "3020801",
+    "3020901"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3020101",
+      "name": "Recruit Sword and Shield"
+    },
+    {
+      "id": "3020201",
+      "name": "Crude Hammer"
+    },
+    {
+      "id": "3020301",
+      "name": "Apprentice Staff"
+    },
+    {
+      "id": "3020401",
+      "name": "Handcrafted Longbow"
+    },
+    {
+      "id": "3020501",
+      "name": "Carved Dagger"
+    },
+    {
+      "id": "3020601",
+      "name": "Wooden-Handled Dual Blades"
+    },
+    {
+      "id": "3020701",
+      "name": "Magical Knot Catalyst"
+    },
+    {
+      "id": "3020801",
+      "name": "Spiked Mace"
+    },
+    {
+      "id": "3020901",
+      "name": "Squire Greatsword"
+    }
+  ]
+}

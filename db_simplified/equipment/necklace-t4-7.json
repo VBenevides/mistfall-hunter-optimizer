@@ -1,0 +1,23 @@
+{
+  "id": "necklace-t4-7",
+  "name": "Generic Necklace T4 #7",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      31,
+      51
+    ]
+  },
+  "sourceIds": [
+    "1640303"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1640303",
+      "name": "Dominance Amulet"
+    }
+  ]
+}

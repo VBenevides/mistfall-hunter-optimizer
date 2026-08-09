@@ -1,0 +1,29 @@
+{
+  "id": "pants-t6-7",
+  "name": "Generic Pants T6 #7",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1460209",
+    "1460509"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460209",
+      "name": "Moon Priestess Pants"
+    },
+    {
+      "id": "1460509",
+      "name": "Holy Saint's Pants"
+    }
+  ]
+}

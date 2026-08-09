@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-14",
+  "name": "Generic Boot T4 #14",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ethereal",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1540102"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540102",
+      "name": "Fearless Boots"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "pants-t4-2",
+  "name": "Generic Pants T4 #2",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1440209",
+    "1440409",
+    "1440508"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440209",
+      "name": "Raven Priest Pants"
+    },
+    {
+      "id": "1440409",
+      "name": "Emissary Tights"
+    },
+    {
+      "id": "1440508",
+      "name": "Enlightenment Pants"
+    }
+  ]
+}

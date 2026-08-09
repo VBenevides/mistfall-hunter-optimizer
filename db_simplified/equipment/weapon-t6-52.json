@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-52",
+  "name": "Generic Weapon T6 #52",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32,
+      41
+    ]
+  },
+  "sourceIds": [
+    "3060801"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060801",
+      "name": "Absolution"
+    }
+  ]
+}

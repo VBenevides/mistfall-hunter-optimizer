@@ -1,0 +1,23 @@
+{
+  "id": "clothe-t4-3",
+  "name": "Generic Clothe T4 #3",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1240109"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240109",
+      "name": "Fearless Breastplate"
+    }
+  ]
+}

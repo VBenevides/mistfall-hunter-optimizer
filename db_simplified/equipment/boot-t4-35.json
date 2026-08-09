@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-35",
+  "name": "Generic Boot T4 #35",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Unyielding",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1540104"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540104",
+      "name": "Fearless Boots"
+    }
+  ]
+}

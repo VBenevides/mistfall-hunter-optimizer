@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t4-32",
+  "name": "Generic Clothe T4 #32",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1240604"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240604",
+      "name": "Crusade Breastplate"
+    }
+  ]
+}

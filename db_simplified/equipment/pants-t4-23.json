@@ -1,0 +1,32 @@
+{
+  "id": "pants-t4-23",
+  "name": "Generic Pants T4 #23",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1440403",
+    "1440602"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440403",
+      "name": "Emissary Tights"
+    },
+    {
+      "id": "1440602",
+      "name": "Crusade Breeches"
+    }
+  ]
+}

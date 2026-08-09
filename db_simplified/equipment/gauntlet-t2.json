@@ -1,0 +1,30 @@
+{
+  "id": "gauntlet-t2",
+  "name": "Generic Gauntlet T2",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 2,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1320101",
+    "1320201",
+    "1320301"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1320101",
+      "name": "Guard Bracers"
+    },
+    {
+      "id": "1320201",
+      "name": "Apprentice Bracers"
+    },
+    {
+      "id": "1320301",
+      "name": "Artisan's Bracers"
+    }
+  ]
+}

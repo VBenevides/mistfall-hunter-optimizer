@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t5-26",
+  "name": "Generic Clothe T5 #26",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "1250502"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250502",
+      "name": "True Prayer Vestment"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-33",
+  "name": "Generic Boot T6 #33",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      21
+    ]
+  },
+  "sourceIds": [
+    "1560302"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560302",
+      "name": "Scaleclaw Leather Boots"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-54",
+  "name": "Generic Weapon T6 #54",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      42
+    ]
+  },
+  "sourceIds": [
+    "3060102"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060102",
+      "name": "Bond of Friendship"
+    }
+  ]
+}

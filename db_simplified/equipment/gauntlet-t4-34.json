@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-34",
+  "name": "Generic Gauntlet T4 #34",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1340104"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340104",
+      "name": "Fearless Bracers"
+    }
+  ]
+}

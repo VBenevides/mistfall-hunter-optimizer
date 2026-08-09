@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-23",
+  "name": "Generic Helmet T6 #23",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      21
+    ]
+  },
+  "sourceIds": [
+    "1160404"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160404",
+      "name": "Ace Assassin Mask"
+    }
+  ]
+}

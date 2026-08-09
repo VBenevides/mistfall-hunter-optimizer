@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-30",
+  "name": "Generic Boot T4 #30",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1540606"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540606",
+      "name": "Crusade Sabatons"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-24",
+  "name": "Generic Pants T4 #24",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1440504"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440504",
+      "name": "Enlightenment Pants"
+    }
+  ]
+}

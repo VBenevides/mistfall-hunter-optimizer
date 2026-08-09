@@ -1,0 +1,29 @@
+{
+  "id": "weapon-t6-9",
+  "name": "Generic Weapon T6 #9",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "3060309",
+    "3060708"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060309",
+      "name": "Blind Eye Staff"
+    },
+    {
+      "id": "3060708",
+      "name": "Byrnes's Ash Urn"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "gauntlet-t5-29",
+  "name": "Generic Gauntlet T5 #29",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sleight of Hand",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "1350404",
+    "1350505"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1350404",
+      "name": "Shadowstrix Bracers"
+    },
+    {
+      "id": "1350505",
+      "name": "True Prayer Bracers"
+    }
+  ]
+}

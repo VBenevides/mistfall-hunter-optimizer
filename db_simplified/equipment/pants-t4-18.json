@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-18",
+  "name": "Generic Pants T4 #18",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1440303"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440303",
+      "name": "Crusader Pants"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t4-16",
+  "name": "Generic Helmet T4 #16",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1140205"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140205",
+      "name": "Raven Priest Hood"
+    }
+  ]
+}

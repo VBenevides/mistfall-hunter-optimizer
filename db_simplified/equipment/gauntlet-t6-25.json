@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-25",
+  "name": "Generic Gauntlet T6 #25",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "1360307"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360307",
+      "name": "Scaleclaw Bracers"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-29",
+  "name": "Generic Boot T6 #29",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1560506"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560506",
+      "name": "Holy Saint's Greaves"
+    }
+  ]
+}

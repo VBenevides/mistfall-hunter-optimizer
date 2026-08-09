@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-15",
+  "name": "Generic Boot T4 #15",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ethereal",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1540602"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540602",
+      "name": "Crusade Sabatons"
+    }
+  ]
+}

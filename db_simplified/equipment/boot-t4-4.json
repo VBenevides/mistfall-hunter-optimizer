@@ -1,0 +1,28 @@
+{
+  "id": "boot-t4-4",
+  "name": "Generic Boot T4 #4",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1540409",
+    "1540509"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540409",
+      "name": "Emissary Long Boots"
+    },
+    {
+      "id": "1540509",
+      "name": "Enlightenment Greaves"
+    }
+  ]
+}

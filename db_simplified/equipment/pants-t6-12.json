@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-12",
+  "name": "Generic Pants T6 #12",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1460101"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460101",
+      "name": "Champion's Pants"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "helmet-t3-19",
+  "name": "Generic Helmet T3 #19",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1130202",
+    "1130302"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1130202",
+      "name": "Practitioner Hood"
+    },
+    {
+      "id": "1130302",
+      "name": "Rover Hood"
+    }
+  ]
+}

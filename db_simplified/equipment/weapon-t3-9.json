@@ -1,0 +1,25 @@
+{
+  "id": "weapon-t3-9",
+  "name": "Generic Weapon T3 #9",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "3030707"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3030707",
+      "name": "Beast Spirit Catalyst"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t4-23",
+  "name": "Generic Helmet T4 #23",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1140204"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140204",
+      "name": "Raven Priest Hood"
+    }
+  ]
+}

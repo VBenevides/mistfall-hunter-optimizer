@@ -1,0 +1,38 @@
+{
+  "id": "weapon-t4-3",
+  "name": "Generic Weapon T4 #3",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      41
+    ]
+  },
+  "sourceIds": [
+    "3040108",
+    "3040209",
+    "3040608",
+    "3040708"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040108",
+      "name": "Studded Sword and Shield"
+    },
+    {
+      "id": "3040209",
+      "name": "Magica Hammer"
+    },
+    {
+      "id": "3040608",
+      "name": "Veil Dual Blades"
+    },
+    {
+      "id": "3040708",
+      "name": "Arcane Elixir Catalyst"
+    }
+  ]
+}

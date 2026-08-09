@@ -1,0 +1,28 @@
+{
+  "id": "boot-t4",
+  "name": "Generic Boot T4",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      21
+    ]
+  },
+  "sourceIds": [
+    "1540209",
+    "1540308"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540209",
+      "name": "Raven Priest Greaves"
+    },
+    {
+      "id": "1540308",
+      "name": "Crusader Long Boots"
+    }
+  ]
+}

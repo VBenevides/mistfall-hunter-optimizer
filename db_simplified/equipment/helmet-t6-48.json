@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-48",
+  "name": "Generic Helmet T6 #48",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1160607"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160607",
+      "name": "Rosen Oath Helmet"
+    }
+  ]
+}

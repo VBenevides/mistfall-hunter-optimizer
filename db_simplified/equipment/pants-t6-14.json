@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-14",
+  "name": "Generic Pants T6 #14",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Bulwark",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1460103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460103",
+      "name": "Champion's Pants"
+    }
+  ]
+}

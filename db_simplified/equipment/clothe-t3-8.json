@@ -1,0 +1,35 @@
+{
+  "id": "clothe-t3-8",
+  "name": "Generic Clothe T3 #8",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1230207",
+    "1230306",
+    "1230406"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1230207",
+      "name": "Practitioner Robe"
+    },
+    {
+      "id": "1230306",
+      "name": "Rover Top"
+    },
+    {
+      "id": "1230406",
+      "name": "Shadow Skull Top"
+    }
+  ]
+}

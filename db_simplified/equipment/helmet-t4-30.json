@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t4-30",
+  "name": "Generic Helmet T4 #30",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1140305"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140305",
+      "name": "Crusader Hood"
+    }
+  ]
+}

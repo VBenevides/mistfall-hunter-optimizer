@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-22",
+  "name": "Generic Gauntlet T4 #22",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1340307"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340307",
+      "name": "Crusader Gauntlets"
+    }
+  ]
+}

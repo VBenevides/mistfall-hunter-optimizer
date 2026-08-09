@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-8",
+  "name": "Generic Gauntlet T4 #8",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Brotherhood",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1340501"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340501",
+      "name": "Enlightenment Bracers"
+    }
+  ]
+}

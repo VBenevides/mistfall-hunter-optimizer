@@ -1,0 +1,42 @@
+{
+  "id": "weapon-t5-32",
+  "name": "Generic Weapon T5 #32",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "3050403",
+    "3050602",
+    "3050704",
+    "3050803"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050403",
+      "name": "Crusader Strongbow"
+    },
+    {
+      "id": "3050602",
+      "name": "Blade of Destined Death"
+    },
+    {
+      "id": "3050704",
+      "name": "True Intent Catalyst"
+    },
+    {
+      "id": "3050803",
+      "name": "Spiritwood Drumstick"
+    }
+  ]
+}

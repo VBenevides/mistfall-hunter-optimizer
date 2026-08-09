@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t5-35",
+  "name": "Generic Weapon T5 #35",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sleight of Hand",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "3050506"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050506",
+      "name": "Gem Lizard Dagger"
+    }
+  ]
+}

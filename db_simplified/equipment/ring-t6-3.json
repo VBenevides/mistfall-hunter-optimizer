@@ -1,0 +1,29 @@
+{
+  "id": "ring-t6-3",
+  "name": "Generic Ring T6 #3",
+  "mainCategory": "armor",
+  "subName": "ring",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1760202",
+    "1760402"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1760202",
+      "name": "Sirius Ring"
+    },
+    {
+      "id": "1760402",
+      "name": "Eye of the Sea Giant"
+    }
+  ]
+}

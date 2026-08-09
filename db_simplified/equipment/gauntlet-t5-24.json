@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t5-24",
+  "name": "Generic Gauntlet T5 #24",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Resilience",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1350103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1350103",
+      "name": "Bloodwrath General Bracers"
+    }
+  ]
+}

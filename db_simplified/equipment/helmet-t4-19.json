@@ -1,0 +1,32 @@
+{
+  "id": "helmet-t4-19",
+  "name": "Generic Helmet T4 #19",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1140404",
+    "1140505"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140404",
+      "name": "Emissary Mask"
+    },
+    {
+      "id": "1140505",
+      "name": "Enlightenment Crown"
+    }
+  ]
+}

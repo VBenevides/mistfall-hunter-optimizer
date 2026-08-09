@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-31",
+  "name": "Generic Boot T6 #31",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1560505"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560505",
+      "name": "Holy Saint's Greaves"
+    }
+  ]
+}

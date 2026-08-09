@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-28",
+  "name": "Generic Boot T4 #28",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1540305"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540305",
+      "name": "Crusader Long Boots"
+    }
+  ]
+}

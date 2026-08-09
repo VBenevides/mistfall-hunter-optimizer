@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-39",
+  "name": "Generic Boot T4 #39",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1540604"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540604",
+      "name": "Crusade Sabatons"
+    }
+  ]
+}

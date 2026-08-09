@@ -1,0 +1,35 @@
+{
+  "id": "boot-t3-18",
+  "name": "Generic Boot T3 #18",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1530305",
+    "1530405",
+    "1530606"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1530305",
+      "name": "Rover Long Boots"
+    },
+    {
+      "id": "1530405",
+      "name": "Shadow Skull Boots"
+    },
+    {
+      "id": "1530606",
+      "name": "Ceremonial Sabatons"
+    }
+  ]
+}

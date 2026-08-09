@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-59",
+  "name": "Generic Weapon T6 #59",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      31
+    ]
+  },
+  "sourceIds": [
+    "3060505"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060505",
+      "name": "Serpent's Whisper"
+    }
+  ]
+}

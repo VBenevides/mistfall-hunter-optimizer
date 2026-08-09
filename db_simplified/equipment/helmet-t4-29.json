@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t4-29",
+  "name": "Generic Helmet T4 #29",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1140302"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140302",
+      "name": "Crusader Hood"
+    }
+  ]
+}

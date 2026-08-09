@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-38",
+  "name": "Generic Helmet T6 #38",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      21
+    ]
+  },
+  "sourceIds": [
+    "1160605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160605",
+      "name": "Rosen Oath Helmet"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-9",
+  "name": "Generic Gauntlet T4 #9",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1340603"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340603",
+      "name": "Crusade Bracers"
+    }
+  ]
+}

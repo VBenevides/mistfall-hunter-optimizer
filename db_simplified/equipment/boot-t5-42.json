@@ -1,0 +1,27 @@
+{
+  "id": "boot-t5-42",
+  "name": "Generic Boot T5 #42",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1550604"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1550604",
+      "name": "Black Iris Sabatons"
+    }
+  ]
+}

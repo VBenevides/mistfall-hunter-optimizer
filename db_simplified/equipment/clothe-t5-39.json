@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t5-39",
+  "name": "Generic Clothe T5 #39",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "1250407"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250407",
+      "name": "Shadowstrix Vigor"
+    }
+  ]
+}

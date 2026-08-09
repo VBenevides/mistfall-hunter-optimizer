@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-31",
+  "name": "Generic Pants T6 #31",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1460504"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460504",
+      "name": "Holy Saint's Pants"
+    }
+  ]
+}

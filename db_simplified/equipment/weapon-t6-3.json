@@ -1,0 +1,29 @@
+{
+  "id": "weapon-t6-3",
+  "name": "Generic Weapon T6 #3",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      22,
+      31
+    ]
+  },
+  "sourceIds": [
+    "3060608",
+    "3060709"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060608",
+      "name": "Venomfang"
+    },
+    {
+      "id": "3060709",
+      "name": "Byrnes's Ash Urn"
+    }
+  ]
+}

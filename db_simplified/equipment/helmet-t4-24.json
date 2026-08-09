@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t4-24",
+  "name": "Generic Helmet T4 #24",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Resilience",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1140104"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140104",
+      "name": "Fearless Helmet"
+    }
+  ]
+}

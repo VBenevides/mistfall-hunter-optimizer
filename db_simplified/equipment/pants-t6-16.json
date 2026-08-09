@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-16",
+  "name": "Generic Pants T6 #16",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1460607"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460607",
+      "name": "Rosen Oath Pants"
+    }
+  ]
+}

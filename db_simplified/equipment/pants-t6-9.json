@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-9",
+  "name": "Generic Pants T6 #9",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1460401"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460401",
+      "name": "Ace Assassin Pants"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t4-27",
+  "name": "Generic Helmet T4 #27",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1140303"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140303",
+      "name": "Crusader Hood"
+    }
+  ]
+}

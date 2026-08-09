@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-24",
+  "name": "Generic Pants T5 #24",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "1450505"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450505",
+      "name": "True Prayer Pants"
+    }
+  ]
+}

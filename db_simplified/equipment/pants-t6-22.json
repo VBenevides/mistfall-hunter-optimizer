@@ -1,0 +1,33 @@
+{
+  "id": "pants-t6-22",
+  "name": "Generic Pants T6 #22",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1460404",
+    "1460503"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460404",
+      "name": "Ace Assassin Pants"
+    },
+    {
+      "id": "1460503",
+      "name": "Holy Saint's Pants"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "weapon-t3-18",
+  "name": "Generic Weapon T3 #18",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "3030401"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3030401",
+      "name": "Oil-soaked Wooden Bow"
+    }
+  ]
+}

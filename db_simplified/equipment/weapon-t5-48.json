@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t5-48",
+  "name": "Generic Weapon T5 #48",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Unyielding",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "3050204"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050204",
+      "name": "Obsidian Sledgehammer"
+    }
+  ]
+}

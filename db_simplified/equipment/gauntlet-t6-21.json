@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-21",
+  "name": "Generic Gauntlet T6 #21",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1360604"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360604",
+      "name": "Rosen Oath Bracers"
+    }
+  ]
+}

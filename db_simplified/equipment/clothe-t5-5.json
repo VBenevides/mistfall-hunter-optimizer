@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t5-5",
+  "name": "Generic Clothe T5 #5",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1250409",
+    "1250608"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250409",
+      "name": "Shadowstrix Vigor"
+    },
+    {
+      "id": "1250608",
+      "name": "Black Iris Breastplate"
+    }
+  ]
+}

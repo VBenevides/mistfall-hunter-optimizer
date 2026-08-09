@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-16",
+  "name": "Generic Pants T4 #16",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1440503"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440503",
+      "name": "Enlightenment Pants"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "weapon-t6-17",
+  "name": "Generic Weapon T6 #17",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "3060406",
+    "3060607",
+    "3060906"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060406",
+      "name": "Deathclaw Hunter"
+    },
+    {
+      "id": "3060607",
+      "name": "Venomfang"
+    },
+    {
+      "id": "3060906",
+      "name": "Mercy"
+    }
+  ]
+}

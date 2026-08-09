@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-25",
+  "name": "Generic Pants T5 #25",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "1450605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450605",
+      "name": "Black Iris Breeches"
+    }
+  ]
+}

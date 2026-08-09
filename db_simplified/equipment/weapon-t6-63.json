@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-63",
+  "name": "Generic Weapon T6 #63",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "3060106"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060106",
+      "name": "Bond of Friendship"
+    }
+  ]
+}

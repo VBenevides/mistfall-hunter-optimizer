@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-34",
+  "name": "Generic Pants T6 #34",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1460304"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460304",
+      "name": "Scaleclaw Pants"
+    }
+  ]
+}

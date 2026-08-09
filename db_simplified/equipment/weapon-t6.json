@@ -1,0 +1,24 @@
+{
+  "id": "weapon-t6",
+  "name": "Generic Weapon T6",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "3060909"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060909",
+      "name": "Mercy"
+    }
+  ]
+}

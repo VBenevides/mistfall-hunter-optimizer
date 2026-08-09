@@ -1,0 +1,32 @@
+{
+  "id": "pants-t5-22",
+  "name": "Generic Pants T5 #22",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "1450503",
+    "1450604"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450503",
+      "name": "True Prayer Pants"
+    },
+    {
+      "id": "1450604",
+      "name": "Black Iris Breeches"
+    }
+  ]
+}

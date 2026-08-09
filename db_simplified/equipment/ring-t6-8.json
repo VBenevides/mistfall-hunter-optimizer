@@ -1,0 +1,24 @@
+{
+  "id": "ring-t6-8",
+  "name": "Generic Ring T6 #8",
+  "mainCategory": "armor",
+  "subName": "ring",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      31,
+      41,
+      52
+    ]
+  },
+  "sourceIds": [
+    "1760303"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1760303",
+      "name": "Shadow Amberflux Ring"
+    }
+  ]
+}

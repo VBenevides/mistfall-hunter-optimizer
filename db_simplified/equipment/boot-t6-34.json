@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-34",
+  "name": "Generic Boot T6 #34",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1560202"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560202",
+      "name": "Moon Priestess Boots"
+    }
+  ]
+}

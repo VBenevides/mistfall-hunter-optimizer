@@ -1,0 +1,23 @@
+{
+  "id": "necklace-t5-5",
+  "name": "Generic Necklace T5 #5",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      52
+    ]
+  },
+  "sourceIds": [
+    "1650203"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1650203",
+      "name": "Dragon Slumber Necklace"
+    }
+  ]
+}

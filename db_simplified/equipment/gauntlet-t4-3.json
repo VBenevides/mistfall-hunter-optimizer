@@ -1,0 +1,33 @@
+{
+  "id": "gauntlet-t4-3",
+  "name": "Generic Gauntlet T4 #3",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1340208",
+    "1340309",
+    "1340609"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340208",
+      "name": "Raven Priest Bracers"
+    },
+    {
+      "id": "1340309",
+      "name": "Crusader Gauntlets"
+    },
+    {
+      "id": "1340609",
+      "name": "Crusade Bracers"
+    }
+  ]
+}

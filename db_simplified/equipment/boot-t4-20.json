@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-20",
+  "name": "Generic Boot T4 #20",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1540107"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540107",
+      "name": "Fearless Boots"
+    }
+  ]
+}

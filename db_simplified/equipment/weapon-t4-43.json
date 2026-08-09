@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-43",
+  "name": "Generic Weapon T4 #43",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "3040102"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040102",
+      "name": "Studded Sword and Shield"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-12",
+  "name": "Generic Pants T5 #12",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Brotherhood",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12
+    ]
+  },
+  "sourceIds": [
+    "1450502"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450502",
+      "name": "True Prayer Pants"
+    }
+  ]
+}

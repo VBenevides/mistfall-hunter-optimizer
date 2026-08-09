@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-11",
+  "name": "Generic Gauntlet T4 #11",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1340406"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340406",
+      "name": "Emissary Gauntlets"
+    }
+  ]
+}

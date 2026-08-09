@@ -1,0 +1,40 @@
+{
+  "id": "pants-t3-14",
+  "name": "Generic Pants T3 #14",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1430104",
+    "1430203",
+    "1430403",
+    "1430602"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1430104",
+      "name": "Veteran Pants"
+    },
+    {
+      "id": "1430203",
+      "name": "Practitioner Pants"
+    },
+    {
+      "id": "1430403",
+      "name": "Shadow Skull Tights"
+    },
+    {
+      "id": "1430602",
+      "name": "Ceremonial Breeches"
+    }
+  ]
+}

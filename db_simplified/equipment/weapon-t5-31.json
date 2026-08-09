@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t5-31",
+  "name": "Generic Weapon T5 #31",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12
+    ]
+  },
+  "sourceIds": [
+    "3050303"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050303",
+      "name": "Empyrean Rain Staff"
+    }
+  ]
+}

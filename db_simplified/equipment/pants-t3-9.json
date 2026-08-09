@@ -1,0 +1,25 @@
+{
+  "id": "pants-t3-9",
+  "name": "Generic Pants T3 #9",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Distant Ward",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1430106"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1430106",
+      "name": "Veteran Pants"
+    }
+  ]
+}

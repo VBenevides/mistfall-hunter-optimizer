@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-21",
+  "name": "Generic Boot T6 #21",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ethereal",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1560402"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560402",
+      "name": "Ace Assassin Boots"
+    }
+  ]
+}

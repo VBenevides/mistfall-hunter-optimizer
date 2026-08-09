@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t4-14",
+  "name": "Generic Clothe T4 #14",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1240207"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240207",
+      "name": "Raven Priest Robe"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-36",
+  "name": "Generic Pants T6 #36",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "1460105"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460105",
+      "name": "Champion's Pants"
+    }
+  ]
+}

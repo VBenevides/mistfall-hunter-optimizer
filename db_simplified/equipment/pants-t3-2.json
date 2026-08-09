@@ -1,0 +1,22 @@
+{
+  "id": "pants-t3-2",
+  "name": "Generic Pants T3 #2",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 3,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1430209"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1430209",
+      "name": "Practitioner Pants"
+    }
+  ]
+}

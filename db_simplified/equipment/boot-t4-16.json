@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-16",
+  "name": "Generic Boot T4 #16",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1540504"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540504",
+      "name": "Enlightenment Greaves"
+    }
+  ]
+}

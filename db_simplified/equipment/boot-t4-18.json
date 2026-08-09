@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-18",
+  "name": "Generic Boot T4 #18",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1540203"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540203",
+      "name": "Raven Priest Greaves"
+    }
+  ]
+}

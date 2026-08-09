@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-11",
+  "name": "Generic Clothe T6 #11",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1260101"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260101",
+      "name": "Champion's Armor"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "necklace-t4-4",
+  "name": "Generic Necklace T4 #4",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1640202",
+    "1640402"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1640202",
+      "name": "Bloodborn Amulet"
+    },
+    {
+      "id": "1640402",
+      "name": "Dreamweaver Necklace"
+    }
+  ]
+}

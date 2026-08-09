@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t4-6",
+  "name": "Generic Weapon T4 #6",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      31,
+      41
+    ]
+  },
+  "sourceIds": [
+    "3040509",
+    "3040909"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040509",
+      "name": "Venomfang Dagger"
+    },
+    {
+      "id": "3040909",
+      "name": "Exile Greatsword"
+    }
+  ]
+}

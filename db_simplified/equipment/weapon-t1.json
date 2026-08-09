@@ -1,0 +1,60 @@
+{
+  "id": "weapon-t1",
+  "name": "Generic Weapon T1",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 1,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "3010101",
+    "3010201",
+    "3010301",
+    "3010401",
+    "3010501",
+    "3010601",
+    "3010701",
+    "3010801",
+    "3010901"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3010101",
+      "name": "Rusty Recruit Sword and Shield"
+    },
+    {
+      "id": "3010201",
+      "name": "Rusty Crude Hammer"
+    },
+    {
+      "id": "3010301",
+      "name": "Faded Apprentice Staff"
+    },
+    {
+      "id": "3010401",
+      "name": "Rough Handcrafted Longbow"
+    },
+    {
+      "id": "3010501",
+      "name": "Worn Carved Dagger"
+    },
+    {
+      "id": "3010601",
+      "name": "Rusty Wooden-Handled Dual Blades"
+    },
+    {
+      "id": "3010701",
+      "name": "Twilight Knot Catalyst"
+    },
+    {
+      "id": "3010801",
+      "name": "Rusty Spiked Mace"
+    },
+    {
+      "id": "3010901",
+      "name": "Rusty Squire Greatsword"
+    }
+  ]
+}

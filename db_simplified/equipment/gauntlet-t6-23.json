@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-23",
+  "name": "Generic Gauntlet T6 #23",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "1360403"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360403",
+      "name": "Ace Assassin Bracers"
+    }
+  ]
+}

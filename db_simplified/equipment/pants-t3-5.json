@@ -1,0 +1,40 @@
+{
+  "id": "pants-t3-5",
+  "name": "Generic Pants T3 #5",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1430101",
+    "1430201",
+    "1430301",
+    "1430401"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1430101",
+      "name": "Veteran Pants"
+    },
+    {
+      "id": "1430201",
+      "name": "Practitioner Pants"
+    },
+    {
+      "id": "1430301",
+      "name": "Rover Pants"
+    },
+    {
+      "id": "1430401",
+      "name": "Shadow Skull Tights"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "boot-t5-7",
+  "name": "Generic Boot T5 #7",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1550408"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1550408",
+      "name": "Shadowstrix Leather Boots"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-18",
+  "name": "Generic Pants T6 #18",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1460507"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460507",
+      "name": "Holy Saint's Pants"
+    }
+  ]
+}

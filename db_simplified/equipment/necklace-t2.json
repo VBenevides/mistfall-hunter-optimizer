@@ -1,0 +1,25 @@
+{
+  "id": "necklace-t2",
+  "name": "Generic Necklace T2",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 2,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1620101",
+    "1620201"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1620101",
+      "name": "Carved Amulet"
+    },
+    {
+      "id": "1620201",
+      "name": "Brass Necklace"
+    }
+  ]
+}

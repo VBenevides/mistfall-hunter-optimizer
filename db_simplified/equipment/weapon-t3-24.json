@@ -1,0 +1,25 @@
+{
+  "id": "weapon-t3-24",
+  "name": "Generic Weapon T3 #24",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "3030307"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3030307",
+      "name": "Focus Staff"
+    }
+  ]
+}

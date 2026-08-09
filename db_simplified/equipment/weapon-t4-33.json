@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-33",
+  "name": "Generic Weapon T4 #33",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sleight of Hand",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "3040506"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040506",
+      "name": "Venomfang Dagger"
+    }
+  ]
+}

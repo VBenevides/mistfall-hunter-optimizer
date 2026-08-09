@@ -1,0 +1,40 @@
+{
+  "id": "weapon-t3-23",
+  "name": "Generic Weapon T3 #23",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "3030105",
+    "3030201",
+    "3030801",
+    "3030907"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3030105",
+      "name": "Fine Iron Sword and Shield"
+    },
+    {
+      "id": "3030201",
+      "name": "Military Hammer"
+    },
+    {
+      "id": "3030801",
+      "name": "Morningstar Mace"
+    },
+    {
+      "id": "3030907",
+      "name": "Executioner Greatsword"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "boot-t3-4",
+  "name": "Generic Boot T3 #4",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 3,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1530208",
+    "1530408"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1530208",
+      "name": "Practitioner Shoes"
+    },
+    {
+      "id": "1530408",
+      "name": "Shadow Skull Boots"
+    }
+  ]
+}

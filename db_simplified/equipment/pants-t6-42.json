@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-42",
+  "name": "Generic Pants T6 #42",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1460601"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460601",
+      "name": "Rosen Oath Pants"
+    }
+  ]
+}

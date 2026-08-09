@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t5-22",
+  "name": "Generic Clothe T5 #22",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12
+    ]
+  },
+  "sourceIds": [
+    "1250307"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250307",
+      "name": "Eagle God Armor"
+    }
+  ]
+}

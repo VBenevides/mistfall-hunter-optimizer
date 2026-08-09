@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-11",
+  "name": "Generic Pants T5 #11",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1450201"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450201",
+      "name": "Mysteria Elder Pants"
+    }
+  ]
+}

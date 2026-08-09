@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-9",
+  "name": "Generic Clothe T6 #9",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "1260601"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260601",
+      "name": "Rosen Oath Breastplate"
+    }
+  ]
+}

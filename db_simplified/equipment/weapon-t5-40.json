@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t5-40",
+  "name": "Generic Weapon T5 #40",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "3050901"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050901",
+      "name": "Sacred Heart Greatsword"
+    }
+  ]
+}

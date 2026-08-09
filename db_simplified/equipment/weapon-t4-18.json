@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-18",
+  "name": "Generic Weapon T4 #18",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "3040606"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040606",
+      "name": "Veil Dual Blades"
+    }
+  ]
+}

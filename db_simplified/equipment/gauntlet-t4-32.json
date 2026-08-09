@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-32",
+  "name": "Generic Gauntlet T4 #32",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sleight of Hand",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1340606"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340606",
+      "name": "Crusade Bracers"
+    }
+  ]
+}

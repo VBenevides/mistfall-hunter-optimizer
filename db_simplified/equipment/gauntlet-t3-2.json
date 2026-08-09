@@ -1,0 +1,42 @@
+{
+  "id": "gauntlet-t3-2",
+  "name": "Generic Gauntlet T3 #2",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1330108",
+    "1330309",
+    "1330409",
+    "1330508",
+    "1330608"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1330108",
+      "name": "Veteran Bracers"
+    },
+    {
+      "id": "1330309",
+      "name": "Rover Bracers"
+    },
+    {
+      "id": "1330409",
+      "name": "Shadow Skull Gauntlets"
+    },
+    {
+      "id": "1330508",
+      "name": "Martyr's Bracers"
+    },
+    {
+      "id": "1330608",
+      "name": "Ceremonial Bracers"
+    }
+  ]
+}

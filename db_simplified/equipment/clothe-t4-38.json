@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t4-38",
+  "name": "Generic Clothe T4 #38",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1240407"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240407",
+      "name": "Emissary Leather Armor"
+    }
+  ]
+}

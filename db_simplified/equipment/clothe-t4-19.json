@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t4-19",
+  "name": "Generic Clothe T4 #19",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ethereal",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1240204"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240204",
+      "name": "Raven Priest Robe"
+    }
+  ]
+}

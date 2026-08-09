@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-17",
+  "name": "Generic Clothe T6 #17",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Distant Ward",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1260602"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260602",
+      "name": "Rosen Oath Breastplate"
+    }
+  ]
+}

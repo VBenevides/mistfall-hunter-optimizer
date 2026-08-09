@@ -1,0 +1,45 @@
+{
+  "id": "weapon-t3-20",
+  "name": "Generic Weapon T3 #20",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "3030205",
+    "3030504",
+    "3030604",
+    "3030805",
+    "3030904"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3030205",
+      "name": "Military Hammer"
+    },
+    {
+      "id": "3030504",
+      "name": "Fang-Piercer Dagger"
+    },
+    {
+      "id": "3030604",
+      "name": "Spirit Feline Dual Blades"
+    },
+    {
+      "id": "3030805",
+      "name": "Morningstar Mace"
+    },
+    {
+      "id": "3030904",
+      "name": "Executioner Greatsword"
+    }
+  ]
+}

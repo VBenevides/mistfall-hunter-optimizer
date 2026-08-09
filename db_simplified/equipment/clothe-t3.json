@@ -1,0 +1,37 @@
+{
+  "id": "clothe-t3",
+  "name": "Generic Clothe T3",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 3,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1230108",
+    "1230309",
+    "1230408",
+    "1230508"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1230108",
+      "name": "Veteran Armor"
+    },
+    {
+      "id": "1230309",
+      "name": "Rover Top"
+    },
+    {
+      "id": "1230408",
+      "name": "Shadow Skull Top"
+    },
+    {
+      "id": "1230508",
+      "name": "Martyr's Vestment"
+    }
+  ]
+}

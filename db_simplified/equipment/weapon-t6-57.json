@@ -1,0 +1,33 @@
+{
+  "id": "weapon-t6-57",
+  "name": "Generic Weapon T6 #57",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "3060405",
+    "3060605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060405",
+      "name": "Deathclaw Hunter"
+    },
+    {
+      "id": "3060605",
+      "name": "Venomfang"
+    }
+  ]
+}

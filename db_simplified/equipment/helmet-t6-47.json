@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-47",
+  "name": "Generic Helmet T6 #47",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1160207"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160207",
+      "name": "Moon Priestess Mask"
+    }
+  ]
+}

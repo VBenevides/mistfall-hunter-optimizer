@@ -1,0 +1,25 @@
+{
+  "id": "helmet-t3-8",
+  "name": "Generic Helmet T3 #8",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Bulwark",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1130103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1130103",
+      "name": "Veteran Helmet"
+    }
+  ]
+}

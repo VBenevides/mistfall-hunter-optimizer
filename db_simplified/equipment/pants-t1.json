@@ -1,0 +1,30 @@
+{
+  "id": "pants-t1",
+  "name": "Generic Pants T1",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 1,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1410101",
+    "1410201",
+    "1410301"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1410101",
+      "name": "Crude Recruit Pants"
+    },
+    {
+      "id": "1410201",
+      "name": "Training Apprentice Pants"
+    },
+    {
+      "id": "1410301",
+      "name": "Simple Leather Pants"
+    }
+  ]
+}

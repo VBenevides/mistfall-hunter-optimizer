@@ -1,0 +1,30 @@
+{
+  "id": "helmet-t3-20",
+  "name": "Generic Helmet T3 #20",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1130305",
+    "1130605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1130305",
+      "name": "Rover Hood"
+    },
+    {
+      "id": "1130605",
+      "name": "Ceremonial Helmet"
+    }
+  ]
+}

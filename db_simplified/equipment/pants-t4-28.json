@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-28",
+  "name": "Generic Pants T4 #28",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1440105"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440105",
+      "name": "Fearless Pants"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-64",
+  "name": "Generic Weapon T6 #64",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32,
+      41
+    ]
+  },
+  "sourceIds": [
+    "3060203"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060203",
+      "name": "Skullcrusher"
+    }
+  ]
+}

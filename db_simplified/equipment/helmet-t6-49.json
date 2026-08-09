@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-49",
+  "name": "Generic Helmet T6 #49",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1160603"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160603",
+      "name": "Rosen Oath Helmet"
+    }
+  ]
+}

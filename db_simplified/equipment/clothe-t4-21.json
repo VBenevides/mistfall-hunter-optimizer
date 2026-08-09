@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t4-21",
+  "name": "Generic Clothe T4 #21",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1240605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240605",
+      "name": "Crusade Breastplate"
+    }
+  ]
+}

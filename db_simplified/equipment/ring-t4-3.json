@@ -1,0 +1,23 @@
+{
+  "id": "ring-t4-3",
+  "name": "Generic Ring T4 #3",
+  "mainCategory": "armor",
+  "subName": "ring",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      51
+    ]
+  },
+  "sourceIds": [
+    "1740103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1740103",
+      "name": "Woodling Guardian Ring"
+    }
+  ]
+}

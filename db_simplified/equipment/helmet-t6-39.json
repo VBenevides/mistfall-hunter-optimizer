@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-39",
+  "name": "Generic Helmet T6 #39",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1160305"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160305",
+      "name": "Scaleclaw Winged Helm"
+    }
+  ]
+}

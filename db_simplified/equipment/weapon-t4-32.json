@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-32",
+  "name": "Generic Weapon T4 #32",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "3040401"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040401",
+      "name": "Yew Longbow"
+    }
+  ]
+}

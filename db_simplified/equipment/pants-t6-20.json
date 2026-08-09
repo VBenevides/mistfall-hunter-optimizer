@@ -1,0 +1,38 @@
+{
+  "id": "pants-t6-20",
+  "name": "Generic Pants T6 #20",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1460306",
+    "1460407",
+    "1460606"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460306",
+      "name": "Scaleclaw Pants"
+    },
+    {
+      "id": "1460407",
+      "name": "Ace Assassin Pants"
+    },
+    {
+      "id": "1460606",
+      "name": "Rosen Oath Pants"
+    }
+  ]
+}

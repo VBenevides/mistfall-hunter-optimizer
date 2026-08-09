@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-37",
+  "name": "Generic Helmet T6 #37",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1160302"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160302",
+      "name": "Scaleclaw Winged Helm"
+    }
+  ]
+}

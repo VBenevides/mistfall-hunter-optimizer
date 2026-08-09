@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-17",
+  "name": "Generic Gauntlet T4 #17",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1340604"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340604",
+      "name": "Crusade Bracers"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-43",
+  "name": "Generic Pants T6 #43",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1460402"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460402",
+      "name": "Ace Assassin Pants"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ring-t5-3",
+  "name": "Generic Ring T5 #3",
+  "mainCategory": "armor",
+  "subName": "ring",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1750101",
+    "1750301"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1750101",
+      "name": "Ragon's Ring"
+    },
+    {
+      "id": "1750301",
+      "name": "Commander Seal Ring"
+    }
+  ]
+}

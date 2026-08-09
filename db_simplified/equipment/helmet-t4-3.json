@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t4-3",
+  "name": "Generic Helmet T4 #3",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1140509",
+    "1140608"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140509",
+      "name": "Enlightenment Crown"
+    },
+    {
+      "id": "1140608",
+      "name": "Crusade Helmet"
+    }
+  ]
+}

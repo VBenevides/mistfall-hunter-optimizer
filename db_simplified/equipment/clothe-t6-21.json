@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-21",
+  "name": "Generic Clothe T6 #21",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1260605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260605",
+      "name": "Rosen Oath Breastplate"
+    }
+  ]
+}

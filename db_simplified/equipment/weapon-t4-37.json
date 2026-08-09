@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-37",
+  "name": "Generic Weapon T4 #37",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Spirit Shield",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "3040702"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040702",
+      "name": "Arcane Elixir Catalyst"
+    }
+  ]
+}

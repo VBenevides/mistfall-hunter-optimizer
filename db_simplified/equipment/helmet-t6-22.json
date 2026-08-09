@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-22",
+  "name": "Generic Helmet T6 #22",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1160405"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160405",
+      "name": "Ace Assassin Mask"
+    }
+  ]
+}

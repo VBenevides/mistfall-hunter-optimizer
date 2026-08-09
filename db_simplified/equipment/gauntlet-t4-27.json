@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-27",
+  "name": "Generic Gauntlet T4 #27",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1340302"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340302",
+      "name": "Crusader Gauntlets"
+    }
+  ]
+}

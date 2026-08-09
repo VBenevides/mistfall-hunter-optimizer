@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-37",
+  "name": "Generic Boot T6 #37",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1560606"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560606",
+      "name": "Rosen Oath Boots"
+    }
+  ]
+}

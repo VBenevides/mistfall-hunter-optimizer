@@ -1,0 +1,33 @@
+{
+  "id": "clothe-t6-12",
+  "name": "Generic Clothe T6 #12",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1260105",
+    "1260507"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260105",
+      "name": "Champion's Armor"
+    },
+    {
+      "id": "1260507",
+      "name": "Holy Saint's Vestment"
+    }
+  ]
+}

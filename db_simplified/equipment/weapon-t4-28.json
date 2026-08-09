@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-28",
+  "name": "Generic Weapon T4 #28",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "3040304"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040304",
+      "name": "Convergence Staff"
+    }
+  ]
+}

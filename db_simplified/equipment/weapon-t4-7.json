@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-7",
+  "name": "Generic Weapon T4 #7",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "3040101"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040101",
+      "name": "Studded Sword and Shield"
+    }
+  ]
+}

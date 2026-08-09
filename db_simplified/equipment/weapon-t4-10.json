@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-10",
+  "name": "Generic Weapon T4 #10",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Brotherhood",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "3040701"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040701",
+      "name": "Arcane Elixir Catalyst"
+    }
+  ]
+}

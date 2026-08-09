@@ -1,0 +1,24 @@
+{
+  "id": "necklace-t6-6",
+  "name": "Generic Necklace T6 #6",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      31,
+      52
+    ]
+  },
+  "sourceIds": [
+    "1660203"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1660203",
+      "name": "Einherjar's Blessing Necklace"
+    }
+  ]
+}

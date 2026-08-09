@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-48",
+  "name": "Generic Weapon T4 #48",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "3040206"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040206",
+      "name": "Magica Hammer"
+    }
+  ]
+}

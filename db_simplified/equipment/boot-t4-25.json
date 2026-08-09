@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-25",
+  "name": "Generic Boot T4 #25",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1540202"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540202",
+      "name": "Raven Priest Greaves"
+    }
+  ]
+}

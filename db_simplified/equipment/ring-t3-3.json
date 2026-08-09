@@ -1,0 +1,27 @@
+{
+  "id": "ring-t3-3",
+  "name": "Generic Ring T3 #3",
+  "mainCategory": "armor",
+  "subName": "ring",
+  "grade": 3,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1730201",
+    "1730401"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1730201",
+      "name": "Traveler's Ring"
+    },
+    {
+      "id": "1730401",
+      "name": "Mithril Ring"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-56",
+  "name": "Generic Weapon T6 #56",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "3060107"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060107",
+      "name": "Bond of Friendship"
+    }
+  ]
+}

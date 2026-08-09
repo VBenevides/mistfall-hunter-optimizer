@@ -1,0 +1,23 @@
+{
+  "id": "ring-t5-7",
+  "name": "Generic Ring T5 #7",
+  "mainCategory": "armor",
+  "subName": "ring",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      31,
+      52
+    ]
+  },
+  "sourceIds": [
+    "1750303"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1750303",
+      "name": "Commander Seal Ring"
+    }
+  ]
+}

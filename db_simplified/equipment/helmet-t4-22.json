@@ -1,0 +1,32 @@
+{
+  "id": "helmet-t4-22",
+  "name": "Generic Helmet T4 #22",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1140304",
+    "1140504"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140304",
+      "name": "Crusader Hood"
+    },
+    {
+      "id": "1140504",
+      "name": "Enlightenment Crown"
+    }
+  ]
+}

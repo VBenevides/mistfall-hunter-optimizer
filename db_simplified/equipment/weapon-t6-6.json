@@ -1,0 +1,29 @@
+{
+  "id": "weapon-t6-6",
+  "name": "Generic Weapon T6 #6",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      12,
+      21,
+      31
+    ]
+  },
+  "sourceIds": [
+    "3060209",
+    "3060508"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060209",
+      "name": "Skullcrusher"
+    },
+    {
+      "id": "3060508",
+      "name": "Serpent's Whisper"
+    }
+  ]
+}

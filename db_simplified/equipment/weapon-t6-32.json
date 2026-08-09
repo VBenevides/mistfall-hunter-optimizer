@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-32",
+  "name": "Generic Weapon T6 #32",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32,
+      41
+    ]
+  },
+  "sourceIds": [
+    "3060207"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060207",
+      "name": "Skullcrusher"
+    }
+  ]
+}

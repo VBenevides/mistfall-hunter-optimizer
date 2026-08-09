@@ -1,0 +1,27 @@
+{
+  "id": "boot-t5-40",
+  "name": "Generic Boot T5 #40",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1550105"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1550105",
+      "name": "Bloodwrath General Greaves"
+    }
+  ]
+}

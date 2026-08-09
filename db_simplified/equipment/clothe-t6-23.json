@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-23",
+  "name": "Generic Clothe T6 #23",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1260304"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260304",
+      "name": "Scaleclaw Armor"
+    }
+  ]
+}

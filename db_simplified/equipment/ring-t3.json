@@ -1,0 +1,27 @@
+{
+  "id": "ring-t3",
+  "name": "Generic Ring T3",
+  "mainCategory": "armor",
+  "subName": "ring",
+  "grade": 3,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1730101",
+    "1730301"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1730101",
+      "name": "Lover's Ring"
+    },
+    {
+      "id": "1730301",
+      "name": "Hunter's Ring"
+    }
+  ]
+}

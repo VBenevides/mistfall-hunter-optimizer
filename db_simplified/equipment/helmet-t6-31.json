@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-31",
+  "name": "Generic Helmet T6 #31",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1160204"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160204",
+      "name": "Moon Priestess Mask"
+    }
+  ]
+}

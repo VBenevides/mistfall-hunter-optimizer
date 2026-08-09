@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-55",
+  "name": "Generic Weapon T6 #55",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Unyielding",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "3060204"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060204",
+      "name": "Skullcrusher"
+    }
+  ]
+}

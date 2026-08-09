@@ -1,0 +1,23 @@
+{
+  "id": "boot-t5-5",
+  "name": "Generic Boot T5 #5",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1550309"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1550309",
+      "name": "Eagle God Leather Boots"
+    }
+  ]
+}

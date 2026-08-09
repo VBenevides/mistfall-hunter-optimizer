@@ -1,0 +1,33 @@
+{
+  "id": "gauntlet-t6-36",
+  "name": "Generic Gauntlet T6 #36",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sleight of Hand",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1360207",
+    "1360305"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360207",
+      "name": "Moon Priestess Bracers"
+    },
+    {
+      "id": "1360305",
+      "name": "Scaleclaw Bracers"
+    }
+  ]
+}

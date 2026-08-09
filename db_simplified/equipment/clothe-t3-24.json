@@ -1,0 +1,25 @@
+{
+  "id": "clothe-t3-24",
+  "name": "Generic Clothe T3 #24",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1230407"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1230407",
+      "name": "Shadow Skull Top"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-20",
+  "name": "Generic Pants T4 #20",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1440505"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440505",
+      "name": "Enlightenment Pants"
+    }
+  ]
+}

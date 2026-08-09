@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t5-4",
+  "name": "Generic Weapon T5 #4",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      12,
+      41
+    ]
+  },
+  "sourceIds": [
+    "3050208",
+    "3050409"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050208",
+      "name": "Obsidian Sledgehammer"
+    },
+    {
+      "id": "3050409",
+      "name": "Crusader Strongbow"
+    }
+  ]
+}

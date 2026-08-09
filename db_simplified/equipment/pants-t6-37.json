@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-37",
+  "name": "Generic Pants T6 #37",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1460603"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460603",
+      "name": "Rosen Oath Pants"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "clothe-t5-4",
+  "name": "Generic Clothe T5 #4",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      12,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1250508"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250508",
+      "name": "True Prayer Vestment"
+    }
+  ]
+}

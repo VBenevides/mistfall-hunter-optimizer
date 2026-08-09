@@ -1,0 +1,23 @@
+{
+  "id": "pants-t5-5",
+  "name": "Generic Pants T5 #5",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1450109"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450109",
+      "name": "Bloodwrath General Pants"
+    }
+  ]
+}

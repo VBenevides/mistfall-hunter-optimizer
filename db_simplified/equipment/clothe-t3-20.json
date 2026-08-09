@@ -1,0 +1,25 @@
+{
+  "id": "clothe-t3-20",
+  "name": "Generic Clothe T3 #20",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Spirit Shield",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1230503"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1230503",
+      "name": "Martyr's Vestment"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "boot-t5-12",
+  "name": "Generic Boot T5 #12",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "1550207"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1550207",
+      "name": "Mysteria Elder Boots"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-15",
+  "name": "Generic Boot T6 #15",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1560106"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560106",
+      "name": "Champion's Boots"
+    }
+  ]
+}

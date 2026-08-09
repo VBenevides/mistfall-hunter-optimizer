@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t4-23",
+  "name": "Generic Clothe T4 #23",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1240304"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240304",
+      "name": "Crusader Leather Armor"
+    }
+  ]
+}

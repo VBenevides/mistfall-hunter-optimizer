@@ -1,0 +1,33 @@
+{
+  "id": "clothe-t5",
+  "name": "Generic Clothe T5",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "1250308",
+    "1250408",
+    "1250509"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250308",
+      "name": "Eagle God Armor"
+    },
+    {
+      "id": "1250408",
+      "name": "Shadowstrix Vigor"
+    },
+    {
+      "id": "1250509",
+      "name": "True Prayer Vestment"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "clothe-t4-35",
+  "name": "Generic Clothe T4 #35",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1240302",
+    "1240402"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240302",
+      "name": "Crusader Leather Armor"
+    },
+    {
+      "id": "1240402",
+      "name": "Emissary Leather Armor"
+    }
+  ]
+}

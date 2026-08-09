@@ -1,0 +1,23 @@
+{
+  "id": "necklace-t4-6",
+  "name": "Generic Necklace T4 #6",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      51
+    ]
+  },
+  "sourceIds": [
+    "1640203"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1640203",
+      "name": "Bloodborn Amulet"
+    }
+  ]
+}

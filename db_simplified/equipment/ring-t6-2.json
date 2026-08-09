@@ -1,0 +1,29 @@
+{
+  "id": "ring-t6-2",
+  "name": "Generic Ring T6 #2",
+  "mainCategory": "armor",
+  "subName": "ring",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1760102",
+    "1760302"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1760102",
+      "name": "Ancestral Blessing Ring"
+    },
+    {
+      "id": "1760302",
+      "name": "Shadow Amberflux Ring"
+    }
+  ]
+}

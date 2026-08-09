@@ -1,0 +1,28 @@
+{
+  "id": "ring-t4-2",
+  "name": "Generic Ring T4 #2",
+  "mainCategory": "armor",
+  "subName": "ring",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1740201",
+    "1740401"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1740201",
+      "name": "Demonbane Ring"
+    },
+    {
+      "id": "1740401",
+      "name": "Mandrake Silver Ring"
+    }
+  ]
+}

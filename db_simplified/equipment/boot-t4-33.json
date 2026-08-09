@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-33",
+  "name": "Generic Boot T4 #33",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1540206"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540206",
+      "name": "Raven Priest Greaves"
+    }
+  ]
+}

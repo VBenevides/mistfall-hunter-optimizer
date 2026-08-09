@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t4-33",
+  "name": "Generic Clothe T4 #33",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1240202"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240202",
+      "name": "Raven Priest Robe"
+    }
+  ]
+}

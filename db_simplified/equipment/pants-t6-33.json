@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-33",
+  "name": "Generic Pants T6 #33",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1460506"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460506",
+      "name": "Holy Saint's Pants"
+    }
+  ]
+}

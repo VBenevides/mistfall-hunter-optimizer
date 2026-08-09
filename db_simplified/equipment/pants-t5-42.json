@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-42",
+  "name": "Generic Pants T5 #42",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1450205"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450205",
+      "name": "Mysteria Elder Pants"
+    }
+  ]
+}

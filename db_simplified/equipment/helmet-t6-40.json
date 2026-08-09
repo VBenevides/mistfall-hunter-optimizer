@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-40",
+  "name": "Generic Helmet T6 #40",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      21
+    ]
+  },
+  "sourceIds": [
+    "1160105"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160105",
+      "name": "Champion's Helmet"
+    }
+  ]
+}

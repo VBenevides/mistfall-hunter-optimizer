@@ -1,0 +1,32 @@
+{
+  "id": "boot-t5-19",
+  "name": "Generic Boot T5 #19",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ethereal",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1550301",
+    "1550402"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1550301",
+      "name": "Eagle God Leather Boots"
+    },
+    {
+      "id": "1550402",
+      "name": "Shadowstrix Leather Boots"
+    }
+  ]
+}

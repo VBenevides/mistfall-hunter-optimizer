@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-12",
+  "name": "Generic Gauntlet T6 #12",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1360603"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360603",
+      "name": "Rosen Oath Bracers"
+    }
+  ]
+}

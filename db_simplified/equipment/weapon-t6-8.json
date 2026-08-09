@@ -1,0 +1,34 @@
+{
+  "id": "weapon-t6-8",
+  "name": "Generic Weapon T6 #8",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      12,
+      31,
+      41
+    ]
+  },
+  "sourceIds": [
+    "3060308",
+    "3060609",
+    "3060908"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060308",
+      "name": "Blind Eye Staff"
+    },
+    {
+      "id": "3060609",
+      "name": "Venomfang"
+    },
+    {
+      "id": "3060908",
+      "name": "Mercy"
+    }
+  ]
+}

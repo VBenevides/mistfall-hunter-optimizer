@@ -1,0 +1,37 @@
+{
+  "id": "weapon-t4-20",
+  "name": "Generic Weapon T4 #20",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "3040302",
+    "3040402",
+    "3040903"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040302",
+      "name": "Convergence Staff"
+    },
+    {
+      "id": "3040402",
+      "name": "Yew Longbow"
+    },
+    {
+      "id": "3040903",
+      "name": "Exile Greatsword"
+    }
+  ]
+}

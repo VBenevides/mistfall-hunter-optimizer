@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-29",
+  "name": "Generic Boot T4 #29",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1540405"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540405",
+      "name": "Emissary Long Boots"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "necklace-t6-8",
+  "name": "Generic Necklace T6 #8",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      31,
+      41,
+      52
+    ]
+  },
+  "sourceIds": [
+    "1660303"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1660303",
+      "name": "Frostspeaker Pendant"
+    }
+  ]
+}

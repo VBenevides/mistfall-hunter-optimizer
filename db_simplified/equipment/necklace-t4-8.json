@@ -1,0 +1,23 @@
+{
+  "id": "necklace-t4-8",
+  "name": "Generic Necklace T4 #8",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      41,
+      51
+    ]
+  },
+  "sourceIds": [
+    "1640403"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1640403",
+      "name": "Dreamweaver Necklace"
+    }
+  ]
+}

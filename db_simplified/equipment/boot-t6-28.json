@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-28",
+  "name": "Generic Boot T6 #28",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "1560204"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560204",
+      "name": "Moon Priestess Boots"
+    }
+  ]
+}

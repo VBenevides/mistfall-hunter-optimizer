@@ -1,0 +1,35 @@
+{
+  "id": "weapon-t3-12",
+  "name": "Generic Weapon T3 #12",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "3030202",
+    "3030606",
+    "3030806"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3030202",
+      "name": "Military Hammer"
+    },
+    {
+      "id": "3030606",
+      "name": "Spirit Feline Dual Blades"
+    },
+    {
+      "id": "3030806",
+      "name": "Morningstar Mace"
+    }
+  ]
+}

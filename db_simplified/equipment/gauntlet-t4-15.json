@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-15",
+  "name": "Generic Gauntlet T4 #15",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1340605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340605",
+      "name": "Crusade Bracers"
+    }
+  ]
+}

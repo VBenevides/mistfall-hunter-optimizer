@@ -1,0 +1,29 @@
+{
+  "id": "necklace-t6-3",
+  "name": "Generic Necklace T6 #3",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1660202",
+    "1660402"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1660202",
+      "name": "Einherjar's Blessing Necklace"
+    },
+    {
+      "id": "1660402",
+      "name": "Raven War Pendant"
+    }
+  ]
+}

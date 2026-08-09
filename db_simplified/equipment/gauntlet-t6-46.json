@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-46",
+  "name": "Generic Gauntlet T6 #46",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1360102"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360102",
+      "name": "Champion's Bracers"
+    }
+  ]
+}

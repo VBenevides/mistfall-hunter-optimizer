@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t5-12",
+  "name": "Generic Weapon T5 #12",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "3050807"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050807",
+      "name": "Spiritwood Drumstick"
+    }
+  ]
+}

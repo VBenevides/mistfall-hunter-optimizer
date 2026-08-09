@@ -1,0 +1,32 @@
+{
+  "id": "weapon-t4-14",
+  "name": "Generic Weapon T4 #14",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "3040406",
+    "3040906"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040406",
+      "name": "Yew Longbow"
+    },
+    {
+      "id": "3040906",
+      "name": "Exile Greatsword"
+    }
+  ]
+}

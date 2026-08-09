@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-28",
+  "name": "Generic Clothe T6 #28",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1260203"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260203",
+      "name": "Moon Priestess Robe"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-45",
+  "name": "Generic Pants T6 #45",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1460305"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460305",
+      "name": "Scaleclaw Pants"
+    }
+  ]
+}

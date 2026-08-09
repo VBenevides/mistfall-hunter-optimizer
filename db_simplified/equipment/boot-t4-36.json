@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-36",
+  "name": "Generic Boot T4 #36",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1540607"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540607",
+      "name": "Crusade Sabatons"
+    }
+  ]
+}

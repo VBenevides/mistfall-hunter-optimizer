@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-38",
+  "name": "Generic Boot T4 #38",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1540103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540103",
+      "name": "Fearless Boots"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-31",
+  "name": "Generic Boot T4 #31",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Spirit Shield",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1540503"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540503",
+      "name": "Enlightenment Greaves"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-51",
+  "name": "Generic Weapon T6 #51",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "3060105"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060105",
+      "name": "Bond of Friendship"
+    }
+  ]
+}

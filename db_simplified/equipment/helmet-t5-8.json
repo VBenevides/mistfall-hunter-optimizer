@@ -1,0 +1,33 @@
+{
+  "id": "helmet-t5-8",
+  "name": "Generic Helmet T5 #8",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      32,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1150109",
+    "1150208",
+    "1150509"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1150109",
+      "name": "Bloodwrath General Helmet"
+    },
+    {
+      "id": "1150208",
+      "name": "Mysteria Elder Mask"
+    },
+    {
+      "id": "1150509",
+      "name": "True Prayer Miter"
+    }
+  ]
+}

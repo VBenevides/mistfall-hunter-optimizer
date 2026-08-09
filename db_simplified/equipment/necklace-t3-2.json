@@ -1,0 +1,27 @@
+{
+  "id": "necklace-t3-2",
+  "name": "Generic Necklace T3 #2",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 3,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1630102",
+    "1630302"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1630102",
+      "name": "Discipline Pendant"
+    },
+    {
+      "id": "1630302",
+      "name": "Warrior Pendant"
+    }
+  ]
+}

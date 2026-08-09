@@ -1,0 +1,37 @@
+{
+  "id": "pants-t3-4",
+  "name": "Generic Pants T3 #4",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 3,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1430109",
+    "1430308",
+    "1430409",
+    "1430508"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1430109",
+      "name": "Veteran Pants"
+    },
+    {
+      "id": "1430308",
+      "name": "Rover Pants"
+    },
+    {
+      "id": "1430409",
+      "name": "Shadow Skull Tights"
+    },
+    {
+      "id": "1430508",
+      "name": "Martyr's Pants"
+    }
+  ]
+}

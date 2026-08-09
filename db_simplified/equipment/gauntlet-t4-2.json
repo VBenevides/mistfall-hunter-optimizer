@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t4-2",
+  "name": "Generic Gauntlet T4 #2",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1340409",
+    "1340608"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340409",
+      "name": "Emissary Gauntlets"
+    },
+    {
+      "id": "1340608",
+      "name": "Crusade Bracers"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-41",
+  "name": "Generic Pants T5 #41",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "1450406"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450406",
+      "name": "Shadowstrix Pants"
+    }
+  ]
+}

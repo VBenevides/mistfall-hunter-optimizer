@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-33",
+  "name": "Generic Gauntlet T6 #33",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1360301"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360301",
+      "name": "Scaleclaw Bracers"
+    }
+  ]
+}

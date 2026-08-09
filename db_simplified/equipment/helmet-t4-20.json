@@ -1,0 +1,37 @@
+{
+  "id": "helmet-t4-20",
+  "name": "Generic Helmet T4 #20",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1140301",
+    "1140403",
+    "1140502"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140301",
+      "name": "Crusader Hood"
+    },
+    {
+      "id": "1140403",
+      "name": "Emissary Mask"
+    },
+    {
+      "id": "1140502",
+      "name": "Enlightenment Crown"
+    }
+  ]
+}

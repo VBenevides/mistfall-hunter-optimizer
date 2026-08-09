@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t4-2",
+  "name": "Generic Clothe T4 #2",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1240409",
+    "1240508"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240409",
+      "name": "Emissary Leather Armor"
+    },
+    {
+      "id": "1240508",
+      "name": "Enlightenment Vestment"
+    }
+  ]
+}

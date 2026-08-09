@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-15",
+  "name": "Generic Pants T6 #15",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "1460307"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460307",
+      "name": "Scaleclaw Pants"
+    }
+  ]
+}

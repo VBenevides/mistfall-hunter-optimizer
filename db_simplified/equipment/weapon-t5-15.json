@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t5-15",
+  "name": "Generic Weapon T5 #15",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "3050707"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050707",
+      "name": "True Intent Catalyst"
+    }
+  ]
+}

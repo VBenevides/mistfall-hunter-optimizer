@@ -1,0 +1,37 @@
+{
+  "id": "weapon-t5-36",
+  "name": "Generic Weapon T5 #36",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "3050504",
+    "3050604",
+    "3050805"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050504",
+      "name": "Gem Lizard Dagger"
+    },
+    {
+      "id": "3050604",
+      "name": "Blade of Destined Death"
+    },
+    {
+      "id": "3050805",
+      "name": "Spiritwood Drumstick"
+    }
+  ]
+}

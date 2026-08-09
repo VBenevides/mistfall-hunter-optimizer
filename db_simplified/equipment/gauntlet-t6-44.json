@@ -1,0 +1,33 @@
+{
+  "id": "gauntlet-t6-44",
+  "name": "Generic Gauntlet T6 #44",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1360101",
+    "1360407"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360101",
+      "name": "Champion's Bracers"
+    },
+    {
+      "id": "1360407",
+      "name": "Ace Assassin Bracers"
+    }
+  ]
+}

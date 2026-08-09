@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t4-36",
+  "name": "Generic Helmet T4 #36",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1140207"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140207",
+      "name": "Raven Priest Hood"
+    }
+  ]
+}

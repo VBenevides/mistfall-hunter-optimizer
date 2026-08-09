@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-13",
+  "name": "Generic Gauntlet T4 #13",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1340205"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340205",
+      "name": "Raven Priest Bracers"
+    }
+  ]
+}

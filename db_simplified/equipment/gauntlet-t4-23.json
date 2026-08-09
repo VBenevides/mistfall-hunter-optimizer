@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-23",
+  "name": "Generic Gauntlet T4 #23",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1340303"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340303",
+      "name": "Crusader Gauntlets"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t5-5",
+  "name": "Generic Weapon T5 #5",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "3050309",
+    "3050708"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050309",
+      "name": "Empyrean Rain Staff"
+    },
+    {
+      "id": "3050708",
+      "name": "True Intent Catalyst"
+    }
+  ]
+}

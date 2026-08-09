@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-39",
+  "name": "Generic Pants T6 #39",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "1460501"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460501",
+      "name": "Holy Saint's Pants"
+    }
+  ]
+}

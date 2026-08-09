@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-35",
+  "name": "Generic Pants T6 #35",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1460405"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460405",
+      "name": "Ace Assassin Pants"
+    }
+  ]
+}

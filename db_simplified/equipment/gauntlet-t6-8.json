@@ -1,0 +1,24 @@
+{
+  "id": "gauntlet-t6-8",
+  "name": "Generic Gauntlet T6 #8",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      22,
+      31,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1360209"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360209",
+      "name": "Moon Priestess Bracers"
+    }
+  ]
+}

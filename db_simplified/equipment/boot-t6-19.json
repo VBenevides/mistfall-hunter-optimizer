@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-19",
+  "name": "Generic Boot T6 #19",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ethereal",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1560201"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560201",
+      "name": "Moon Priestess Boots"
+    }
+  ]
+}

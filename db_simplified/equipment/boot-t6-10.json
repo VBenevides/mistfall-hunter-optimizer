@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-10",
+  "name": "Generic Boot T6 #10",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1560605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560605",
+      "name": "Rosen Oath Boots"
+    }
+  ]
+}

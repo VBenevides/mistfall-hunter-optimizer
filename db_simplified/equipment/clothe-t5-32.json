@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t5-32",
+  "name": "Generic Clothe T5 #32",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "1250604"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250604",
+      "name": "Black Iris Breastplate"
+    }
+  ]
+}

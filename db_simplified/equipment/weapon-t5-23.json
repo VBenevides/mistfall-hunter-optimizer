@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t5-23",
+  "name": "Generic Weapon T5 #23",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "3050302"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050302",
+      "name": "Empyrean Rain Staff"
+    }
+  ]
+}

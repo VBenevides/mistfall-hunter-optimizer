@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-24",
+  "name": "Generic Gauntlet T4 #24",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1340502"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340502",
+      "name": "Enlightenment Bracers"
+    }
+  ]
+}

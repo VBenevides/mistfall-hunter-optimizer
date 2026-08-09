@@ -1,0 +1,32 @@
+{
+  "id": "helmet-t5-20",
+  "name": "Generic Helmet T5 #20",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "1150404",
+    "1150505"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1150404",
+      "name": "Shadowstrix Mask"
+    },
+    {
+      "id": "1150505",
+      "name": "True Prayer Miter"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "necklace-t4-3",
+  "name": "Generic Necklace T4 #3",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      51
+    ]
+  },
+  "sourceIds": [
+    "1640103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1640103",
+      "name": "Benediction Amulet"
+    }
+  ]
+}

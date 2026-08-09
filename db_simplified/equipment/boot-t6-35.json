@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-35",
+  "name": "Generic Boot T6 #35",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sleight of Hand",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1560407"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560407",
+      "name": "Ace Assassin Boots"
+    }
+  ]
+}

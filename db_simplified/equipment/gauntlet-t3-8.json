@@ -1,0 +1,25 @@
+{
+  "id": "gauntlet-t3-8",
+  "name": "Generic Gauntlet T3 #8",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1330603"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1330603",
+      "name": "Ceremonial Bracers"
+    }
+  ]
+}

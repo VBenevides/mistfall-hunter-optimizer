@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-29",
+  "name": "Generic Pants T4 #29",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1440603"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440603",
+      "name": "Crusade Breeches"
+    }
+  ]
+}

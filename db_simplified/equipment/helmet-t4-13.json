@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t4-13",
+  "name": "Generic Helmet T4 #13",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1140507"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140507",
+      "name": "Enlightenment Crown"
+    }
+  ]
+}

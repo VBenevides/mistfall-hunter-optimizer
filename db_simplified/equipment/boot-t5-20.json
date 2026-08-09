@@ -1,0 +1,32 @@
+{
+  "id": "boot-t5-20",
+  "name": "Generic Boot T5 #20",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "1550203",
+    "1550303"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1550203",
+      "name": "Mysteria Elder Boots"
+    },
+    {
+      "id": "1550303",
+      "name": "Eagle God Leather Boots"
+    }
+  ]
+}

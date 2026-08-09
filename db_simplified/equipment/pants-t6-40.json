@@ -1,0 +1,33 @@
+{
+  "id": "pants-t6-40",
+  "name": "Generic Pants T6 #40",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1460202",
+    "1460302"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460202",
+      "name": "Moon Priestess Pants"
+    },
+    {
+      "id": "1460302",
+      "name": "Scaleclaw Pants"
+    }
+  ]
+}

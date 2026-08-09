@@ -1,0 +1,38 @@
+{
+  "id": "pants-t4-4",
+  "name": "Generic Pants T4 #4",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      31,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1440109",
+    "1440309",
+    "1440408",
+    "1440608"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440109",
+      "name": "Fearless Pants"
+    },
+    {
+      "id": "1440309",
+      "name": "Crusader Pants"
+    },
+    {
+      "id": "1440408",
+      "name": "Emissary Tights"
+    },
+    {
+      "id": "1440608",
+      "name": "Crusade Breeches"
+    }
+  ]
+}

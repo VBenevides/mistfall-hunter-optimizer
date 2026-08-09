@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t5-41",
+  "name": "Generic Weapon T5 #41",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "3050104"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050104",
+      "name": "Commander Sword and Shield"
+    }
+  ]
+}

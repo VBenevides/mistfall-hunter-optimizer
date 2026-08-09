@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-7",
+  "name": "Generic Boot T4 #7",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1540401"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540401",
+      "name": "Emissary Long Boots"
+    }
+  ]
+}

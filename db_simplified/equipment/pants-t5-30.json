@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-30",
+  "name": "Generic Pants T5 #30",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12
+    ]
+  },
+  "sourceIds": [
+    "1450204"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450204",
+      "name": "Mysteria Elder Pants"
+    }
+  ]
+}

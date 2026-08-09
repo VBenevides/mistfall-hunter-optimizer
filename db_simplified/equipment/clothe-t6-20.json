@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-20",
+  "name": "Generic Clothe T6 #20",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ethereal",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1260204"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260204",
+      "name": "Moon Priestess Robe"
+    }
+  ]
+}

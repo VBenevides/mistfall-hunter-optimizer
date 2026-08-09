@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-44",
+  "name": "Generic Weapon T4 #44",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Unyielding",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "3040204"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040204",
+      "name": "Magica Hammer"
+    }
+  ]
+}

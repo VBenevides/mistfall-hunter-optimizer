@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-33",
+  "name": "Generic Weapon T6 #33",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "3060705"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060705",
+      "name": "Byrnes's Ash Urn"
+    }
+  ]
+}

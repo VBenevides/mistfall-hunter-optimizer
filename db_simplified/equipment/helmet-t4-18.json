@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t4-18",
+  "name": "Generic Helmet T4 #18",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1140405"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140405",
+      "name": "Emissary Mask"
+    }
+  ]
+}

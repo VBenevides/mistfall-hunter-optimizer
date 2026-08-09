@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t5-14",
+  "name": "Generic Weapon T5 #14",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Bulwark",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "3050103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050103",
+      "name": "Commander Sword and Shield"
+    }
+  ]
+}

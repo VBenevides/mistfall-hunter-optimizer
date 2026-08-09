@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-40",
+  "name": "Generic Gauntlet T6 #40",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1360105"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360105",
+      "name": "Champion's Bracers"
+    }
+  ]
+}

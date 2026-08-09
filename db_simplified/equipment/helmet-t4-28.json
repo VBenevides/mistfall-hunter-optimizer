@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t4-28",
+  "name": "Generic Helmet T4 #28",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1140202"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140202",
+      "name": "Raven Priest Hood"
+    }
+  ]
+}

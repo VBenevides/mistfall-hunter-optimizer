@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-36",
+  "name": "Generic Gauntlet T4 #36",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1340506"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340506",
+      "name": "Enlightenment Bracers"
+    }
+  ]
+}

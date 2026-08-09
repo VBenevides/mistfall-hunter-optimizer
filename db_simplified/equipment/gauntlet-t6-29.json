@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-29",
+  "name": "Generic Gauntlet T6 #29",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Resilience",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1360103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360103",
+      "name": "Champion's Bracers"
+    }
+  ]
+}

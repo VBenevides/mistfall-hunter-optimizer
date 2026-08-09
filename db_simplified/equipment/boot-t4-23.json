@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-23",
+  "name": "Generic Boot T4 #23",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1540403"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540403",
+      "name": "Emissary Long Boots"
+    }
+  ]
+}

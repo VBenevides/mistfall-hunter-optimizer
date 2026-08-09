@@ -1,0 +1,25 @@
+{
+  "id": "helmet-t3-6",
+  "name": "Generic Helmet T3 #6",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1130406"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1130406",
+      "name": "Shadow Skull Mask"
+    }
+  ]
+}

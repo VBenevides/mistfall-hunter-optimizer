@@ -1,0 +1,25 @@
+{
+  "id": "weapon-t3-21",
+  "name": "Generic Weapon T3 #21",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Spirit Shield",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "3030702"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3030702",
+      "name": "Beast Spirit Catalyst"
+    }
+  ]
+}

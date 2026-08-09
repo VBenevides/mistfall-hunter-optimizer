@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-20",
+  "name": "Generic Gauntlet T4 #20",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1340403"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340403",
+      "name": "Emissary Gauntlets"
+    }
+  ]
+}

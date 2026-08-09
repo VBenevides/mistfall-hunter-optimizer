@@ -1,0 +1,29 @@
+{
+  "id": "necklace-t6-5",
+  "name": "Generic Necklace T6 #5",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      12,
+      21,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1660101",
+    "1660301"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1660101",
+      "name": "Tri-phase Knot Pendant"
+    },
+    {
+      "id": "1660301",
+      "name": "Frostspeaker Pendant"
+    }
+  ]
+}

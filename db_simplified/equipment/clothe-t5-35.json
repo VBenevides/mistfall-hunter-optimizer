@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t5-35",
+  "name": "Generic Clothe T5 #35",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "1250102"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250102",
+      "name": "Bloodwrath General Armor"
+    }
+  ]
+}

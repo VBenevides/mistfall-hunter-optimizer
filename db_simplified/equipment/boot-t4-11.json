@@ -1,0 +1,37 @@
+{
+  "id": "boot-t4-11",
+  "name": "Generic Boot T4 #11",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1540106",
+    "1540406",
+    "1540507"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540106",
+      "name": "Fearless Boots"
+    },
+    {
+      "id": "1540406",
+      "name": "Emissary Long Boots"
+    },
+    {
+      "id": "1540507",
+      "name": "Enlightenment Greaves"
+    }
+  ]
+}

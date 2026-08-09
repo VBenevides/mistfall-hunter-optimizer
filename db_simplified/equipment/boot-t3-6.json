@@ -1,0 +1,25 @@
+{
+  "id": "boot-t3-6",
+  "name": "Generic Boot T3 #6",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1530605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1530605",
+      "name": "Ceremonial Sabatons"
+    }
+  ]
+}

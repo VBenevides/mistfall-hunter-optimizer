@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-21",
+  "name": "Generic Pants T6 #21",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1460107"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460107",
+      "name": "Champion's Pants"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "helmet-t6",
+  "name": "Generic Helmet T6",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1160609"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160609",
+      "name": "Rosen Oath Helmet"
+    }
+  ]
+}

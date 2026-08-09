@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-44",
+  "name": "Generic Pants T6 #44",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1460205"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460205",
+      "name": "Moon Priestess Pants"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-46",
+  "name": "Generic Helmet T6 #46",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1160307"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160307",
+      "name": "Scaleclaw Winged Helm"
+    }
+  ]
+}

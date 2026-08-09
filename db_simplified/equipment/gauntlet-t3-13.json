@@ -1,0 +1,35 @@
+{
+  "id": "gauntlet-t3-13",
+  "name": "Generic Gauntlet T3 #13",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1330202",
+    "1330401",
+    "1330604"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1330202",
+      "name": "Practitioner Bracers"
+    },
+    {
+      "id": "1330401",
+      "name": "Shadow Skull Gauntlets"
+    },
+    {
+      "id": "1330604",
+      "name": "Ceremonial Bracers"
+    }
+  ]
+}

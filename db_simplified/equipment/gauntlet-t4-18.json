@@ -1,0 +1,32 @@
+{
+  "id": "gauntlet-t4-18",
+  "name": "Generic Gauntlet T4 #18",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1340202",
+    "1340401"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340202",
+      "name": "Raven Priest Bracers"
+    },
+    {
+      "id": "1340401",
+      "name": "Emissary Gauntlets"
+    }
+  ]
+}

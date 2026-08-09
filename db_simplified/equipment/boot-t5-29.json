@@ -1,0 +1,27 @@
+{
+  "id": "boot-t5-29",
+  "name": "Generic Boot T5 #29",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1550202"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1550202",
+      "name": "Mysteria Elder Boots"
+    }
+  ]
+}

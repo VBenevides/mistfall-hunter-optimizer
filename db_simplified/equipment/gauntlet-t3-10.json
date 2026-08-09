@@ -1,0 +1,25 @@
+{
+  "id": "gauntlet-t3-10",
+  "name": "Generic Gauntlet T3 #10",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1330406"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1330406",
+      "name": "Shadow Skull Gauntlets"
+    }
+  ]
+}

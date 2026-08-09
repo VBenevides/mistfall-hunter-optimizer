@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t4-37",
+  "name": "Generic Helmet T4 #37",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1140407"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140407",
+      "name": "Emissary Mask"
+    }
+  ]
+}

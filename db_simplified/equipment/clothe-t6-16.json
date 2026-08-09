@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-16",
+  "name": "Generic Clothe T6 #16",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1260406"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260406",
+      "name": "Ace Assassin Garb"
+    }
+  ]
+}

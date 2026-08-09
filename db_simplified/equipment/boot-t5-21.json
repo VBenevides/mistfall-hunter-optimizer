@@ -1,0 +1,27 @@
+{
+  "id": "boot-t5-21",
+  "name": "Generic Boot T5 #21",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1550504"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1550504",
+      "name": "True Prayer Greaves"
+    }
+  ]
+}

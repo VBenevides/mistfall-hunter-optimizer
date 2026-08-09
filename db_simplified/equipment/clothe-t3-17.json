@@ -1,0 +1,25 @@
+{
+  "id": "clothe-t3-17",
+  "name": "Generic Clothe T3 #17",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1230205"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1230205",
+      "name": "Practitioner Robe"
+    }
+  ]
+}

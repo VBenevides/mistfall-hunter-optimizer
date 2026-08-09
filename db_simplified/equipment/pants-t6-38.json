@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-38",
+  "name": "Generic Pants T6 #38",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1460206"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460206",
+      "name": "Moon Priestess Pants"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "helmet-t6-9",
+  "name": "Generic Helmet T6 #9",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      22,
+      31,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1160309",
+    "1160508"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160309",
+      "name": "Scaleclaw Winged Helm"
+    },
+    {
+      "id": "1160508",
+      "name": "Holy Saint's Miter"
+    }
+  ]
+}

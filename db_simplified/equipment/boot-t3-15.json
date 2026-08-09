@@ -1,0 +1,30 @@
+{
+  "id": "boot-t3-15",
+  "name": "Generic Boot T3 #15",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1530403",
+    "1530505"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1530403",
+      "name": "Shadow Skull Boots"
+    },
+    {
+      "id": "1530505",
+      "name": "Martyr's Greaves"
+    }
+  ]
+}

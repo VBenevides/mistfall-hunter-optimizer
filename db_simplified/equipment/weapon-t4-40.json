@@ -1,0 +1,37 @@
+{
+  "id": "weapon-t4-40",
+  "name": "Generic Weapon T4 #40",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "3040105",
+    "3040201",
+    "3040801"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040105",
+      "name": "Studded Sword and Shield"
+    },
+    {
+      "id": "3040201",
+      "name": "Magica Hammer"
+    },
+    {
+      "id": "3040801",
+      "name": "Antique Mace"
+    }
+  ]
+}

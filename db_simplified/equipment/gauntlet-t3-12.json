@@ -1,0 +1,35 @@
+{
+  "id": "gauntlet-t3-12",
+  "name": "Generic Gauntlet T3 #12",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1330206",
+    "1330304",
+    "1330605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1330206",
+      "name": "Practitioner Bracers"
+    },
+    {
+      "id": "1330304",
+      "name": "Rover Bracers"
+    },
+    {
+      "id": "1330605",
+      "name": "Ceremonial Bracers"
+    }
+  ]
+}

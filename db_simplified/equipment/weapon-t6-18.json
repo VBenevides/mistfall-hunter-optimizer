@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-18",
+  "name": "Generic Weapon T6 #18",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "3060706"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060706",
+      "name": "Byrnes's Ash Urn"
+    }
+  ]
+}

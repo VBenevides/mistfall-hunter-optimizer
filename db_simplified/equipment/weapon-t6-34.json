@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-34",
+  "name": "Generic Weapon T6 #34",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      31
+    ]
+  },
+  "sourceIds": [
+    "3060304"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060304",
+      "name": "Blind Eye Staff"
+    }
+  ]
+}

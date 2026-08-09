@@ -1,0 +1,28 @@
+{
+  "id": "pants-t5-2",
+  "name": "Generic Pants T5 #2",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1450108",
+    "1450608"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450108",
+      "name": "Bloodwrath General Pants"
+    },
+    {
+      "id": "1450608",
+      "name": "Black Iris Breeches"
+    }
+  ]
+}

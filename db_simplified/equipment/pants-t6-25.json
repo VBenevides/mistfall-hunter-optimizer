@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-25",
+  "name": "Generic Pants T6 #25",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1460605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460605",
+      "name": "Rosen Oath Pants"
+    }
+  ]
+}

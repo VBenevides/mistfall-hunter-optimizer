@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t5-18",
+  "name": "Generic Gauntlet T5 #18",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1350604"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1350604",
+      "name": "Black Iris Bracers"
+    }
+  ]
+}

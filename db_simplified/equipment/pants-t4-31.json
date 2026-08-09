@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-31",
+  "name": "Generic Pants T4 #31",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1440501"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440501",
+      "name": "Enlightenment Pants"
+    }
+  ]
+}

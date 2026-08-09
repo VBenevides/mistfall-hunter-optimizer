@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-19",
+  "name": "Generic Gauntlet T6 #19",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1360206"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360206",
+      "name": "Moon Priestess Bracers"
+    }
+  ]
+}

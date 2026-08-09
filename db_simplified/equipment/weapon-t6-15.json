@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-15",
+  "name": "Generic Weapon T6 #15",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Bulwark",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "3060103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060103",
+      "name": "Bond of Friendship"
+    }
+  ]
+}

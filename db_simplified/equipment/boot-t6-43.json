@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-43",
+  "name": "Generic Boot T6 #43",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1560601"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560601",
+      "name": "Rosen Oath Boots"
+    }
+  ]
+}

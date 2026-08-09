@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-32",
+  "name": "Generic Clothe T6 #32",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1260205"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260205",
+      "name": "Moon Priestess Robe"
+    }
+  ]
+}

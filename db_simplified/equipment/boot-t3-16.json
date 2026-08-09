@@ -1,0 +1,30 @@
+{
+  "id": "boot-t3-16",
+  "name": "Generic Boot T3 #16",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1530202",
+    "1530302"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1530202",
+      "name": "Practitioner Shoes"
+    },
+    {
+      "id": "1530302",
+      "name": "Rover Long Boots"
+    }
+  ]
+}

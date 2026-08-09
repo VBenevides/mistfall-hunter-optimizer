@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t5-17",
+  "name": "Generic Clothe T5 #17",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "1250305"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250305",
+      "name": "Eagle God Armor"
+    }
+  ]
+}

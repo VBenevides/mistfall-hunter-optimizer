@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-43",
+  "name": "Generic Weapon T6 #43",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "3060205"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060205",
+      "name": "Skullcrusher"
+    }
+  ]
+}

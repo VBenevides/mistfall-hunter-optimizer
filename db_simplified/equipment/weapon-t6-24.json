@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-24",
+  "name": "Generic Weapon T6 #24",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      21
+    ]
+  },
+  "sourceIds": [
+    "3060402"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060402",
+      "name": "Deathclaw Hunter"
+    }
+  ]
+}

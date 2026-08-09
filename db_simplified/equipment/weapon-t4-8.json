@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-8",
+  "name": "Generic Weapon T4 #8",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "3040507"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040507",
+      "name": "Venomfang Dagger"
+    }
+  ]
+}

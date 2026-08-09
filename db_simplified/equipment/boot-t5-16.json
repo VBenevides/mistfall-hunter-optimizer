@@ -1,0 +1,32 @@
+{
+  "id": "boot-t5-16",
+  "name": "Generic Boot T5 #16",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ethereal",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12
+    ]
+  },
+  "sourceIds": [
+    "1550102",
+    "1550201"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1550102",
+      "name": "Bloodwrath General Greaves"
+    },
+    {
+      "id": "1550201",
+      "name": "Mysteria Elder Boots"
+    }
+  ]
+}

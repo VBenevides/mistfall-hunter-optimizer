@@ -1,0 +1,45 @@
+{
+  "id": "helmet-t3-24",
+  "name": "Generic Helmet T3 #24",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1130207",
+    "1130307",
+    "1130407",
+    "1130506",
+    "1130607"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1130207",
+      "name": "Practitioner Hood"
+    },
+    {
+      "id": "1130307",
+      "name": "Rover Hood"
+    },
+    {
+      "id": "1130407",
+      "name": "Shadow Skull Mask"
+    },
+    {
+      "id": "1130506",
+      "name": "Martyr's Hood"
+    },
+    {
+      "id": "1130607",
+      "name": "Ceremonial Helmet"
+    }
+  ]
+}

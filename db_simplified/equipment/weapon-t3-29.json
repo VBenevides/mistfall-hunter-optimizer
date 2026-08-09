@@ -1,0 +1,40 @@
+{
+  "id": "weapon-t3-29",
+  "name": "Generic Weapon T3 #29",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "3030106",
+    "3030203",
+    "3030601",
+    "3030902"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3030106",
+      "name": "Fine Iron Sword and Shield"
+    },
+    {
+      "id": "3030203",
+      "name": "Military Hammer"
+    },
+    {
+      "id": "3030601",
+      "name": "Spirit Feline Dual Blades"
+    },
+    {
+      "id": "3030902",
+      "name": "Executioner Greatsword"
+    }
+  ]
+}

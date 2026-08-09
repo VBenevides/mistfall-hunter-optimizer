@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-39",
+  "name": "Generic Pants T5 #39",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1450501"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450501",
+      "name": "True Prayer Pants"
+    }
+  ]
+}

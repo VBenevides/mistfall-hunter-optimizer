@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-60",
+  "name": "Generic Weapon T6 #60",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "3060206"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060206",
+      "name": "Skullcrusher"
+    }
+  ]
+}

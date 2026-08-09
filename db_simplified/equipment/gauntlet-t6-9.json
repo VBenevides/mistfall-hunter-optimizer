@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-9",
+  "name": "Generic Gauntlet T6 #9",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1360601"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360601",
+      "name": "Rosen Oath Bracers"
+    }
+  ]
+}

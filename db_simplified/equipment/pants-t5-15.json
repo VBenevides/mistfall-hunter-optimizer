@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-15",
+  "name": "Generic Pants T5 #15",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1450307"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450307",
+      "name": "Eagle God Pants"
+    }
+  ]
+}

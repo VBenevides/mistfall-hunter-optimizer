@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-39",
+  "name": "Generic Gauntlet T6 #39",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1360104"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360104",
+      "name": "Champion's Bracers"
+    }
+  ]
+}

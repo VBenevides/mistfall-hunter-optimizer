@@ -1,0 +1,29 @@
+{
+  "id": "boot-t6",
+  "name": "Generic Boot T6",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      22,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1560109",
+    "1560608"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560109",
+      "name": "Champion's Boots"
+    },
+    {
+      "id": "1560608",
+      "name": "Rosen Oath Boots"
+    }
+  ]
+}

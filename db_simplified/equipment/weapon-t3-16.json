@@ -1,0 +1,35 @@
+{
+  "id": "weapon-t3-16",
+  "name": "Generic Weapon T3 #16",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "3030304",
+    "3030404",
+    "3030705"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3030304",
+      "name": "Focus Staff"
+    },
+    {
+      "id": "3030404",
+      "name": "Oil-soaked Wooden Bow"
+    },
+    {
+      "id": "3030705",
+      "name": "Beast Spirit Catalyst"
+    }
+  ]
+}

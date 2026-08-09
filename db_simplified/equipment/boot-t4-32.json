@@ -1,0 +1,32 @@
+{
+  "id": "boot-t4-32",
+  "name": "Generic Boot T4 #32",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1540101",
+    "1540603"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540101",
+      "name": "Fearless Boots"
+    },
+    {
+      "id": "1540603",
+      "name": "Crusade Sabatons"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "helmet-t4-21",
+  "name": "Generic Helmet T4 #21",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1140201",
+    "1140602"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140201",
+      "name": "Raven Priest Hood"
+    },
+    {
+      "id": "1140602",
+      "name": "Crusade Helmet"
+    }
+  ]
+}

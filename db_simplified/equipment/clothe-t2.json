@@ -1,0 +1,30 @@
+{
+  "id": "clothe-t2",
+  "name": "Generic Clothe T2",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 2,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1220101",
+    "1220201",
+    "1220301"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1220101",
+      "name": "Guard Armor"
+    },
+    {
+      "id": "1220201",
+      "name": "Apprentice Robe"
+    },
+    {
+      "id": "1220301",
+      "name": "Artisan's Vest"
+    }
+  ]
+}

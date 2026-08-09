@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-48",
+  "name": "Generic Weapon T6 #48",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      31
+    ]
+  },
+  "sourceIds": [
+    "3060901"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060901",
+      "name": "Mercy"
+    }
+  ]
+}

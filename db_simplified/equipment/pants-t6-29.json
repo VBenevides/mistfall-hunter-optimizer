@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-29",
+  "name": "Generic Pants T6 #29",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1460104"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460104",
+      "name": "Champion's Pants"
+    }
+  ]
+}

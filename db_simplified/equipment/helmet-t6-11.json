@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-11",
+  "name": "Generic Helmet T6 #11",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1160401"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160401",
+      "name": "Ace Assassin Mask"
+    }
+  ]
+}

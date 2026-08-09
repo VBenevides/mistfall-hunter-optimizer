@@ -1,0 +1,25 @@
+{
+  "id": "clothe-t3-12",
+  "name": "Generic Clothe T3 #12",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ethereal",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1230204"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1230204",
+      "name": "Practitioner Robe"
+    }
+  ]
+}

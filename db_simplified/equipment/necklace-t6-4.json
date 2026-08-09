@@ -1,0 +1,24 @@
+{
+  "id": "necklace-t6-4",
+  "name": "Generic Necklace T6 #4",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      41,
+      52
+    ]
+  },
+  "sourceIds": [
+    "1660403"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1660403",
+      "name": "Raven War Pendant"
+    }
+  ]
+}

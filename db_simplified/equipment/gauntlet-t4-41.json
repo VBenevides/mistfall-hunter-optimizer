@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-41",
+  "name": "Generic Gauntlet T4 #41",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1340602"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340602",
+      "name": "Crusade Bracers"
+    }
+  ]
+}

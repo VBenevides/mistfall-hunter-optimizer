@@ -1,0 +1,25 @@
+{
+  "id": "clothe-t3-21",
+  "name": "Generic Clothe T3 #21",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1230604"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1230604",
+      "name": "Ceremonial Breastplate"
+    }
+  ]
+}

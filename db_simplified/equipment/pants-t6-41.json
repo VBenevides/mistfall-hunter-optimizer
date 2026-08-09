@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-41",
+  "name": "Generic Pants T6 #41",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      21
+    ]
+  },
+  "sourceIds": [
+    "1460102"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460102",
+      "name": "Champion's Pants"
+    }
+  ]
+}

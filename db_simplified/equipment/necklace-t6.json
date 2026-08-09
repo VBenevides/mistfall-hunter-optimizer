@@ -1,0 +1,24 @@
+{
+  "id": "necklace-t6",
+  "name": "Generic Necklace T6",
+  "mainCategory": "armor",
+  "subName": "necklace",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      21,
+      52
+    ]
+  },
+  "sourceIds": [
+    "1660103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1660103",
+      "name": "Tri-phase Knot Pendant"
+    }
+  ]
+}

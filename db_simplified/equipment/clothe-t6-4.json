@@ -1,0 +1,29 @@
+{
+  "id": "clothe-t6-4",
+  "name": "Generic Clothe T6 #4",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      12,
+      21,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1260309",
+    "1260509"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260309",
+      "name": "Scaleclaw Armor"
+    },
+    {
+      "id": "1260509",
+      "name": "Holy Saint's Vestment"
+    }
+  ]
+}

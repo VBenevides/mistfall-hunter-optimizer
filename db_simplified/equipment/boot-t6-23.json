@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-23",
+  "name": "Generic Boot T6 #23",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1560303"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560303",
+      "name": "Scaleclaw Leather Boots"
+    }
+  ]
+}

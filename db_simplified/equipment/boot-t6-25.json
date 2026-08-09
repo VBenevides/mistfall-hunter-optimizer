@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-25",
+  "name": "Generic Boot T6 #25",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1560203"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560203",
+      "name": "Moon Priestess Boots"
+    }
+  ]
+}

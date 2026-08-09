@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t4-11",
+  "name": "Generic Clothe T4 #11",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1240105"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240105",
+      "name": "Fearless Breastplate"
+    }
+  ]
+}

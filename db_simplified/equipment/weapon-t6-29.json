@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-29",
+  "name": "Generic Weapon T6 #29",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "3060804"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060804",
+      "name": "Absolution"
+    }
+  ]
+}

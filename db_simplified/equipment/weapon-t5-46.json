@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t5-46",
+  "name": "Generic Weapon T5 #46",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "3050307"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3050307",
+      "name": "Empyrean Rain Staff"
+    }
+  ]
+}

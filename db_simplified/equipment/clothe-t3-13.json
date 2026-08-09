@@ -1,0 +1,30 @@
+{
+  "id": "clothe-t3-13",
+  "name": "Generic Clothe T3 #13",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1230504",
+    "1230605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1230504",
+      "name": "Martyr's Vestment"
+    },
+    {
+      "id": "1230605",
+      "name": "Ceremonial Breastplate"
+    }
+  ]
+}

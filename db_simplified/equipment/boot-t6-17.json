@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-17",
+  "name": "Generic Boot T6 #17",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Ethereal",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      21
+    ]
+  },
+  "sourceIds": [
+    "1560502"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560502",
+      "name": "Holy Saint's Greaves"
+    }
+  ]
+}

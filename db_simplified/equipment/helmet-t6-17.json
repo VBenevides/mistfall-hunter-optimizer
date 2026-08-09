@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-17",
+  "name": "Generic Helmet T6 #17",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1160507"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160507",
+      "name": "Holy Saint's Miter"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-16",
+  "name": "Generic Helmet T6 #16",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Bulwark",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1160103"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160103",
+      "name": "Champion's Helmet"
+    }
+  ]
+}

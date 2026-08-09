@@ -1,0 +1,25 @@
+{
+  "id": "boot-t3-19",
+  "name": "Generic Boot T3 #19",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Spirit Shield",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1530503"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1530503",
+      "name": "Martyr's Greaves"
+    }
+  ]
+}

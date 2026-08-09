@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-42",
+  "name": "Generic Weapon T6 #42",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sleight of Hand",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32,
+      41
+    ]
+  },
+  "sourceIds": [
+    "3060506"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060506",
+      "name": "Serpent's Whisper"
+    }
+  ]
+}

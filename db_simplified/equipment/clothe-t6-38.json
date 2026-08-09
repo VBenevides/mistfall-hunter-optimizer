@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-38",
+  "name": "Generic Clothe T6 #38",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1260501"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260501",
+      "name": "Holy Saint's Vestment"
+    }
+  ]
+}

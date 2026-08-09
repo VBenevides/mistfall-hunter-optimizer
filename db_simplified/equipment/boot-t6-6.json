@@ -1,0 +1,29 @@
+{
+  "id": "boot-t6-6",
+  "name": "Generic Boot T6 #6",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      32,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1560208",
+    "1560308"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560208",
+      "name": "Moon Priestess Boots"
+    },
+    {
+      "id": "1560308",
+      "name": "Scaleclaw Leather Boots"
+    }
+  ]
+}

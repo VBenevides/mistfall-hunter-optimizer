@@ -1,0 +1,27 @@
+{
+  "id": "boot-t5-11",
+  "name": "Generic Boot T5 #11",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "1550605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1550605",
+      "name": "Black Iris Sabatons"
+    }
+  ]
+}

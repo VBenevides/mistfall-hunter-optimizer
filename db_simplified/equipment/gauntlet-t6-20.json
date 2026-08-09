@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-20",
+  "name": "Generic Gauntlet T6 #20",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "1360202"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360202",
+      "name": "Moon Priestess Bracers"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t4-17",
+  "name": "Generic Clothe T4 #17",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1240506"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240506",
+      "name": "Enlightenment Vestment"
+    }
+  ]
+}

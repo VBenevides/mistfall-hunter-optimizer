@@ -1,0 +1,45 @@
+{
+  "id": "clothe-t3-22",
+  "name": "Generic Clothe T3 #22",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1230102",
+    "1230202",
+    "1230302",
+    "1230402",
+    "1230501"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1230102",
+      "name": "Veteran Armor"
+    },
+    {
+      "id": "1230202",
+      "name": "Practitioner Robe"
+    },
+    {
+      "id": "1230302",
+      "name": "Rover Top"
+    },
+    {
+      "id": "1230402",
+      "name": "Shadow Skull Top"
+    },
+    {
+      "id": "1230501",
+      "name": "Martyr's Vestment"
+    }
+  ]
+}

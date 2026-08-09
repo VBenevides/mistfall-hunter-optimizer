@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-8",
+  "name": "Generic Boot T4 #8",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1540605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540605",
+      "name": "Crusade Sabatons"
+    }
+  ]
+}

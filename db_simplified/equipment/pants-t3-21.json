@@ -1,0 +1,35 @@
+{
+  "id": "pants-t3-21",
+  "name": "Generic Pants T3 #21",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1430205",
+    "1430305",
+    "1430406"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1430205",
+      "name": "Practitioner Pants"
+    },
+    {
+      "id": "1430305",
+      "name": "Rover Pants"
+    },
+    {
+      "id": "1430406",
+      "name": "Shadow Skull Tights"
+    }
+  ]
+}

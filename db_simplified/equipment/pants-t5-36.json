@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-36",
+  "name": "Generic Pants T5 #36",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12
+    ]
+  },
+  "sourceIds": [
+    "1450206"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450206",
+      "name": "Mysteria Elder Pants"
+    }
+  ]
+}

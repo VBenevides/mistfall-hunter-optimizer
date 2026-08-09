@@ -1,0 +1,30 @@
+{
+  "id": "boot-t1",
+  "name": "Generic Boot T1",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 1,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1510101",
+    "1510201",
+    "1510301"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1510101",
+      "name": "Crude Recruit Boots"
+    },
+    {
+      "id": "1510201",
+      "name": "Training Apprentice Boots"
+    },
+    {
+      "id": "1510301",
+      "name": "Simple Leather Boots"
+    }
+  ]
+}

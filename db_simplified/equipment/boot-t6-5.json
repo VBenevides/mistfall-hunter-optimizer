@@ -1,0 +1,29 @@
+{
+  "id": "boot-t6-5",
+  "name": "Generic Boot T6 #5",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1560509",
+    "1560609"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560509",
+      "name": "Holy Saint's Greaves"
+    },
+    {
+      "id": "1560609",
+      "name": "Rosen Oath Boots"
+    }
+  ]
+}

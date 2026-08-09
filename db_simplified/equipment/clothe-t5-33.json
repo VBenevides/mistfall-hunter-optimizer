@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t5-33",
+  "name": "Generic Clothe T5 #33",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12
+    ]
+  },
+  "sourceIds": [
+    "1250501"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250501",
+      "name": "True Prayer Vestment"
+    }
+  ]
+}

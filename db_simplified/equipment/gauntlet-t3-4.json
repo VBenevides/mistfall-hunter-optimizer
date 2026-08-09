@@ -1,0 +1,32 @@
+{
+  "id": "gauntlet-t3-4",
+  "name": "Generic Gauntlet T3 #4",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1330209",
+    "1330308",
+    "1330609"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1330209",
+      "name": "Practitioner Bracers"
+    },
+    {
+      "id": "1330308",
+      "name": "Rover Bracers"
+    },
+    {
+      "id": "1330609",
+      "name": "Ceremonial Bracers"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "boot-t5-34",
+  "name": "Generic Boot T5 #34",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "1550101",
+    "1550603"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1550101",
+      "name": "Bloodwrath General Greaves"
+    },
+    {
+      "id": "1550603",
+      "name": "Black Iris Sabatons"
+    }
+  ]
+}

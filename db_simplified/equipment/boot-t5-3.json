@@ -1,0 +1,28 @@
+{
+  "id": "boot-t5-3",
+  "name": "Generic Boot T5 #3",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      12,
+      21
+    ]
+  },
+  "sourceIds": [
+    "1550209",
+    "1550509"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1550209",
+      "name": "Mysteria Elder Boots"
+    },
+    {
+      "id": "1550509",
+      "name": "True Prayer Greaves"
+    }
+  ]
+}

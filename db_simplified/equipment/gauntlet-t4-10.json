@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-10",
+  "name": "Generic Gauntlet T4 #10",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1340507"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340507",
+      "name": "Enlightenment Bracers"
+    }
+  ]
+}

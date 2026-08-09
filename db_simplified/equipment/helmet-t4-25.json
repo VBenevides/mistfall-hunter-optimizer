@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t4-25",
+  "name": "Generic Helmet T4 #25",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Resilience",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1140604"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140604",
+      "name": "Crusade Helmet"
+    }
+  ]
+}

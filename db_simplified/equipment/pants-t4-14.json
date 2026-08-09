@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-14",
+  "name": "Generic Pants T4 #14",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1440107"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440107",
+      "name": "Fearless Pants"
+    }
+  ]
+}

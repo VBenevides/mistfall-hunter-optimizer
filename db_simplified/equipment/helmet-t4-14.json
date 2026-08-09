@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t4-14",
+  "name": "Generic Helmet T4 #14",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1140606"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1140606",
+      "name": "Crusade Helmet"
+    }
+  ]
+}

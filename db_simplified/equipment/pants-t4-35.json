@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-35",
+  "name": "Generic Pants T4 #35",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1440406"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440406",
+      "name": "Emissary Tights"
+    }
+  ]
+}

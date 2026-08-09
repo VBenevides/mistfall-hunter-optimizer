@@ -1,0 +1,32 @@
+{
+  "id": "clothe-t5-36",
+  "name": "Generic Clothe T5 #36",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      42
+    ]
+  },
+  "sourceIds": [
+    "1250202",
+    "1250302"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250202",
+      "name": "Mysteria Elder Robe"
+    },
+    {
+      "id": "1250302",
+      "name": "Eagle God Armor"
+    }
+  ]
+}

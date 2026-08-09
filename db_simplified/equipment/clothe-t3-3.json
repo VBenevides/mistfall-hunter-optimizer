@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t3-3",
+  "name": "Generic Clothe T3 #3",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 3,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1230208",
+    "1230308"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1230208",
+      "name": "Practitioner Robe"
+    },
+    {
+      "id": "1230308",
+      "name": "Rover Top"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-12",
+  "name": "Generic Weapon T6 #12",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      32
+    ]
+  },
+  "sourceIds": [
+    "3060807"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060807",
+      "name": "Absolution"
+    }
+  ]
+}

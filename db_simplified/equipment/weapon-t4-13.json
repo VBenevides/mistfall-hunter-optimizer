@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-13",
+  "name": "Generic Weapon T4 #13",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "3040607"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040607",
+      "name": "Veil Dual Blades"
+    }
+  ]
+}

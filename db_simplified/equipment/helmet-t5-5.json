@@ -1,0 +1,23 @@
+{
+  "id": "helmet-t5-5",
+  "name": "Generic Helmet T5 #5",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1150409"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1150409",
+      "name": "Shadowstrix Mask"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ring-t5-4",
+  "name": "Generic Ring T5 #4",
+  "mainCategory": "armor",
+  "subName": "ring",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1750201",
+    "1750401"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1750201",
+      "name": "Dragonbreath Ring"
+    },
+    {
+      "id": "1750401",
+      "name": "Stargazing Ring"
+    }
+  ]
+}

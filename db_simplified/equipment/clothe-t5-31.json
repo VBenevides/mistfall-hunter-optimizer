@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t5-31",
+  "name": "Generic Clothe T5 #31",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Spirit Shield",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "1250503"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250503",
+      "name": "True Prayer Vestment"
+    }
+  ]
+}

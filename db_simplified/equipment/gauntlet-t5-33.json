@@ -1,0 +1,32 @@
+{
+  "id": "gauntlet-t5-33",
+  "name": "Generic Gauntlet T5 #33",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12
+    ]
+  },
+  "sourceIds": [
+    "1350407",
+    "1350506"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1350407",
+      "name": "Shadowstrix Bracers"
+    },
+    {
+      "id": "1350506",
+      "name": "True Prayer Bracers"
+    }
+  ]
+}

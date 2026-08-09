@@ -1,0 +1,30 @@
+{
+  "id": "gauntlet-t3-15",
+  "name": "Generic Gauntlet T3 #15",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1330107",
+    "1330307"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1330107",
+      "name": "Veteran Bracers"
+    },
+    {
+      "id": "1330307",
+      "name": "Rover Bracers"
+    }
+  ]
+}

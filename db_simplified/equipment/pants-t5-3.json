@@ -1,0 +1,23 @@
+{
+  "id": "pants-t5-3",
+  "name": "Generic Pants T5 #3",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      12,
+      21
+    ]
+  },
+  "sourceIds": [
+    "1450408"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450408",
+      "name": "Shadowstrix Pants"
+    }
+  ]
+}

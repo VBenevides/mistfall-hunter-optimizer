@@ -1,0 +1,29 @@
+{
+  "id": "pants-t6",
+  "name": "Generic Pants T6",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      21,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1460208",
+    "1460409"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460208",
+      "name": "Moon Priestess Pants"
+    },
+    {
+      "id": "1460409",
+      "name": "Ace Assassin Pants"
+    }
+  ]
+}

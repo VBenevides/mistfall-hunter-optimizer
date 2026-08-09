@@ -1,0 +1,28 @@
+{
+  "id": "boot-t6-41",
+  "name": "Generic Boot T6 #41",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1560101"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1560101",
+      "name": "Champion's Boots"
+    }
+  ]
+}

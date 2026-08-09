@@ -1,0 +1,32 @@
+{
+  "id": "pants-t5-26",
+  "name": "Generic Pants T5 #26",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "1450203",
+    "1450602"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450203",
+      "name": "Mysteria Elder Pants"
+    },
+    {
+      "id": "1450602",
+      "name": "Black Iris Breeches"
+    }
+  ]
+}

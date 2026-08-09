@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-38",
+  "name": "Generic Weapon T4 #38",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "3040901"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040901",
+      "name": "Exile Greatsword"
+    }
+  ]
+}

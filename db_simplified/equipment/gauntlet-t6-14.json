@@ -1,0 +1,28 @@
+{
+  "id": "gauntlet-t6-14",
+  "name": "Generic Gauntlet T6 #14",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1360406"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1360406",
+      "name": "Ace Assassin Bracers"
+    }
+  ]
+}

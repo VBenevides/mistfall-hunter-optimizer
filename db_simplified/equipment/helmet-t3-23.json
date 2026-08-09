@@ -1,0 +1,30 @@
+{
+  "id": "helmet-t3-23",
+  "name": "Generic Helmet T3 #23",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "1130102",
+    "1130402"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1130102",
+      "name": "Veteran Helmet"
+    },
+    {
+      "id": "1130402",
+      "name": "Shadow Skull Mask"
+    }
+  ]
+}

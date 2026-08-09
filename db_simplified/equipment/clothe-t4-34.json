@@ -1,0 +1,32 @@
+{
+  "id": "clothe-t4-34",
+  "name": "Generic Clothe T4 #34",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1240102",
+    "1240501"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240102",
+      "name": "Fearless Breastplate"
+    },
+    {
+      "id": "1240501",
+      "name": "Enlightenment Vestment"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "weapon-t3-19",
+  "name": "Generic Weapon T3 #19",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sleight of Hand",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "3030506"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3030506",
+      "name": "Fang-Piercer Dagger"
+    }
+  ]
+}

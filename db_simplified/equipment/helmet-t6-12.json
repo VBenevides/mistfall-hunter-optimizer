@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-12",
+  "name": "Generic Helmet T6 #12",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1160101"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160101",
+      "name": "Champion's Helmet"
+    }
+  ]
+}

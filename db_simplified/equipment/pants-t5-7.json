@@ -1,0 +1,28 @@
+{
+  "id": "pants-t5-7",
+  "name": "Generic Pants T5 #7",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1450208",
+    "1450509"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450208",
+      "name": "Mysteria Elder Pants"
+    },
+    {
+      "id": "1450509",
+      "name": "True Prayer Pants"
+    }
+  ]
+}

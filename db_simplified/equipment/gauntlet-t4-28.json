@@ -1,0 +1,27 @@
+{
+  "id": "gauntlet-t4-28",
+  "name": "Generic Gauntlet T4 #28",
+  "mainCategory": "armor",
+  "subName": "gauntlet",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21
+    ]
+  },
+  "sourceIds": [
+    "1340301"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1340301",
+      "name": "Crusader Gauntlets"
+    }
+  ]
+}

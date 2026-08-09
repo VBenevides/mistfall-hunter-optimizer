@@ -1,0 +1,27 @@
+{
+  "id": "clothe-t4-15",
+  "name": "Generic Clothe T4 #15",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "1240306"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1240306",
+      "name": "Crusader Leather Armor"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-25",
+  "name": "Generic Clothe T6 #25",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      32
+    ]
+  },
+  "sourceIds": [
+    "1260107"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260107",
+      "name": "Champion's Armor"
+    }
+  ]
+}

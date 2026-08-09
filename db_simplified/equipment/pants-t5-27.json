@@ -1,0 +1,27 @@
+{
+  "id": "pants-t5-27",
+  "name": "Generic Pants T5 #27",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      32
+    ]
+  },
+  "sourceIds": [
+    "1450104"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450104",
+      "name": "Bloodwrath General Pants"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "helmet-t5-30",
+  "name": "Generic Helmet T5 #30",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "1150202"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1150202",
+      "name": "Mysteria Elder Mask"
+    }
+  ]
+}

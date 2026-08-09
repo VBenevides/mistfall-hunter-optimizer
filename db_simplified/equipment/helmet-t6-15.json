@@ -1,0 +1,28 @@
+{
+  "id": "helmet-t6-15",
+  "name": "Generic Helmet T6 #15",
+  "mainCategory": "armor",
+  "subName": "helmet",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Brotherhood",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1160106"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1160106",
+      "name": "Champion's Helmet"
+    }
+  ]
+}

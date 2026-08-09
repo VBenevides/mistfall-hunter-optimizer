@@ -1,0 +1,28 @@
+{
+  "id": "weapon-t6-30",
+  "name": "Generic Weapon T6 #30",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "3060503"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060503",
+      "name": "Serpent's Whisper"
+    }
+  ]
+}

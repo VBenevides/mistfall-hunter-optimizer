@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t5-2",
+  "name": "Generic Clothe T5 #2",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 5,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1250109",
+    "1250208"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1250109",
+      "name": "Bloodwrath General Armor"
+    },
+    {
+      "id": "1250208",
+      "name": "Mysteria Elder Robe"
+    }
+  ]
+}

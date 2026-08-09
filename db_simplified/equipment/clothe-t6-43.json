@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-43",
+  "name": "Generic Clothe T6 #43",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11,
+      22
+    ]
+  },
+  "sourceIds": [
+    "1260407"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260407",
+      "name": "Ace Assassin Garb"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "pants-t4-19",
+  "name": "Generic Pants T4 #19",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      11
+    ]
+  },
+  "sourceIds": [
+    "1440605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1440605",
+      "name": "Crusade Breeches"
+    }
+  ]
+}

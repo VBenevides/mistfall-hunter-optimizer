@@ -1,0 +1,27 @@
+{
+  "id": "boot-t4-10",
+  "name": "Generic Boot T4 #10",
+  "mainCategory": "armor",
+  "subName": "boot",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "1540205"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1540205",
+      "name": "Raven Priest Greaves"
+    }
+  ]
+}

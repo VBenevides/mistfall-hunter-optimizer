@@ -1,0 +1,24 @@
+{
+  "id": "weapon-t6-7",
+  "name": "Generic Weapon T6 #7",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      12,
+      21,
+      41
+    ]
+  },
+  "sourceIds": [
+    "3060409"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3060409",
+      "name": "Deathclaw Hunter"
+    }
+  ]
+}

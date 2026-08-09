@@ -1,0 +1,33 @@
+{
+  "id": "clothe-t6-39",
+  "name": "Generic Clothe T6 #39",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      21,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1260302",
+    "1260402"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260302",
+      "name": "Scaleclaw Armor"
+    },
+    {
+      "id": "1260402",
+      "name": "Ace Assassin Garb"
+    }
+  ]
+}

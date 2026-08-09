@@ -1,0 +1,27 @@
+{
+  "id": "weapon-t4-26",
+  "name": "Generic Weapon T4 #26",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      31
+    ]
+  },
+  "sourceIds": [
+    "3040407"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040407",
+      "name": "Yew Longbow"
+    }
+  ]
+}

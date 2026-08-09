@@ -1,0 +1,30 @@
+{
+  "id": "weapon-t3-22",
+  "name": "Generic Weapon T3 #22",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "3030104",
+    "3030901"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3030104",
+      "name": "Fine Iron Sword and Shield"
+    },
+    {
+      "id": "3030901",
+      "name": "Executioner Greatsword"
+    }
+  ]
+}

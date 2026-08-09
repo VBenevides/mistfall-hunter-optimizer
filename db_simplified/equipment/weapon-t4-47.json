@@ -1,0 +1,37 @@
+{
+  "id": "weapon-t4-47",
+  "name": "Generic Weapon T4 #47",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 4,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      41
+    ]
+  },
+  "sourceIds": [
+    "3040306",
+    "3040505",
+    "3040605"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3040306",
+      "name": "Convergence Staff"
+    },
+    {
+      "id": "3040505",
+      "name": "Venomfang Dagger"
+    },
+    {
+      "id": "3040605",
+      "name": "Veil Dual Blades"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "pants-t6-11",
+  "name": "Generic Pants T6 #11",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1460301"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1460301",
+      "name": "Scaleclaw Pants"
+    }
+  ]
+}

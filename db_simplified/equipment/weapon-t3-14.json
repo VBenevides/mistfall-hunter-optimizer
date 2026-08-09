@@ -1,0 +1,40 @@
+{
+  "id": "weapon-t3-14",
+  "name": "Generic Weapon T3 #14",
+  "mainCategory": "weapon",
+  "subName": "weapon",
+  "grade": 3,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "holeGroup": []
+  },
+  "sourceIds": [
+    "3030301",
+    "3030503",
+    "3030603",
+    "3030804"
+  ],
+  "itemIncludes": [
+    {
+      "id": "3030301",
+      "name": "Focus Staff"
+    },
+    {
+      "id": "3030503",
+      "name": "Fang-Piercer Dagger"
+    },
+    {
+      "id": "3030603",
+      "name": "Spirit Feline Dual Blades"
+    },
+    {
+      "id": "3030804",
+      "name": "Morningstar Mace"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "pants-t5-10",
+  "name": "Generic Pants T5 #10",
+  "mainCategory": "armor",
+  "subName": "pants",
+  "grade": 5,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22
+    ]
+  },
+  "sourceIds": [
+    "1450101",
+    "1450401"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1450101",
+      "name": "Bloodwrath General Pants"
+    },
+    {
+      "id": "1450401",
+      "name": "Shadowstrix Pants"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "clothe-t6-10",
+  "name": "Generic Clothe T6 #10",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      12,
+      31
+    ]
+  },
+  "sourceIds": [
+    "1260201",
+    "1260301",
+    "1260401"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260201",
+      "name": "Moon Priestess Robe"
+    },
+    {
+      "id": "1260301",
+      "name": "Scaleclaw Armor"
+    },
+    {
+      "id": "1260401",
+      "name": "Ace Assassin Garb"
+    }
+  ]
+}

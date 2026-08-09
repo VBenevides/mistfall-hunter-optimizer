@@ -1,0 +1,28 @@
+{
+  "id": "clothe-t6-40",
+  "name": "Generic Clothe T6 #40",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [
+      {
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "holeGroup": [
+      22,
+      41
+    ]
+  },
+  "sourceIds": [
+    "1260202"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260202",
+      "name": "Moon Priestess Robe"
+    }
+  ]
+}

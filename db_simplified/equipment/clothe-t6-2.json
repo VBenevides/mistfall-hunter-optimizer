@@ -1,0 +1,24 @@
+{
+  "id": "clothe-t6-2",
+  "name": "Generic Clothe T6 #2",
+  "mainCategory": "armor",
+  "subName": "clothe",
+  "grade": 6,
+  "equipment": {
+    "affixes": [],
+    "holeGroup": [
+      11,
+      31,
+      42
+    ]
+  },
+  "sourceIds": [
+    "1260508"
+  ],
+  "itemIncludes": [
+    {
+      "id": "1260508",
+      "name": "Holy Saint's Vestment"
+    }
+  ]
+}
