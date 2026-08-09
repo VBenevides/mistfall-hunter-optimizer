@@ -4,9 +4,12 @@ from pathlib import Path
 
 import requests
 
-from scrape_items import DB_DIR, HEADERS, save_json, slug
+from scrape_items import HEADERS, save_json, slug
 
 
+ROOT = Path(__file__).parent
+SOURCE_DIR = ROOT / "db"
+QUESTLOG_DB_DIR = ROOT / "db-questlog"
 CAPTURE = Path(__file__).parent / "local" / "db-get-item.txt"
 
 
@@ -36,9 +39,10 @@ def fetch_item(session, endpoint, item_id):
     return response.json()["result"]["data"]
 
 
-def populate(session, db_dir=DB_DIR, capture=CAPTURE):
+def populate_questlog(session, db_dir=QUESTLOG_DB_DIR, capture=CAPTURE, source_dir=None):
     endpoint = item_endpoint(capture)
-    items = list(indexed_items(db_dir))
+    source_dir = SOURCE_DIR if source_dir is None and db_dir == QUESTLOG_DB_DIR else source_dir or db_dir
+    items = list(indexed_items(source_dir))
     for number, (item_id, category) in enumerate(items, 1):
         detail = fetch_item(session, endpoint, item_id)
         raw_group = "gem" if category == "affix_gem" else "equipment"
@@ -52,7 +56,12 @@ def populate(session, db_dir=DB_DIR, capture=CAPTURE):
             print(f"{number}/{len(items)} details")
 
 
+def populate(session, db_dir=QUESTLOG_DB_DIR, capture=CAPTURE):
+    """Backward-compatible wrapper for the Questlog population step."""
+    return populate_questlog(session, db_dir, capture)
+
+
 if __name__ == "__main__":
     with requests.Session() as session:
         session.headers.update(HEADERS)
-        populate(session)
+        populate_questlog(session)
