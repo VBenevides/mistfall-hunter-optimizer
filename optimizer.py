@@ -433,6 +433,16 @@ def available_affixes(equipment_dir=EQUIPMENT_DB, gem_dir=GEM_DIR, character_cla
     })
 
 
+def _format_table(headers, rows):
+    values = [headers, *rows]
+    widths = [max(len(str(row[index])) for row in values) for index in range(len(headers))]
+
+    def row(values):
+        return " | ".join(str(value).ljust(width) for value, width in zip(values, widths)).rstrip()
+
+    return "\n".join((row(headers), "-+-".join("-" * width for width in widths), *(row(item) for item in rows)))
+
+
 def _format_one(result):
     if not result.get("possible"):
         requested = result.get("requestedAffixes", {})
@@ -451,6 +461,7 @@ def _format_one(result):
         f"Price: {result['minPrice']} / {result['averagePrice']} / {result['maxPrice']}",
         "Pieces:",
     ]
+    piece_rows = []
     for piece in result["pieces"]:
         native = piece["nativeAffixes"]
         native_text = (
@@ -463,7 +474,9 @@ def _format_one(result):
             for slot in piece.get("gemSlots", [])
         ) or "No gem slots"
         slot_name = _slot_key(piece["slot"]).title()
-        lines.append(f"{slot_name} - {piece['name']} - {native_text}: {gems}")
+        rarity_level = result["weaponLevel"] if _slot_key(piece["slot"]) == "weapon" else result["armorLevel"]
+        piece_rows.append((slot_name, RARITIES[rarity_level], piece["name"], native_text, gems))
+    lines.append(_format_table(("Type", "Rarity", "Name", "Native Affixes", "Gems"), piece_rows))
     return "\n".join(lines)
 
 
