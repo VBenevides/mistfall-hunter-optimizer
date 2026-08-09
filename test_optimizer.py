@@ -24,16 +24,25 @@ class OptimizerTest(unittest.TestCase):
                     "mainCategory": "weapon" if slot == "weapon" else "armor",
                     "subName": slot,
                     "grade": grade,
+                    "minPrice": 1,
+                    "maxPrice": 1,
+                    "recommendedPrice": 1,
                     "equipment": {"affixes": [], "holeGroup": [11]},
                 }))
             (gems / "g1.json").write_text(json.dumps({
                 "id": "g1",
                 "name": "Aegis Ruby",
+                "minPrice": 1,
+                "maxPrice": 3,
+                "recommendedPrice": 2,
                 "gem": {"affixGemType": 1, "affixGemLevel": 1, "affixes": [{"name": "Aegis", "level": 1}]},
             }))
             (gems / "g2.json").write_text(json.dumps({
                 "id": "g2",
                 "name": "Iron Helmet Ruby",
+                "minPrice": 1,
+                "maxPrice": 3,
+                "recommendedPrice": 2,
                 "gem": {"affixGemType": 1, "affixGemLevel": 1, "affixes": [{"name": "Iron Helmet", "level": 1}]},
             }))
 
@@ -42,6 +51,9 @@ class OptimizerTest(unittest.TestCase):
             self.assertEqual(result["above"]["levelCombination"], [3, 2, 2, 2, 2, 2, 2, 2])
             self.assertEqual(result["same"]["effects"], {"Aegis": 2})
             self.assertEqual(result["same"]["gemCost"]["count"], 2)
+            self.assertEqual(result["same"]["minPrice"], 10)
+            self.assertEqual(result["same"]["maxPrice"], 14)
+            self.assertEqual(result["same"]["recommendedPrice"], 12)
             self.assertIsNone(optimize({"Aegis": 2}, "same", equipment, root / "gem", min_level=3))
             self.assertIsNotNone(optimize({"iRoN_hElMeT": 1}, "same", equipment, root / "gem"))
 

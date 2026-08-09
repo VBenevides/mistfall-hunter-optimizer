@@ -15,10 +15,19 @@ RARITIES = {
     5: "Epic",
     6: "Legendary",
 }
+PRICE_FIELDS = ("minPrice", "maxPrice", "recommendedPrice")
 
 
 def _normalize_affix(name):
     return " ".join(str(name).replace("_", " ").split()).casefold()
+
+
+def _prices(item):
+    return tuple(float(item.get(field) or 0) for field in PRICE_FIELDS)
+
+
+def _number(value):
+    return int(value) if value.is_integer() else round(value, 2)
 
 
 def _load_database(equipment_dir=EQUIPMENT_DIR, gem_dir=GEM_DIR):
@@ -64,7 +73,7 @@ def _compatible(gem, hole):
 
 def _item_options(item, gems, positions, limits):
     equipment = item.get("equipment", {})
-    states = {(_vector(equipment.get("affixes", []), positions, limits), ()): (0, 0)}
+    states = {(_vector(equipment.get("affixes", []), positions, limits), ()): (0, 0, 0, 0, 0)}
     choices_by_hole = []
     for hole in equipment.get("holeGroup", []):
         choices_by_hole.append([None] + [gem for gem in gems if _compatible(gem, hole)])
@@ -74,14 +83,16 @@ def _item_options(item, gems, positions, limits):
         for (coverage, selected), cost in states.items():
             for gem in choices:
                 if gem is None:
-                    addition, gem_cost, gem_id = (0,) * len(limits), (0, 0), None
+                    addition, gem_cost, gem_id = (0,) * len(limits), (0, 0, 0, 0, 0), None
                 else:
                     addition = _vector(gem["gem"].get("affixes", []), positions, limits)
                     gem_level = int(gem["gem"]["affixGemLevel"])
-                    gem_cost, gem_id = (gem_level, 1), gem["id"]
+                    prices = _prices(gem)
+                    gem_cost = (prices[2], prices[0], prices[1], gem_level, 1)
+                    gem_id = gem["id"]
                 result = tuple(min(coverage[i] + addition[i], limits[i]) for i in range(len(limits)))
                 candidate = (result, selected + (gem_id,))
-                total_cost = (cost[0] + gem_cost[0], cost[1] + gem_cost[1])
+                total_cost = tuple(cost[index] + gem_cost[index] for index in range(5))
                 previous = next_states.get((result,))
                 if previous is None or total_cost < previous[0]:
                     next_states[(result,)] = (total_cost, candidate[1])
@@ -103,7 +114,7 @@ def _solve(equipment, gems, armor_level, weapon_level, positions, labels, limits
 
     stages = [("weapon", groups["weapon"])] + [(slot, groups[slot]) for slot in armor_slots]
     zero = (0,) * len(limits)
-    states = {zero: ((0, 0), {})}
+    states = {zero: ((0, 0, 0, 0, 0), {})}
     gem_by_id = {gem["id"]: gem for gem in gems}
 
     for slot, items in stages:
@@ -115,9 +126,11 @@ def _solve(equipment, gems, armor_level, weapon_level, positions, labels, limits
                         min(previous_coverage[i] + coverage[i], limits[i])
                         for i in range(len(limits))
                     )
-                    cost = (
-                        previous_cost[0] + option_cost[0],
-                        previous_cost[1] + option_cost[1],
+                    item_prices = _prices(item)
+                    item_cost = (item_prices[2], item_prices[0], item_prices[1], 0, 0)
+                    cost = tuple(
+                        previous_cost[index] + option_cost[index] + item_cost[index]
+                        for index in range(5)
                     )
                     if combined not in next_states or cost < next_states[combined][0]:
                         selected = dict(previous_items)
@@ -125,10 +138,23 @@ def _solve(equipment, gems, armor_level, weapon_level, positions, labels, limits
                             "id": item["id"],
                             "name": item["name"],
                             "grade": item["grade"],
+                            "prices": {
+                                "min": _number(item_prices[0]),
+                                "max": _number(item_prices[1]),
+                                "recommended": _number(item_prices[2]),
+                            },
                             "gems": [
                                 None
                                 if gem_id is None
-                                else {"id": gem_id, "name": gem_by_id[gem_id]["name"]}
+                                else {
+                                    "id": gem_id,
+                                    "name": gem_by_id[gem_id]["name"],
+                                    "prices": {
+                                        "min": _number(_prices(gem_by_id[gem_id])[0]),
+                                        "max": _number(_prices(gem_by_id[gem_id])[1]),
+                                        "recommended": _number(_prices(gem_by_id[gem_id])[2]),
+                                    },
+                                }
                                 for gem_id in selected_gems
                             ],
                             "itemIncludes": item.get("itemIncludes", []),
@@ -147,7 +173,10 @@ def _solve(equipment, gems, armor_level, weapon_level, positions, labels, limits
         "weaponLevel": weapon_level,
         "levelCombination": [weapon_level] + [armor_level] * len(armor_slots),
         "effects": {labels[key][0]: limits[i] for i, key in enumerate(positions)},
-        "gemCost": {"levelSum": cost[0], "count": cost[1]},
+        "minPrice": _number(cost[1]),
+        "maxPrice": _number(cost[2]),
+        "recommendedPrice": _number(cost[0]),
+        "gemCost": {"levelSum": cost[3], "count": cost[4]},
         "items": selected,
     }
 
