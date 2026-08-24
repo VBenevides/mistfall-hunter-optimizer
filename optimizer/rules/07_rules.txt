@@ -1,0 +1,171 @@
+# Current optimizer rules
+
+This file describes the current behavior of both optimizer modes.
+
+## Base optimizer
+
+### Objective
+
+The base optimizer returns the lowest-rarity complete equipment set that
+satisfies the selected targets. Among builds with the same rarity, it compares
+the selected stat priority lexicographically, then uses gem tier and a stable
+item/gem signature as tie-breakers. Price is reported only and is never an
+optimization criterion.
+
+The default stat priority is:
+
+`Weapon Damage > Attack > Defense > Health`
+
+Weapon Damage is the weapon's rarity/damage value. Attack includes Attack and
+the weapon's relevant Physical Damage or Magic Damage percentage. Defense and
+Health use the final calculated values.
+
+### Hard constraints
+
+- The build contains one item for every slot: weapon, helmet, clothes,
+  gauntlets, pants, boots, necklace, and ring.
+- Every requested target must be reached for an exact build. Requested levels
+  must be positive and within the affix's available maximum.
+- Duplicate target names use the highest requested level.
+- Blocked affixes are excluded from equipment and gems, including bonus and
+  fill choices.
+- Explicit targets remain eligible even when their affix is not a Stat First
+  stat affix.
+- The selected class, weapon class, ring filters, necklace filters, fixed
+  rarities, and inclusive rarity range must be respected.
+- Equipment rarity capacity is checked against the requested equipment affix
+  total. The automatic minimum is 2 below 8 levels, then 3 for 8–15, 4 for
+  16–23, 5 for 24–31, and 6 for 32 levels.
+- The weapon must be upgraded before other slots. After that, rarity is
+  distributed by the objective and stats; armor slots do not use a fixed
+  upgrade order.
+- A gem must fit its socket tier. Typed sockets accept matching gems and
+  Any-type gems; Any sockets accept every gem type.
+- Wine contributes 0–2 levels per affix and 8 levels total, but does not
+  contribute to equipment target coverage or rarity selection.
+
+### Match Target Strictly
+
+Match Target Strictly is disabled by default.
+
+When enabled:
+
+- Every explicit target must equal its requested level; target overshoot is
+  rejected.
+- Unused gem and native-affix slots remain empty whenever possible.
+- Equipment with unnecessary non-target native affixes is preferred when its
+  sockets are not used.
+- Compatible empty sockets are not filled with bonus gems.
+
+When disabled:
+
+- The optimizer may exceed target levels.
+- Empty compatible sockets are filled globally after the equipment search.
+- Selected targets are raised toward their defined maximums before bonus
+  affixes are considered.
+- Bonus affixes are used only after target coverage is maximized.
+- A compatible fallback gem is used when no target or bonus assignment is
+  available.
+
+All gem assignments must still obey socket color/type and tier rules.
+
+### Search and fallback
+
+- Normal mode uses exhaustive dynamic programming bounded by affix coverage.
+- The preliminary result only establishes an upper rarity bound; the final
+  search proves the returned result.
+- Dominated states are discarded while preserving better coverage, rarity,
+  stats, gem tier, and deterministic tie-break data.
+- If no exact build exists, the result minimizes target shortfall and is marked
+  as a closest build.
+
+## Stats First optimizer
+
+### Purpose and priority
+
+Stats First generates stronger candidates when a higher average price is
+acceptable. It uses the base optimizer to validate each candidate, then ranks
+the validated equipment by final stats and average price.
+
+The default priority remains:
+
+`Weapon Damage > Attack > Defense > Health`
+
+Weapon Damage is compared first. The weapon is upgraded before every other
+slot. The remaining rarity distribution is chosen by the selected stats, not
+by a fixed armor-slot order.
+
+Attack uses the selected weapon's damage type:
+
+- Physical weapons use Physical Damage.
+- Magic weapons use Magic Damage.
+- 1% Defense Penetration counts as 3% Attack for candidate gain and scoring.
+
+Strife per-stack Physical and Magic Damage is treated as a consistent bonus.
+The level-4-to-level-5 gain is therefore 3.2%, not 1.2%.
+
+Fervor Physical and Magic Damage is multiplied by its maximum stack count.
+Its Defense Penetration is not multiplied by that stack count.
+
+### Candidate generation
+
+Candidates are generated as affix-level combinations before equipment slots
+are assigned. Each candidate must:
+
+- Include every explicit target and meet the configured minimum equipment
+  affix level.
+- Exclude blocked affixes and invalid weapon-only affixes.
+- Use available affixes and valid levels.
+- Include only affixes classified as Attack, Defense, or HP unless an affix
+  is an explicit target. Affixes classified as None are otherwise excluded.
+- Respect the selected class, weapon, rarity, and target settings.
+
+Candidate gains include thresholds, Defense Penetration equivalence, Strife
+per-stack damage, and Fervor stack damage. When gains match, levels are
+centralized on fewer affixes instead of distributed across several affixes.
+New thresholds on another affix are checked before continuing an existing
+affix past a threshold.
+
+The candidate limit is at most 20 validated candidate targets, reduced only by
+the configured reference-cost filter. Candidate generation uses the same
+worker count as the equipment optimizer and divides candidate states between
+workers.
+
+### Validation and ranking
+
+Each candidate is validated by the base slot optimizer. Validation enforces
+complete equipment, native affixes, gem compatibility, fixed rarities,
+weapon-only rules, class and weapon availability, blocked affixes, and the
+configured minimum equipment-affix level.
+
+Estimated candidate scores are used only for generation and pruning. Final
+ranking uses the actual validated equipment stats and `AveragePrice`.
+
+Results are reduced to a Pareto frontier where a result is removed when
+another result is no more expensive and has equal or higher final value.
+
+### Stopping and reference cost
+
+The frontier is sorted by average price. The optimizer calculates the marginal
+stat gain between adjacent results and stops after three consecutive gains at
+or below 25% of the previous gain.
+
+Reference Cost is a soft lookup constraint, not a price target:
+
+- A positive reference cost sets a 110% upper ceiling for candidate guidance.
+- Candidates above the ceiling are removed only when at least one eligible
+  result is at or below the ceiling.
+- Results below 90% are not penalized or removed.
+- Explicit targets always remain eligible.
+- A reference cost of 0 disables price guidance.
+
+The final result is selected from validated Pareto candidates. If no candidate
+produces a valid equipment set, Stats First returns the same failure format as
+the base optimizer.
+
+### Match Target Strictly
+
+The Match Target Strictly setting is passed to the base optimizer for every
+candidate. Enabled mode requires exact target levels and leaves unused sockets
+empty. Disabled mode allows target overshoot and fills compatible empty sockets
+using the base optimizer's global assignment rules.

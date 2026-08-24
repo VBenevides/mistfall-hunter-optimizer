@@ -1,0 +1,148 @@
+# Stat First Optimizer
+
+## Purpose
+
+Stat First mode finds stronger equipment when the user accepts a higher average
+price than the normal optimizer requires.
+
+The normal optimizer finds the lowest-rarity equipment set that satisfies the
+selected targets. Stat First mode uses it as its equipment and socket
+validator.
+
+The default stat priority is Weapon Damage, Attack, Defense, then Health.
+Weapon Damage is the weapon's damage/rank value. Attack uses the combined
+value of Attack and the weapon's relevant Physical or Magic Damage.
+
+The Weapon upgrades before every other slot. No armor or accessory may have a
+higher rarity than the Weapon. The remaining slot distribution is decided by
+the stat priority, not a fixed armor-slot order.
+
+Strife's per-stack Physical and Magic Damage is treated as a consistent bonus
+in the stat model. At level 5, this makes the level-4-to-level-5 gain 3.2%
+instead of 1.2%.
+
+Fervor's Physical and Magic Damage is multiplied by its maximum stacks from
+the description. Its Defense Penetration is not multiplied by those stacks.
+
+Each affix is classified as Attack, Defense, HP, or None from its level effects.
+Stat First candidates and gem filling ignore None affixes unless they are
+explicit targets.
+
+For Stat First scoring, 1% Defense Penetration is treated as 3% Attack.
+
+## Required values
+
+Stat First mode uses the current class, weapon, rarity, slot, gem, blocked
+affix, and stat priority settings.
+
+The starting equipment-affix level is:
+
+`max(configured minimum affix level, sum of explicit target levels)`
+
+The minimum rarity remains a separate hard constraint. It does not add affix
+levels to the starting value. The optimizer can still raise the minimum
+rarity when the requested affix total needs more capacity.
+
+Stat First mode always uses automatic marginal-gain stopping and validates up
+to 20 relaxed affix targets. Reference Cost can narrow that number further.
+
+It also uses this setting:
+
+- Reference Cost: an average-price target used with the total-affix-level lookup.
+  `0` disables price-guided candidate generation.
+
+`AveragePrice` is used as the Pareto cost. Reference Cost sets a soft upper
+ceiling at 110% of its value. Lower-priced results remain eligible and are not
+penalized for being below 90%.
+
+## Process
+
+### 1. Generate relaxed affix candidates
+
+Create candidate target vectors without assigning equipment slots.
+
+Each candidate must:
+
+- Meet every explicit affix target.
+- Meet the starting equipment-affix level.
+- Exclude blocked affixes.
+- Respect the selected class and weapon rules.
+- Use only available affixes and valid affix levels.
+
+This stage ranks candidates with an estimated stat value. It does not prove
+that a candidate can produce a valid equipment set.
+
+When estimated gains match, prefer fewer active affixes and concentrate levels
+on the highest-level affixes before using the stable signature tie-breaker.
+
+Keep alternatives that reach newly introduced threshold effects. This allows a
+threshold on another affix to be checked before continuing an existing affix
+from level 5 to levels 6 or 7.
+
+### 2. Validate each candidate with the normal optimizer
+
+Pass each candidate target vector to the existing slot-aware optimizer.
+
+The normal optimizer must validate:
+
+- One item for every equipment slot.
+- Native affixes and item rarity.
+- Weapon-only affixes.
+- Gem color and tier compatibility.
+- Fixed slot rarities.
+- Ring and amulet filters.
+- Class and weapon availability.
+- The configured minimum equipment-affix level.
+
+The normal optimizer returns the actual stat values and `AveragePrice` for
+each valid candidate. Stat First mode must rank candidates from these results,
+not from the relaxed estimate.
+
+### 3. Build the Pareto frontier
+
+Use these two values for every valid result:
+
+- Cost: `AveragePrice`.
+- Value: the final stat score in the selected priority order.
+
+A result is dominated when another result is no more expensive and has equal
+or higher value. Remove dominated results.
+
+The remaining results form the cost and value Pareto frontier.
+
+### 4. Apply the automatic marginal-gain rule
+
+Sort the frontier by `AveragePrice`. For two adjacent results, calculate:
+
+`gain = (value2 - value1) / (AveragePrice2 - AveragePrice1)`
+
+Stop accepting more expensive results when the gain drops to 25% of the
+previous gain for three consecutive results.
+
+### 5. Apply the reference-cost lookup
+
+If Reference Cost is greater than `0` and the lookup table is available, select
+total affix levels whose lookup average price is at or below:
+
+`Reference Cost * 1.10`
+
+If no level is at or below that ceiling, use the cheapest lookup level and
+nearby levels. Explicit targets always remain eligible. After validation,
+discard results above the ceiling when at least one result is at or below it.
+The normal stat-versus-price Pareto and automatic marginal-gain rules then
+choose the result; Reference Cost does not prefer a result merely because it
+is closer to the reference value.
+
+## Important behavior
+
+Stat First mode must not replace the normal slot solver. It adds an outer
+candidate and ranking layer around that solver.
+
+The relaxed stage may use an estimated stat value for pruning. The final stage
+must always use the exact stat model and the actual equipment result.
+
+The final ranking must use the selected stat priority. The implementation must
+not silently change the normal mode from rarity-first optimization.
+
+If no candidate produces a valid equipment set, return the same failure format
+as the normal optimizer.

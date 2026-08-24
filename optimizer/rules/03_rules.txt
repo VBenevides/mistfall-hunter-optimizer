@@ -1,0 +1,170 @@
+# Optimizer rules — version 3
+
+The optimizer evaluates complete equipment sets, native affixes, compatible
+gems, class base stats, item attributes, and affix effects together.
+
+## Objective
+
+Find the best valid build using this priority order:
+
+1. Satisfy every selected hard constraint.
+2. Minimize the total rarity level of all eight equipment pieces.
+3. Among equal-rarity builds, maximize the selected stats in lexicographic
+   priority order.
+4. Use deterministic tie-breakers.
+
+Equipment and gem price is reported only. Price is never optimized.
+
+## Hard constraints
+
+### Affix targets
+
+- Affix targets are optional. With no targets, the optimizer may select from
+  all available affixes without an affix coverage requirement.
+- If a target is set, the final build must reach at least that affix level.
+- Requested levels must be positive and cannot exceed the affix's defined
+  maximum level.
+- Duplicate affix names are merged using the highest requested level.
+- Blocked affixes are excluded from equipment and gems.
+- A target affix may be used wherever necessary to satisfy its target.
+- Bonus affixes may be selected even when they are not targets.
+
+### Equipment and rarity
+
+- The build contains exactly one item for each slot:
+  weapon, helmet, clothes, gauntlets, pants, boots, necklace, and ring.
+- Every item must be within the inclusive minimum and maximum rarity range.
+- Fixed rarities must be respected, including weapon rarity and fixed slot
+  rarities.
+- The selected class must have the requested weapon class available.
+- Ring and necklace filters are hard filters. Supported filters are `HP`,
+  `ATK`, or `Any`, combined with `PHYS`, `MAG`, or `Any`.
+
+The minimum rarity may be raised automatically as a capacity check based on
+the total requested equipment affix levels:
+
+- below 8 levels: minimum rarity 2
+- 8–15 levels: minimum rarity 3
+- 16–23 levels: minimum rarity 4
+- 24–31 levels: minimum rarity 5
+- 32 levels: minimum rarity 6
+
+### Gems and sockets
+
+- A gem must match its socket type unless the socket accepts any type.
+- A gem's tier cannot exceed the socket tier.
+- A tier-2 socket accepts tier-1 or tier-2 gems.
+- Typed sockets accept only the matching gem type.
+- If Match Target Strictly is disabled, every empty socket must receive a compatible
+  gem. If no compatible assignment exists, the build is invalid.
+
+### Wine and input validation
+
+- Wine is limited to 0–2 levels per affix and 8 levels total.
+- Wine does not contribute to optimizer target coverage or rarity selection.
+- The stat priority must contain every configured stat exactly once.
+
+### Weapon-only affixes
+
+The following affixes are weapon-only for the listed weapon classes:
+
+- Burst: Greatsword, Polearm & Shield
+- Ranged: Bow, Staff, Javelin, Catalyst
+- Bulwark: Sword & Shield, Polearm & Shield
+
+For other weapon classes, these affixes are considered only when explicitly
+targeted or when needed as a dummy/fill gem. They are not selected as ordinary
+bonus affixes.
+
+## Weapon and damage rules
+
+Attack optimization includes final Attack and the damage type that matches the
+selected weapon. Use the following damage mapping:
+
+| Weapon | Damage type |
+|---|---|
+| Sword & Shield | Physical |
+| Hammer | Physical |
+| Bow | Physical |
+| Javelin / Spear | Physical |
+| Dagger | Physical |
+| Dual Blades | Physical |
+| Greatsword | Physical |
+| Polearm & Shield / Spear & Shield | Physical |
+| Staff | Magic |
+| Catalyst | Magic |
+| Mace | Magic |
+
+When Attack is prioritized, compare final Attack, including flat and
+percentage Attack effects, then the relevant Physical Damage or Magic Damage
+percentage before moving to lower-priority stats.
+
+## Soft constraints
+
+Soft constraints are applied in this order:
+
+1. Minimize the sum of the rarity levels of all eight equipment pieces.
+2. Maximize the first stat in the selected priority order.
+3. If it ties, maximize the second stat, then the third, and so on.
+4. Prefer a higher-tier gem when affix coverage and prioritized stats tie.
+5. Use a deterministic item and gem signature as the final tie-breaker.
+
+This is lexicographic comparison, not a weighted score.
+
+The default stat priority is:
+
+`Weapon Damage > Attack > Defense > Health`
+
+The user may reorder the configured stats. Attack optimization additionally
+uses the weapon's mapped Physical Damage or Magic Damage percentage.
+
+## Stat calculation
+
+Final stats are calculated as:
+
+`class base stat + item attributes + flat affix bonuses + percentage bonuses`
+
+The current reference base stats are:
+
+- Health: 618
+- Stamina: 100
+- Defense: 50
+- Attack: 100
+
+The selected class's loaded base stats are used when available. Stamina is
+shown in the build summary but is not part of the four-stat priority list.
+Physical Damage and Magic Damage are percentages and default to 0%.
+
+## Affix coverage and Match Target Strictly
+
+- Native equipment affixes and gem affixes both contribute to target coverage.
+- With Match Target Strictly enabled, target coverage cannot exceed the requested level.
+- A target's defined maximum is used when filling selected affixes beyond the
+  requested threshold.
+- Bonus affixes are allowed and may exceed requested targets when strict matching is disabled.
+
+When Match Target Strictly is disabled, empty sockets are assigned globally in this
+order:
+
+1. Maximize reached affix thresholds.
+2. Raise selected target affixes toward their defined maximums.
+3. Maximize bonus affix levels.
+4. Prefer the gem tier closest to the socket tier.
+5. Use deterministic gem order.
+
+The fill process preserves optimizer-selected gems. Fallback gems must remain
+compatible with the socket's type and tier. Price does not decide the fill
+assignment.
+
+## Search behavior
+
+- Normal mode uses exhaustive dynamic programming bounded by affix coverage.
+- The optimizer evaluates all feasible rarity combinations needed to prove
+  the best result.
+- A preliminary result is used only as an upper rarity bound; it is never
+  returned before the final optimal search completes.
+- For each coverage state, dominated combinations are discarded and only the
+  best current state is retained to limit memory use.
+- If no exact build exists, the fallback minimizes total target shortfall and
+  marks the result as a closest build.
+- Recommended, minimum, and maximum prices are calculated and displayed only.

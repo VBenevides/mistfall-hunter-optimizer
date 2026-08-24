@@ -1,0 +1,25 @@
+## Removal
+
+- Remove at least 1 affix level requirement, the user can optimize and allow optimizer to select all affixes
+
+## Addition
+
+# Attack Optimization
+- Attack optimization consists of optimizing: % Attack and % Physical damage / % Magic Damage (Depends on the class)
+- Prioritize the following damage type based on the weapon
+    - Sword & Shield: Physical
+	- Hammer: Physical
+    - Bow: Physical
+	- Javelin / Spear: Physical
+    - Dagger: Physical
+	- Dual Blades: Physical
+    - Greatsword: Physical
+	- Polearm & Shield / Spear & Shield: Physical
+	- Staff: Magic
+    - Catalyst: Magic
+	- Mace: Magic
+- The following weapon affixes should be ONLY be used on the weapons (if the weapon is not here, consider it only if in TARGET or as a dummy/fill gem): 
+    - Burst: Greatsword, Polearm & Shield
+    - Ranged: Bow, Staff, Javelin, Catalyst
+    - Bulwark: Sword & Shield, Polearm & Shield
+    

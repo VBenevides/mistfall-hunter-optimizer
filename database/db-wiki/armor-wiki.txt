@@ -1,0 +1,49 @@
+Armor - Slot - Class - Rarity - Attack - Health - Combat
+Ace Assassin Boots;Feet;Shadowstrix;Legendary;12;55;525
+Ace Assassin Bracers;Arms;Shadowstrix;Legendary;12;;525
+Ace Assassin Garb;Chest;Shadowstrix;Legendary;;74;525
+Ace Assassin Mask;Head;Shadowstrix;Legendary;;74;525
+Ace Assassin Pants;Legs;Shadowstrix;Legendary;;92;525
+Ancestral Blessing Ring;Ring;All classes;Legendary;;34;500
+Apprentice Boots;Feet;Sorcerer, Seer;Common;6;35;200
+Apprentice Bracers;Arms;Sorcerer, Seer;Common;6;;200
+Apprentice Hood;Head;Sorcerer, Seer;Common;;47;200
+Apprentice Pants;Legs;Sorcerer, Seer;Common;;58;200
+Apprentice Robe;Chest;Sorcerer, Seer;Common;;47;200
+Artisan's Bracers;Arms;Blackarrow, Shadowstrix;Common;6;;200
+Artisan's Eyepatch;Head;Blackarrow, Shadowstrix;Common;;47;200
+Artisan's Leather Boots;Feet;Blackarrow, Shadowstrix;Common;6;35;200
+Artisan's Pants;Legs;Blackarrow, Shadowstrix;Common;;58;200
+Artisan's Vest;Chest;Blackarrow, Shadowstrix;Common;;47;200
+Beak Necklace;Amulet;All classes;Rare;;25;275
+Benediction Amulet;Amulet;All classes;Excellent;;30;350
+Black Iris Bracers;Arms;Withered Knight;Epic;10;;450
+Black Iris Breastplate;Chest;Withered Knight;Epic;;66;450
+Black Iris Breeches;Legs;Withered Knight;Epic;;83;450
+Black Iris Helmet;Head;Withered Knight;Epic;;66;450
+Black Iris Sabatons;Feet;Withered Knight;Epic;10;50;450
+Bloodborn Amulet;Amulet;All classes;Excellent;;30;350
+Bloodwrath General Armor;Chest;Mercenary;Epic;;66;450
+Bloodwrath General Bracers;Arms;Mercenary;Epic;10;;450
+Bloodwrath General Greaves;Feet;Mercenary;Epic;10;50;450
+Bloodwrath General Helmet;Head;Mercenary;Epic;;66;450
+Bloodwrath General Pants;Legs;Mercenary;Epic;;83;450
+Brass Necklace;Amulet;All classes;Common;4;;200
+Carved Amulet;Amulet;All classes;Common;;23;200
+Ceremonial Bracers;Arms;Withered Knight;Rare;7;;300
+Ceremonial Breastplate;Chest;Withered Knight;Rare;;50;300
+Ceremonial Breeches;Legs;Withered Knight;Rare;;63;300
+Ceremonial Helmet;Head;Withered Knight;Rare;;50;300
+Ceremonial Sabatons;Feet;Withered Knight;Rare;7;38;300
+Champion's Armor;Chest;Mercenary;Legendary;;74;525
+Champion's Boots;Feet;Mercenary;Legendary;12;55;525
+Champion's Bracers;Arms;Mercenary;Legendary;12;;525
+Champion's Helmet;Head;Mercenary;Legendary;;74;525
+Champion's Pants;Legs;Mercenary;Legendary;;92;525
+Commander Seal Ring;Ring;All classes;Epic;7;;425
+Crude Recruit Armor;Chest;Mercenary, Withered Knight;Damaged;;40;100
+Crude Recruit Boots;Feet;Mercenary, Withered Knight;Damaged;5;30;100
+Crude Recruit Bracers;Arms;Mercenary, Withered Knight;Damaged;5;;100
+Crude Recruit Helmet;Head;Mercenary, Withered Knight;Damaged;;40;100
+Crude Recruit Pants;Legs;Mercenary, Withered Knight;Damaged;;50;100
+Crusade Bracers;Arms;Withered Knight;Excellent;9;;375
