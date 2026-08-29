@@ -209,8 +209,18 @@ func secondaryWeapon(classID int, primary GUIPiece, mode string) (GUIPiece, bool
 	weaponType := nativeWeaponType(primaryConfig)
 	if mode == secondaryWeaponMatched {
 		variant := primary.NativeID % 100
+		matches := func(config nativeEquipmentConfig) bool {
+			return config.ClassID == classID && config.Slot == "primary" && config.Rarity == primaryConfig.Rarity && nativeWeaponType(config) != weaponType
+		}
 		for _, config := range nativeTables.Equipment {
-			if config.ClassID == classID && config.Slot == "primary" && config.Rarity == primaryConfig.Rarity && config.ID%100 == variant && nativeWeaponType(config) != weaponType {
+			if matches(config) && config.ID%100 == variant {
+				secondary := primary
+				secondary.Type, secondary.Name, secondary.NativeID = "Secondary", config.Name, config.ID
+				return secondary, true
+			}
+		}
+		for _, config := range nativeTables.Equipment {
+			if matches(config) {
 				secondary := primary
 				secondary.Type, secondary.Name, secondary.NativeID = "Secondary", config.Name, config.ID
 				return secondary, true
@@ -230,13 +240,16 @@ func secondaryWeapon(classID int, primary GUIPiece, mode string) (GUIPiece, bool
 }
 
 func nativeWeaponType(config nativeEquipmentConfig) string {
+	if weaponType := nativeWeaponTypesByID[config.ID]; weaponType != "" {
+		return weaponType
+	}
 	name := strings.ToLower(strings.TrimSpace(config.Name))
 	for _, weaponType := range []string{
 		"sword and shield", "polearm and shield", "dual blades", "greatsword", "javelin",
 		"catalyst", "hammer", "dagger", "staff", "bow", "mace",
 	} {
 		if strings.HasSuffix(name, weaponType) {
-			return weaponType
+			return canonicalWeaponClass(weaponType)
 		}
 	}
 	return strconv.Itoa(config.ID / 100 % 100)

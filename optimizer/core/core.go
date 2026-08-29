@@ -27,10 +27,26 @@ func rarityPriorityIndexes(_ []string) ([8]int, int) {
 }
 
 var embeddedAffixes []byte
+var nativeWeaponTypesByID map[int]string
 
 func ConfigureAssets(database, affixes []byte) {
 	embeddedAffixes = affixes
 	configureDatabase(database)
+	nativeWeaponTypesByID = map[int]string{}
+	if equipment, _, err := loadDatabase(""); err == nil {
+		for _, item := range equipment {
+			if item.MainCategory != "weapon" {
+				continue
+			}
+			id := item.NativeID
+			if id == 0 {
+				id, _ = strconv.Atoi(item.ID)
+			}
+			if id != 0 {
+				nativeWeaponTypesByID[id] = canonicalWeaponClass(weaponClass(item))
+			}
+		}
+	}
 }
 
 type Affix struct {
