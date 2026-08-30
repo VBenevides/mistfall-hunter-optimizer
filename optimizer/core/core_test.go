@@ -111,7 +111,7 @@ func TestNativeCodeAddsWhiteSecondaryWeapon(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	secondary, ok := secondaryWeapon(classID, primary, secondaryWeaponWhite)
+	secondary, ok := secondaryWeapon(classID, primary, secondaryWeaponWhite, nil)
 	if !ok || secondary.Rarity != "White" || secondary.NativeID%10000 == primary.NativeID%10000 {
 		t.Fatalf("secondary weapon = %#v, primary = %#v", secondary, primary)
 	}
@@ -149,9 +149,89 @@ func TestNativeCodeUsesAlternateWeaponTypeForWhiteSecondary(t *testing.T) {
 			break
 		}
 	}
-	secondary, ok := secondaryWeapon(classID, primary, secondaryWeaponWhite)
+	secondary, ok := secondaryWeapon(classID, primary, secondaryWeaponWhite, nil)
 	if !ok || secondary.NativeID != 3021001 {
 		t.Fatalf("secondary weapon = %#v, primary = %#v", secondary, primary)
+	}
+}
+
+func TestMatchedSecondaryKeepsCompatibleGems(t *testing.T) {
+	session, err := DecodeCode("17lpUcxR1roFJzaMOlCWTFsQuPCKRXSbmg6kV9Tv")
+	if err != nil {
+		t.Fatal(err)
+	}
+	var primary GUIPiece
+	for _, piece := range session.Result.Sets[0].Pieces {
+		if piece.Type == "Weapon" {
+			primary = piece
+		}
+	}
+	secondary, ok := secondaryWeapon(15, primary, secondaryWeaponMatched, nil)
+	if !ok || secondary.NativeID != 3040901 || len(secondary.Gems) != len(primary.Gems) {
+		t.Fatalf("secondary=%+v primary=%+v", secondary, primary)
+	}
+	code, err := ExportCode(session.Request.CharacterClass, GUISet{Pieces: []GUIPiece{primary, secondary}})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if _, err := DecodeCode(code); err != nil {
+		t.Fatalf("generated code=%s: %v", code, err)
+	}
+}
+
+func TestImportedBuildOptimizesAtOriginalRarity(t *testing.T) {
+	session, err := DecodeCode("17lpUcxR1roFJzaMOlCWTFsQuPCKRXSbmg6kV9Tv")
+	if err != nil {
+		t.Fatal(err)
+	}
+	want := map[string]int{"Smiting": 3, "Burst": 3, "Vitality": 2, "Bulwark": 2, "Elusive": 3, "Valor": 3}
+	if len(session.Request.Affixes) != len(want) {
+		t.Fatalf("imported targets = %#v", session.Request.Affixes)
+	}
+	for _, affix := range session.Request.Affixes {
+		if want[affix.Name] != affix.Level {
+			t.Fatalf("imported target = %#v", affix)
+		}
+	}
+	session.Request.MinRarity, session.Request.MaxRarity = "Gray", "Gold"
+	engine, err := NewEngine()
+	if err != nil {
+		t.Fatal(err)
+	}
+	result, err := engine.Execute(session.Request)
+	if err != nil || !result.Possible || result.OptimizationRank == nil || result.OptimizationRank.RaritySum != 32 {
+		t.Fatalf("optimized imported build = %#v, %v", result, err)
+	}
+	for _, piece := range result.Sets[0].Pieces {
+		if piece.Rarity != "Blue" {
+			t.Fatalf("optimized piece rarity = %#v", piece)
+		}
+	}
+	code, err := ExportCode(session.Request.CharacterClass, result.Sets[0])
+	if err != nil {
+		t.Fatal(err)
+	}
+	if _, err := DecodeCode(code); err != nil {
+		t.Fatalf("optimized build code = %s: %v", code, err)
+	}
+}
+
+func TestMatchedSecondaryFindsEquivalentGemVariant(t *testing.T) {
+	_, gems, err := loadDatabase("Withered Knight")
+	if err != nil {
+		t.Fatal(err)
+	}
+	primary := GUIPiece{Type: "Weapon", NativeID: 3030909, Gems: []GUIGem{{NativeID: 222102}}}
+	secondary, ok := secondaryWeapon(15, primary, secondaryWeaponMatched, gems)
+	if !ok || secondary.NativeID != 3031009 || len(secondary.Gems) != 1 || secondary.Gems[0].NativeID != 221107 {
+		t.Fatalf("secondary=%+v", secondary)
+	}
+	code, err := ExportCode("Withered Knight", GUISet{Pieces: []GUIPiece{primary, secondary}})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if _, err := DecodeCode(code); err != nil {
+		t.Fatalf("generated code=%s: %v", code, err)
 	}
 }
 
@@ -218,7 +298,7 @@ func TestNativeCodeAddsWhiteAlternateWeaponForEveryClassAndPrimary(t *testing.T)
 					continue
 				}
 				primaryPiece := GUIPiece{Type: "Weapon", NativeID: primaryID}
-				secondary, hasSecondary := secondaryWeapon(classID, primaryPiece, secondaryWeaponWhite)
+				secondary, hasSecondary := secondaryWeapon(classID, primaryPiece, secondaryWeaponWhite, nil)
 				pieces := []GUIPiece{primaryPiece}
 				if hasSecondary {
 					pieces = append(pieces, secondary)

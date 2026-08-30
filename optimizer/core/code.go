@@ -201,7 +201,7 @@ func nativeEquipment(classID, id int) (nativeEquipmentConfig, bool) {
 	return nativeEquipmentConfig{}, false
 }
 
-func secondaryWeapon(classID int, primary GUIPiece, mode string) (GUIPiece, bool) {
+func secondaryWeapon(classID int, primary GUIPiece, mode string, availableGems []Item) (GUIPiece, bool) {
 	primaryConfig, ok := nativeEquipment(classID, primary.NativeID)
 	if !ok {
 		return GUIPiece{}, false
@@ -212,18 +212,114 @@ func secondaryWeapon(classID int, primary GUIPiece, mode string) (GUIPiece, bool
 		matches := func(config nativeEquipmentConfig) bool {
 			return config.ClassID == classID && config.Slot == "primary" && config.Rarity == primaryConfig.Rarity && nativeWeaponType(config) != weaponType
 		}
+		gemByID := map[int]Item{}
+		for _, gem := range availableGems {
+			if id, err := databaseGemID(gem); err == nil {
+				gemByID[id] = gem
+			}
+		}
+		primaryGems := []Item{}
+		missingGem := false
+		for _, gem := range primary.Gems {
+			if gem.NativeID == 0 {
+				continue
+			}
+			item, exists := gemByID[gem.NativeID]
+			if !exists {
+				missingGem = true
+				continue
+			}
+			primaryGems = append(primaryGems, item)
+		}
+		matchingGems := func(config nativeEquipmentConfig) ([]GUIGem, bool) {
+			if missingGem {
+				return nil, false
+			}
+			selected := make([]GUIGem, len(config.Holes))
+			for index, hole := range config.Holes {
+				typ := hole / 10
+				if hole >= 50 {
+					typ = 5
+				}
+				selected[index].Color, selected[index].Tier = gemColors[gemTypes[typ]], hole%10
+			}
+			used := make([]bool, len(config.Holes))
+			var assign func(int) bool
+			assign = func(gemIndex int) bool {
+				if gemIndex == len(primaryGems) {
+					return true
+				}
+				target := primaryGems[gemIndex]
+				for socketIndex, hole := range config.Holes {
+					if used[socketIndex] {
+						continue
+					}
+					typ := hole / 10
+					if hole >= 50 {
+						typ = 5
+					}
+					for _, gem := range availableGems {
+						if !slices.Equal(gem.Gem.Affixes, target.Gem.Affixes) || !compatible(gem, Socket{Type: typ, Level: hole % 10}) {
+							continue
+						}
+						id, err := databaseGemID(gem)
+						if err != nil {
+							continue
+						}
+						names := make([]string, len(gem.Gem.Affixes))
+						for index, affix := range gem.Gem.Affixes {
+							names[index] = affix.Name
+						}
+						used[socketIndex] = true
+						selected[socketIndex].GemColor = gemActualColors[gemType(gem)]
+						selected[socketIndex].Name = formatGemName(GemRef{Name: gem.Name})
+						selected[socketIndex].Affixes = strings.Join(names, " / ")
+						selected[socketIndex].NativeID = id
+						if assign(gemIndex + 1) {
+							return true
+						}
+						used[socketIndex] = false
+					}
+				}
+				return false
+			}
+			if !assign(0) {
+				return nil, false
+			}
+			return selected, true
+		}
+		secondaryPiece := func(config nativeEquipmentConfig, gems []GUIGem, matched bool) GUIPiece {
+			secondary := primary
+			secondary.Type, secondary.Name, secondary.NativeID = "Secondary", config.Name, config.ID
+			if matched {
+				secondary.Gems = gems
+			} else if !slices.Equal(config.Holes, primaryConfig.Holes) {
+				secondary.Gems = nil
+			}
+			return secondary
+		}
 		for _, config := range nativeTables.Equipment {
 			if matches(config) && config.ID%100 == variant {
-				secondary := primary
-				secondary.Type, secondary.Name, secondary.NativeID = "Secondary", config.Name, config.ID
-				return secondary, true
+				if gems, ok := matchingGems(config); ok {
+					return secondaryPiece(config, gems, true), true
+				}
 			}
 		}
 		for _, config := range nativeTables.Equipment {
 			if matches(config) {
-				secondary := primary
-				secondary.Type, secondary.Name, secondary.NativeID = "Secondary", config.Name, config.ID
-				return secondary, true
+				if gems, ok := matchingGems(config); ok {
+					return secondaryPiece(config, gems, true), true
+				}
+			}
+		}
+		for _, config := range nativeTables.Equipment {
+			if matches(config) && slices.Equal(config.Holes, primaryConfig.Holes) {
+				return secondaryPiece(config, nil, false), true
+			}
+		}
+		for _, config := range nativeTables.Equipment {
+			if matches(config) {
+				return secondaryPiece(config, nil, false), true
 			}
 		}
 		return GUIPiece{}, false
@@ -485,15 +581,24 @@ func DecodeCode(code string) (GUISession, error) {
 	affixOrder := []string{}
 	affixLevels := map[string]int{}
 	affixNames := map[string]string{}
-	addAffixes := func(affixes []Affix) {
+	collectAffixes := func(affixes []Affix, order *[]string, levels map[string]int, names map[string]string) {
 		for _, affix := range affixes {
 			key := normalize(affix.Name)
-			if _, exists := affixLevels[key]; !exists {
-				affixOrder = append(affixOrder, key)
-				affixNames[key] = affix.Name
+			if _, exists := levels[key]; !exists {
+				*order = append(*order, key)
+				names[key] = affix.Name
 			}
-			affixLevels[key] += affix.Level
+			levels[key] += affix.Level
 		}
+	}
+	addAffixes := func(affixes []Affix) {
+		collectAffixes(affixes, &affixOrder, affixLevels, affixNames)
+	}
+	primaryAffixOrder := []string{}
+	primaryAffixLevels := map[string]int{}
+	primaryAffixNames := map[string]string{}
+	addPrimaryAffixes := func(affixes []Affix) {
+		collectAffixes(affixes, &primaryAffixOrder, primaryAffixLevels, primaryAffixNames)
 	}
 	request := GUIRequest{CharacterClass: titleCase(className), MatchTargetStrictly: true}
 	var primaryConfig nativeEquipmentConfig
@@ -524,6 +629,9 @@ func DecodeCode(code string) (GUISession, error) {
 			price += item.RecommendedPrice
 			name, itemClass = item.Name, item.SubName
 			addAffixes(item.Equipment.Affixes)
+			if slot != nativeSlotIDs["secondary"] {
+				addPrimaryAffixes(item.Equipment.Affixes)
+			}
 			names := make([]string, len(item.Equipment.Affixes))
 			for index, affix := range item.Equipment.Affixes {
 				names[index] = affix.Name
@@ -572,6 +680,9 @@ func DecodeCode(code string) (GUISession, error) {
 				if databaseGem.ID != "" {
 					price += databaseGem.RecommendedPrice
 					addAffixes(databaseGem.Gem.Affixes)
+					if slot != nativeSlotIDs["secondary"] {
+						addPrimaryAffixes(databaseGem.Gem.Affixes)
+					}
 					gem.Name = formatGemName(GemRef{Name: databaseGem.Name})
 					affixes := make([]string, len(databaseGem.Gem.Affixes))
 					for i, affix := range databaseGem.Gem.Affixes {
@@ -593,6 +704,9 @@ func DecodeCode(code string) (GUISession, error) {
 	set.Price = formatNumber(price)
 	for _, key := range affixOrder {
 		set.Affixes = append(set.Affixes, GUIResultAffix{Name: affixNames[key], Result: affixLevels[key]})
+	}
+	for _, key := range primaryAffixOrder {
+		request.Affixes = append(request.Affixes, GUIAffix{Name: primaryAffixNames[key], Level: primaryAffixLevels[key], Enabled: true})
 	}
 	return GUISession{
 		Request:   request,

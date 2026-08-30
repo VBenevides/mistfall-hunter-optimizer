@@ -1007,7 +1007,7 @@ func (engine *Engine) executeStandard(request GUIRequest, reports ...func(GUIPro
 		primary := GUIPiece{Type: titleCase(piece.Slot), Rarity: rarityColors[piece.Grade], Name: piece.Name, Attributes: attributes, NativeAffixes: native, NativeID: nativeID, Gems: gems}
 		pieceRows = append(pieceRows, primary)
 		if piece.Slot == "weapon" && request.SecondaryWeapon != secondaryWeaponNone {
-			secondary, ok := secondaryWeapon(classID, primary, request.SecondaryWeapon)
+			secondary, ok := secondaryWeapon(classID, primary, request.SecondaryWeapon, data.gems)
 			if !ok {
 				return GUIResult{}, fmt.Errorf("secondary weapon %q is unavailable", request.SecondaryWeapon)
 			}
