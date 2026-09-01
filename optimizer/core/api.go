@@ -50,9 +50,10 @@ type GUIRequest struct {
 }
 
 type standardDatabase struct {
-	equipment []Item
-	gems      []Item
-	stats     map[string]cachedItemStats
+	equipment    []Item
+	allEquipment []Item
+	gems         []Item
+	stats        map[string]cachedItemStats
 }
 
 type ClassStats struct {
@@ -166,6 +167,7 @@ type GUIResultAffix struct {
 type GUISet struct {
 	Code             string           `json:"code,omitempty"`
 	Affixes          []GUIResultAffix `json:"affixes"`
+	PrimaryAffixes   []GUIResultAffix `json:"primaryAffixes,omitempty"`
 	Price            string           `json:"price"`
 	UnusedGemSlots   int              `json:"unusedGemSlots"`
 	UnusedAffixSlots int              `json:"unusedAffixSlots"`
@@ -177,20 +179,21 @@ type GUISet struct {
 
 func (set *GUISet) UnmarshalJSON(data []byte) error {
 	var value struct {
-		Affixes          json.RawMessage `json:"affixes"`
-		Code             string          `json:"code"`
-		Price            string          `json:"price"`
-		UnusedGemSlots   int             `json:"unusedGemSlots"`
-		UnusedAffixSlots int             `json:"unusedAffixSlots"`
-		Pieces           []GUIPiece      `json:"pieces"`
-		Legacy           bool            `json:"legacy"`
-		TargetAffixes    string          `json:"targetAffixes"`
-		SelectedAffixes  string          `json:"selectedAffixes"`
+		Affixes          json.RawMessage  `json:"affixes"`
+		PrimaryAffixes   []GUIResultAffix `json:"primaryAffixes"`
+		Code             string           `json:"code"`
+		Price            string           `json:"price"`
+		UnusedGemSlots   int              `json:"unusedGemSlots"`
+		UnusedAffixSlots int              `json:"unusedAffixSlots"`
+		Pieces           []GUIPiece       `json:"pieces"`
+		Legacy           bool             `json:"legacy"`
+		TargetAffixes    string           `json:"targetAffixes"`
+		SelectedAffixes  string           `json:"selectedAffixes"`
 	}
 	if err := json.Unmarshal(data, &value); err != nil {
 		return err
 	}
-	set.Code, set.Price, set.UnusedGemSlots, set.UnusedAffixSlots, set.Pieces = value.Code, value.Price, value.UnusedGemSlots, value.UnusedAffixSlots, value.Pieces
+	set.Code, set.PrimaryAffixes, set.Price, set.UnusedGemSlots, set.UnusedAffixSlots, set.Pieces = value.Code, value.PrimaryAffixes, value.Price, value.UnusedGemSlots, value.UnusedAffixSlots, value.Pieces
 	set.Legacy, set.TargetAffixes, set.SelectedAffixes = value.Legacy, value.TargetAffixes, value.SelectedAffixes
 	if len(value.Affixes) == 0 || string(value.Affixes) == "null" {
 		return nil
@@ -241,7 +244,7 @@ func legacyAffixes(targetText, selectedText string) []GUIResultAffix {
 	return result
 }
 
-func formatGUIAffixes(request []GUIAffix, result *Solution, details map[string]GUIAffixDetails) []GUIResultAffix {
+func formatGUIAffixes(request []GUIAffix, result *Solution, details map[string]GUIAffixDetails, extra []Affix) []GUIResultAffix {
 	order, extras := []string{}, []string{}
 	names, levels, targets, wines := map[string]string{}, map[string]int{}, map[string]int{}, map[string]int{}
 	for _, requested := range request {
@@ -273,6 +276,7 @@ func formatGUIAffixes(request []GUIAffix, result *Solution, details map[string]G
 			}
 		}
 	}
+	add(extra)
 	sort.Slice(extras, func(i, j int) bool { return strings.ToLower(names[extras[i]]) < strings.ToLower(names[extras[j]]) })
 	affixes := make([]GUIResultAffix, 0, len(order)+len(extras))
 	for _, key := range append(order, extras...) {
@@ -719,6 +723,8 @@ func (engine *Engine) prepareStandardDatabase(request GUIRequest, blocked map[st
 	if err != nil {
 		return nil, err
 	}
+	allEquipment := equipment
+	equipment = slices.Clone(equipment)
 	equipment = slices.DeleteFunc(equipment, func(item Item) bool {
 		return hasBlockedAffix(item.Equipment.Affixes, blocked)
 	})
@@ -753,7 +759,7 @@ func (engine *Engine) prepareStandardDatabase(request GUIRequest, blocked map[st
 			return item.MainCategory == "weapon" && searchShardForItem(item.ID, request.SearchShards) != request.SearchShard
 		})
 	}
-	return &standardDatabase{equipment: equipment, gems: gems}, nil
+	return &standardDatabase{equipment: equipment, allEquipment: allEquipment, gems: gems}, nil
 }
 
 func (engine *Engine) executeStandard(request GUIRequest, reports ...func(GUIProgress)) (GUIResult, error) {
@@ -976,6 +982,12 @@ func (engine *Engine) executeStandard(request GUIRequest, reports ...func(GUIPro
 	if err != nil {
 		return GUIResult{}, err
 	}
+	secondaryEquipment := data.allEquipment
+	if len(secondaryEquipment) == 0 {
+		secondaryEquipment = equipment
+	}
+	secondaryAffixes := []Affix{}
+	secondaryPrice := 0.0
 	for _, piece := range result.Pieces {
 		item, ok := equipmentByID[piece.ItemID]
 		if !ok {
@@ -1016,9 +1028,23 @@ func (engine *Engine) executeStandard(request GUIRequest, reports ...func(GUIPro
 		primary := GUIPiece{Type: titleCase(piece.Slot), Rarity: rarityColors[piece.Grade], Name: piece.Name, Attributes: attributes, NativeAffixes: native, NativeID: nativeID, Gems: gems}
 		pieceRows = append(pieceRows, primary)
 		if piece.Slot == "weapon" && request.SecondaryWeapon != secondaryWeaponNone {
-			secondary, ok := secondaryWeapon(classID, primary, request.SecondaryWeapon, data.gems)
+			secondary, ok := secondaryWeapon(classID, primary, request.SecondaryWeapon, data.gems, secondaryEquipment)
 			if !ok {
 				return GUIResult{}, fmt.Errorf("secondary weapon %q is unavailable", request.SecondaryWeapon)
+			}
+			if config, ok := nativeEquipment(classID, secondary.NativeID); ok {
+				if item := findDatabaseEquipment(classID, config, secondaryEquipment); item.ID != "" {
+					secondaryPrice += item.RecommendedPrice
+					secondaryAffixes = append(secondaryAffixes, item.Equipment.Affixes...)
+				}
+			}
+			for _, gem := range secondary.Gems {
+				if native, ok := nativeGem(gem.NativeID); ok {
+					if item := findDatabaseGem(native, data.gems); item.ID != "" {
+						secondaryPrice += item.RecommendedPrice
+						secondaryAffixes = append(secondaryAffixes, item.Gem.Affixes...)
+					}
+				}
 			}
 			pieceRows = append(pieceRows, secondary)
 		}
@@ -1029,7 +1055,11 @@ func (engine *Engine) executeStandard(request GUIRequest, reports ...func(GUIPro
 	if request.MatchTargetStrictly {
 		unusedGems, unusedAffixes = unusedGemSlots(result), unusedAffixSlots(result)
 	}
-	set := GUISet{Affixes: formatGUIAffixes(request.Affixes, result, engine.options.AffixDetails), Price: formatNumber(result.AveragePrice), UnusedGemSlots: unusedGems, UnusedAffixSlots: unusedAffixes, Pieces: pieceRows}
+	set := GUISet{
+		Affixes:        formatGUIAffixes(request.Affixes, result, engine.options.AffixDetails, secondaryAffixes),
+		PrimaryAffixes: formatGUIAffixes(request.Affixes, result, engine.options.AffixDetails, nil),
+		Price:          formatNumber(result.AveragePrice + secondaryPrice), UnusedGemSlots: unusedGems, UnusedAffixSlots: unusedAffixes, Pieces: pieceRows,
+	}
 	if code, exportErr := ExportCode(request.CharacterClass, set); exportErr == nil {
 		set.Code = code
 	}

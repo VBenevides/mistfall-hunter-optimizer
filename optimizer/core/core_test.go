@@ -111,7 +111,7 @@ func TestNativeCodeAddsWhiteSecondaryWeapon(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	secondary, ok := secondaryWeapon(classID, primary, secondaryWeaponWhite, nil)
+	secondary, ok := secondaryWeapon(classID, primary, secondaryWeaponWhite, nil, nil)
 	if !ok || secondary.Rarity != "White" || secondary.NativeID%10000 == primary.NativeID%10000 {
 		t.Fatalf("secondary weapon = %#v, primary = %#v", secondary, primary)
 	}
@@ -149,7 +149,7 @@ func TestNativeCodeUsesAlternateWeaponTypeForWhiteSecondary(t *testing.T) {
 			break
 		}
 	}
-	secondary, ok := secondaryWeapon(classID, primary, secondaryWeaponWhite, nil)
+	secondary, ok := secondaryWeapon(classID, primary, secondaryWeaponWhite, nil, nil)
 	if !ok || secondary.NativeID != 3021001 {
 		t.Fatalf("secondary weapon = %#v, primary = %#v", secondary, primary)
 	}
@@ -166,7 +166,7 @@ func TestMatchedSecondaryKeepsCompatibleGems(t *testing.T) {
 			primary = piece
 		}
 	}
-	secondary, ok := secondaryWeapon(15, primary, secondaryWeaponMatched, nil)
+	secondary, ok := secondaryWeapon(15, primary, secondaryWeaponMatched, nil, nil)
 	if !ok || secondary.NativeID != 3040901 || len(secondary.Gems) != len(primary.Gems) {
 		t.Fatalf("secondary=%+v primary=%+v", secondary, primary)
 	}
@@ -222,7 +222,7 @@ func TestMatchedSecondaryFindsEquivalentGemVariant(t *testing.T) {
 		t.Fatal(err)
 	}
 	primary := GUIPiece{Type: "Weapon", NativeID: 3030909, Gems: []GUIGem{{NativeID: 222102}}}
-	secondary, ok := secondaryWeapon(15, primary, secondaryWeaponMatched, gems)
+	secondary, ok := secondaryWeapon(15, primary, secondaryWeaponMatched, gems, nil)
 	if !ok || secondary.NativeID != 3031009 || len(secondary.Gems) != 1 || secondary.Gems[0].NativeID != 221107 {
 		t.Fatalf("secondary=%+v", secondary)
 	}
@@ -298,7 +298,7 @@ func TestNativeCodeAddsWhiteAlternateWeaponForEveryClassAndPrimary(t *testing.T)
 					continue
 				}
 				primaryPiece := GUIPiece{Type: "Weapon", NativeID: primaryID}
-				secondary, hasSecondary := secondaryWeapon(classID, primaryPiece, secondaryWeaponWhite, nil)
+				secondary, hasSecondary := secondaryWeapon(classID, primaryPiece, secondaryWeaponWhite, nil, nil)
 				pieces := []GUIPiece{primaryPiece}
 				if hasSecondary {
 					pieces = append(pieces, secondary)
@@ -621,6 +621,42 @@ func TestExecuteMatchesPrimarySecondaryWeapon(t *testing.T) {
 	secondaryConfig, secondaryOK := nativeEquipment(15, secondary.NativeID)
 	if !primaryOK || !secondaryOK || secondary.Type != "Secondary" || secondary.Rarity != primary.Rarity || secondary.NativeAffixes != primary.NativeAffixes || nativeWeaponType(primaryConfig) == nativeWeaponType(secondaryConfig) || !strings.Contains(secondary.Name, "Polearm and Shield") {
 		t.Fatalf("matched secondary = %#v, primary = %#v", secondary, primary)
+	}
+}
+
+func TestExecutedBuildMatchesDecodedSecondaryAttributes(t *testing.T) {
+	service, err := NewEngine()
+	if err != nil {
+		t.Fatal(err)
+	}
+	result, err := service.Execute(GUIRequest{
+		CharacterClass:  "Mercenary",
+		WeaponClass:     "Sword and Shield",
+		SecondaryWeapon: secondaryWeaponWhite,
+		MinRarity:       "Green",
+		MaxRarity:       "Green",
+	})
+	if err != nil {
+		t.Fatal(err)
+	}
+	decoded, err := DecodeCode(result.Sets[0].Code)
+	if err != nil {
+		t.Fatal(err)
+	}
+	current, loaded := result.Sets[0], decoded.Result.Sets[0]
+	var currentSecondary, loadedSecondary GUIPiece
+	for _, piece := range current.Pieces {
+		if piece.Type == "Secondary" {
+			currentSecondary = piece
+		}
+	}
+	for _, piece := range loaded.Pieces {
+		if piece.Type == "Secondary" {
+			loadedSecondary = piece
+		}
+	}
+	if current.Price != loaded.Price || currentSecondary.Attributes["attack"] != loadedSecondary.Attributes["attack"] {
+		t.Fatalf("executed build differs from decoded secondary: current=%+v loaded=%+v", current, loaded)
 	}
 }
 
@@ -1616,7 +1652,7 @@ func TestFormatGUIAffixesShowsTargetAndCappedSelection(t *testing.T) {
 		"Stoic": {Levels: map[string]string{"1": "", "2": ""}},
 		"Valor": {Levels: map[string]string{"1": "", "2": ""}},
 	}
-	affixes := formatGUIAffixes(request, result, details)
+	affixes := formatGUIAffixes(request, result, details, nil)
 	want := []GUIResultAffix{{Name: "Valor", Result: 2, Target: 2}, {Name: "Aegis", Result: 7, Target: 2, Wine: 1}, {Name: "Stoic", Result: 2}}
 	if !slices.Equal(affixes, want) {
 		t.Fatalf("affixes = %#v", affixes)
