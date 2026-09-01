@@ -4,8 +4,9 @@
 ## Addition
 
 # Rarity Spread
-- The highest and lowest rarities in a completed equipment set may differ by at most one rarity level.
-- Blue/Purple is valid; Blue/Gold is invalid.
+- By default, the highest and lowest rarities in a completed equipment set may differ by at most one rarity level.
+- By default, Blue/Purple is valid; Blue/Gold is invalid.
+- The "Disable Item Rarity Difference Constraint" setting allows larger differences and removes the weapon-versus-armor rarity ordering constraint.
 
 # Attack Optimization
 - Attack optimization consists of optimizing: % Attack and % Physical damage / % Magic Damage (Depends on the class)

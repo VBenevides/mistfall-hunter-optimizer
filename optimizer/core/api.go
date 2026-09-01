@@ -22,30 +22,31 @@ type GUIAffix struct {
 }
 
 type GUIRequest struct {
-	CharacterClass           string            `json:"characterClass"`
-	WeaponClass              string            `json:"weaponClass"`
-	SecondaryWeapon          string            `json:"secondaryWeapon,omitempty"`
-	WeaponRarity             string            `json:"weaponRarity"`
-	MinRarity                string            `json:"minRarity"`
-	MaxRarity                string            `json:"maxRarity"`
-	Ring                     string            `json:"ring"`
-	Amulet                   string            `json:"amulet"`
-	FixedRarities            map[string]string `json:"fixedRarities,omitempty"`
-	StatPriority             []string          `json:"statPriority,omitempty"`
-	Affixes                  []GUIAffix        `json:"affixes"`
-	MinimumAffixLevel        int               `json:"minimumAffixLevel,omitempty"`
-	MatchTargetStrictly      bool              `json:"matchTargetStrictly"`
-	LowPerformance           bool              `json:"lowPerformance"`
-	StatFirst                bool              `json:"statFirst,omitempty"`
-	StatFirstReferenceCost   int               `json:"statFirstReferenceCost,omitempty"`
-	StatFirstCostCeiling     int               `json:"statFirstCostCeiling,omitempty"` // legacy session field
-	SearchShard              int               `json:"searchShard,omitempty"`
-	SearchShards             int               `json:"searchShards,omitempty"`
-	StatFirstCandidateShard  int               `json:"statFirstCandidateShard,omitempty"`
-	StatFirstCandidateShards int               `json:"statFirstCandidateShards,omitempty"`
-	StatFirstCandidates      [][]GUIAffix      `json:"statFirstCandidates,omitempty"`
-	StatFirstGenerateOnly    bool              `json:"statFirstGenerateOnly,omitempty"`
-	prepared                 *standardDatabase `json:"-"`
+	CharacterClass                        string            `json:"characterClass"`
+	WeaponClass                           string            `json:"weaponClass"`
+	SecondaryWeapon                       string            `json:"secondaryWeapon,omitempty"`
+	WeaponRarity                          string            `json:"weaponRarity"`
+	MinRarity                             string            `json:"minRarity"`
+	MaxRarity                             string            `json:"maxRarity"`
+	Ring                                  string            `json:"ring"`
+	Amulet                                string            `json:"amulet"`
+	FixedRarities                         map[string]string `json:"fixedRarities,omitempty"`
+	StatPriority                          []string          `json:"statPriority,omitempty"`
+	Affixes                               []GUIAffix        `json:"affixes"`
+	MinimumAffixLevel                     int               `json:"minimumAffixLevel,omitempty"`
+	MatchTargetStrictly                   bool              `json:"matchTargetStrictly"`
+	DisableItemRarityDifferenceConstraint bool              `json:"disableItemRarityDifferenceConstraint"`
+	LowPerformance                        bool              `json:"lowPerformance"`
+	StatFirst                             bool              `json:"statFirst,omitempty"`
+	StatFirstReferenceCost                int               `json:"statFirstReferenceCost,omitempty"`
+	StatFirstCostCeiling                  int               `json:"statFirstCostCeiling,omitempty"` // legacy session field
+	SearchShard                           int               `json:"searchShard,omitempty"`
+	SearchShards                          int               `json:"searchShards,omitempty"`
+	StatFirstCandidateShard               int               `json:"statFirstCandidateShard,omitempty"`
+	StatFirstCandidateShards              int               `json:"statFirstCandidateShards,omitempty"`
+	StatFirstCandidates                   [][]GUIAffix      `json:"statFirstCandidates,omitempty"`
+	StatFirstGenerateOnly                 bool              `json:"statFirstGenerateOnly,omitempty"`
+	prepared                              *standardDatabase `json:"-"`
 }
 
 type standardDatabase struct {
@@ -582,8 +583,10 @@ func maxRarityForFixed(maxRarity int, fixed map[string]int) int {
 	return maxRarity
 }
 
-func maxEquipmentAffixLevelsForFixed(maxRarity int, fixed map[string]int) int {
-	maxRarity = maxRarityForFixed(maxRarity, fixed)
+func maxEquipmentAffixLevelsForFixed(maxRarity int, fixed map[string]int, disableRarityDifferenceConstraint bool) int {
+	if !disableRarityDifferenceConstraint {
+		maxRarity = maxRarityForFixed(maxRarity, fixed)
+	}
 	total := 0
 	for _, slot := range slotOrder {
 		rarity := fixed[slot]
@@ -631,7 +634,7 @@ func rarityConfiguration(request GUIRequest, minLevel, maxLevel int) (map[string
 		}
 		fixed["weapon"] = level
 	}
-	if len(fixed) > 1 {
+	if len(fixed) > 1 && !request.DisableItemRarityDifferenceConstraint {
 		lowest, highest := 0, 0
 		lowestSlot, highestSlot := "", ""
 		for _, slot := range slotOrder {
@@ -793,7 +796,9 @@ func (engine *Engine) executeStandard(request GUIRequest, reports ...func(GUIPro
 	if err != nil {
 		return GUIResult{}, err
 	}
-	maxLevel = maxRarityForFixed(maxLevel, fixedRarities)
+	if !request.DisableItemRarityDifferenceConstraint {
+		maxLevel = maxRarityForFixed(maxLevel, fixedRarities)
+	}
 	for _, fixed := range fixedRarities {
 		minLevel = min(minLevel, fixed)
 	}
@@ -854,7 +859,7 @@ func (engine *Engine) executeStandard(request GUIRequest, reports ...func(GUIPro
 		}
 		milestone = func(message string) { report(GUIProgress{Milestone: message}) }
 	}
-	progress := &optimizationProgress{report: progressReport, milestone: milestone, restrictGems: request.MatchTargetStrictly}
+	progress := &optimizationProgress{report: progressReport, milestone: milestone, restrictGems: request.MatchTargetStrictly, disableRarityDifferenceConstraint: request.DisableItemRarityDifferenceConstraint}
 	result, err := optimizeConfiguredWithStatsCache(equipment, optimizationGems, requirements, minLevel, maxLevel, progress, !request.LowPerformance, fixedRarities, rarityUpgradeOrder, 0, engine.options.ClassStats[request.CharacterClass], engine.options.AffixDetails, data.stats, statPriority)
 	if err != nil {
 		return GUIResult{}, err
@@ -883,7 +888,11 @@ func (engine *Engine) executeStandard(request GUIRequest, reports ...func(GUIPro
 	if weaponDamageType(request.WeaponClass) == 1 {
 		damageLabel = "Magic"
 	}
-	rules := []string{"Targets: " + strings.Join(targetRules, ", "), "Maximums: " + strings.Join(maximumRules, ", "), fmt.Sprintf("Rarity: %s–%s", rarityColors[minLevel], request.MaxRarity), "Highest and lowest equipment rarities may differ by at most one rarity level", "Wine reference: 0–2 per affix, 8 total; ignored by optimization", "Gem color/type is a hard constraint", "Tier-2 sockets accept tier-1 and tier-2 gems, with tier 2 preferred", "Weapon-only affixes: non-target Burst, Ranged, Bulwark, and Strife stay on allowed weapons; targets and fill gems are exceptions", "Class: " + request.CharacterClass, "Weapon: " + request.WeaponClass, "Attack priority: Attack + " + damageLabel + " Damage"}
+	rarityRule := "Highest and lowest equipment rarities may differ by at most one rarity level"
+	if request.DisableItemRarityDifferenceConstraint {
+		rarityRule = "Item rarity difference constraint: disabled"
+	}
+	rules := []string{"Targets: " + strings.Join(targetRules, ", "), "Maximums: " + strings.Join(maximumRules, ", "), fmt.Sprintf("Rarity: %s–%s", rarityColors[minLevel], request.MaxRarity), rarityRule, "Wine reference: 0–2 per affix, 8 total; ignored by optimization", "Gem color/type is a hard constraint", "Tier-2 sockets accept tier-1 and tier-2 gems, with tier 2 preferred", "Weapon-only affixes: non-target Burst, Ranged, Bulwark, and Strife stay on allowed weapons; targets and fill gems are exceptions", "Class: " + request.CharacterClass, "Weapon: " + request.WeaponClass, "Attack priority: Attack + " + damageLabel + " Damage"}
 	if request.WeaponRarity != "" && !strings.EqualFold(request.WeaponRarity, "Any") {
 		rules = append(rules, "Weapon rarity: "+request.WeaponRarity)
 	}
@@ -906,7 +915,7 @@ func (engine *Engine) executeStandard(request GUIRequest, reports ...func(GUIPro
 		"Optimization: minimize the total rarity levels of all equipment while satisfying targets",
 		"Optimization: among equal-rarity combinations, maximize stats in the selected priority order",
 	)
-	if fixedRarities["weapon"] == 0 {
+	if fixedRarities["weapon"] == 0 && !request.DisableItemRarityDifferenceConstraint {
 		rules = append(rules, "Weapon rarity constraint: no other equipment may have a higher rarity than the Weapon")
 	}
 	if request.LowPerformance {

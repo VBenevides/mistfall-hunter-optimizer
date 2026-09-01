@@ -916,7 +916,7 @@ func TestExecuteStatFirst(t *testing.T) {
 
 func TestMaxEquipmentAffixLevelsForFixedRarities(t *testing.T) {
 	fixed := map[string]int{"weapon": 4, "gauntlets": 4, "necklace": 5}
-	if got := maxEquipmentAffixLevelsForFixed(6, fixed); got != 22 {
+	if got := maxEquipmentAffixLevelsForFixed(6, fixed, false); got != 22 {
 		t.Fatalf("fixed rarity capacity = %d, want 22", got)
 	}
 }
@@ -1360,12 +1360,20 @@ func TestMixedRarityFollowsPriorityAndStaysAdjacent(t *testing.T) {
 	if err != nil || result == nil || !result.Possible || result.Closest || !slices.Equal(result.LevelCombination, want) {
 		t.Fatalf("mixed rarity result = %#v, %v; want %v", result, err, want)
 	}
+	relaxed, err := optimizeConfigured(items, nil, []Requirement{{Key: "aegis", Name: "Aegis", Level: 1}}, 1, 3, &optimizationProgress{disableRarityDifferenceConstraint: true}, false, nil, rarityUpgradeOrder, 0)
+	if err != nil || relaxed == nil || !relaxed.Possible || !slices.Equal(relaxed.LevelCombination, []int{1, 1, 3, 1, 1, 1, 1, 1}) {
+		t.Fatalf("relaxed rarity result = %#v, %v", relaxed, err)
+	}
 }
 
 func TestFixedRaritiesMustBeAdjacent(t *testing.T) {
 	_, err := rarityConfiguration(GUIRequest{FixedRarities: map[string]string{"weapon": "Blue", "helmet": "Gold"}}, 4, 6)
 	if err == nil || err.Error() != `Hard constraints violated: The difference between "Weapon" and "Helmet" is higher than 1 tier` {
 		t.Fatalf("fixed rarity spread error = %v", err)
+	}
+	fixed, err := rarityConfiguration(GUIRequest{DisableItemRarityDifferenceConstraint: true, FixedRarities: map[string]string{"weapon": "Blue", "helmet": "Gold"}}, 4, 6)
+	if err != nil || fixed["weapon"] != 4 || fixed["helmet"] != 6 {
+		t.Fatalf("relaxed fixed rarity spread = %#v, %v", fixed, err)
 	}
 }
 

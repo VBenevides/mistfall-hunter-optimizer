@@ -1201,11 +1201,12 @@ func (candidate solveState) betterThan(current *solveState, limits []int) bool {
 }
 
 type optimizationProgress struct {
-	tested, reported int
-	updated          time.Time
-	report           func(mode, stage string, current, total, tested int)
-	milestone        func(string)
-	restrictGems     bool
+	tested, reported                  int
+	updated                           time.Time
+	report                            func(mode, stage string, current, total, tested int)
+	milestone                         func(string)
+	restrictGems                      bool
+	disableRarityDifferenceConstraint bool
 }
 
 func (p *optimizationProgress) start(mode, stage string, current, total int) {
@@ -1899,7 +1900,7 @@ func solveBoundedWithCaps(equipment, gems []Item, levels map[string]int, require
 					minRarity = min(minRarity, stageOption.item.Grade)
 					maxRarity = max(maxRarity, stageOption.item.Grade)
 				}
-				if maxRarity-minRarity > 1 {
+				if (progress == nil || !progress.disableRarityDifferenceConstraint) && maxRarity-minRarity > 1 {
 					continue
 				}
 				stats := previous.Stats
@@ -2133,7 +2134,7 @@ func optimizeConfiguredWithStatsCache(equipment, gems []Item, requirements []Req
 		}
 	}
 	maximum := maxAffixLevels(equipment, gems, requirements, maxRarity)
-	cache := &optionCache{items: map[string][]optionState{}, choice: map[socketChoiceKey][]*Item{}, vector: map[string][]int{}, stats: statsCache, allowBonusGems: progress == nil || !progress.restrictGems, allowArmorAboveWeapon: fixedRarities["weapon"] > 0, exactTargets: progress != nil && progress.restrictGems, exactPositions: exactPositions}
+	cache := &optionCache{items: map[string][]optionState{}, choice: map[socketChoiceKey][]*Item{}, vector: map[string][]int{}, stats: statsCache, allowBonusGems: progress == nil || !progress.restrictGems, allowArmorAboveWeapon: progress != nil && progress.disableRarityDifferenceConstraint || fixedRarities["weapon"] > 0, exactTargets: progress != nil && progress.restrictGems, exactPositions: exactPositions}
 	seedResult := solveWithCaps(equipment, gems, nil, requirements, positions, targets, limits, bounds, "seed", progress, false, cache, 0, maxSolveStates, model, rarityPriority, selectedStatOrder)
 	rarityLimit := 0
 	if seedResult != nil {

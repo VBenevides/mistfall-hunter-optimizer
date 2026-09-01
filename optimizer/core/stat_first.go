@@ -620,7 +620,7 @@ func (engine *Engine) executeStatFirst(request GUIRequest, reports ...func(GUIPr
 	if err != nil {
 		return GUIResult{}, err
 	}
-	maximumTotal := maxEquipmentAffixLevelsForFixed(maximumRarity, fixedRarities)
+	maximumTotal := maxEquipmentAffixLevelsForFixed(maximumRarity, fixedRarities, request.DisableItemRarityDifferenceConstraint)
 	if report != nil {
 		report(GUIProgress{Milestone: "Generating Stat First affix candidates."})
 	}
