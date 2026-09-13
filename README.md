@@ -103,7 +103,7 @@ cd web
 
 The static files are written to `optimizer/web/dist/` and can be served by any static web server. The browser version stores sessions and saved results in browser local storage.
 
-The web build uses [`garble`](https://github.com/burrowers/garble) when available and falls back to a stripped Go WebAssembly build when it is not installed.
+The web build uses [`garble`](https://github.com/burrowers/garble) when available and compatible, and falls back to a stripped Go WebAssembly build when it is unavailable or incompatible with the installed Go version.
 
 ## Tests
 

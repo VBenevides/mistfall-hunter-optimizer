@@ -18,10 +18,11 @@ cp ../affixes.json "$ASSET_DIR/affixes.json"
 python3 export_database.py ../../database/db_mistfalldb.sqlite "$ASSET_DIR/database.json"
 BUILD_CACHE="${MISTFALL_HUNTER_GO_CACHE:-${TMPDIR:-/tmp}/mistfall-hunter-go-cache}"
 mkdir -p "$BUILD_CACHE"
-if command -v garble >/dev/null 2>&1; then
-  GOCACHE="$BUILD_CACHE" GOOS=js GOARCH=wasm garble -tiny build -trimpath -ldflags="-s -w" -o dist/mistfall.wasm .
+if command -v garble >/dev/null 2>&1 && \
+  GOCACHE="$BUILD_CACHE" GOOS=js GOARCH=wasm garble -tiny build -trimpath -ldflags="-s -w" -o dist/mistfall.wasm .; then
+  :
 else
-  echo "garble not found; using stripped Go WASM build" >&2
+  echo "garble unavailable or incompatible; using stripped Go WASM build" >&2
   GOCACHE="$BUILD_CACHE" GOOS=js GOARCH=wasm go build -trimpath -ldflags="-s -w" -o dist/mistfall.wasm .
 fi
 BUILD_TIMESTAMP="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
