@@ -231,6 +231,32 @@ func secondaryWeapon(classID int, primary GUIPiece, mode string, availableGems, 
 			}
 			primaryGems = append(primaryGems, item)
 		}
+		primaryAffixes := []string{}
+		seenPrimaryAffixes := map[string]bool{}
+		addPrimaryAffix := func(name string) {
+			key := normalize(name)
+			if key != "" && key != "-" && !seenPrimaryAffixes[key] {
+				seenPrimaryAffixes[key] = true
+				primaryAffixes = append(primaryAffixes, key)
+			}
+		}
+		for _, name := range strings.Split(primary.NativeAffixes, ",") {
+			addPrimaryAffix(name)
+		}
+		for _, gem := range primaryGems {
+			for _, affix := range gem.Gem.Affixes {
+				addPrimaryAffix(affix.Name)
+			}
+		}
+		databaseHasAffix := func(config nativeEquipmentConfig, wanted string) bool {
+			item := findDatabaseEquipment(classID, config, availableEquipment)
+			for _, affix := range item.Equipment.Affixes {
+				if normalize(affix.Name) == wanted {
+					return true
+				}
+			}
+			return false
+		}
 		matchingGems := func(config nativeEquipmentConfig) ([]GUIGem, bool) {
 			if missingGem {
 				return nil, false
@@ -294,6 +320,14 @@ func secondaryWeapon(classID int, primary GUIPiece, mode string, availableGems, 
 			if item := findDatabaseEquipment(classID, config, availableEquipment); item.ID != "" {
 				secondary.Name = item.Name
 				secondary.Attributes = guiItemAttributes(item)
+				secondary.NativeAffixes = "-"
+				if len(item.Equipment.Affixes) > 0 {
+					names := make([]string, len(item.Equipment.Affixes))
+					for index, affix := range item.Equipment.Affixes {
+						names[index] = affix.Name
+					}
+					secondary.NativeAffixes = strings.Join(names, ", ")
+				}
 			}
 			if matched {
 				secondary.Gems = gems
@@ -313,6 +347,13 @@ func secondaryWeapon(classID int, primary GUIPiece, mode string, availableGems, 
 			if matches(config) {
 				if gems, ok := matchingGems(config); ok {
 					return secondaryPiece(config, gems, true), true
+				}
+			}
+		}
+		for _, wanted := range primaryAffixes {
+			for _, config := range nativeTables.Equipment {
+				if matches(config) && databaseHasAffix(config, wanted) {
+					return secondaryPiece(config, nil, false), true
 				}
 			}
 		}
@@ -587,9 +628,6 @@ func DecodeCode(code string) (GUISession, error) {
 	}
 	configs := nativeTables.EquipmentByClassSlot[strconv.Itoa(classID)]
 	set := GUISet{Code: strings.TrimSpace(code), Pieces: []GUIPiece{}}
-	affixOrder := []string{}
-	affixLevels := map[string]int{}
-	affixNames := map[string]string{}
 	collectAffixes := func(affixes []Affix, order *[]string, levels map[string]int, names map[string]string) {
 		for _, affix := range affixes {
 			key := normalize(affix.Name)
@@ -600,9 +638,6 @@ func DecodeCode(code string) (GUISession, error) {
 			levels[key] += affix.Level
 		}
 	}
-	addAffixes := func(affixes []Affix) {
-		collectAffixes(affixes, &affixOrder, affixLevels, affixNames)
-	}
 	primaryAffixOrder := []string{}
 	primaryAffixLevels := map[string]int{}
 	primaryAffixNames := map[string]string{}
@@ -610,9 +645,7 @@ func DecodeCode(code string) (GUISession, error) {
 		collectAffixes(affixes, &primaryAffixOrder, primaryAffixLevels, primaryAffixNames)
 	}
 	request := GUIRequest{CharacterClass: titleCase(className), MatchTargetStrictly: true}
-	var primaryConfig nativeEquipmentConfig
-	hasPrimary := false
-	primaryNativeAffixes := ""
+	var primaryPiece GUIPiece
 	price := 0.0
 	for _, slot := range nativeCodeSlots {
 		index, err := read(10)
@@ -637,7 +670,6 @@ func DecodeCode(code string) (GUISession, error) {
 		if item.ID != "" {
 			price += item.RecommendedPrice
 			name, itemClass = item.Name, item.SubName
-			addAffixes(item.Equipment.Affixes)
 			if slot != nativeSlotIDs["secondary"] {
 				addPrimaryAffixes(item.Equipment.Affixes)
 			}
@@ -648,17 +680,19 @@ func DecodeCode(code string) (GUISession, error) {
 			nativeAffixes = strings.Join(names, ", ")
 		}
 		piece := GUIPiece{Type: nativeDisplaySlots[config.Slot], Rarity: rarityColor(config.Rarity), Name: name, NativeAffixes: nativeAffixes, NativeID: config.ID, Gems: []GUIGem{}}
-		if slot == nativeSlotIDs["primary"] {
-			primaryConfig, hasPrimary = config, true
-			primaryNativeAffixes = nativeAffixes
-		}
 		if slot == nativeSlotIDs["secondary"] {
 			piece.Type = "Secondary"
 			if config.Rarity == "Common" && config.Affix == "" {
 				request.SecondaryWeapon = secondaryWeaponWhite
-			} else if hasPrimary && config.Rarity == primaryConfig.Rarity && config.ID%100 == primaryConfig.ID%100 && nativeWeaponType(config) != nativeWeaponType(primaryConfig) {
-				request.SecondaryWeapon = secondaryWeaponMatched
-				piece.NativeAffixes = primaryNativeAffixes
+			} else if primaryPiece.NativeID != 0 {
+				expected, ok := secondaryWeapon(classID, primaryPiece, secondaryWeaponMatched, gems, equipment)
+				matched := ok && expected.NativeID == config.ID
+				if primaryConfig, ok := nativeEquipment(classID, primaryPiece.NativeID); ok && config.Rarity == primaryConfig.Rarity && config.ID%100 == primaryConfig.ID%100 && nativeWeaponType(config) != nativeWeaponType(primaryConfig) {
+					matched = true
+				}
+				if matched {
+					request.SecondaryWeapon = secondaryWeaponMatched
+				}
 			}
 		}
 		piece.Attributes = guiItemAttributes(item)
@@ -688,7 +722,6 @@ func DecodeCode(code string) (GUISession, error) {
 				gem.Name = native.Name
 				if databaseGem.ID != "" {
 					price += databaseGem.RecommendedPrice
-					addAffixes(databaseGem.Gem.Affixes)
 					if slot != nativeSlotIDs["secondary"] {
 						addPrimaryAffixes(databaseGem.Gem.Affixes)
 					}
@@ -703,6 +736,9 @@ func DecodeCode(code string) (GUISession, error) {
 			}
 			piece.Gems = append(piece.Gems, gem)
 		}
+		if slot == nativeSlotIDs["primary"] {
+			primaryPiece = piece
+		}
 		set.Pieces = append(set.Pieces, piece)
 	}
 	canonicalCode, err := encodeNativeBuild(classID, set.Pieces)
@@ -711,11 +747,9 @@ func DecodeCode(code string) (GUISession, error) {
 	}
 	set.Code = canonicalCode
 	set.Price = formatNumber(price)
-	for _, key := range affixOrder {
-		set.Affixes = append(set.Affixes, GUIResultAffix{Name: affixNames[key], Result: affixLevels[key]})
-	}
 	for _, key := range primaryAffixOrder {
 		affix := GUIResultAffix{Name: primaryAffixNames[key], Result: primaryAffixLevels[key]}
+		set.Affixes = append(set.Affixes, affix)
 		set.PrimaryAffixes = append(set.PrimaryAffixes, affix)
 		request.Affixes = append(request.Affixes, GUIAffix{Name: affix.Name, Level: affix.Result, Enabled: true})
 	}

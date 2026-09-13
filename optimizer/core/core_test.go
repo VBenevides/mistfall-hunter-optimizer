@@ -624,6 +624,61 @@ func TestExecuteMatchesPrimarySecondaryWeapon(t *testing.T) {
 	}
 }
 
+func TestMatchedSecondaryPreservesPrimaryAffixWithoutAddingBonus(t *testing.T) {
+	service, err := NewEngine()
+	if err != nil {
+		t.Fatal(err)
+	}
+	result, err := service.Execute(GUIRequest{
+		CharacterClass: "Withered Knight", WeaponClass: "Spear and Shield", SecondaryWeapon: secondaryWeaponMatched,
+		MinRarity: "Green", MaxRarity: "Green", MatchTargetStrictly: true,
+		Affixes: []GUIAffix{{Name: "Smiting", Level: 2, Enabled: true}, {Name: "Valor", Level: 3, Enabled: true}, {Name: "Elusive", Level: 3, Enabled: true}},
+	})
+	if err != nil || !result.Possible || len(result.Sets) != 1 {
+		t.Fatalf("matched secondary result = %#v, %v", result, err)
+	}
+	set := result.Sets[0]
+	if len(set.Pieces) < 2 || set.Pieces[1].NativeID != 3030904 || set.Pieces[1].NativeAffixes != "Smiting" {
+		t.Fatalf("matched secondary = %#v", set.Pieces)
+	}
+	wantAffixes := []GUIResultAffix{{Name: "Smiting", Result: 2, Target: 2}, {Name: "Valor", Result: 3, Target: 3}, {Name: "Elusive", Result: 3, Target: 3}}
+	if !slices.Equal(set.Affixes, wantAffixes) {
+		t.Fatalf("result affixes = %#v", set.Affixes)
+	}
+	if set.Price != "1165" {
+		t.Fatalf("result price = %q", set.Price)
+	}
+	decoded, err := DecodeCode(set.Code)
+	var decodedSecondary GUIPiece
+	if len(decoded.Result.Sets) == 1 {
+		for _, piece := range decoded.Result.Sets[0].Pieces {
+			if piece.Type == "Secondary" {
+				decodedSecondary = piece
+			}
+		}
+	}
+	if err != nil || decoded.Request.SecondaryWeapon != secondaryWeaponMatched || decoded.Result.Sets[0].Price != set.Price || decodedSecondary.NativeID != 3030904 || decodedSecondary.NativeAffixes != "Smiting" {
+		t.Fatalf("decoded secondary = %#v, %v", decoded.Result.Sets, err)
+	}
+	if !slices.Equal(decoded.Result.Sets[0].Affixes, []GUIResultAffix{{Name: "Smiting", Result: 2}, {Name: "Valor", Result: 3}, {Name: "Elusive", Result: 3}}) {
+		t.Fatalf("decoded result affixes = %#v", decoded.Result.Sets[0].Affixes)
+	}
+}
+
+func TestDecodeRecognizesLegacyMatchedSecondary(t *testing.T) {
+	code, err := ExportCode("Withered Knight", GUISet{Pieces: []GUIPiece{
+		{Type: "Weapon", NativeID: 3031008, Gems: []GUIGem{{NativeID: 224103}}},
+		{Type: "Secondary", NativeID: 3030908},
+	}})
+	if err != nil {
+		t.Fatal(err)
+	}
+	session, err := DecodeCode(code)
+	if err != nil || session.Request.SecondaryWeapon != secondaryWeaponMatched {
+		t.Fatalf("legacy secondary mode = %q, %v", session.Request.SecondaryWeapon, err)
+	}
+}
+
 func TestExecutedBuildMatchesDecodedSecondaryAttributes(t *testing.T) {
 	service, err := NewEngine()
 	if err != nil {

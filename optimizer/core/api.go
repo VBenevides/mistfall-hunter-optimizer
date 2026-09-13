@@ -986,7 +986,6 @@ func (engine *Engine) executeStandard(request GUIRequest, reports ...func(GUIPro
 	if len(secondaryEquipment) == 0 {
 		secondaryEquipment = equipment
 	}
-	secondaryAffixes := []Affix{}
 	secondaryPrice := 0.0
 	for _, piece := range result.Pieces {
 		item, ok := equipmentByID[piece.ItemID]
@@ -1035,14 +1034,12 @@ func (engine *Engine) executeStandard(request GUIRequest, reports ...func(GUIPro
 			if config, ok := nativeEquipment(classID, secondary.NativeID); ok {
 				if item := findDatabaseEquipment(classID, config, secondaryEquipment); item.ID != "" {
 					secondaryPrice += item.RecommendedPrice
-					secondaryAffixes = append(secondaryAffixes, item.Equipment.Affixes...)
 				}
 			}
 			for _, gem := range secondary.Gems {
 				if native, ok := nativeGem(gem.NativeID); ok {
 					if item := findDatabaseGem(native, data.gems); item.ID != "" {
 						secondaryPrice += item.RecommendedPrice
-						secondaryAffixes = append(secondaryAffixes, item.Gem.Affixes...)
 					}
 				}
 			}
@@ -1056,7 +1053,7 @@ func (engine *Engine) executeStandard(request GUIRequest, reports ...func(GUIPro
 		unusedGems, unusedAffixes = unusedGemSlots(result), unusedAffixSlots(result)
 	}
 	set := GUISet{
-		Affixes:        formatGUIAffixes(request.Affixes, result, engine.options.AffixDetails, secondaryAffixes),
+		Affixes:        formatGUIAffixes(request.Affixes, result, engine.options.AffixDetails, nil),
 		PrimaryAffixes: formatGUIAffixes(request.Affixes, result, engine.options.AffixDetails, nil),
 		Price:          formatNumber(result.AveragePrice + secondaryPrice), UnusedGemSlots: unusedGems, UnusedAffixSlots: unusedAffixes, Pieces: pieceRows,
 	}
