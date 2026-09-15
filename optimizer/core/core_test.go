@@ -665,6 +665,37 @@ func TestMatchedSecondaryPreservesPrimaryAffixWithoutAddingBonus(t *testing.T) {
 	}
 }
 
+func TestMatchedSecondaryDoesNotAddDifferentAffix(t *testing.T) {
+	service, err := NewEngine()
+	if err != nil {
+		t.Fatal(err)
+	}
+	result, err := service.Execute(GUIRequest{
+		CharacterClass: "Withered Knight", WeaponClass: "Greatsword", SecondaryWeapon: secondaryWeaponMatched,
+		MinRarity: "Green", MaxRarity: "Green", MatchTargetStrictly: true,
+		Affixes: []GUIAffix{{Name: "Smiting", Level: 2, Enabled: true}, {Name: "Elusive", Level: 3, Enabled: true}, {Name: "Vitality", Level: 3, Enabled: true}},
+	})
+	if err != nil || !result.Possible || len(result.Sets) != 1 {
+		t.Fatalf("matched secondary result = %#v, %v", result, err)
+	}
+	secondary := result.Sets[0].Pieces[1]
+	if secondary.NativeID != 3031008 || secondary.NativeAffixes != "-" || len(secondary.Gems) != 1 || secondary.Gems[0].Affixes != "Smiting" {
+		t.Fatalf("matched secondary added native affix: %+v", secondary)
+	}
+	decoded, err := DecodeCode(result.Sets[0].Code)
+	var decodedSecondary GUIPiece
+	if len(decoded.Result.Sets) == 1 {
+		for _, piece := range decoded.Result.Sets[0].Pieces {
+			if piece.Type == "Secondary" {
+				decodedSecondary = piece
+			}
+		}
+	}
+	if err != nil || decodedSecondary.NativeID != 3031008 || decodedSecondary.NativeAffixes != "-" {
+		t.Fatalf("decoded matched secondary = %#v, %v", decoded.Result.Sets, err)
+	}
+}
+
 func TestDecodeRecognizesLegacyMatchedSecondary(t *testing.T) {
 	code, err := ExportCode("Withered Knight", GUISet{Pieces: []GUIPiece{
 		{Type: "Weapon", NativeID: 3031008, Gems: []GUIGem{{NativeID: 224103}}},

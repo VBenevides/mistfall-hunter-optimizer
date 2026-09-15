@@ -1029,7 +1029,7 @@ func (engine *Engine) executeStandard(request GUIRequest, reports ...func(GUIPro
 		if piece.Slot == "weapon" && request.SecondaryWeapon != secondaryWeaponNone {
 			secondary, ok := secondaryWeapon(classID, primary, request.SecondaryWeapon, data.gems, secondaryEquipment)
 			if !ok {
-				return GUIResult{}, fmt.Errorf("secondary weapon %q is unavailable", request.SecondaryWeapon)
+				continue
 			}
 			if config, ok := nativeEquipment(classID, secondary.NativeID); ok {
 				if item := findDatabaseEquipment(classID, config, secondaryEquipment); item.ID != "" {
